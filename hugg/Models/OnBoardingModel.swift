@@ -7,6 +7,8 @@
 
 import Foundation
 
-struct OnboardingModel {
-    
+struct OnBoardingModel {
+    let image: String
+    let title: String
+    let desc: String
 }

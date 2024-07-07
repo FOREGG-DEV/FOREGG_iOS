@@ -8,11 +8,24 @@
 import SwiftUI
 
 struct BorderedButton: View {
+    let action: () -> Void
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action: self.action) {
+            Text("다음")
+                .font(.system(size: 24, weight: .bold))
+                .foregroundColor(.black) // Change text color
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 12)
+        }
+        .background(.white)
+        .overlay(RoundedRectangle(cornerRadius: 8)
+            .stroke(.main1, lineWidth: 1))
+        .padding(.horizontal, 16)
     }
 }
 
 #Preview {
-    BorderedButton()
+    BorderedButton(action: {
+        print("heoo")
+    })
 }

@@ -7,12 +7,56 @@
 
 import SwiftUI
 
-struct Appbar: View {
+struct AppBar: View {
+    @Binding var currentStep: Int
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            if currentStep != 0 {
+                Button(action: {
+                    // 뒤로가기 액션
+                    currentStep -= 1
+                }) {
+                    Image(systemName: "chevron.left")
+                        .fontWeight(Font.Weight.semibold)
+                        .foregroundColor(.black60)
+                        .frame(width: 24, height: 24)
+                }
+            } else {
+                Spacer()
+                    .frame(width: 24, height: 24)
+            }
+            Spacer()
+            Image("onboardingLogo")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 86, height: 26)
+            Spacer()
+            Button(action: {
+                // Skip 버튼 액션
+                print("Skip button tapped")
+            }) {
+                Text("Skip")
+                    .fontWeight(Font.Weight.semibold)
+                    .foregroundColor(.black60)
+            }
+        }
+        .padding(.horizontal, 28)
+        .padding(.vertical, 15)
+        .background(Color.white)
+        .overlay(VStack {
+            Spacer()
+            Divider()
+                .background(.black60)
+                .frame(height: 1)
+
+        })
     }
 }
 
 #Preview {
-    Appbar()
+    Group {
+        AppBar(currentStep: .constant(0))
+        AppBar(currentStep: .constant(1))
+    }
 }
