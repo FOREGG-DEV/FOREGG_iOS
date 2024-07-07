@@ -11,7 +11,6 @@
 		1F0D92F32C365B6D00BB6ADD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D92F22C365B6D00BB6ADD /* ContentView.swift */; };
 		1F0D92F52C365B6E00BB6ADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D92F42C365B6E00BB6ADD /* Assets.xcassets */; };
 		1F0D92F82C365B6E00BB6ADD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D92F72C365B6E00BB6ADD /* Preview Assets.xcassets */; };
-		1F0D93042C3664DB00BB6ADD /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D93032C3664DB00BB6ADD /* ColorPalette.swift */; };
 		1F0D93082C367F5300BB6ADD /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D93072C367F5300BB6ADD /* OnboardingView.swift */; };
 		1F0D930C2C36809500BB6ADD /* AppBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D930B2C36809500BB6ADD /* AppBar.swift */; };
 		1FD826102C3A7697003C295A /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD8260F2C3A7697003C295A /* OnboardingPage.swift */; };
@@ -25,7 +24,6 @@
 		1F0D92F22C365B6D00BB6ADD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1F0D92F42C365B6E00BB6ADD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F0D92F72C365B6E00BB6ADD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1F0D93032C3664DB00BB6ADD /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		1F0D93072C367F5300BB6ADD /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		1F0D930B2C36809500BB6ADD /* AppBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBar.swift; sourceTree = "<group>"; };
 		1FD8260F2C3A7697003C295A /* OnboardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage.swift; sourceTree = "<group>"; };
@@ -64,7 +62,6 @@
 		1F0D92EF2C365B6D00BB6ADD /* hugg */ = {
 			isa = PBXGroup;
 			children = (
-				1F0D93022C3664C300BB6ADD /* DesignSystem */,
 				1F0D93012C3664B800BB6ADD /* Services */,
 				1F0D93002C365DD600BB6ADD /* VIewModels */,
 				1F0D92FF2C365DCF00BB6ADD /* Views */,
@@ -115,14 +112,6 @@
 			children = (
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		1F0D93022C3664C300BB6ADD /* DesignSystem */ = {
-			isa = PBXGroup;
-			children = (
-				1F0D93032C3664DB00BB6ADD /* ColorPalette.swift */,
-			);
-			path = DesignSystem;
 			sourceTree = "<group>";
 		};
 		1F0D93092C36808100BB6ADD /* Components */ = {
@@ -227,7 +216,6 @@
 				1F0D92F12C365B6D00BB6ADD /* huggApp.swift in Sources */,
 				1F0D930C2C36809500BB6ADD /* AppBar.swift in Sources */,
 				1F0D93082C367F5300BB6ADD /* OnboardingView.swift in Sources */,
-				1F0D93042C3664DB00BB6ADD /* ColorPalette.swift in Sources */,
 				1FD826102C3A7697003C295A /* OnboardingPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
