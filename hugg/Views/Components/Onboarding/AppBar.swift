@@ -15,7 +15,9 @@ struct AppBar: View {
             if currentStep != 0 {
                 Button(action: {
                     // 뒤로가기 액션
-                    currentStep -= 1
+                    withAnimation(.default) {
+                        currentStep -= 1
+                    }
                 }) {
                     Image(systemName: "chevron.left")
                         .fontWeight(Font.Weight.semibold)

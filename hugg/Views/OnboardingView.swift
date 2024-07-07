@@ -18,9 +18,11 @@ struct OnboardingView: View {
     @State private var currentStep = 0
 
     func nextPage() {
-        if currentStep < datas.count - 1 {
-            currentStep += 1
-        } else {}
+        withAnimation(.default) {
+            if currentStep < datas.count - 1 {
+                currentStep += 1
+            } else {}
+        }
     }
 
     var body: some View {
@@ -35,22 +37,10 @@ struct OnboardingView: View {
             .frame(height: 500)
             HStack {
                 ForEach(0 ..< datas.count, id: \.self) { index in
-                    Group {
-                        if index == currentStep {
-                            Rectangle()
-                                .frame(width: 24, height: 8)
-                                .foregroundColor(.main1)
-                                .cornerRadius(5)
-                                .transition(.scale) // Add a transition effect if needed
-                                .animation(.easeInOut(duration: 0.3), value: currentStep) // Animate changes
-                        } else {
-                            Circle()
-                                .frame(width: 8, height: 8)
-                                .foregroundColor(Color.black.opacity(0.3))
-                                .transition(.scale) // Add a transition effect if needed
-                                .animation(.easeInOut(duration: 0.3), value: currentStep) // Animate changes
-                        }
-                    }
+                    Rectangle()
+                        .frame(width: index == currentStep ? 24 : 8, height: 8)
+                        .foregroundColor(index == currentStep ? .main1 : .black30)
+                        .cornerRadius(5)
                 }
             }
             .padding()

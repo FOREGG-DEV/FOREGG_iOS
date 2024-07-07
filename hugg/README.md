@@ -11,8 +11,9 @@
 - [ ] github 연동 
 - [ ] splash screen (app launch screen)
 - [ ] app icon setting
-- [ ] onboarding screen
 - [ ] Design UI components 
+- [ ] Add animation to onboarding progress indicators
 
 ## Done
 - [x] color system
+- [x] onboarding screen
