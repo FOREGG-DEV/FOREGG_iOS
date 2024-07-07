@@ -16,6 +16,7 @@
 		1FD826102C3A7697003C295A /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD8260F2C3A7697003C295A /* OnboardingPage.swift */; };
 		1FF22A792C3AD7C200367518 /* OnBoardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF22A782C3AD7C200367518 /* OnBoardingModel.swift */; };
 		1FF22A7C2C3AD87000367518 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF22A7B2C3AD87000367518 /* BorderedButton.swift */; };
+		1FF22A7E2C3ADFA000367518 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF22A7D2C3ADFA000367518 /* MainButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1FD826112C3A779A003C295A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1FF22A782C3AD7C200367518 /* OnBoardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingModel.swift; sourceTree = "<group>"; };
 		1FF22A7B2C3AD87000367518 /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		1FF22A7D2C3ADFA000367518 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				1FF22A7B2C3AD87000367518 /* BorderedButton.swift */,
+				1FF22A7D2C3ADFA000367518 /* MainButton.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				1FF22A792C3AD7C200367518 /* OnBoardingModel.swift in Sources */,
 				1FF22A7C2C3AD87000367518 /* BorderedButton.swift in Sources */,
 				1F0D92F12C365B6D00BB6ADD /* huggApp.swift in Sources */,
+				1FF22A7E2C3ADFA000367518 /* MainButton.swift in Sources */,
 				1F0D930C2C36809500BB6ADD /* AppBar.swift in Sources */,
 				1F0D93082C367F5300BB6ADD /* OnboardingView.swift in Sources */,
 				1FD826102C3A7697003C295A /* OnboardingPage.swift in Sources */,
