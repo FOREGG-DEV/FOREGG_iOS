@@ -19,7 +19,7 @@ struct OnboardingPage: View {
             Text(data.title)
                 .font(.system(size: 24, weight: .semibold))
                 .foregroundStyle(.black)
-                .padding(EdgeInsets(top: 49, leading: 0, bottom: 8, trailing: 0))
+                .padding(EdgeInsets(top: 30, leading: 0, bottom: 8, trailing: 0))
             Text(data.desc)
                 .font(.system(size: 16, weight: .medium))
                 .foregroundStyle(.black80)
@@ -30,5 +30,5 @@ struct OnboardingPage: View {
 
 #Preview {
     OnboardingPage(
-        data: OnBoardingModel(image: "onboarding1", title: "title", desc: "desc"))
+        data: OnBoardingModel(image: "onboarding1", title: "주사 맞을 시간엔 알람이 울려요", desc: "desc"))
 }

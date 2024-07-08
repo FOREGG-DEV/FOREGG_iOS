@@ -17,7 +17,7 @@ struct BorderedButton: View {
                 .font(.system(size: 24, weight: .bold))
                 .foregroundColor(.black)
                 .frame(maxWidth: .infinity)
-                .padding(.vertical, 12)
+                .padding(.vertical, 16)
         }
         .background(.white)
         .overlay(RoundedRectangle(cornerRadius: 8)

@@ -18,7 +18,7 @@ struct OnboardingView: View {
     @State private var currentStep = 0
 
     func nextPage() {
-        withAnimation(.default) {
+        withAnimation {
             if currentStep < datas.count - 1 {
                 currentStep += 1
             } else {}
@@ -34,7 +34,6 @@ struct OnboardingView: View {
                 }
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-            .frame(height: 500)
             HStack {
                 ForEach(0 ..< datas.count, id: \.self) { index in
                     Rectangle()
@@ -47,22 +46,15 @@ struct OnboardingView: View {
             .background(RoundedRectangle(cornerRadius: 30).fill(Color.clear))
             .frame(width: 60)
             .allowsTightening(false)
-            .padding(.bottom, 39)
+            .padding(.bottom, 32)
 
-            Button(action: nextPage) {
-                Text("다음")
-                    .font(.system(size: 24, weight: .bold))
-                    .foregroundColor(.black) // Change text color
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 12)
-            }
-            .background(.white)
-            .overlay(RoundedRectangle(cornerRadius: 8)
-                .stroke(.main1, lineWidth: 1))
-            .padding(.horizontal, 16)
+            BorderedButton(title: "다음", action: nextPage)
+
+            // add kakao login button when is last page
+
             Spacer()
         }
-        .background(.background)
+        .background(.bg)
     }
 }
 

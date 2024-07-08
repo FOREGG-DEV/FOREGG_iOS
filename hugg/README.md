@@ -3,16 +3,16 @@
 
 ## Study
 - [ ] @State
-- [ ] jwt with SwiftUI
-- [ ] kakao login
+- [ ] jwt with SwiftUI / Using node.js backend
+- [ ] kakao login with toy project (sample app)
 - [ ] http connection
 
 ## Todo
-- [ ] github 연동 
+- [x] github 연동 
 - [ ] splash screen (app launch screen)
 - [ ] app icon setting
 - [ ] Design UI components 
-- [ ] Add animation to onboarding progress indicators
+- [ ] Add animation to Gesture on onboarding progress indicators
 
 ## Done
 - [x] color system

@@ -16,7 +16,9 @@ struct AppBar: View {
                 Button(action: {
                     // 뒤로가기 액션
                     withAnimation(.default) {
-                        currentStep -= 1
+                        if currentStep >= 0 {
+                            currentStep -= 1
+                        }
                     }
                 }) {
                     Image(systemName: "chevron.left")

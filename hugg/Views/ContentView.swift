@@ -7,32 +7,40 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
     // UserDefaults -> check
     @State private var hasSeenOnboarding = UserDefaults.standard.bool(forKey: "hasSeenOnboarding")
+    // show splash
+    @State private var showMainView = false
 
     var body: some View {
-        Group {
-            if hasSeenOnboarding {
-                MainView() // 메인 화면
+        ZStack {
+            if showMainView {
+                Group {
+                    if hasSeenOnboarding {
+                        HomeView() // 메인 화면
+                    } else {
+                        OnboardingView()
+                            .onDisappear {
+                                self.hasSeenOnboarding = true
+                            }
+                    }
+                }
+
             } else {
-                OnboardingView()
-                    .onDisappear {
-                        self.hasSeenOnboarding = true
+                SplashView()
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                            withAnimation {
+                                showMainView = true
+                            }
+                        }
                     }
             }
         }
     }
 }
 
-struct MainView: View {
-    var body: some View {
-        Text("This is the main view")
-            .font(.largeTitle)
-            .padding()
-    }
-}
-
 #Preview {
-    ContentView()
+    MainView()
 }
