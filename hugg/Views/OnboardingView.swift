@@ -19,7 +19,7 @@ struct OnboardingView: View {
 
             TabView(selection: $viewModel.currentStep) {
                 ForEach(0 ..< viewModel.datas.count, id: \.self) { idx in
-                    OnboardingPage(data: viewModel.datas[idx]).tag(idx)
+                    OnboardingContent(data: viewModel.datas[idx]).tag(idx)
                         .gesture(DragGesture(minimumDistance: 10).onEnded { endedGesture in
                             if endedGesture.location.x - endedGesture.startLocation.x > 0 {
                                 viewModel.decreaseStep()

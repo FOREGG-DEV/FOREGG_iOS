@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct OnboardingPage: View {
+struct OnboardingContent: View {
     var data: OnBoardingModel
 
     var body: some View {
