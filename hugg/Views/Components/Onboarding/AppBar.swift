@@ -8,18 +8,14 @@
 import SwiftUI
 
 struct AppBar: View {
-    @Binding var currentStep: Int
+    @ObservedObject var viewModel: OnboardingViewModel
 
     var body: some View {
         HStack {
-            if currentStep != 0 {
+            if viewModel.currentStep != 0 {
                 Button(action: {
                     // 뒤로가기 액션
-                    withAnimation(.default) {
-                        if currentStep >= 0 {
-                            currentStep -= 1
-                        }
-                    }
+                    viewModel.decreaseStep()
                 }) {
                     Image(systemName: "chevron.left")
                         .fontWeight(Font.Weight.semibold)
@@ -60,7 +56,6 @@ struct AppBar: View {
 
 #Preview {
     Group {
-        AppBar(currentStep: .constant(0))
-        AppBar(currentStep: .constant(1))
+        AppBar(viewModel: OnboardingViewModel())
     }
 }

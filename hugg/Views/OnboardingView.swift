@@ -8,37 +8,37 @@
 import SwiftUI
 
 struct OnboardingView: View {
-    let datas = [
-        OnBoardingModel(image: "onboarding1", title: "주사맞을 시간엔 알람이 울려요", desc: "정확한 시간에 맞아야 하는 주사,\n허그가 챙길 테니 안심하세요."),
-        OnBoardingModel(image: "onboarding2", title: "여보, 우리 내일부터 과배란 주사지?", desc: "진료 내용, 복약 스케줄, 하루 동안 느낀 감정까지\n모든 과정을 남편과 공유해요."),
-        OnBoardingModel(image: "onboarding3", title: "총 얼마 썼는지 궁금할 땐?", desc: "가계부 기능을 통해, 정부지원금과 개인 지출을\n구분하여 확인할 수 있어요."),
-        OnBoardingModel(image: "onboarding4", title: "생활습관 챌린지로 건강하게", desc: "난자는 영양 상태, 호르몬 변화에 큰 영향을 받아요.\n챌린지를 통해 건강한 생활습관을 지켜나가요.")
-    ]
-
-    @State private var currentStep = 0
-
-    func nextPage() {
-        withAnimation {
-            if currentStep < datas.count - 1 {
-                currentStep += 1
-            } else {}
-        }
-    }
+    //    init viewModel instance
+    @StateObject private var viewModel = OnboardingViewModel()
 
     var body: some View {
         VStack(spacing: 0) {
-            AppBar(currentStep: $currentStep)
-            TabView(selection: $currentStep) {
-                ForEach(0 ..< datas.count, id: \.self) { idx in
-                    OnboardingPage(data: datas[idx]).tag(idx)
+            AppBar(viewModel: viewModel)
+            // TODO: TabView Size change(depending on device size)
+            // check fastcampus project
+
+            TabView(selection: $viewModel.currentStep) {
+                ForEach(0 ..< viewModel.datas.count, id: \.self) { idx in
+                    OnboardingPage(data: viewModel.datas[idx]).tag(idx)
+                        .gesture(DragGesture(minimumDistance: 10).onEnded { endedGesture in
+                            if endedGesture.location.x - endedGesture.startLocation.x > 0 {
+                                viewModel.decreaseStep()
+                            } else {
+                                // right to left
+                                viewModel.increaseStep()
+                            }
+                        })
                 }
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+
+            // MARK: Custom tabview indicator using HStack
+
             HStack {
-                ForEach(0 ..< datas.count, id: \.self) { index in
+                ForEach(0 ..< viewModel.datas.count, id: \.self) { index in
                     Rectangle()
-                        .frame(width: index == currentStep ? 24 : 8, height: 8)
-                        .foregroundColor(index == currentStep ? .main1 : .black30)
+                        .frame(width: index == viewModel.currentStep ? 24 : 8, height: 8)
+                        .foregroundColor(index == viewModel.currentStep ? .main1 : .black30)
                         .cornerRadius(5)
                 }
             }
@@ -48,13 +48,30 @@ struct OnboardingView: View {
             .allowsTightening(false)
             .padding(.bottom, 32)
 
-            BorderedButton(title: "다음", action: nextPage)
+            // TODO: kakao button
 
-            // add kakao login button when is last page
-
+            if viewModel.currentStep == 3 {
+                DummyButton()
+            } else {
+                BorderedButton(title: "다음", action: viewModel.increaseStep)
+            }
             Spacer()
         }
         .background(.bg)
+    }
+}
+
+private struct DummyButton: View {
+    fileprivate var body: some View {
+        Button(action: {}) {
+            Text("카카오로 로그인")
+                .font(.system(size: 24, weight: .bold))
+                .foregroundColor(.black)
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 16)
+        }
+        .background(.yellow)
+        .padding(.horizontal, 16)
     }
 }
 

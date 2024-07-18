@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct OnboardingPage: View {
-    let data: OnBoardingModel
+    var data: OnBoardingModel
 
     var body: some View {
         VStack {
@@ -28,7 +28,7 @@ struct OnboardingPage: View {
     }
 }
 
-#Preview {
-    OnboardingPage(
-        data: OnBoardingModel(image: "onboarding1", title: "주사 맞을 시간엔 알람이 울려요", desc: "desc"))
-}
+// #Preview {
+//    OnboardingPage(
+//        data: OnBoardingModel(image: "onboarding1", title: "주사 맞을 시간엔 알람이 울려요", desc: "desc"))
+// }

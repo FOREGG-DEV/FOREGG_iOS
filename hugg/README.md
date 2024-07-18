@@ -17,3 +17,6 @@
 ## Done
 - [x] color system
 - [x] onboarding screen
+
+## MEMO
+page -> contents
