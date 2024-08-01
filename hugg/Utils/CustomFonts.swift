@@ -11,4 +11,5 @@ extension Font {
     static let gmarketMedium32: Font = .custom("GmarketSansMedium", size: 32)
     static let gmarketLight26: Font = .custom("GmarketSansLight", size: 26)
     static let bottomNavTitle: Font = .custom("Pretendard-Medium", size: 10)
+    static let pretendartSemiBold16: Font = .custom("Pretendard-SemiBold", size: 16)
 }

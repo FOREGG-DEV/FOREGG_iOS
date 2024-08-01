@@ -13,7 +13,7 @@ struct OnboardingView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            AppBar(viewModel: viewModel)
+            OnboardingAppBar(viewModel: viewModel)
             // TODO: TabView Size change(depending on device size)
             // check fastcampus project
 
@@ -53,7 +53,7 @@ struct OnboardingView: View {
             if viewModel.currentStep == 3 {
                 DummyButton()
             } else {
-                BorderedButton(title: "다음", action: viewModel.increaseStep)
+                BorderedButton(label: "다음", action: viewModel.increaseStep)
             }
             Spacer()
         }

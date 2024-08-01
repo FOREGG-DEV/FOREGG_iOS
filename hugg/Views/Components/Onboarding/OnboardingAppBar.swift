@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AppBar: View {
+struct OnboardingAppBar: View {
     @ObservedObject var viewModel: OnboardingViewModel
 
     var body: some View {
@@ -56,6 +56,6 @@ struct AppBar: View {
 
 #Preview {
     Group {
-        AppBar(viewModel: OnboardingViewModel())
+        OnboardingAppBar(viewModel: OnboardingViewModel())
     }
 }

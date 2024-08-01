@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct BorderedButton: View {
-    let title: String
+    let label: String
     let action: () -> Void
 
     var body: some View {
         Button(action: self.action) {
-            Text(title)
+            Text(label)
                 .font(.system(size: 24, weight: .bold))
                 .foregroundColor(.black)
                 .frame(maxWidth: .infinity)
@@ -27,7 +27,7 @@ struct BorderedButton: View {
 }
 
 #Preview {
-    BorderedButton(title: "다음",
+    BorderedButton(label: "다음",
                    action: {
                        print("heoo")
                    })

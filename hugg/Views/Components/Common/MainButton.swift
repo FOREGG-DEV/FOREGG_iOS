@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct MainButton: View {
-    let title: String
-    let titleWeight: Font.Weight? = nil
+    let label: String
+    let labelWeight: Font.Weight? = nil
     let fontSize: CGFloat? = nil
     let verticalPadding: CGFloat? = nil
     let action: () -> Void
 
     var body: some View {
         Button(action: self.action) {
-            Text(title)
-                .font(.system(size: fontSize ?? 24, weight: titleWeight ?? .bold))
+            Text(label)
+                .font(.system(size: fontSize ?? 24, weight: labelWeight ?? .bold))
                 .foregroundColor(.white)
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, verticalPadding ?? 16)
@@ -29,7 +29,7 @@ struct MainButton: View {
 }
 
 #Preview {
-    MainButton(title: "메인 버튼",
+    MainButton(label: "메인 버튼",
                action: {
                    print("Hello world")
                })
