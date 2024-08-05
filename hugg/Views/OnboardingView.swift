@@ -57,6 +57,7 @@ struct OnboardingView: View {
             }
             Spacer()
         }
+        .padding(.horizontal, 16)
         .background(.bg)
     }
 }

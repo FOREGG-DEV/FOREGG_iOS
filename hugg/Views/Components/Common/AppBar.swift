@@ -22,7 +22,7 @@ struct AppBar: View {
             }
             Spacer()
             Text(title)
-                .font(.pretendartSemiBold16)
+                .font(.pretendardSemiBold16)
             Spacer()
             Spacer()
                 .frame(width: 24, height: 24)

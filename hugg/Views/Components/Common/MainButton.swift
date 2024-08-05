@@ -24,7 +24,6 @@ struct MainButton: View {
         }
         .background(.main1)
         .cornerRadius(8)
-        .padding(.horizontal, 16)
     }
 }
 
