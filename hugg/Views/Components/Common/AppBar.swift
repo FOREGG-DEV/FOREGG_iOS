@@ -9,12 +9,11 @@ import SwiftUI
 
 struct AppBar: View {
     var title: String
+    var onBack: () -> Void
 
     var body: some View {
         HStack {
-            Button(action: {
-                // 뒤로가기 액션
-            }) {
+            Button(action: onBack) {
                 Image(systemName: "chevron.left")
                     .fontWeight(.semibold)
                     .foregroundColor(.black60)
@@ -44,9 +43,9 @@ struct AppBar: View {
 #Preview {
     Group {
         Spacer()
-        AppBar(title: "회원가입")
+        AppBar(title: "회원가입", onBack: {})
         Spacer()
-        AppBar(title: "일정")
+        AppBar(title: "일정", onBack: {})
         Spacer()
     }
 }

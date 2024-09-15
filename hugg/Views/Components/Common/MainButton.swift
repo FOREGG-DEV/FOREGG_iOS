@@ -22,7 +22,7 @@ struct MainButton: View {
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, verticalPadding ?? 16)
         }
-        .background(.main1)
+        .background(.main)
         .cornerRadius(8)
     }
 }

@@ -38,7 +38,7 @@ struct OnboardingView: View {
                 ForEach(0 ..< viewModel.datas.count, id: \.self) { index in
                     Rectangle()
                         .frame(width: index == viewModel.currentStep ? 24 : 8, height: 8)
-                        .foregroundColor(index == viewModel.currentStep ? .main1 : .black30)
+                        .foregroundColor(index == viewModel.currentStep ? .main : .black30)
                         .cornerRadius(5)
                 }
             }
@@ -58,7 +58,7 @@ struct OnboardingView: View {
             Spacer()
         }
         .padding(.horizontal, 16)
-        .background(.bg)
+        .background(.mainBg)
     }
 }
 

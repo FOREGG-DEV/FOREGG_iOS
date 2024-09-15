@@ -21,7 +21,7 @@ struct BorderedButton: View {
         }
         .background(.white)
         .overlay(RoundedRectangle(cornerRadius: 8)
-            .stroke(.main1, lineWidth: 1))
+            .stroke(.main, lineWidth: 1))
     }
 }
 

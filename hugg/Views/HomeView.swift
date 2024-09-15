@@ -12,7 +12,7 @@ struct HomeView: View {
     @StateObject var viewModel = HomeViewModel()
 
     init() {
-        UITabBar.appearance().backgroundColor = .menubarBg
+        UITabBar.appearance().backgroundColor = .navbarBg
     }
 
     var body: some View {
@@ -74,7 +74,7 @@ private struct TabViewContainer: View {
             Text(title)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(.bg)
+        .background(.mainBg)
     }
 }
 

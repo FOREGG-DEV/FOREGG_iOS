@@ -16,15 +16,34 @@ struct SignUpView: View {
         }
     }
 
+    func decreaseIndex() {
+        withAnimation {
+            progressIndex -= 1
+        }
+    }
+
     var body: some View {
         // TODO: Signup Content
         // TODO: Design State
         VStack(alignment: .leading) {
-            AppBar(title: "회원가입")
+            AppBar(title: "회원가입", onBack: decreaseIndex)
             Spacer()
                 .frame(height: 38)
+
+            // MARK: custom progress indicator
+
             Group {
-                SkeletonBox(label: "idc", width: 44, height: 10)
+                HStack {
+                    ForEach(0 ..< 3, id: \.self) { index in
+                        Rectangle()
+                            .frame(width: index == progressIndex ? 20 : 10, height: 10)
+                            .foregroundColor(index == progressIndex ? .main : .black30)
+                            .cornerRadius(5)
+                    }
+                }
+                .background(RoundedRectangle(cornerRadius: 30).fill(Color.clear))
+                .frame(width: 44)
+                .allowsTightening(false)
 
                 // MARK: Sign Up Content below
 
@@ -51,7 +70,7 @@ struct SignUpView: View {
             }
             .padding(.horizontal, 16)
         }
-        .background(.bg)
+        .background(.mainBg)
     }
 }
 
@@ -60,4 +79,3 @@ struct SignUpView: View {
 }
 
 // SignUpState
-

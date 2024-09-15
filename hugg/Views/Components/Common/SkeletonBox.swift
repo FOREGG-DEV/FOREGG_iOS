@@ -22,7 +22,7 @@ struct SkeletonBox: View {
 
     var body: some View {
         Rectangle()
-            .fill(.main1)
+            .fill(.main)
             .frame(width: width ?? 100, height: height ?? 100)
             .overlay {
                 Text(label ?? "label")
