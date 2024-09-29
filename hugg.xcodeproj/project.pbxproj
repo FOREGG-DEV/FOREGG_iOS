@@ -16,6 +16,8 @@
 		1F0D93082C367F5300BB6ADD /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D93072C367F5300BB6ADD /* OnboardingView.swift */; };
 		1F0D930C2C36809500BB6ADD /* OnboardingAppBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D930B2C36809500BB6ADD /* OnboardingAppBar.swift */; };
 		1F31AFDE2C972BA100DBFB18 /* TurnCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F31AFDD2C972BA100DBFB18 /* TurnCounter.swift */; };
+		1F656AEE2CA96FD90035F81E /* SignUpParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F656AED2CA96FD90035F81E /* SignUpParam.swift */; };
+		1F656AF22CA979DE0035F81E /* TreatmentSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F656AF12CA979DE0035F81E /* TreatmentSelectView.swift */; };
 		1F8D591A2C3B956500832F61 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D59192C3B956500832F61 /* HomeView.swift */; };
 		1F8D591C2C3B96CE00832F61 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D591B2C3B96CE00832F61 /* SplashView.swift */; };
 		1F8D59282C3B9D0200832F61 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1F8D591F2C3B9D0100832F61 /* Pretendard-SemiBold.otf */; };
@@ -55,6 +57,8 @@
 		1F0D93072C367F5300BB6ADD /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		1F0D930B2C36809500BB6ADD /* OnboardingAppBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAppBar.swift; sourceTree = "<group>"; };
 		1F31AFDD2C972BA100DBFB18 /* TurnCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnCounter.swift; sourceTree = "<group>"; };
+		1F656AED2CA96FD90035F81E /* SignUpParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpParam.swift; sourceTree = "<group>"; };
+		1F656AF12CA979DE0035F81E /* TreatmentSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentSelectView.swift; sourceTree = "<group>"; };
 		1F8D59192C3B956500832F61 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1F8D591B2C3B96CE00832F61 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		1F8D591F2C3B9D0100832F61 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				1FF22A782C3AD7C200367518 /* OnBoardingModel.swift */,
+				1F656AED2CA96FD90035F81E /* SignUpParam.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				1FE68CF12C5B522200CD43E4 /* SignUpView.swift */,
+				1F656AF12CA979DE0035F81E /* TreatmentSelectView.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -359,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F032BB92C612A3500E8C64B /* SkeletonBox.swift in Sources */,
+				1F656AEE2CA96FD90035F81E /* SignUpParam.swift in Sources */,
 				1F31AFDE2C972BA100DBFB18 /* TurnCounter.swift in Sources */,
 				1FEAF0342C4988E0004C0EE1 /* InformationView.swift in Sources */,
 				1F032BBD2C612B5B00E8C64B /* SignUpViewModel.swift in Sources */,
@@ -372,6 +379,7 @@
 				1FF22A7E2C3ADFA000367518 /* MainButton.swift in Sources */,
 				1F0D930C2C36809500BB6ADD /* OnboardingAppBar.swift in Sources */,
 				1FC4328B2C49732E00FE5834 /* OnboardingViewModel.swift in Sources */,
+				1F656AF22CA979DE0035F81E /* TreatmentSelectView.swift in Sources */,
 				1FE68CF42C5B528700CD43E4 /* AppBar.swift in Sources */,
 				1FEAF0362C498C1A004C0EE1 /* InformationDetailView.swift in Sources */,
 				1FEAF02F2C4986F5004C0EE1 /* HomeViewModel.swift in Sources */,

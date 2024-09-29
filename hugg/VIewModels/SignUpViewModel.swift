@@ -20,6 +20,10 @@ class SignUpViewModel: ObservableObject {
     // 회원가입 단계 index
     @Published var currentStep: Int = 0
 
+    var isLastStep: Bool {
+        currentStep == 4
+    }
+
     func increaseStep() {
         withAnimation(.default) {
             if currentStep < titles.count - 1 {
@@ -47,5 +51,6 @@ class SignUpViewModel: ObservableObject {
         Text("배우자 코드를 남편에게\n공유해주세요."),
     ]
 
+    // Sign up params
     @Published var currentTreatmentStatus: TreatmentStatus = .consideringTreatment
 }

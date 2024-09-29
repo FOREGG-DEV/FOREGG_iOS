@@ -52,12 +52,14 @@ struct OnboardingView: View {
 
             if viewModel.currentStep == 3 {
                 DummyButton()
+                    .padding(.horizontal, 16)
             } else {
                 BorderedButton(label: "다음", action: viewModel.increaseStep)
+                    .padding(.horizontal, 16)
             }
             Spacer()
         }
-        .padding(.horizontal, 16)
+//        .padding(.horizontal, 16)
         .background(.mainBg)
     }
 }
