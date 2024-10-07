@@ -35,6 +35,7 @@
 		1F8D59362C3B9D7700832F61 /* GmarketSansMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1F8D59332C3B9D7700832F61 /* GmarketSansMedium.otf */; };
 		1F8D59372C3B9D7700832F61 /* GmarketSansBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1F8D59342C3B9D7700832F61 /* GmarketSansBold.otf */; };
 		1F8D593B2C3B9FDA00832F61 /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D593A2C3B9FDA00832F61 /* CustomFonts.swift */; };
+		1FA645F02CB3EA3F00419660 /* AnyTransition+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA645EF2CB3EA3F00419660 /* AnyTransition+Extension.swift */; };
 		1FB8AE942CAD60A0003BDC9C /* NoTapAnimationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8AE932CAD60A0003BDC9C /* NoTapAnimationStyle.swift */; };
 		1FC4328B2C49732E00FE5834 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4328A2C49732E00FE5834 /* OnboardingViewModel.swift */; };
 		1FD826102C3A7697003C295A /* OnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD8260F2C3A7697003C295A /* OnboardingContent.swift */; };
@@ -47,6 +48,10 @@
 		1FF22A792C3AD7C200367518 /* OnBoardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF22A782C3AD7C200367518 /* OnBoardingModel.swift */; };
 		1FF22A7C2C3AD87000367518 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF22A7B2C3AD87000367518 /* BorderedButton.swift */; };
 		1FF22A7E2C3ADFA000367518 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF22A7D2C3ADFA000367518 /* MainButton.swift */; };
+		1FFD020A2CB402B600020AF4 /* TreatmentStartDatePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD02092CB402B600020AF4 /* TreatmentStartDatePage.swift */; };
+		1FFD020C2CB40ABB00020AF4 /* ShareCodePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD020B2CB40ABB00020AF4 /* ShareCodePage.swift */; };
+		1FFD020F2CB41AA900020AF4 /* CalendarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD020E2CB41AA900020AF4 /* CalendarScreen.swift */; };
+		DC0BE58E617382EDA1BEEDB2 /* Pods_hugg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB72E845A1D1725DE71B7C8D /* Pods_hugg.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +85,7 @@
 		1F8D59342C3B9D7700832F61 /* GmarketSansBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansBold.otf; sourceTree = "<group>"; };
 		1F8D59382C3B9EB700832F61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1F8D593A2C3B9FDA00832F61 /* CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
+		1FA645EF2CB3EA3F00419660 /* AnyTransition+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransition+Extension.swift"; sourceTree = "<group>"; };
 		1FB8AE932CAD60A0003BDC9C /* NoTapAnimationStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoTapAnimationStyle.swift; sourceTree = "<group>"; };
 		1FC4328A2C49732E00FE5834 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		1FD8260F2C3A7697003C295A /* OnboardingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContent.swift; sourceTree = "<group>"; };
@@ -93,6 +99,12 @@
 		1FF22A782C3AD7C200367518 /* OnBoardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingModel.swift; sourceTree = "<group>"; };
 		1FF22A7B2C3AD87000367518 /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		1FF22A7D2C3ADFA000367518 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		1FFD02092CB402B600020AF4 /* TreatmentStartDatePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentStartDatePage.swift; sourceTree = "<group>"; };
+		1FFD020B2CB40ABB00020AF4 /* ShareCodePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCodePage.swift; sourceTree = "<group>"; };
+		1FFD020E2CB41AA900020AF4 /* CalendarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarScreen.swift; sourceTree = "<group>"; };
+		651848B73B01ED5298F8403D /* Pods-hugg.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hugg.release.xcconfig"; path = "Target Support Files/Pods-hugg/Pods-hugg.release.xcconfig"; sourceTree = "<group>"; };
+		8A5E1464749B3A1ACF4791A4 /* Pods-hugg.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hugg.debug.xcconfig"; path = "Target Support Files/Pods-hugg/Pods-hugg.debug.xcconfig"; sourceTree = "<group>"; };
+		AB72E845A1D1725DE71B7C8D /* Pods_hugg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hugg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC0BE58E617382EDA1BEEDB2 /* Pods_hugg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +124,8 @@
 			children = (
 				1F0D92EF2C365B6D00BB6ADD /* hugg */,
 				1F0D92EE2C365B6D00BB6ADD /* Products */,
+				5CBE2FCD3CCE9F0CD4AC6FFC /* Pods */,
+				D084686927A204010A3C4DE5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +175,7 @@
 		1F0D92FF2C365DCF00BB6ADD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1FFD020D2CB41A9200020AF4 /* Calendar */,
 				1FB8AE922CAD6087003BDC9C /* Styles */,
 				1FE68CF02C5B520100CD43E4 /* SignIn */,
 				1F0D93092C36808100BB6ADD /* Components */,
@@ -264,9 +280,18 @@
 		1F8D59392C3B9FC800832F61 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1FA645EE2CB3EA1B00419660 /* Extensions */,
 				1F8D593A2C3B9FDA00832F61 /* CustomFonts.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		1FA645EE2CB3EA1B00419660 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1FA645EF2CB3EA3F00419660 /* AnyTransition+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		1FB8AE922CAD6087003BDC9C /* Styles */ = {
@@ -283,6 +308,8 @@
 				1FE68CF12C5B522200CD43E4 /* SignUpView.swift */,
 				1F656AF12CA979DE0035F81E /* TreatmentSelectView.swift */,
 				1F8B64C02CB3A9E400F61118 /* RoundSelectPage.swift */,
+				1FFD02092CB402B600020AF4 /* TreatmentStartDatePage.swift */,
+				1FFD020B2CB40ABB00020AF4 /* ShareCodePage.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -307,6 +334,31 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		1FFD020D2CB41A9200020AF4 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				1FFD020E2CB41AA900020AF4 /* CalendarScreen.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		5CBE2FCD3CCE9F0CD4AC6FFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A5E1464749B3A1ACF4791A4 /* Pods-hugg.debug.xcconfig */,
+				651848B73B01ED5298F8403D /* Pods-hugg.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D084686927A204010A3C4DE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB72E845A1D1725DE71B7C8D /* Pods_hugg.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -314,9 +366,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F0D92FB2C365B6E00BB6ADD /* Build configuration list for PBXNativeTarget "hugg" */;
 			buildPhases = (
+				CB9887E2D33B7BFB758B7BB8 /* [CP] Check Pods Manifest.lock */,
 				1F0D92E92C365B6D00BB6ADD /* Sources */,
 				1F0D92EA2C365B6D00BB6ADD /* Frameworks */,
 				1F0D92EB2C365B6D00BB6ADD /* Resources */,
+				6C4E9D20A8EE5D4730F87F74 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -384,6 +438,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6C4E9D20A8EE5D4730F87F74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hugg/Pods-hugg-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hugg/Pods-hugg-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hugg/Pods-hugg-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB9887E2D33B7BFB758B7BB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hugg-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F0D92E92C365B6D00BB6ADD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -396,12 +492,16 @@
 				1F032BBD2C612B5B00E8C64B /* SignUpViewModel.swift in Sources */,
 				1FEAF0322C49885D004C0EE1 /* HomeContent.swift in Sources */,
 				1F8D591A2C3B956500832F61 /* HomeView.swift in Sources */,
+				1FFD020F2CB41AA900020AF4 /* CalendarScreen.swift in Sources */,
+				1FA645F02CB3EA3F00419660 /* AnyTransition+Extension.swift in Sources */,
+				1FFD020A2CB402B600020AF4 /* TreatmentStartDatePage.swift in Sources */,
 				1FB8AE942CAD60A0003BDC9C /* NoTapAnimationStyle.swift in Sources */,
 				1F0D92F32C365B6D00BB6ADD /* ContentView.swift in Sources */,
 				1FF22A792C3AD7C200367518 /* OnBoardingModel.swift in Sources */,
 				1FE68CF22C5B522200CD43E4 /* SignUpView.swift in Sources */,
 				1FF22A7C2C3AD87000367518 /* BorderedButton.swift in Sources */,
 				1F0D92F12C365B6D00BB6ADD /* huggApp.swift in Sources */,
+				1FFD020C2CB40ABB00020AF4 /* ShareCodePage.swift in Sources */,
 				1FF22A7E2C3ADFA000367518 /* MainButton.swift in Sources */,
 				1F0D930C2C36809500BB6ADD /* OnboardingAppBar.swift in Sources */,
 				1F8B64C12CB3A9E400F61118 /* RoundSelectPage.swift in Sources */,
@@ -458,7 +558,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -521,7 +621,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -542,6 +642,7 @@
 		};
 		1F0D92FC2C365B6E00BB6ADD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A5E1464749B3A1ACF4791A4 /* Pods-hugg.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -576,6 +677,7 @@
 		};
 		1F0D92FD2C365B6E00BB6ADD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 651848B73B01ED5298F8403D /* Pods-hugg.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

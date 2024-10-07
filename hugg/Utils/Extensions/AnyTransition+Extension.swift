@@ -1,8 +1,17 @@
-//
-//  AnyTransition+Extension.swift
-//  hugg
-//
-//  Created by Donghan Kim on 10/7/24.
-//
+import SwiftUI
 
-import Foundation
+extension AnyTransition {
+    static var backTransition: AnyTransition {
+        AnyTransition.asymmetric(
+            insertion: .move(edge: .leading),
+            removal: .move(edge: .trailing)
+        )
+    }
+
+    static var nextTransition: AnyTransition {
+        AnyTransition.asymmetric(
+            insertion: .move(edge: .trailing),
+            removal: .move(edge: .leading)
+        )
+    }
+}

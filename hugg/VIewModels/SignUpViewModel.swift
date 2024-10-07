@@ -18,6 +18,13 @@ enum TreatmentStatus: String, CaseIterable, Identifiable {
 }
 
 class SignUpViewModel: ObservableObject {
+    init(currentStep: Int = 0, currentTreatmentStatus: TreatmentStatus = .consideringTreatment, currentRound: Int = 0, startDate: Date = Date()) {
+        self.currentStep = currentStep
+        self.currentTreatmentStatus = currentTreatmentStatus
+        self.currentRound = currentRound
+        self.startDate = startDate
+    }
+
     // 회원가입 단계 index
     @Published var currentStep: Int = 0
 
@@ -27,7 +34,7 @@ class SignUpViewModel: ObservableObject {
 
     func increaseStep() {
         withAnimation(.default) {
-            if currentStep < titles.count - 1 {
+            if currentStep < 4 {
                 currentStep += 1
             }
         }
@@ -44,16 +51,21 @@ class SignUpViewModel: ObservableObject {
 
     // View array 사용하는 게 일반적인 방법인가?
     // 공통 부분
-    @Published var titles: [any View] = [
-        Text("주민번호 앞 7자리를\n적어주세요."),
-        Text("현재 받고 있는 시술을\n선택해주세요."),
-        Text("현재 진행중인 회차를\n알려주세요."),
-        Text("치료 시작 날짜를\n알려주세요."),
-        Text("배우자 코드를 남편에게\n공유해주세요."),
-    ]
+//    @Published var titles: [any View] = [
+//        Text("주민번호 앞 7자리를\n적어주세요."),
+//        Text("현재 받고 있는 시술을\n선택해주세요."),
+//        Text("현재 진행중인 회차를\n알려주세요."),
+//        Text("치료 시작 날짜를\n알려주세요."),
+//        Text("배우자 코드를 남편에게\n공유해주세요."),
+//    ]
 
     // Sign up params
     @Published var currentTreatmentStatus: TreatmentStatus = .consideringTreatment
 
+    func changeTreatmentStatus(_ newValue: TreatmentStatus) {
+        currentTreatmentStatus = newValue
+    }
+
     @Published var currentRound: Int = 0
+    @Published var startDate: Date
 }

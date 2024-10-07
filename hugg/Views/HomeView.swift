@@ -1,10 +1,3 @@
-//
-//  HomeView.swift
-//  hugg
-//
-//  Created by Donghan Kim on 7/8/24.
-//
-
 import SwiftUI
 
 struct HomeView: View {

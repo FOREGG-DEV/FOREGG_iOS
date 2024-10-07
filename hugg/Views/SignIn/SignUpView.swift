@@ -3,49 +3,71 @@ import SwiftUI
 struct SignUpView: View {
     @StateObject private var vm = SignUpViewModel()
 
+    @State private var isBack: Bool = false
+
     var body: some View {
         VStack(alignment: .leading) {
             // TODO: change onBack logic (maybe navigation)
-            AppBar(title: "회원가입", onBack: vm.decreaseStep)
-                .padding(.bottom, 38)
+            AppBar(title: "회원가입", onBack: {
+                if !isBack {
+                    isBack.toggle()
+                }
+                vm.decreaseStep()
+            })
+            .padding(.bottom, 38)
 
             Group {
                 HStack {
-                    ForEach(0 ..< 3, id: \.self) { index in
-                        Rectangle()
-                            .frame(width: index == vm.currentStep ? 20 : 10, height: 10)
-                            .foregroundColor(index == vm.currentStep ? .mainSub : .black30)
-                            .cornerRadius(5)
-                    }
+                    Rectangle()
+                        .frame(width: vm.currentStep == 0 ? 20 : 10, height: 10)
+                        .foregroundColor(.mainSub)
+                        .cornerRadius(5)
+                    Rectangle()
+                        .frame(width: vm.currentStep >= 1 && vm.currentStep < 4 ? 20 : 10, height: 10)
+                        .foregroundColor(vm.currentStep >= 1 ? .mainSub : .black30)
+                        .cornerRadius(5)
+                    Rectangle()
+                        .frame(width: vm.currentStep == 4 ? 20 : 10, height: 10)
+                        .foregroundColor(vm.currentStep == 4 ? .mainSub : .black30)
+                        .cornerRadius(5)
                 }
                 .background(RoundedRectangle(cornerRadius: 30).fill(Color.clear))
                 .allowsTightening(false)
 
                 // MARK: Sign Up Content below
 
-                switch vm.currentStep {
-                case 0:
-                    VStack(alignment: .leading) {
+                Group {
+                    switch vm.currentStep {
+                    // TODO: conditional jump -> husband, wife version (depending on user's gender)
+                    case 0:
                         VStack(alignment: .leading) {
-                            Text("주민번호")
-                                .font(.pretendardSemiBold24)
-                                .foregroundStyle(.black80) +
-                                Text(" 앞 7자리").font(.pretendardSemiBold24).foregroundStyle(.main) + Text("를\n적어주세요.")
-                                .font(.pretendardSemiBold24)
-                                .foregroundStyle(.black80)
+                            VStack(alignment: .leading) {
+                                Text("주민번호")
+                                    .font(.pretendardSemiBold24)
+                                    .foregroundStyle(.black80) +
+                                    Text(" 앞 7자리").font(.pretendardSemiBold24).foregroundStyle(.main) + Text("를\n적어주세요.")
+                                    .font(.pretendardSemiBold24)
+                                    .foregroundStyle(.black80)
+                            }
+                            .padding(.bottom, 12)
+
+                            SkeletonBox(width: .infinity, height: 48)
                         }
-                        .padding(.bottom, 12)
+                        .frame(maxWidth: .infinity)
+                    case 1:
+                        TreatmentSelectView()
+                    case 2:
+                        RoundSelectPage()
+                    case 3:
+                        TreatmentStartDatePage()
+                    case 4:
+                        ShareCodePage()
 
-                        SkeletonBox(width: .infinity, height: 48)
+                    default:
+                        Spacer().frame(height: 10)
                     }
-                case 1:
-                    TreatmentSelectView()
-                case 2:
-                    RoundSelectPage()
-
-                default:
-                    Spacer().frame(height: 10)
                 }
+                .transition(isBack ? .backTransition : .nextTransition)
 
                 Spacer()
 
@@ -55,6 +77,9 @@ struct SignUpView: View {
                     MainButton(label: "가입 완료", action: {})
                 } else {
                     BorderedButton(label: "다음", action: {
+                        if isBack {
+                            isBack.toggle()
+                        }
                         vm.increaseStep()
                     })
                 }

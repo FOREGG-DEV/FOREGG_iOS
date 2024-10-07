@@ -3,13 +3,15 @@ import SwiftUI
 struct TreatmentSelectView: View {
     @EnvironmentObject var vm: SignUpViewModel
 
-    @State private var selectedTreatment: TreatmentStatus = .consideringTreatment
+//    @State private var selectedTreatment: TreatmentStatus = .consideringTreatment
 
     @State private var showDropbox: Bool = false
 
     func selectTreatment(_ newValue: TreatmentStatus) {
-        selectedTreatment = newValue
-        showDropbox.toggle()
+        vm.changeTreatmentStatus(newValue)
+        withAnimation {
+            showDropbox.toggle()
+        }
     }
 
     var body: some View {
@@ -17,13 +19,15 @@ struct TreatmentSelectView: View {
             SignUpTitleText(title: "현재 받고 있는 시술을\n선택해주세요.")
 
             Button(action: {
-                showDropbox.toggle()
+                withAnimation(.default) {
+                    showDropbox.toggle()
+                }
             }, label: {
                 HStack(spacing: 0) {
                     ZStack {
                         UnevenRoundedRectangle(cornerRadii: .init(topLeading: 8.0, bottomLeading: 8.0, bottomTrailing: 0.0, topTrailing: 0.0))
                             .fill(.white)
-                        Text(selectedTreatment.rawValue)
+                        Text(vm.currentTreatmentStatus.rawValue)
                     }
                     .frame(height: 48.0)
 
@@ -31,7 +35,7 @@ struct TreatmentSelectView: View {
                         UnevenRoundedRectangle(cornerRadii: .init(topLeading: 0.0, bottomLeading: 0.0, bottomTrailing: 8.0, topTrailing: 8.0))
                             .fill(.main)
                             .frame(width: 48.0, height: 48.0)
-                        Image(systemName: "arrowtriangle.down.fill") // 원하는 이미지
+                        Image(systemName: showDropbox ? "arrowtriangle.up.fill" : "arrowtriangle.down.fill")
                             .resizable()
                             .frame(width: 12, height: 12)
                             .foregroundColor(.white)
@@ -60,7 +64,7 @@ struct TreatmentSelectView: View {
                             Rectangle()
                                 .frame(width: .infinity)
                                 .foregroundStyle(.clear)
-                                .background(selectedTreatment == item ? .mainBg : .white)
+                                .background(vm.currentTreatmentStatus == item ? .mainBg : .white)
                                 .clipShape(RoundedRectangle(cornerSize: CGSize(width: 8, height: 8)))
                             Text(item.rawValue)
                                 .font(.pretendardSemiBold16)
@@ -77,6 +81,7 @@ struct TreatmentSelectView: View {
             .opacity(showDropbox ? 1.0 : 0.0)
             .zIndex(100)
         }
+        .frame(maxWidth: .infinity)
     }
 }
 
@@ -84,4 +89,5 @@ struct TreatmentSelectView: View {
     TreatmentSelectView()
         .background(.mainBg)
         .padding(.horizontal, 16.0)
+        .environmentObject(SignUpViewModel())
 }

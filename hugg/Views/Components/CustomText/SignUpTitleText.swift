@@ -11,11 +11,14 @@ struct SignUpTitleText: View {
     let title: String
 
     var body: some View {
-        Text(title)
-            .font(.pretendardSemiBold24)
-            .foregroundStyle(.black80)
-            .fixedSize(horizontal: false, vertical: true)
-            .padding(.bottom, 24.0)
+        HStack {
+            Text(title)
+                .font(.pretendardSemiBold24)
+                .foregroundStyle(.black80)
+                .fixedSize(horizontal: false, vertical: true)
+            Spacer()
+        }
+        .padding(.bottom, 24.0)
     }
 }
 

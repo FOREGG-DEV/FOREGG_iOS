@@ -15,7 +15,6 @@ struct OnboardingContent: View {
             Image(data.image)
                 .resizable()
                 .scaledToFit()
-                .padding(.horizontal, 28)
             Text(data.title)
                 .font(.system(size: 24, weight: .semibold))
                 .foregroundStyle(.black)
@@ -25,10 +24,11 @@ struct OnboardingContent: View {
                 .foregroundStyle(.black80)
                 .multilineTextAlignment(.center)
         }
+        .frame(maxWidth: .infinity)
     }
 }
 
-// #Preview {
-//    OnboardingPage(
-//        data: OnBoardingModel(image: "onboarding1", title: "주사 맞을 시간엔 알람이 울려요", desc: "desc"))
-// }
+#Preview {
+    OnboardingContent(
+        data: OnBoardingModel(image: "onboarding4", title: "주사 맞을 시간엔 알람이 울려요", desc: "desc"))
+}

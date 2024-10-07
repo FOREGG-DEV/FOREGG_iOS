@@ -16,23 +16,23 @@ extension Font {
     static let pretendardSemiBold24: Font = .custom("Pretendard-SemiBold", size: 24)
 
     // fonts from figma
-    static let h1: Font = .custom("Pretendart-SemiBold", size: 24)
-    static let h2: Font = .custom("Pretendart-SemiBold", size: 20)
-    static let h3: Font = .custom("Pretendart-SemiBold", size: 16)
-    static let h4: Font = .custom("Pretendart-SemiBold", size: 14)
+    static let h1: Font = .custom("Pretendard-SemiBold", size: 24)
+    static let h2: Font = .custom("Pretendard-SemiBold", size: 20)
+    static let h3: Font = .custom("Pretendard-SemiBold", size: 16)
+    static let h4: Font = .custom("Pretendard-SemiBold", size: 14)
 
-    static let btn: Font = .custom("Pretendart-SemiBold", size: 24)
+    static let btn: Font = .custom("Pretendard-SemiBold", size: 24)
 
-    static let p1: Font = .custom("Pretendart-Medium", size: 16)
-    static let p1L: Font = .custom("Pretendart-Regular", size: 16)
+    static let p1: Font = .custom("Pretendard-Medium", size: 16)
+    static let p1L: Font = .custom("Pretendard-Regular", size: 16)
 
-    static let p2: Font = .custom("Pretendart-Medium", size: 14)
-    static let p2L: Font = .custom("Pretendart-Light", size: 14)
+    static let p2: Font = .custom("Pretendard-Medium", size: 14)
+    static let p2L: Font = .custom("Pretendard-Light", size: 14)
 
-    static let p3: Font = .custom("Pretendart-Medium", size: 12)
-    static let p3L: Font = .custom("Pretendart-Regular", size: 12)
+    static let p3: Font = .custom("Pretendard-Medium", size: 12)
+    static let p3L: Font = .custom("Pretendard-Regular", size: 12)
 
-    static let p4: Font = .custom("Pretendart-Regular", size: 10)
+    static let p4: Font = .custom("Pretendard-Regular", size: 10)
 
-    static let p5: Font = .custom("Pretendart-Regular", size: 8)
+    static let p5: Font = .custom("Pretendard-Regular", size: 8)
 }

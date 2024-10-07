@@ -58,8 +58,8 @@ struct OnboardingView: View {
                     .padding(.horizontal, 16)
             }
             Spacer()
+                .frame(height: 60)
         }
-//        .padding(.horizontal, 16)
         .background(.mainBg)
     }
 }
