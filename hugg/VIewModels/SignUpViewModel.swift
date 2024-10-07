@@ -9,11 +9,12 @@ import SwiftUI
 
 // Swift Enum
 // status.rawValue => String 사용 가능
-enum TreatmentStatus: String {
+enum TreatmentStatus: String, CaseIterable, Identifiable {
     case consideringTreatment = "시술 고민 중"
     case intrauterineInsemination = "인공수정(자궁 내 정자 주입술)"
     case eggFreezing = "난자 동결"
     case inVitroFertilization = "체외 수정(시험관 아기)"
+    var id: TreatmentStatus { self }
 }
 
 class SignUpViewModel: ObservableObject {
@@ -53,4 +54,6 @@ class SignUpViewModel: ObservableObject {
 
     // Sign up params
     @Published var currentTreatmentStatus: TreatmentStatus = .consideringTreatment
+
+    @Published var currentRound: Int = 0
 }

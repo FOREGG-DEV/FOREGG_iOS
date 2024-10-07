@@ -44,8 +44,6 @@ struct MainAppBar: View {
             Text(title)
 
             Spacer()
-
-            Spacer()
                 .frame(width: 24, height: 24)
         }
         .padding(.horizontal, 28)
