@@ -3,12 +3,10 @@ import SwiftUI
 struct TreatmentSelectView: View {
     @EnvironmentObject var vm: SignUpViewModel
 
-//    @State private var selectedTreatment: TreatmentStatus = .consideringTreatment
-
     @State private var showDropbox: Bool = false
 
-    func selectTreatment(_ newValue: TreatmentStatus) {
-        vm.changeTreatmentStatus(newValue)
+    func selectTreatment(_ newValue: SurgeryType) {
+        vm.changeSurgeryType(newValue)
         withAnimation {
             showDropbox.toggle()
         }
@@ -27,7 +25,7 @@ struct TreatmentSelectView: View {
                     ZStack {
                         UnevenRoundedRectangle(cornerRadii: .init(topLeading: 8.0, bottomLeading: 8.0, bottomTrailing: 0.0, topTrailing: 0.0))
                             .fill(.white)
-                        Text(vm.currentTreatmentStatus.rawValue)
+                        Text(vm.currentSurgeryType.rawValue)
                     }
                     .frame(height: 48.0)
 
@@ -59,12 +57,12 @@ struct TreatmentSelectView: View {
                     )
 
                 VStack(spacing: 0) {
-                    ForEach(TreatmentStatus.allCases, id: \.self) { item in
+                    ForEach(SurgeryType.allCases, id: \.self) { item in
                         ZStack {
                             Rectangle()
                                 .frame(width: .infinity)
                                 .foregroundStyle(.clear)
-                                .background(vm.currentTreatmentStatus == item ? .mainBg : .white)
+                                .background(vm.currentSurgeryType == item ? .mainBg : .white)
                                 .clipShape(RoundedRectangle(cornerSize: CGSize(width: 8, height: 8)))
                             Text(item.rawValue)
                                 .font(.pretendardSemiBold16)

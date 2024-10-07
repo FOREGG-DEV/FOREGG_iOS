@@ -7,25 +7,19 @@
 
 import SwiftUI
 
-// Swift Enum
-// status.rawValue => String 사용 가능
-enum TreatmentStatus: String, CaseIterable, Identifiable {
-    case consideringTreatment = "시술 고민 중"
-    case intrauterineInsemination = "인공수정(자궁 내 정자 주입술)"
-    case eggFreezing = "난자 동결"
-    case inVitroFertilization = "체외 수정(시험관 아기)"
-    var id: TreatmentStatus { self }
-}
-
 class SignUpViewModel: ObservableObject {
-    init(currentStep: Int = 0, currentTreatmentStatus: TreatmentStatus = .consideringTreatment, currentRound: Int = 0, startDate: Date = Date()) {
+    init(currentStep: Int = 0, currentSurgeryType: SurgeryType = .THINK_SURGERY,
+         currentRound: Int = 0, startDate: Date = Date(),
+         ssn: String = "", spouseCode: String = "")
+    {
         self.currentStep = currentStep
-        self.currentTreatmentStatus = currentTreatmentStatus
+        self.currentSurgeryType = currentSurgeryType
         self.currentRound = currentRound
         self.startDate = startDate
     }
 
-    // 회원가입 단계 index
+    // MARK: current Step
+
     @Published var currentStep: Int = 0
 
     var isLastStep: Bool {
@@ -49,23 +43,51 @@ class SignUpViewModel: ObservableObject {
         }
     }
 
-    // View array 사용하는 게 일반적인 방법인가?
-    // 공통 부분
-//    @Published var titles: [any View] = [
-//        Text("주민번호 앞 7자리를\n적어주세요."),
-//        Text("현재 받고 있는 시술을\n선택해주세요."),
-//        Text("현재 진행중인 회차를\n알려주세요."),
-//        Text("치료 시작 날짜를\n알려주세요."),
-//        Text("배우자 코드를 남편에게\n공유해주세요."),
-//    ]
+    // MARK: surgeryType
 
-    // Sign up params
-    @Published var currentTreatmentStatus: TreatmentStatus = .consideringTreatment
+    @Published var currentSurgeryType: SurgeryType
 
-    func changeTreatmentStatus(_ newValue: TreatmentStatus) {
-        currentTreatmentStatus = newValue
+    func changeSurgeryType(_ newValue: SurgeryType) {
+        currentSurgeryType = newValue
     }
 
+    // MARK: count
+
     @Published var currentRound: Int = 0
+
+    // MARK: startAt
+
     @Published var startDate: Date
+
+    // MARK: spouseCode
+
+    @Published var spouseCode: String = ""
+    // TODO: Implement Service layer
+    // [GET] from Service layer (get spouseCode)
+    func changeSpouseCode(_ newValue: String) {
+        spouseCode = newValue
+    }
+
+    // MARK: SSN
+
+    // TODO: Implement seperated text -> ssn string
+    @Published var ssn: String = ""
+
+    // MARK: FCM Token
+
+    @Published var fcmToken: String = ""
+    func changeFcmToken(_ newValue: String) {
+        fcmToken = newValue
+    }
+
+    func signUp() {
+        let signUpDTO = SignUpRequestDTO(
+            surgeryType: currentSurgeryType.rawValue,
+            count: currentRound,
+            startAt: yearMonthDayFormatter.string(from: startDate),
+            spouseCode: spouseCode,
+            ssn: ssn,
+            fcmToken: fcmToken
+        )
+    }
 }
