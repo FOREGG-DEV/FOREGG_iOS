@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct OnboardingView: View {
+struct OnboardingScreen: View {
     //    init viewModel instance
     @StateObject private var viewModel = OnboardingViewModel()
 
@@ -15,7 +15,6 @@ struct OnboardingView: View {
         VStack(spacing: 0) {
             OnboardingAppBar(viewModel: viewModel)
             // TODO: TabView Size change(depending on device size)
-            // check fastcampus project
 
             TabView(selection: $viewModel.currentStep) {
                 ForEach(0 ..< viewModel.datas.count, id: \.self) { idx in
@@ -79,5 +78,5 @@ private struct DummyButton: View {
 }
 
 #Preview {
-    OnboardingView()
+    OnboardingScreen()
 }

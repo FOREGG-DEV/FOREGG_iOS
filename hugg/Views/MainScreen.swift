@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct HomeView: View {
+struct MainScreen: View {
     // init viewmodel
     @StateObject var viewModel = HomeViewModel()
 
@@ -10,25 +10,25 @@ struct HomeView: View {
 
     var body: some View {
         TabView(selection: $viewModel.currentTab) {
-            TabViewContainer(title: "calendar")
-                .tabItem {
-                    BottomNavItem(title: "캘린더", image: "calendar", isSelected: viewModel.currentTab == .calendar)
-                }.tag(HomeTab.calendar)
-
-            TabViewContainer(title: "가계부")
-                .tabItem {
-                    BottomNavItem(title: "가계부", image: "savings", isSelected: viewModel.currentTab == .savings)
-                }.tag(HomeTab.savings)
-
             TabViewContainer(title: "홈 화면")
                 .tabItem {
                     BottomNavItem(title: "홈", image: "home", isSelected: viewModel.currentTab == .home)
                 }.tag(HomeTab.home)
 
-            InformationView()
+            TabViewContainer(title: "calendar")
                 .tabItem {
-                    BottomNavItem(title: "정보", image: "info", isSelected: viewModel.currentTab == .info)
-                }.tag(HomeTab.info)
+                    BottomNavItem(title: "캘린더", image: "calendar", isSelected: viewModel.currentTab == .calendar)
+                }.tag(HomeTab.calendar)
+
+            DailyHugView()
+                .tabItem {
+                    BottomNavItem(title: "데일리 허그", image: "info", isSelected: viewModel.currentTab == .daily)
+                }.tag(HomeTab.daily)
+
+            TabViewContainer(title: "가계부")
+                .tabItem {
+                    BottomNavItem(title: "가계부", image: "savings", isSelected: viewModel.currentTab == .savings)
+                }.tag(HomeTab.savings)
 
             TabViewContainer(title: "마이페이지")
                 .tabItem {
@@ -40,7 +40,7 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView()
+    MainScreen()
 }
 
 private struct BottomNavItem: View {

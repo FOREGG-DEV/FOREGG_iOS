@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct SignUpView: View {
+struct SignUpScreen: View {
     @StateObject private var vm = SignUpViewModel()
 
     @State private var isBack: Bool = false
@@ -57,11 +57,11 @@ struct SignUpView: View {
                     case 1:
                         TreatmentSelectView()
                     case 2:
-                        RoundSelectPage()
+                        RoundSelectView()
                     case 3:
-                        TreatmentStartDatePage()
+                        SelectStartDateView()
                     case 4:
-                        ShareCodePage()
+                        WifeShareCodeView()
 
                     default:
                         Spacer().frame(height: 10)
@@ -100,7 +100,7 @@ struct SignUpView: View {
 }
 
 #Preview {
-    SignUpView()
+    SignUpScreen()
         .environmentObject(SignUpViewModel())
 }
 

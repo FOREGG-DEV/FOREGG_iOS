@@ -2,7 +2,7 @@
 import SwiftUI
 
 enum HomeTab {
-    case calendar, savings, home, info, mypage
+    case calendar, savings, home, daily, mypage
 }
 
 class HomeViewModel: ObservableObject {

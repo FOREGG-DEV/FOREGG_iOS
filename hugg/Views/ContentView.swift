@@ -18,9 +18,9 @@ struct MainView: View {
             if showMainView {
                 Group {
                     if hasSeenOnboarding {
-                        HomeView() // 메인 화면
+                        MainScreen() // 메인 화면
                     } else {
-                        OnboardingView()
+                        OnboardingScreen()
                             .onDisappear {
                                 self.hasSeenOnboarding = true
                             }
@@ -28,7 +28,7 @@ struct MainView: View {
                 }
 
             } else {
-                SplashView()
+                SplashScreen()
                     .onAppear {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                             withAnimation {

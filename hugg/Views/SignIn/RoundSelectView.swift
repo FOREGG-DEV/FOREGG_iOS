@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct RoundSelectPage: View {
+struct RoundSelectView: View {
     @EnvironmentObject var vm: SignUpViewModel
 
     var body: some View {
@@ -13,6 +13,6 @@ struct RoundSelectPage: View {
 }
 
 #Preview {
-    RoundSelectPage()
+    RoundSelectView()
         .environmentObject(SignUpViewModel())
 }

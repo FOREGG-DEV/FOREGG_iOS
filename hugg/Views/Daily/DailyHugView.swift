@@ -1,18 +1,18 @@
 //
-//  InformationDetailView.swift
+//  DailyHugView.swift
 //  hugg
 //
-//  Created by Donghan Kim on 7/19/24.
+//  Created by Donghan Kim on 10/8/24.
 //
 
 import SwiftUI
 
-struct InformationDetailView: View {
+struct DailyHugView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    InformationDetailView()
+    DailyHugView()
 }
