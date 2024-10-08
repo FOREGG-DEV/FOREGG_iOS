@@ -22,13 +22,14 @@ struct AppBar: View {
             Spacer()
             Text(title)
                 .font(.pretendardSemiBold16)
+                .foregroundStyle(.kBlack)
             Spacer()
             Spacer()
                 .frame(width: 24, height: 24)
         }
         .padding(.horizontal, 28)
         .padding(.vertical, 15)
-        .background(.background)
+        .background(.mainBg)
         .overlay(
             VStack {
                 Spacer()

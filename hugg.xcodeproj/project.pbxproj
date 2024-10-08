@@ -16,8 +16,12 @@
 		1F0D93082C367F5300BB6ADD /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D93072C367F5300BB6ADD /* OnboardingScreen.swift */; };
 		1F0D930C2C36809500BB6ADD /* OnboardingAppBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D930B2C36809500BB6ADD /* OnboardingAppBar.swift */; };
 		1F31AFDE2C972BA100DBFB18 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F31AFDD2C972BA100DBFB18 /* Counter.swift */; };
+		1F3DC34F2CB5032200A72A52 /* SSNTextfieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DC34E2CB5032200A72A52 /* SSNTextfieldStyle.swift */; };
+		1F3DC3542CB50FAE00A72A52 /* MaxLengthModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DC3532CB50FAE00A72A52 /* MaxLengthModifier.swift */; };
+		1F3DC3562CB50FCE00A72A52 /* TextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DC3552CB50FCE00A72A52 /* TextField+Extension.swift */; };
 		1F656AEE2CA96FD90035F81E /* SignUpRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F656AED2CA96FD90035F81E /* SignUpRequestDTO.swift */; };
 		1F656AF22CA979DE0035F81E /* TreatmentSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F656AF12CA979DE0035F81E /* TreatmentSelectView.swift */; };
+		1F692CE12CB4FEA400BAEEBE /* EnterSsnScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F692CE02CB4FEA400BAEEBE /* EnterSsnScreen.swift */; };
 		1F8B64C12CB3A9E400F61118 /* RoundSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B64C02CB3A9E400F61118 /* RoundSelectView.swift */; };
 		1F8B64C52CB3AA7200F61118 /* SignUpTitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B64C42CB3AA7200F61118 /* SignUpTitleText.swift */; };
 		1F8D591A2C3B956500832F61 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D59192C3B956500832F61 /* MainScreen.swift */; };
@@ -38,6 +42,7 @@
 		1FA645F02CB3EA3F00419660 /* AnyTransition+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA645EF2CB3EA3F00419660 /* AnyTransition+Extension.swift */; };
 		1FB8AE942CAD60A0003BDC9C /* NoTapAnimationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8AE932CAD60A0003BDC9C /* NoTapAnimationStyle.swift */; };
 		1FC4328B2C49732E00FE5834 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4328A2C49732E00FE5834 /* OnboardingViewModel.swift */; };
+		1FCD8F432CB52C6A00956BA0 /* SSNModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCD8F422CB52C6A00956BA0 /* SSNModel.swift */; };
 		1FD0D22A2CB4308B00F96E87 /* DailyHugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD0D2292CB4308B00F96E87 /* DailyHugView.swift */; };
 		1FD0D2302CB433A200F96E87 /* SurgeryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD0D22F2CB433A200F96E87 /* SurgeryType.swift */; };
 		1FD0D2322CB437B600F96E87 /* CustomDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD0D2312CB437B600F96E87 /* CustomDateFormatter.swift */; };
@@ -66,8 +71,12 @@
 		1F0D93072C367F5300BB6ADD /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
 		1F0D930B2C36809500BB6ADD /* OnboardingAppBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAppBar.swift; sourceTree = "<group>"; };
 		1F31AFDD2C972BA100DBFB18 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		1F3DC34E2CB5032200A72A52 /* SSNTextfieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSNTextfieldStyle.swift; sourceTree = "<group>"; };
+		1F3DC3532CB50FAE00A72A52 /* MaxLengthModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxLengthModifier.swift; sourceTree = "<group>"; };
+		1F3DC3552CB50FCE00A72A52 /* TextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Extension.swift"; sourceTree = "<group>"; };
 		1F656AED2CA96FD90035F81E /* SignUpRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequestDTO.swift; sourceTree = "<group>"; };
 		1F656AF12CA979DE0035F81E /* TreatmentSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentSelectView.swift; sourceTree = "<group>"; };
+		1F692CE02CB4FEA400BAEEBE /* EnterSsnScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterSsnScreen.swift; sourceTree = "<group>"; };
 		1F8B64C02CB3A9E400F61118 /* RoundSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundSelectView.swift; sourceTree = "<group>"; };
 		1F8B64C42CB3AA7200F61118 /* SignUpTitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTitleText.swift; sourceTree = "<group>"; };
 		1F8D59192C3B956500832F61 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
@@ -89,6 +98,7 @@
 		1FA645EF2CB3EA3F00419660 /* AnyTransition+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransition+Extension.swift"; sourceTree = "<group>"; };
 		1FB8AE932CAD60A0003BDC9C /* NoTapAnimationStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoTapAnimationStyle.swift; sourceTree = "<group>"; };
 		1FC4328A2C49732E00FE5834 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		1FCD8F422CB52C6A00956BA0 /* SSNModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSNModel.swift; sourceTree = "<group>"; };
 		1FD0D2292CB4308B00F96E87 /* DailyHugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyHugView.swift; sourceTree = "<group>"; };
 		1FD0D22F2CB433A200F96E87 /* SurgeryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurgeryType.swift; sourceTree = "<group>"; };
 		1FD0D2312CB437B600F96E87 /* CustomDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDateFormatter.swift; sourceTree = "<group>"; };
@@ -239,6 +249,14 @@
 			path = Dialog;
 			sourceTree = "<group>";
 		};
+		1F3DC3522CB50F9D00A72A52 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				1F3DC3532CB50FAE00A72A52 /* MaxLengthModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 		1F8B64C32CB3AA4F00F61118 /* CustomText */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +303,7 @@
 		1F8D59392C3B9FC800832F61 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1F3DC3522CB50F9D00A72A52 /* Modifiers */,
 				1FA645EE2CB3EA1B00419660 /* Extensions */,
 				1F8D593A2C3B9FDA00832F61 /* CustomFonts.swift */,
 				1FD0D2312CB437B600F96E87 /* CustomDateFormatter.swift */,
@@ -296,6 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				1FA645EF2CB3EA3F00419660 /* AnyTransition+Extension.swift */,
+				1F3DC3552CB50FCE00A72A52 /* TextField+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -304,6 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				1FB8AE932CAD60A0003BDC9C /* NoTapAnimationStyle.swift */,
+				1F3DC34E2CB5032200A72A52 /* SSNTextfieldStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -341,6 +362,7 @@
 		1FD0D22C2CB432E500F96E87 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				1FCD8F422CB52C6A00956BA0 /* SSNModel.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -361,6 +383,7 @@
 				1F8B64C02CB3A9E400F61118 /* RoundSelectView.swift */,
 				1FFD02092CB402B600020AF4 /* SelectStartDateView.swift */,
 				1FFD020B2CB40ABB00020AF4 /* WifeShareCodeView.swift */,
+				1F692CE02CB4FEA400BAEEBE /* EnterSsnScreen.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -537,8 +560,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F032BB92C612A3500E8C64B /* SkeletonBox.swift in Sources */,
+				1F692CE12CB4FEA400BAEEBE /* EnterSsnScreen.swift in Sources */,
 				1F656AEE2CA96FD90035F81E /* SignUpRequestDTO.swift in Sources */,
 				1F31AFDE2C972BA100DBFB18 /* Counter.swift in Sources */,
+				1F3DC3562CB50FCE00A72A52 /* TextField+Extension.swift in Sources */,
 				1F032BBD2C612B5B00E8C64B /* SignUpViewModel.swift in Sources */,
 				1FEAF0322C49885D004C0EE1 /* HomeContent.swift in Sources */,
 				1F8D591A2C3B956500832F61 /* MainScreen.swift in Sources */,
@@ -554,11 +579,14 @@
 				1F0D92F12C365B6D00BB6ADD /* huggApp.swift in Sources */,
 				1FFD020C2CB40ABB00020AF4 /* WifeShareCodeView.swift in Sources */,
 				1FF22A7E2C3ADFA000367518 /* MainButton.swift in Sources */,
+				1F3DC3542CB50FAE00A72A52 /* MaxLengthModifier.swift in Sources */,
 				1F0D930C2C36809500BB6ADD /* OnboardingAppBar.swift in Sources */,
 				1F8B64C12CB3A9E400F61118 /* RoundSelectView.swift in Sources */,
 				1FC4328B2C49732E00FE5834 /* OnboardingViewModel.swift in Sources */,
+				1FCD8F432CB52C6A00956BA0 /* SSNModel.swift in Sources */,
 				1FD0D22A2CB4308B00F96E87 /* DailyHugView.swift in Sources */,
 				1F8B64C52CB3AA7200F61118 /* SignUpTitleText.swift in Sources */,
+				1F3DC34F2CB5032200A72A52 /* SSNTextfieldStyle.swift in Sources */,
 				1F656AF22CA979DE0035F81E /* TreatmentSelectView.swift in Sources */,
 				1FE68CF42C5B528700CD43E4 /* AppBar.swift in Sources */,
 				1FEAF02F2C4986F5004C0EE1 /* HomeViewModel.swift in Sources */,

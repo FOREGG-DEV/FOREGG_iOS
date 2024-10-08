@@ -1,16 +1,9 @@
-//
-//  SignUpViewModel.swift
-//  hugg
-//
-//  Created by Donghan Kim on 8/6/24.
-//
-
 import SwiftUI
 
 class SignUpViewModel: ObservableObject {
     init(currentStep: Int = 0, currentSurgeryType: SurgeryType = .THINK_SURGERY,
          currentRound: Int = 0, startDate: Date = Date(),
-         ssn: String = "", spouseCode: String = "")
+         ssn: SSNModel = SSNModel(), spouseCode: String = "")
     {
         self.currentStep = currentStep
         self.currentSurgeryType = currentSurgeryType
@@ -43,6 +36,8 @@ class SignUpViewModel: ObservableObject {
         }
     }
 
+    @Published var ssn = SSNModel()
+
     // MARK: surgeryType
 
     @Published var currentSurgeryType: SurgeryType
@@ -70,9 +65,6 @@ class SignUpViewModel: ObservableObject {
 
     // MARK: SSN
 
-    // TODO: Implement seperated text -> ssn string
-    @Published var ssn: String = ""
-
     // MARK: FCM Token
 
     @Published var fcmToken: String = ""
@@ -81,13 +73,15 @@ class SignUpViewModel: ObservableObject {
     }
 
     func signUp() {
-        let signUpDTO = SignUpRequestDTO(
-            surgeryType: currentSurgeryType.rawValue,
-            count: currentRound,
-            startAt: yearMonthDayFormatter.string(from: startDate),
-            spouseCode: spouseCode,
-            ssn: ssn,
-            fcmToken: fcmToken
-        )
+        // Check is null?
+        // create DTO with ViewModel
+//        let signUpDTO = SignUpRequestDTO(
+//            surgeryType: currentSurgeryType.rawValue,
+//            count: currentRound,
+//            startAt: yearMonthDayFormatter.string(from: startDate),
+//            spouseCode: spouseCode,
+//            ssn: ssn.fullSSN,
+//            fcmToken: fcmToken
+//        )
     }
 }

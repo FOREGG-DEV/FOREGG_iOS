@@ -15,7 +15,7 @@ class OnboardingViewModel: ObservableObject {
         OnBoardingModel(image: "onboarding4", title: "생활습관 챌린지로 건강하게", desc: "난자는 영양 상태, 호르몬 변화에 큰 영향을 받아요.\n챌린지를 통해 건강한 생활습관을 지켜나가요.")
     ]
 
-    @Published var currentStep: Int = 3
+    @Published var currentStep: Int = 0
 
     func increaseStep() {
         withAnimation(.default) {

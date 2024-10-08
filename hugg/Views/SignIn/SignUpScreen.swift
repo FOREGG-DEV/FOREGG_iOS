@@ -40,20 +40,7 @@ struct SignUpScreen: View {
                     switch vm.currentStep {
                     // TODO: conditional jump -> husband, wife version (depending on user's gender)
                     case 0:
-                        VStack(alignment: .leading) {
-                            VStack(alignment: .leading) {
-                                Text("주민번호")
-                                    .font(.pretendardSemiBold24)
-                                    .foregroundStyle(.black80) +
-                                    Text(" 앞 7자리").font(.pretendardSemiBold24).foregroundStyle(.main) + Text("를\n적어주세요.")
-                                    .font(.pretendardSemiBold24)
-                                    .foregroundStyle(.black80)
-                            }
-                            .padding(.bottom, 12)
-
-                            SkeletonBox(width: .infinity, height: 48)
-                        }
-                        .frame(maxWidth: .infinity)
+                        EnterSsnScreen()
                     case 1:
                         TreatmentSelectView()
                     case 2:
@@ -101,7 +88,6 @@ struct SignUpScreen: View {
 
 #Preview {
     SignUpScreen()
-        .environmentObject(SignUpViewModel())
 }
 
 // SignUpState

@@ -50,3 +50,6 @@
 `Page` : Screen 내부 View (PageView, TabView 등)
 `Content` : Page 내부 View
 `Cell` : List 아이템
+
+## CHECK
+- Modal, dialog 등 내에서 상태관리를 직접하지말 것 (Server request)
