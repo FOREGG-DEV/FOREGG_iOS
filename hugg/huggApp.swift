@@ -1,5 +1,7 @@
 import SwiftUI
 
+// MARK: 앱 테스트 시 활용
+
 private enum AppMode {
     case production
     case signupTest
@@ -7,7 +9,7 @@ private enum AppMode {
 
 @main
 struct huggApp: App {
-    private let currentMode: AppMode = .signup
+    private let currentMode: AppMode = .signupTest
 
     var body: some Scene {
         WindowGroup {
