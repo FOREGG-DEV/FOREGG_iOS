@@ -60,7 +60,7 @@ struct TreatmentSelectView: View {
                     ForEach(SurgeryType.allCases, id: \.self) { item in
                         ZStack {
                             Rectangle()
-                                .frame(width: .infinity)
+                                .frame(maxWidth: .infinity)
                                 .foregroundStyle(.clear)
                                 .background(vm.currentSurgeryType == item ? .mainBg : .white)
                                 .clipShape(RoundedRectangle(cornerSize: CGSize(width: 8, height: 8)))
@@ -75,7 +75,8 @@ struct TreatmentSelectView: View {
                     }
                 }
             }
-            .frame(width: .infinity, height: 192)
+            .frame(maxWidth: .infinity)
+            .frame(height: 192)
             .opacity(showDropbox ? 1.0 : 0.0)
             .zIndex(100)
         }

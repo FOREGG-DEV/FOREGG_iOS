@@ -31,6 +31,7 @@ struct EnterSSNView: View {
                     .font(.pretendardSemiBold24)
                     .foregroundStyle(.black80)
             }
+            .fixedSize(horizontal: false, vertical: true)
             .padding(.bottom, 12)
             HStack {
                 TextField("", text: $vm.ssn.ssn1)
@@ -115,6 +116,8 @@ struct EnterSSNView: View {
                     .onChange(of: vm.ssn.ssn7) { _, next in
                         if next.isEmpty {
                             focusField = .ssn6
+                        } else {
+                            focusField = nil
                         }
                     }
                 RoundedRectangle(cornerRadius: 4)

@@ -40,7 +40,7 @@ struct SignUpScreen: View {
                     switch vm.currentStep {
                     // TODO: conditional jump -> husband, wife version (depending on user's gender)
                     case 0:
-                        EnterSsnScreen()
+                        EnterSSNView()
                     case 1:
                         TreatmentSelectView()
                     case 2:
@@ -67,16 +67,16 @@ struct SignUpScreen: View {
                         if isBack {
                             isBack.toggle()
                         }
+//                        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+//
                         vm.increaseStep()
                     })
                 }
 
                 // MARK: Check wtf ?
 
-                ViewThatFits(in: .vertical) {
-                    Spacer()
-                        .frame(maxHeight: 40)
-                }
+                Spacer()
+                    .frame(maxHeight: 40)
             }
             .padding(.horizontal, 16)
         }
