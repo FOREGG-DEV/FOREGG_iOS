@@ -14,7 +14,7 @@ enum SSNFocusEnum {
     case ssn7
 }
 
-struct EnterSsnScreen: View {
+struct EnterSSNView: View {
     // text limit
     fileprivate let limit = 1
     @EnvironmentObject private var vm: SignUpViewModel
@@ -131,7 +131,7 @@ struct EnterSsnScreen: View {
         ZStack {
             Color(.mainBg)
             HStack {
-                EnterSsnScreen()
+                EnterSSNView()
                 Spacer()
             }
             .frame(maxWidth: .infinity)
