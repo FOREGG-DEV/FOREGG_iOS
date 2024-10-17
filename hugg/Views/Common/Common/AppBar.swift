@@ -41,12 +41,40 @@ struct AppBar: View {
     }
 }
 
+// AppBar without Back button
+struct AppBarWithoutBtn: View {
+    var title: String
+
+    var body: some View {
+        HStack {
+            Spacer()
+            Text(title)
+                .font(.pretendardSemiBold16)
+                .foregroundStyle(.kBlack)
+            Spacer()
+        }
+        .padding(.horizontal, 28)
+        .padding(.vertical, 15)
+        .background(.mainBg)
+        .overlay(
+            VStack {
+                Spacer()
+                Divider()
+                    .background(.black60)
+                    .frame(height: 1)
+
+            })
+    }
+}
+
 #Preview {
     Group {
         Spacer()
         AppBar(title: "회원가입", onBack: {})
         Spacer()
         AppBar(title: "일정", onBack: {})
+        Spacer()
+        AppBarWithoutBtn(title: "마이페이지")
         Spacer()
     }
 }

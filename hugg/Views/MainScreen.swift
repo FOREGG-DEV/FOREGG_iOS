@@ -2,37 +2,37 @@ import SwiftUI
 
 struct MainScreen: View {
     // init viewmodel
-    @StateObject var viewModel = HomeViewModel()
+    @StateObject var vm = MainViewModel()
 
     init() {
         UITabBar.appearance().backgroundColor = .navbarBg
     }
 
     var body: some View {
-        TabView(selection: $viewModel.currentTab) {
+        TabView(selection: $vm.currentTab) {
             TabViewContainer(title: "홈 화면")
                 .tabItem {
-                    BottomNavItem(title: "홈", image: "home", isSelected: viewModel.currentTab == .home)
+                    BottomNavItem(title: "홈", image: "home", isSelected: vm.currentTab == .home)
                 }.tag(HomeTab.home)
 
             TabViewContainer(title: "calendar")
                 .tabItem {
-                    BottomNavItem(title: "캘린더", image: "calendar", isSelected: viewModel.currentTab == .calendar)
+                    BottomNavItem(title: "캘린더", image: "calendar", isSelected: vm.currentTab == .calendar)
                 }.tag(HomeTab.calendar)
 
             DailyHugView()
                 .tabItem {
-                    BottomNavItem(title: "데일리 허그", image: "info", isSelected: viewModel.currentTab == .daily)
+                    BottomNavItem(title: "데일리 허그", image: "info", isSelected: vm.currentTab == .daily)
                 }.tag(HomeTab.daily)
 
             TabViewContainer(title: "가계부")
                 .tabItem {
-                    BottomNavItem(title: "가계부", image: "savings", isSelected: viewModel.currentTab == .savings)
+                    BottomNavItem(title: "가계부", image: "savings", isSelected: vm.currentTab == .savings)
                 }.tag(HomeTab.savings)
 
-            TabViewContainer(title: "마이페이지")
+            MyPageView()
                 .tabItem {
-                    BottomNavItem(title: "마이페이지", image: "mypage", isSelected: viewModel.currentTab == .mypage)
+                    BottomNavItem(title: "마이페이지", image: "mypage", isSelected: vm.currentTab == .mypage)
                 }.tag(HomeTab.mypage)
         }
         .tint(.black80)

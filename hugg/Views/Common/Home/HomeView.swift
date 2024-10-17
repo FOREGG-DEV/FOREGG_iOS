@@ -7,12 +7,13 @@
 
 import SwiftUI
 
-struct HomeContent: View {
+struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        AppBarWithoutBtn(title: "홈")
+        Text("홈페이지")
     }
 }
 
 #Preview {
-    HomeContent()
+    HomeView()
 }

@@ -5,11 +5,12 @@ import SwiftUI
 private enum AppMode {
     case production
     case signupTest
+    case mainScreenTest
 }
 
 @main
 struct huggApp: App {
-    private let currentMode: AppMode = .signupTest
+    private let currentMode: AppMode = .mainScreenTest
 
     var body: some Scene {
         WindowGroup {
@@ -18,6 +19,8 @@ struct huggApp: App {
                 MainView()
             case .signupTest:
                 SignUpScreen()
+            case .mainScreenTest:
+                MainScreen()
             }
         }
     }
