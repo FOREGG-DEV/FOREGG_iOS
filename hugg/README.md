@@ -13,6 +13,8 @@
 - [ ] app icon setting
 
 ### feature
+- [ ] home screen UI
+- [ ] add assets (daily hugg)
 
 #### Sign up
 - [ ] clipboard with toast

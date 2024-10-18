@@ -44,7 +44,7 @@ struct MyPageView: View {
         }.navigationDestination(for: String.self) { title in
             switch title {
             case "공지사항":
-                Text("공지사항")
+                MyPageBaseView(title: "공지사항")
             case "계정관리":
                 Text("계정관리")
             default:
