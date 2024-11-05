@@ -11,17 +11,21 @@ private enum AppMode {
 @main
 struct huggApp: App {
     private let currentMode: AppMode = .mainScreenTest
+    @StateObject private var appState = AppState()
 
     var body: some Scene {
         WindowGroup {
-            switch currentMode {
-            case .production:
-                MainView()
-            case .signupTest:
-                SignUpScreen()
-            case .mainScreenTest:
-                MainScreen()
+            NavigationStack {
+                switch currentMode {
+                case .production:
+                    MainView()
+                case .signupTest:
+                    SignUpScreen()
+                case .mainScreenTest:
+                    MainScreen()
+                }
             }
+            .environmentObject(appState)
         }
     }
 }

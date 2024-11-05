@@ -1,7 +1,7 @@
 import Foundation
 // 회원가입 시 사용하는 DTO
 
-struct SignUpRequestDTO: Codable {
+struct UserJoinRequestDTO: Codable {
     let surgeryType: String
     let count: Int
     let startAt: String

@@ -18,7 +18,7 @@ struct SSNModel {
 
     // You can add validation logic or computed properties here
     var fullSSN: String {
-        return "\(ssn1)\(ssn2)\(ssn3)\(ssn4)\(ssn5)\(ssn6)\(ssn7)"
+        "\(ssn1)\(ssn2)\(ssn3)\(ssn4)\(ssn5)\(ssn6)\(ssn7)"
     }
 
     var isValid: Bool {
