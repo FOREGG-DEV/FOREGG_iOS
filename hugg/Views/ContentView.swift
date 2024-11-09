@@ -1,46 +1,35 @@
-//
-//  ContentView.swift
-//  hugg
-//
-//  Created by Donghan Kim on 7/4/24.
-//
-
 import SwiftUI
 
-struct MainView: View {
-    // UserDefaults -> check
-    @State private var hasSeenOnboarding = UserDefaults.standard.bool(forKey: "hasSeenOnboarding")
-    // show splash
-    @State private var showMainView = false
+struct EntryPointScreen: View {
+    @EnvironmentObject private var appState: AppState
+    func checkUserAndProceed() async {
+        try? await Task.sleep(for: .seconds(1))
+
+        let userToken = UserDefaults.standard.string(forKey: "userToken")
+        if userToken != nil {
+            appState.routes.append(.mainScreen)
+        } else {
+            appState.routes.append(.onboarding)
+        }
+    }
 
     var body: some View {
         ZStack {
-            if showMainView {
-                Group {
-                    if hasSeenOnboarding {
-                        MainScreen() // 메인 화면
-                    } else {
-                        OnboardingScreen()
-                            .onDisappear {
-                                self.hasSeenOnboarding = true
-                            }
+            SplashScreen()
+                .onAppear {
+                    Task {
+                        await checkUserAndProceed()
                     }
+                    // check userToken
+                    // if user token exist -> app state append mainscreen route
+                    // else -> app state append onboarding route
                 }
-
-            } else {
-                SplashScreen()
-                    .onAppear {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                            withAnimation {
-                                showMainView = true
-                            }
-                        }
-                    }
-            }
         }
     }
 }
 
 #Preview {
-    MainView()
+    PreviewContainer {
+        EntryPointScreen()
+    }
 }

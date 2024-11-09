@@ -15,16 +15,20 @@ struct huggApp: App {
 
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
-                switch currentMode {
-                case .production:
-                    MainView()
-                case .signupTest:
-                    SignUpScreen()
-                case .mainScreenTest:
-                    MainScreen()
-                }
+            NavigationStack(path: $appState.routes) {
+                EntryPointScreen()
+                    .navigationDestination(for: Route.self, destination: { route in
+                        switch route {
+                        case .onboarding:
+                            OnboardingScreen()
+                        case .register:
+                            SignUpScreen()
+                        case .mainScreen:
+                            MainScreen()
+                        }
+                    })
             }
+            .navigationBarBackButtonHidden()
             .environmentObject(appState)
         }
     }

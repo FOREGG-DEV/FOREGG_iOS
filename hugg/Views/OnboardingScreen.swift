@@ -50,11 +50,24 @@ struct OnboardingScreen: View {
             // TODO: kakao button
 
             if viewModel.currentStep == 3 {
-                DummyButton()
-                    .padding(.horizontal, 16)
+                VStack {
+                    Image(.kakaoLogin)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 52)
+                        .padding(.horizontal, 16)
+                    Image(.appleLogin)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 52)
+                        .padding(.horizontal, 16)
+                }
             } else {
-                BorderedButton(label: "다음", action: viewModel.increaseStep)
-                    .padding(.horizontal, 16)
+                VStack {
+                    BorderedButton(label: "다음", action: viewModel.increaseStep)
+                        .padding(.horizontal, 16)
+                }
+                .frame(height: 105)
             }
             Spacer()
                 .frame(height: 60)
