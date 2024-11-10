@@ -1,15 +1,28 @@
-//
-//  OnboardingView.swift
-//  hugg
-//
-//  Created by Donghan Kim on 7/4/24.
-//
-
+import KakaoSDKAuth
+import KakaoSDKUser
 import SwiftUI
 
 struct OnboardingScreen: View {
     //    init viewModel instance
     @StateObject private var viewModel = OnboardingViewModel()
+
+    // how can i do unit test this ?
+    private func handleKakaoLogin() {
+        // 카카오톡으로 로그인 사용 가능한지 체크
+        if UserApi.isKakaoTalkLoginAvailable() {
+            UserApi.shared.loginWithKakaoTalk { oauthToken, error in
+                if let error = error {
+                    print(error)
+                } else {
+                    // 로그인 성공
+                    print("kakao login is success")
+                    let result = oauthToken?.accessToken
+                    print(result ?? "No token found")
+                    // set token to userDefaults?
+                }
+            }
+        }
+    }
 
     var body: some View {
         VStack(spacing: 0) {
@@ -56,6 +69,10 @@ struct OnboardingScreen: View {
                         .scaledToFit()
                         .frame(height: 52)
                         .padding(.horizontal, 16)
+                        .onTapGesture {
+                            print("tapped")
+                            handleKakaoLogin()
+                        }
                     Image(.appleLogin)
                         .resizable()
                         .scaledToFit()

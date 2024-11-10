@@ -28,6 +28,9 @@
 		1F6813CD2CDDEB60002B8481 /* HomeResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6813CC2CDDEB5C002B8481 /* HomeResponseDTO.swift */; };
 		1F6813CF2CDDEB76002B8481 /* HomeRecordResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6813CE2CDDEB6D002B8481 /* HomeRecordResponseDTO.swift */; };
 		1F692CE12CB4FEA400BAEEBE /* EnterSSNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F692CE02CB4FEA400BAEEBE /* EnterSSNView.swift */; };
+		1F89292E2CE0D86100DDF698 /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1F89292D2CE0D86100DDF698 /* KakaoSDKAuth */; };
+		1F8929302CE0D86100DDF698 /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 1F89292F2CE0D86100DDF698 /* KakaoSDKCommon */; };
+		1F8929322CE0D86100DDF698 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 1F8929312CE0D86100DDF698 /* KakaoSDKUser */; };
 		1F8B64C12CB3A9E400F61118 /* RoundSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B64C02CB3A9E400F61118 /* RoundSelectView.swift */; };
 		1F8B64C52CB3AA7200F61118 /* SignUpTitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B64C42CB3AA7200F61118 /* SignUpTitleText.swift */; };
 		1F8D591A2C3B956500832F61 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D59192C3B956500832F61 /* MainScreen.swift */; };
@@ -138,6 +141,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F8929302CE0D86100DDF698 /* KakaoSDKCommon in Frameworks */,
+				1F89292E2CE0D86100DDF698 /* KakaoSDKAuth in Frameworks */,
+				1F8929322CE0D86100DDF698 /* KakaoSDKUser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +510,9 @@
 				Base,
 			);
 			mainGroup = 1F0D92E42C365B6D00BB6ADD;
+			packageReferences = (
+				1F89292C2CE0D86100DDF698 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
+			);
 			productRefGroup = 1F0D92EE2C365B6D00BB6ADD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -729,6 +738,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -763,6 +773,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -802,6 +813,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1F89292C2CE0D86100DDF698 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F89292D2CE0D86100DDF698 /* KakaoSDKAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F89292C2CE0D86100DDF698 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKAuth;
+		};
+		1F89292F2CE0D86100DDF698 /* KakaoSDKCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F89292C2CE0D86100DDF698 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCommon;
+		};
+		1F8929312CE0D86100DDF698 /* KakaoSDKUser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F89292C2CE0D86100DDF698 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKUser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1F0D92E52C365B6D00BB6ADD /* Project object */;
 }

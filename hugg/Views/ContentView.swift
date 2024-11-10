@@ -2,6 +2,7 @@ import SwiftUI
 
 struct EntryPointScreen: View {
     @EnvironmentObject private var appState: AppState
+
     func checkUserAndProceed() async {
         try? await Task.sleep(for: .seconds(1))
 
