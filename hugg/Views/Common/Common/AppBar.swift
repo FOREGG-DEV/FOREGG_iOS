@@ -68,13 +68,5 @@ struct AppBarWithoutBtn: View {
 }
 
 #Preview {
-    Group {
-        Spacer()
-        AppBar(title: "회원가입", onBack: {})
-        Spacer()
-        AppBar(title: "일정", onBack: {})
-        Spacer()
-        AppBarWithoutBtn(title: "마이페이지")
-        Spacer()
-    }
+    AppBar(title: "회원가입", onBack: {})
 }

@@ -57,7 +57,8 @@ struct huggApp: App {
                             DummyScreen()
 
                         case .manageAccount:
-                            DummyScreen()
+                            ManageAccountScreen()
+                                .navigationBarBackButtonHidden(true)
                         }
 
                     })
@@ -65,7 +66,7 @@ struct huggApp: App {
             .environmentObject(appState)
             .onOpenURL(perform: { url in
                 if AuthApi.isKakaoTalkLoginUrl(url) {
-                    AuthController.handleOpenUrl(url: url)
+                    _ = AuthController.handleOpenUrl(url: url)
                 }
             })
         }

@@ -1,6 +1,19 @@
 // TODO: Check list cell's height
+// TODO: 마이페이지 내 내정보 불러오기 기능 (appState -> User Information 사용)
 
 import SwiftUI
+
+enum NestedExample {
+    enum Section1 {
+        case spouse
+        case myMedicine
+    }
+
+    enum Section2 {
+        case notice
+        case faq
+    }
+}
 
 protocol MyPageNavigatable {
     var routeName: String { get }
