@@ -30,7 +30,7 @@ struct MainScreen: View {
                     BottomNavItem(title: "가계부", image: "savings", isSelected: vm.currentTab == .savings)
                 }.tag(HomeTab.savings)
 
-            MyPageView()
+            MyPageScreen()
                 .tabItem {
                     BottomNavItem(title: "마이페이지", image: "mypage", isSelected: vm.currentTab == .mypage)
                 }.tag(HomeTab.mypage)

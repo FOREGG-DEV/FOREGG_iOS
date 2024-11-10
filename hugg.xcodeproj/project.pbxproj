@@ -21,7 +21,7 @@
 		1F3DC34F2CB5032200A72A52 /* SSNTextfieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DC34E2CB5032200A72A52 /* SSNTextfieldStyle.swift */; };
 		1F3DC3542CB50FAE00A72A52 /* MaxLengthModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DC3532CB50FAE00A72A52 /* MaxLengthModifier.swift */; };
 		1F3DC3562CB50FCE00A72A52 /* TextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DC3552CB50FCE00A72A52 /* TextField+Extension.swift */; };
-		1F603C6F2CBD06E100E5BF5D /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F603C6E2CBD06E100E5BF5D /* MyPageView.swift */; };
+		1F603C6F2CBD06E100E5BF5D /* MyPageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F603C6E2CBD06E100E5BF5D /* MyPageScreen.swift */; };
 		1F60E3352CBFAA2300543A22 /* MyPageBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60E3342CBFAA2300543A22 /* MyPageBaseView.swift */; };
 		1F656AEE2CA96FD90035F81E /* UserJoinRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F656AED2CA96FD90035F81E /* UserJoinRequestDTO.swift */; };
 		1F656AF22CA979DE0035F81E /* TreatmentSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F656AF12CA979DE0035F81E /* TreatmentSelectView.swift */; };
@@ -31,6 +31,7 @@
 		1F89292E2CE0D86100DDF698 /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1F89292D2CE0D86100DDF698 /* KakaoSDKAuth */; };
 		1F8929302CE0D86100DDF698 /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 1F89292F2CE0D86100DDF698 /* KakaoSDKCommon */; };
 		1F8929322CE0D86100DDF698 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 1F8929312CE0D86100DDF698 /* KakaoSDKUser */; };
+		1F8929342CE0FF2600DDF698 /* MyPageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8929332CE0FF2600DDF698 /* MyPageListCell.swift */; };
 		1F8B64C12CB3A9E400F61118 /* RoundSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B64C02CB3A9E400F61118 /* RoundSelectView.swift */; };
 		1F8B64C52CB3AA7200F61118 /* SignUpTitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B64C42CB3AA7200F61118 /* SignUpTitleText.swift */; };
 		1F8D591A2C3B956500832F61 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D59192C3B956500832F61 /* MainScreen.swift */; };
@@ -87,13 +88,14 @@
 		1F3DC34E2CB5032200A72A52 /* SSNTextfieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSNTextfieldStyle.swift; sourceTree = "<group>"; };
 		1F3DC3532CB50FAE00A72A52 /* MaxLengthModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxLengthModifier.swift; sourceTree = "<group>"; };
 		1F3DC3552CB50FCE00A72A52 /* TextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Extension.swift"; sourceTree = "<group>"; };
-		1F603C6E2CBD06E100E5BF5D /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
+		1F603C6E2CBD06E100E5BF5D /* MyPageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageScreen.swift; sourceTree = "<group>"; };
 		1F60E3342CBFAA2300543A22 /* MyPageBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageBaseView.swift; sourceTree = "<group>"; };
 		1F656AED2CA96FD90035F81E /* UserJoinRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserJoinRequestDTO.swift; sourceTree = "<group>"; };
 		1F656AF12CA979DE0035F81E /* TreatmentSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentSelectView.swift; sourceTree = "<group>"; };
 		1F6813CC2CDDEB5C002B8481 /* HomeResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResponseDTO.swift; sourceTree = "<group>"; };
 		1F6813CE2CDDEB6D002B8481 /* HomeRecordResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecordResponseDTO.swift; sourceTree = "<group>"; };
 		1F692CE02CB4FEA400BAEEBE /* EnterSSNView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterSSNView.swift; sourceTree = "<group>"; };
+		1F8929332CE0FF2600DDF698 /* MyPageListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageListCell.swift; sourceTree = "<group>"; };
 		1F8B64C02CB3A9E400F61118 /* RoundSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundSelectView.swift; sourceTree = "<group>"; };
 		1F8B64C42CB3AA7200F61118 /* SignUpTitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTitleText.swift; sourceTree = "<group>"; };
 		1F8D59192C3B956500832F61 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
@@ -391,8 +393,9 @@
 		1FD0D2272CB42F7600F96E87 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
-				1F603C6E2CBD06E100E5BF5D /* MyPageView.swift */,
+				1F603C6E2CBD06E100E5BF5D /* MyPageScreen.swift */,
 				1F60E3342CBFAA2300543A22 /* MyPageBaseView.swift */,
+				1F8929332CE0FF2600DDF698 /* MyPageListCell.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -551,7 +554,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F603C6F2CBD06E100E5BF5D /* MyPageView.swift in Sources */,
+				1F603C6F2CBD06E100E5BF5D /* MyPageScreen.swift in Sources */,
 				1FA883FB2CD9F6930022244D /* PreviewContainer.swift in Sources */,
 				1F032BB92C612A3500E8C64B /* SkeletonBox.swift in Sources */,
 				1F692CE12CB4FEA400BAEEBE /* EnterSSNView.swift in Sources */,
@@ -579,6 +582,7 @@
 				1F3DC3542CB50FAE00A72A52 /* MaxLengthModifier.swift in Sources */,
 				1F0D930C2C36809500BB6ADD /* OnboardingAppBar.swift in Sources */,
 				1F8B64C12CB3A9E400F61118 /* RoundSelectView.swift in Sources */,
+				1F8929342CE0FF2600DDF698 /* MyPageListCell.swift in Sources */,
 				1F6813CF2CDDEB76002B8481 /* HomeRecordResponseDTO.swift in Sources */,
 				1FC4328B2C49732E00FE5834 /* OnboardingViewModel.swift in Sources */,
 				1FCD8F432CB52C6A00956BA0 /* SSNModel.swift in Sources */,

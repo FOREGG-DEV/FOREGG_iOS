@@ -29,13 +29,37 @@ struct huggApp: App {
                         case .onboarding:
                             OnboardingScreen()
                                 .navigationBarBackButtonHidden(true)
+
                         case .register:
                             SignUpScreen()
                                 .navigationBarBackButtonHidden(true)
+
                         case .mainScreen:
                             MainScreen()
                                 .navigationBarBackButtonHidden(true)
+                        // MyPage derivation
+                        case .spouse:
+                            DummyScreen()
+
+                        case .myMedicine:
+                            DummyScreen()
+
+                        case .faq:
+                            DummyScreen()
+
+                        case .notice:
+                            DummyScreen()
+
+                        case .question:
+                            DummyScreen()
+
+                        case .terms:
+                            DummyScreen()
+
+                        case .manageAccount:
+                            DummyScreen()
                         }
+
                     })
             }
             .environmentObject(appState)
@@ -45,5 +69,11 @@ struct huggApp: App {
                 }
             })
         }
+    }
+}
+
+struct DummyScreen: View {
+    var body: some View {
+        Text("Hello, World!")
     }
 }

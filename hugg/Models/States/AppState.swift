@@ -5,6 +5,14 @@ enum Route: Hashable {
     case onboarding
     case register
     case mainScreen
+    // my page sub screens
+    case spouse
+    case myMedicine
+    case notice
+    case faq
+    case question
+    case terms
+    case manageAccount
 }
 
 // 전역적으로 활용되는 State

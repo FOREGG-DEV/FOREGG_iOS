@@ -10,7 +10,8 @@ struct EntryPointScreen: View {
         if userToken != nil {
             appState.routes.append(.mainScreen)
         } else {
-            appState.routes.append(.onboarding)
+//            appState.routes.append(.onboarding)
+            appState.routes.append(.mainScreen)
         }
     }
 
