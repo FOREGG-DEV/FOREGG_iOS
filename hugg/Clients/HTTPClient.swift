@@ -81,6 +81,10 @@ struct HTTPClient {
             request.httpBody = data
         }
 
+        if let jwtToken = TokenManager.shared.jwtToken {
+            request.addValue("Bearer \(jwtToken)", forHTTPHeaderField: "Authorization")
+        }
+
         let configuration = URLSessionConfiguration.default
         configuration.httpAdditionalHeaders = ["Content-Type": "application/json"]
         let session = URLSession(configuration: configuration)

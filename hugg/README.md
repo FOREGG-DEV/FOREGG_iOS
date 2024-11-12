@@ -15,15 +15,15 @@
 ### feature
 - [ ] home screen UI
 - [ ] add assets (daily hugg)
+- [ ] 마이페이지 파생 스크린 UI 작업
+- [ ] base API DTO 작업
 
 #### Sign up
 - [ ] clipboard with toast
 
 - [ ] Implement WebService layer (repository)
 - [ ] Connect SignIn API
-- [ ] Implement Kakao Login
 - [ ] Implement Apple Login
-- [ ] Implement JWT system (AppState or ViewModel for RootView)
 - [ ] Implement Calendar view
 - [ ] Implement popup system (toast...)
 
@@ -41,6 +41,8 @@
 - [x] datepicker
 - [x] splash screen (app launch screen)
 - [x] onboarding screen
+- [x] Implement Kakao Login
+- [x] Implement JWT system (AppState or ViewModel for RootView)
 
 ### Design
 - [x] font system
