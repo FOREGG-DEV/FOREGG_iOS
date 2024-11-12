@@ -21,6 +21,7 @@
 		1F3DC34F2CB5032200A72A52 /* SSNTextfieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DC34E2CB5032200A72A52 /* SSNTextfieldStyle.swift */; };
 		1F3DC3542CB50FAE00A72A52 /* MaxLengthModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DC3532CB50FAE00A72A52 /* MaxLengthModifier.swift */; };
 		1F3DC3562CB50FCE00A72A52 /* TextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DC3552CB50FCE00A72A52 /* TextField+Extension.swift */; };
+		1F3F3CB42CE2E59D006D4EE7 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3F3CB32CE2E598006D4EE7 /* TokenManager.swift */; };
 		1F603C6F2CBD06E100E5BF5D /* MyPageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F603C6E2CBD06E100E5BF5D /* MyPageScreen.swift */; };
 		1F60E3352CBFAA2300543A22 /* MyPageBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60E3342CBFAA2300543A22 /* MyPageBaseView.swift */; };
 		1F656AEE2CA96FD90035F81E /* UserJoinRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F656AED2CA96FD90035F81E /* UserJoinRequestDTO.swift */; };
@@ -90,6 +91,7 @@
 		1F3DC34E2CB5032200A72A52 /* SSNTextfieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSNTextfieldStyle.swift; sourceTree = "<group>"; };
 		1F3DC3532CB50FAE00A72A52 /* MaxLengthModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxLengthModifier.swift; sourceTree = "<group>"; };
 		1F3DC3552CB50FCE00A72A52 /* TextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Extension.swift"; sourceTree = "<group>"; };
+		1F3F3CB32CE2E598006D4EE7 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
 		1F603C6E2CBD06E100E5BF5D /* MyPageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageScreen.swift; sourceTree = "<group>"; };
 		1F60E3342CBFAA2300543A22 /* MyPageBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageBaseView.swift; sourceTree = "<group>"; };
 		1F656AED2CA96FD90035F81E /* UserJoinRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserJoinRequestDTO.swift; sourceTree = "<group>"; };
@@ -329,6 +331,7 @@
 		1F8D59392C3B9FC800832F61 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1F3F3CB32CE2E598006D4EE7 /* TokenManager.swift */,
 				1F3DC3522CB50F9D00A72A52 /* Modifiers */,
 				1FA645EE2CB3EA1B00419660 /* Extensions */,
 				1F8D593A2C3B9FDA00832F61 /* CustomFonts.swift */,
@@ -601,6 +604,7 @@
 				1F656AF22CA979DE0035F81E /* TreatmentSelectView.swift in Sources */,
 				1FE68CF42C5B528700CD43E4 /* AppBar.swift in Sources */,
 				1FEAF02F2C4986F5004C0EE1 /* MainViewModel.swift in Sources */,
+				1F3F3CB42CE2E59D006D4EE7 /* TokenManager.swift in Sources */,
 				1F8D591C2C3B96CE00832F61 /* SplashScreen.swift in Sources */,
 				1F8D593B2C3B9FDA00832F61 /* CustomFonts.swift in Sources */,
 				1F0D93082C367F5300BB6ADD /* OnboardingScreen.swift in Sources */,
