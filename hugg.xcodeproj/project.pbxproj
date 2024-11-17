@@ -23,6 +23,7 @@
 		1F3DC3562CB50FCE00A72A52 /* TextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DC3552CB50FCE00A72A52 /* TextField+Extension.swift */; };
 		1F3F3CB42CE2E59D006D4EE7 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3F3CB32CE2E598006D4EE7 /* TokenManager.swift */; };
 		1F3F3CB72CE2EF7C006D4EE7 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 1F3F3CB62CE2EF7C006D4EE7 /* PopupView */; };
+		1F3F3CBA2CE2FDC3006D4EE7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3F3CB92CE2FDC1006D4EE7 /* Constants.swift */; };
 		1F603C6F2CBD06E100E5BF5D /* MyPageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F603C6E2CBD06E100E5BF5D /* MyPageScreen.swift */; };
 		1F60E3352CBFAA2300543A22 /* MyPageBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60E3342CBFAA2300543A22 /* MyPageBaseView.swift */; };
 		1F656AEE2CA96FD90035F81E /* UserJoinRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F656AED2CA96FD90035F81E /* UserJoinRequestDTO.swift */; };
@@ -52,6 +53,8 @@
 		1F8D59362C3B9D7700832F61 /* GmarketSansMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1F8D59332C3B9D7700832F61 /* GmarketSansMedium.otf */; };
 		1F8D59372C3B9D7700832F61 /* GmarketSansBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1F8D59342C3B9D7700832F61 /* GmarketSansBold.otf */; };
 		1F8D593B2C3B9FDA00832F61 /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D593A2C3B9FDA00832F61 /* CustomFonts.swift */; };
+		1F94774F2CE9E5AF00D947E1 /* SelectablePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F94774E2CE9E5AF00D947E1 /* SelectablePopup.swift */; };
+		1F9477512CE9E60F00D947E1 /* AlertPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9477502CE9E60F00D947E1 /* AlertPopup.swift */; };
 		1F99A7E62CC4DB4B00779628 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F99A7E52CC4DB4B00779628 /* HomeView.swift */; };
 		1FA645F02CB3EA3F00419660 /* AnyTransition+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA645EF2CB3EA3F00419660 /* AnyTransition+Extension.swift */; };
 		1FA883F52CD9F5400022244D /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA883F42CD9F5400022244D /* HTTPClient.swift */; };
@@ -93,6 +96,7 @@
 		1F3DC3532CB50FAE00A72A52 /* MaxLengthModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxLengthModifier.swift; sourceTree = "<group>"; };
 		1F3DC3552CB50FCE00A72A52 /* TextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Extension.swift"; sourceTree = "<group>"; };
 		1F3F3CB32CE2E598006D4EE7 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
+		1F3F3CB92CE2FDC1006D4EE7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1F603C6E2CBD06E100E5BF5D /* MyPageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageScreen.swift; sourceTree = "<group>"; };
 		1F60E3342CBFAA2300543A22 /* MyPageBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageBaseView.swift; sourceTree = "<group>"; };
 		1F656AED2CA96FD90035F81E /* UserJoinRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserJoinRequestDTO.swift; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 		1F8D59342C3B9D7700832F61 /* GmarketSansBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansBold.otf; sourceTree = "<group>"; };
 		1F8D59382C3B9EB700832F61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1F8D593A2C3B9FDA00832F61 /* CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
+		1F94774E2CE9E5AF00D947E1 /* SelectablePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectablePopup.swift; sourceTree = "<group>"; };
+		1F9477502CE9E60F00D947E1 /* AlertPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPopup.swift; sourceTree = "<group>"; };
 		1F99A7E52CC4DB4B00779628 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1FA645EF2CB3EA3F00419660 /* AnyTransition+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransition+Extension.swift"; sourceTree = "<group>"; };
 		1FA883F42CD9F5400022244D /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
@@ -179,6 +185,7 @@
 		1F0D92EF2C365B6D00BB6ADD /* hugg */ = {
 			isa = PBXGroup;
 			children = (
+				1F3F3CB92CE2FDC1006D4EE7 /* Constants.swift */,
 				1F8D59392C3B9FC800832F61 /* Utils */,
 				1F8D59382C3B9EB700832F61 /* Info.plist */,
 				1F8D591D2C3B9C5B00832F61 /* Resources */,
@@ -255,7 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				1F8B64C32CB3AA4F00F61118 /* CustomText */,
-				1F31AFDC2C972B3500DBFB18 /* Dialog */,
+				1F31AFDC2C972B3500DBFB18 /* Popup */,
 				1FF22A7A2C3AD85700367518 /* Common */,
 				1FEAF0302C498843004C0EE1 /* Home */,
 				1F0D930A2C36808900BB6ADD /* Onboarding */,
@@ -272,11 +279,13 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
-		1F31AFDC2C972B3500DBFB18 /* Dialog */ = {
+		1F31AFDC2C972B3500DBFB18 /* Popup */ = {
 			isa = PBXGroup;
 			children = (
+				1F94774E2CE9E5AF00D947E1 /* SelectablePopup.swift */,
+				1F9477502CE9E60F00D947E1 /* AlertPopup.swift */,
 			);
-			path = Dialog;
+			path = Popup;
 			sourceTree = "<group>";
 		};
 		1F3DC3522CB50F9D00A72A52 /* Modifiers */ = {
@@ -577,6 +586,7 @@
 				1F8D591A2C3B956500832F61 /* MainScreen.swift in Sources */,
 				1FFD020F2CB41AA900020AF4 /* CalendarScreen.swift in Sources */,
 				1FA883F82CD9F5600022244D /* AppState.swift in Sources */,
+				1F9477512CE9E60F00D947E1 /* AlertPopup.swift in Sources */,
 				1FA645F02CB3EA3F00419660 /* AnyTransition+Extension.swift in Sources */,
 				1FFD020A2CB402B600020AF4 /* SelectStartDateView.swift in Sources */,
 				1FB8AE942CAD60A0003BDC9C /* NoTapAnimationStyle.swift in Sources */,
@@ -591,6 +601,7 @@
 				1F60E3352CBFAA2300543A22 /* MyPageBaseView.swift in Sources */,
 				1F0D92F12C365B6D00BB6ADD /* huggApp.swift in Sources */,
 				1FFD020C2CB40ABB00020AF4 /* WifeShareCodeView.swift in Sources */,
+				1F3F3CBA2CE2FDC3006D4EE7 /* Constants.swift in Sources */,
 				1FF22A7E2C3ADFA000367518 /* MainButton.swift in Sources */,
 				1F3DC3542CB50FAE00A72A52 /* MaxLengthModifier.swift in Sources */,
 				1F0D930C2C36809500BB6ADD /* OnboardingAppBar.swift in Sources */,
@@ -612,6 +623,7 @@
 				1F8D593B2C3B9FDA00832F61 /* CustomFonts.swift in Sources */,
 				1F0D93082C367F5300BB6ADD /* OnboardingScreen.swift in Sources */,
 				1F6813CD2CDDEB60002B8481 /* HomeResponseDTO.swift in Sources */,
+				1F94774F2CE9E5AF00D947E1 /* SelectablePopup.swift in Sources */,
 				1FD0D2322CB437B600F96E87 /* CustomDateFormatter.swift in Sources */,
 				1FA883F52CD9F5400022244D /* HTTPClient.swift in Sources */,
 				1FD826102C3A7697003C295A /* OnboardingContent.swift in Sources */,
