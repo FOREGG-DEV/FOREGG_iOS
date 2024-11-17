@@ -1,9 +1,8 @@
-import PopupView
 // TODO: 로그아웃 기능 구현
 // TODO: 회원 탈퇴 기능 구현
-// TODO: 팝업 구현
 // TODO: Binding() 공부하기
 import SwiftUI
+import PopupView
 
 enum ManageAccountPopupConfig: Equatable {
     case logout

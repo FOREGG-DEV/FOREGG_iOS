@@ -77,6 +77,8 @@ enum MyPageRouteSection3Config: String, CaseIterable, MyPageNavigatable {
     }
 }
 
+// Screen code here
+
 struct MyPageScreen: View {
     @EnvironmentObject private var appState: AppState
 
