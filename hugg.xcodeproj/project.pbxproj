@@ -69,6 +69,7 @@
 		1FD0D2302CB433A200F96E87 /* SurgeryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD0D22F2CB433A200F96E87 /* SurgeryType.swift */; };
 		1FD0D2322CB437B600F96E87 /* CustomDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD0D2312CB437B600F96E87 /* CustomDateFormatter.swift */; };
 		1FD826102C3A7697003C295A /* OnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD8260F2C3A7697003C295A /* OnboardingContent.swift */; };
+		1FDAAC2D2CEB525A00767F86 /* HGPlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDAAC2C2CEB525A00767F86 /* HGPlusButton.swift */; };
 		1FE68CF22C5B522200CD43E4 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE68CF12C5B522200CD43E4 /* SignUpScreen.swift */; };
 		1FE68CF42C5B528700CD43E4 /* AppBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE68CF32C5B528700CD43E4 /* AppBar.swift */; };
 		1FEAF02F2C4986F5004C0EE1 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEAF02E2C4986F5004C0EE1 /* MainViewModel.swift */; };
@@ -142,6 +143,7 @@
 		1FD0D2312CB437B600F96E87 /* CustomDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDateFormatter.swift; sourceTree = "<group>"; };
 		1FD8260F2C3A7697003C295A /* OnboardingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContent.swift; sourceTree = "<group>"; };
 		1FD826112C3A779A003C295A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1FDAAC2C2CEB525A00767F86 /* HGPlusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGPlusButton.swift; sourceTree = "<group>"; };
 		1FE68CF12C5B522200CD43E4 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
 		1FE68CF32C5B528700CD43E4 /* AppBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBar.swift; sourceTree = "<group>"; };
 		1FEAF02E2C4986F5004C0EE1 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
@@ -485,6 +487,7 @@
 				1FE68CF32C5B528700CD43E4 /* AppBar.swift */,
 				1F032BB82C612A3500E8C64B /* SkeletonBox.swift */,
 				1F31AFDD2C972BA100DBFB18 /* Counter.swift */,
+				1FDAAC2C2CEB525A00767F86 /* HGPlusButton.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -592,6 +595,7 @@
 				1F692CE12CB4FEA400BAEEBE /* EnterSSNView.swift in Sources */,
 				1F656AEE2CA96FD90035F81E /* UserJoinRequestDTO.swift in Sources */,
 				1F31AFDE2C972BA100DBFB18 /* Counter.swift in Sources */,
+				1FDAAC2D2CEB525A00767F86 /* HGPlusButton.swift in Sources */,
 				1F3DC3562CB50FCE00A72A52 /* TextField+Extension.swift in Sources */,
 				1F032BBD2C612B5B00E8C64B /* SignUpViewModel.swift in Sources */,
 				1F8D591A2C3B956500832F61 /* MainScreen.swift in Sources */,
