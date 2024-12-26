@@ -62,7 +62,7 @@ struct OnboardingScreen: View {
 
             // TODO: kakao button
 
-            if viewModel.currentStep == 3 {
+            if viewModel.currentStep == viewModel.datas.count - 1 {
                 VStack {
                     Image(.kakaoLogin)
                         .resizable()
@@ -70,7 +70,6 @@ struct OnboardingScreen: View {
                         .frame(height: 52)
                         .padding(.horizontal, 16)
                         .onTapGesture {
-                            print("tapped")
                             handleKakaoLogin()
                         }
                     Image(.appleLogin)
@@ -90,20 +89,6 @@ struct OnboardingScreen: View {
                 .frame(height: 60)
         }
         .background(.mainBg)
-    }
-}
-
-private struct DummyButton: View {
-    fileprivate var body: some View {
-        Button(action: {}) {
-            Text("카카오로 로그인")
-                .font(.system(size: 24, weight: .bold))
-                .foregroundColor(.black)
-                .frame(maxWidth: .infinity)
-                .padding(.vertical, 16)
-        }
-        .background(.yellow)
-        .padding(.horizontal, 16)
     }
 }
 
