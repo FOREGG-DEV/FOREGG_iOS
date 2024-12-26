@@ -63,7 +63,7 @@
 		1FA883FB2CD9F6930022244D /* PreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA883FA2CD9F6930022244D /* PreviewContainer.swift */; };
 		1FAE4ABB2CE1126E005C946B /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAE4ABA2CE11264005C946B /* UINavigationController+Extensions.swift */; };
 		1FB8AE942CAD60A0003BDC9C /* NoTapAnimationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8AE932CAD60A0003BDC9C /* NoTapAnimationStyle.swift */; };
-		1FC4328B2C49732E00FE5834 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4328A2C49732E00FE5834 /* OnboardingViewModel.swift */; };
+		1FC4328B2C49732E00FE5834 /* OnboardingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4328A2C49732E00FE5834 /* OnboardingState.swift */; };
 		1FCD8F432CB52C6A00956BA0 /* SSNModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCD8F422CB52C6A00956BA0 /* SSNModel.swift */; };
 		1FD0D22A2CB4308B00F96E87 /* DailyHugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD0D2292CB4308B00F96E87 /* DailyHugView.swift */; };
 		1FD0D2302CB433A200F96E87 /* SurgeryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD0D22F2CB433A200F96E87 /* SurgeryType.swift */; };
@@ -73,7 +73,7 @@
 		1FE68CF22C5B522200CD43E4 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE68CF12C5B522200CD43E4 /* SignUpScreen.swift */; };
 		1FE68CF42C5B528700CD43E4 /* AppBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE68CF32C5B528700CD43E4 /* AppBar.swift */; };
 		1FEAF02F2C4986F5004C0EE1 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEAF02E2C4986F5004C0EE1 /* MainViewModel.swift */; };
-		1FF22A792C3AD7C200367518 /* OnBoardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF22A782C3AD7C200367518 /* OnBoardingModel.swift */; };
+		1FF22A792C3AD7C200367518 /* OnboardingVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF22A782C3AD7C200367518 /* OnboardingVO.swift */; };
 		1FF22A7C2C3AD87000367518 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF22A7B2C3AD87000367518 /* BorderedButton.swift */; };
 		1FF22A7E2C3ADFA000367518 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF22A7D2C3ADFA000367518 /* MainButton.swift */; };
 		1FFD020A2CB402B600020AF4 /* SelectStartDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD02092CB402B600020AF4 /* SelectStartDateView.swift */; };
@@ -136,7 +136,7 @@
 		1FA883FA2CD9F6930022244D /* PreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContainer.swift; sourceTree = "<group>"; };
 		1FAE4ABA2CE11264005C946B /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
 		1FB8AE932CAD60A0003BDC9C /* NoTapAnimationStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoTapAnimationStyle.swift; sourceTree = "<group>"; };
-		1FC4328A2C49732E00FE5834 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		1FC4328A2C49732E00FE5834 /* OnboardingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingState.swift; sourceTree = "<group>"; };
 		1FCD8F422CB52C6A00956BA0 /* SSNModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSNModel.swift; sourceTree = "<group>"; };
 		1FD0D2292CB4308B00F96E87 /* DailyHugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyHugView.swift; sourceTree = "<group>"; };
 		1FD0D22F2CB433A200F96E87 /* SurgeryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurgeryType.swift; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 		1FE68CF12C5B522200CD43E4 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
 		1FE68CF32C5B528700CD43E4 /* AppBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBar.swift; sourceTree = "<group>"; };
 		1FEAF02E2C4986F5004C0EE1 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		1FF22A782C3AD7C200367518 /* OnBoardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingModel.swift; sourceTree = "<group>"; };
+		1FF22A782C3AD7C200367518 /* OnboardingVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVO.swift; sourceTree = "<group>"; };
 		1FF22A7B2C3AD87000367518 /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		1FF22A7D2C3ADFA000367518 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 		1FFD02092CB402B600020AF4 /* SelectStartDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectStartDateView.swift; sourceTree = "<group>"; };
@@ -252,7 +252,6 @@
 		1F0D93002C365DD600BB6ADD /* VIewModels */ = {
 			isa = PBXGroup;
 			children = (
-				1FC4328A2C49732E00FE5834 /* OnboardingViewModel.swift */,
 				1FEAF02E2C4986F5004C0EE1 /* MainViewModel.swift */,
 				1F032BBC2C612B5B00E8C64B /* SignUpViewModel.swift */,
 			);
@@ -382,6 +381,7 @@
 			isa = PBXGroup;
 			children = (
 				1FA883F72CD9F5600022244D /* AppState.swift */,
+				1FC4328A2C49732E00FE5834 /* OnboardingState.swift */,
 			);
 			path = States;
 			sourceTree = "<group>";
@@ -444,7 +444,7 @@
 		1FD0D22C2CB432E500F96E87 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				1FF22A782C3AD7C200367518 /* OnBoardingModel.swift */,
+				1FF22A782C3AD7C200367518 /* OnboardingVO.swift */,
 				1FCD8F422CB52C6A00956BA0 /* SSNModel.swift */,
 			);
 			path = Entity;
@@ -607,7 +607,7 @@
 				1FB8AE942CAD60A0003BDC9C /* NoTapAnimationStyle.swift in Sources */,
 				1F0DD9392CD7534700708811 /* RecordType.swift in Sources */,
 				1F0D92F32C365B6D00BB6ADD /* ContentView.swift in Sources */,
-				1FF22A792C3AD7C200367518 /* OnBoardingModel.swift in Sources */,
+				1FF22A792C3AD7C200367518 /* OnboardingVO.swift in Sources */,
 				1F99A7E62CC4DB4B00779628 /* HomeScreen.swift in Sources */,
 				1FE68CF22C5B522200CD43E4 /* SignUpScreen.swift in Sources */,
 				1FD0D2302CB433A200F96E87 /* SurgeryType.swift in Sources */,
@@ -625,7 +625,7 @@
 				1F8929342CE0FF2600DDF698 /* MyPageListCell.swift in Sources */,
 				1F6813CF2CDDEB76002B8481 /* HomeRecordResponseDTO.swift in Sources */,
 				1FAE4ABB2CE1126E005C946B /* UINavigationController+Extensions.swift in Sources */,
-				1FC4328B2C49732E00FE5834 /* OnboardingViewModel.swift in Sources */,
+				1FC4328B2C49732E00FE5834 /* OnboardingState.swift in Sources */,
 				1FCD8F432CB52C6A00956BA0 /* SSNModel.swift in Sources */,
 				1FD0D22A2CB4308B00F96E87 /* DailyHugView.swift in Sources */,
 				1F8B64C52CB3AA7200F61118 /* SignUpTitleText.swift in Sources */,

@@ -1,14 +1,7 @@
-//
-//  OnboardingPage.swift
-//  hugg
-//
-//  Created by Donghan Kim on 7/7/24.
-//
-
 import SwiftUI
 
 struct OnboardingContent: View {
-    var data: OnBoardingModel
+    var data: OnboardingVO
 
     var body: some View {
         VStack {
@@ -30,5 +23,5 @@ struct OnboardingContent: View {
 
 #Preview {
     OnboardingContent(
-        data: OnBoardingModel(image: "onboarding4", title: "주사 맞을 시간엔 알람이 울려요", desc: "desc"))
+        data: OnboardingVO(image: "onboarding4", title: "주사 맞을 시간엔 알람이 울려요", desc: "desc"))
 }

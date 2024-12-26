@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct OnBoardingModel {
+struct OnboardingVO {
     let image: String
     let title: String
     let desc: String

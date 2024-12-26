@@ -4,7 +4,7 @@ import SwiftUI
 
 struct OnboardingScreen: View {
     //    init viewModel instance
-    @StateObject private var viewModel = OnboardingViewModel()
+    @StateObject private var state = OnboardingState()
 
     // how can i do unit test this ?
     private func handleKakaoLogin() {
@@ -26,18 +26,18 @@ struct OnboardingScreen: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            OnboardingAppBar(viewModel: viewModel)
+            OnboardingAppBar(state: state)
             // TODO: TabView Size change(depending on device size)
 
-            TabView(selection: $viewModel.currentStep) {
-                ForEach(0 ..< viewModel.datas.count, id: \.self) { idx in
-                    OnboardingContent(data: viewModel.datas[idx]).tag(idx)
+            TabView(selection: $state.currentStep) {
+                ForEach(0 ..< state.datas.count, id: \.self) { idx in
+                    OnboardingContent(data: state.datas[idx]).tag(idx)
                         .gesture(DragGesture(minimumDistance: 10).onEnded { endedGesture in
                             if endedGesture.location.x - endedGesture.startLocation.x > 0 {
-                                viewModel.decreaseStep()
+                                state.decreaseStep()
                             } else {
                                 // right to left
-                                viewModel.increaseStep()
+                                state.increaseStep()
                             }
                         })
                 }
@@ -47,10 +47,10 @@ struct OnboardingScreen: View {
             // MARK: Custom tabview indicator using HStack
 
             HStack {
-                ForEach(0 ..< viewModel.datas.count, id: \.self) { index in
+                ForEach(0 ..< state.datas.count, id: \.self) { index in
                     Rectangle()
-                        .frame(width: index == viewModel.currentStep ? 24 : 8, height: 8)
-                        .foregroundColor(index == viewModel.currentStep ? .main : .black30)
+                        .frame(width: index == state.currentStep ? 24 : 8, height: 8)
+                        .foregroundColor(index == state.currentStep ? .main : .black30)
                         .cornerRadius(5)
                 }
             }
@@ -62,7 +62,7 @@ struct OnboardingScreen: View {
 
             // TODO: kakao button
 
-            if viewModel.currentStep == viewModel.datas.count - 1 {
+            if state.currentStep == state.datas.count - 1 {
                 VStack {
                     Image(.kakaoLogin)
                         .resizable()
@@ -80,7 +80,7 @@ struct OnboardingScreen: View {
                 }
             } else {
                 VStack {
-                    BorderedButton(label: "다음", action: viewModel.increaseStep)
+                    BorderedButton(label: "다음", action: state.increaseStep)
                         .padding(.horizontal, 16)
                 }
                 .frame(height: 105)

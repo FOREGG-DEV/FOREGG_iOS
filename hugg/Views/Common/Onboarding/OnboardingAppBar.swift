@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct OnboardingAppBar: View {
-    @ObservedObject var viewModel: OnboardingViewModel
+    @ObservedObject var state: OnboardingState
 
     var body: some View {
         HStack {
-            if viewModel.currentStep != 0 {
+            if state.currentStep != 0 {
                 Button(action: {
                     // 뒤로가기 액션
-                    viewModel.decreaseStep()
+                    state.decreaseStep()
                 }) {
                     Image(systemName: "chevron.left")
                         .fontWeight(Font.Weight.semibold)
@@ -56,6 +56,6 @@ struct OnboardingAppBar: View {
 
 #Preview {
     Group {
-        OnboardingAppBar(viewModel: OnboardingViewModel())
+        OnboardingAppBar(state: OnboardingState())
     }
 }
