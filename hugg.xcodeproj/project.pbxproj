@@ -25,6 +25,7 @@
 		1F3F3CB72CE2EF7C006D4EE7 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 1F3F3CB62CE2EF7C006D4EE7 /* PopupView */; };
 		1F3F3CBA2CE2FDC3006D4EE7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3F3CB92CE2FDC1006D4EE7 /* Constants.swift */; };
 		1F4CE85C2D1E540C005CB661 /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4CE85B2D1E5404005CB661 /* CheckboxToggleStyle.swift */; };
+		1F4CE85E2D1E5B02005CB661 /* PermissionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4CE85D2D1E5B02005CB661 /* PermissionScreen.swift */; };
 		1F603C6F2CBD06E100E5BF5D /* MyPageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F603C6E2CBD06E100E5BF5D /* MyPageScreen.swift */; };
 		1F60E3352CBFAA2300543A22 /* MyPageBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60E3342CBFAA2300543A22 /* MyPageBaseView.swift */; };
 		1F656AEE2CA96FD90035F81E /* UserJoinRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F656AED2CA96FD90035F81E /* UserJoinRequestDTO.swift */; };
@@ -102,6 +103,7 @@
 		1F3F3CB32CE2E598006D4EE7 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
 		1F3F3CB92CE2FDC1006D4EE7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1F4CE85B2D1E5404005CB661 /* CheckboxToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxToggleStyle.swift; sourceTree = "<group>"; };
+		1F4CE85D2D1E5B02005CB661 /* PermissionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionScreen.swift; sourceTree = "<group>"; };
 		1F603C6E2CBD06E100E5BF5D /* MyPageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageScreen.swift; sourceTree = "<group>"; };
 		1F60E3342CBFAA2300543A22 /* MyPageBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageBaseView.swift; sourceTree = "<group>"; };
 		1F656AED2CA96FD90035F81E /* UserJoinRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserJoinRequestDTO.swift; sourceTree = "<group>"; };
@@ -479,6 +481,7 @@
 				1FFD020B2CB40ABB00020AF4 /* WifeShareCodeView.swift */,
 				1F692CE02CB4FEA400BAEEBE /* EnterSSNView.swift */,
 				1FD5D8772D1E41A9001D9C5B /* AgreementView.swift */,
+				1F4CE85D2D1E5B02005CB661 /* PermissionScreen.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -637,6 +640,7 @@
 				1F8D591C2C3B96CE00832F61 /* SplashScreen.swift in Sources */,
 				1FD5D8782D1E41A9001D9C5B /* AgreementView.swift in Sources */,
 				1F8D593B2C3B9FDA00832F61 /* CustomFonts.swift in Sources */,
+				1F4CE85E2D1E5B02005CB661 /* PermissionScreen.swift in Sources */,
 				1F0D93082C367F5300BB6ADD /* OnboardingScreen.swift in Sources */,
 				1F6813CD2CDDEB60002B8481 /* HomeResponseDTO.swift in Sources */,
 				1F94774F2CE9E5AF00D947E1 /* SelectablePopup.swift in Sources */,

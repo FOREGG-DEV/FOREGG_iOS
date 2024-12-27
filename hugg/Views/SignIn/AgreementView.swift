@@ -1,3 +1,5 @@
+// TODO: Fix all agree boolean behavior
+// 다른 agrees들도 다 false가 되어버림
 import SwiftUI
 
 struct HGAgreementItem: View {
@@ -48,7 +50,7 @@ struct HGAgreementItem: View {
     }
 }
 
-struct TermsView: View {
+struct AgreementView: View {
     @EnvironmentObject var state: SignUpViewModel
     @State var termsAgree: Bool = false
     @State var privacyAgree: Bool = false
@@ -77,6 +79,7 @@ struct TermsView: View {
                     .stroke(.main, lineWidth: 1)
             }
             .onChange(of: allAgree) { _, newValue in
+                // old value = true, newValue = false
                 // 전체 동의 상태 변경 시 나머지 업데이트
                 termsAgree = newValue
                 privacyAgree = newValue
@@ -101,7 +104,7 @@ struct TermsView: View {
 #Preview {
     VStack {
         Spacer()
-        TermsView()
+        AgreementView()
             .environmentObject(SignUpViewModel())
         Spacer()
     }

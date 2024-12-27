@@ -11,7 +11,7 @@ struct EntryPointScreen: View {
             appState.routes.append(.mainScreen)
         } else {
 //            appState.routes.append(.onboarding)
-            appState.routes.append(.mainScreen)
+            appState.routes.append(.register)
         }
     }
 

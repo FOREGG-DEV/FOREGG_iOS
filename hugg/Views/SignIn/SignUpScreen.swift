@@ -1,9 +1,19 @@
+// TODO: Check AttributedString
 import SwiftUI
 
 struct SignUpScreen: View {
     @StateObject private var vm = SignUpViewModel()
 
     @State private var isBack: Bool = false
+
+    // for custom Link
+    var customAttributedString: AttributedString {
+        var string = AttributedString("for.egg0302@gmail.com")
+        string.link = URL(string: "mailto:for.egg0302@gmail.com")
+        string.font = .p2L
+        string.foregroundColor = .black70 // 원하는 색상 지정
+        return string
+    }
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -23,12 +33,12 @@ struct SignUpScreen: View {
                         .foregroundColor(.mainSub)
                         .cornerRadius(5)
                     Rectangle()
-                        .frame(width: vm.currentStep >= 1 && vm.currentStep < 4 ? 20 : 10, height: 10)
+                        .frame(width: vm.currentStep >= 1 && vm.currentStep < 5 ? 20 : 10, height: 10)
                         .foregroundColor(vm.currentStep >= 1 ? .mainSub : .black30)
                         .cornerRadius(5)
                     Rectangle()
-                        .frame(width: vm.currentStep == 4 ? 20 : 10, height: 10)
-                        .foregroundColor(vm.currentStep == 4 ? .mainSub : .black30)
+                        .frame(width: vm.currentStep == 5 ? 20 : 10, height: 10)
+                        .foregroundColor(vm.currentStep == 5 ? .mainSub : .black30)
                         .cornerRadius(5)
                 }
                 .background(RoundedRectangle(cornerRadius: 30).fill(Color.clear))
@@ -40,14 +50,16 @@ struct SignUpScreen: View {
                     switch vm.currentStep {
                     // TODO: conditional jump -> husband, wife version (depending on user's gender)
                     case 0:
-                        EnterSSNView()
+                        AgreementView()
                     case 1:
-                        TreatmentSelectView()
+                        EnterSSNView()
                     case 2:
-                        RoundSelectView()
+                        TreatmentSelectView()
                     case 3:
-                        SelectStartDateView()
+                        RoundSelectView()
                     case 4:
+                        SelectStartDateView()
+                    case 5:
                         WifeShareCodeView()
 
                     default:
@@ -72,6 +84,16 @@ struct SignUpScreen: View {
                                          }
                                          vm.increaseStep()
                                      })
+
+                    HStack {
+                        Spacer()
+                        Text("약관 문의").font(.p2).foregroundStyle(.black70)
+                        Spacer().frame(width: 4)
+                        Text(customAttributedString)
+                        Spacer()
+                    }
+                    .padding(.top, 12)
+                    .opacity(vm.currentStep == 0 ? 1 : 0)
                 }
 
                 // MARK: Check wtf ?
