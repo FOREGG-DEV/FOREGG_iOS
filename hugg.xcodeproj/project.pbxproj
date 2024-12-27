@@ -271,9 +271,14 @@
 			children = (
 				1F8B64C32CB3AA4F00F61118 /* CustomText */,
 				1F31AFDC2C972B3500DBFB18 /* Popup */,
-				1FF22A7A2C3AD85700367518 /* Common */,
 				1FEAF0302C498843004C0EE1 /* Home */,
 				1F0D930A2C36808900BB6ADD /* Onboarding */,
+				1FF22A7B2C3AD87000367518 /* BorderedButton.swift */,
+				1FF22A7D2C3ADFA000367518 /* MainButton.swift */,
+				1FE68CF32C5B528700CD43E4 /* AppBar.swift */,
+				1F032BB82C612A3500E8C64B /* SkeletonBox.swift */,
+				1F31AFDD2C972BA100DBFB18 /* Counter.swift */,
+				1FDAAC2C2CEB525A00767F86 /* HGPlusButton.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -477,19 +482,6 @@
 			children = (
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		1FF22A7A2C3AD85700367518 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				1FF22A7B2C3AD87000367518 /* BorderedButton.swift */,
-				1FF22A7D2C3ADFA000367518 /* MainButton.swift */,
-				1FE68CF32C5B528700CD43E4 /* AppBar.swift */,
-				1F032BB82C612A3500E8C64B /* SkeletonBox.swift */,
-				1F31AFDD2C972BA100DBFB18 /* Counter.swift */,
-				1FDAAC2C2CEB525A00767F86 /* HGPlusButton.swift */,
-			);
-			path = Common;
 			sourceTree = "<group>";
 		};
 		1FFD020D2CB41A9200020AF4 /* Calendar */ = {

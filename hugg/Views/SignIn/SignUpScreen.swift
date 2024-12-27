@@ -63,14 +63,15 @@ struct SignUpScreen: View {
                 if vm.isLastStep {
                     MainButton(label: "가입 완료", action: {})
                 } else {
-                    BorderedButton(label: "다음", action: {
-                        if isBack {
-                            isBack.toggle()
-                        }
-//                        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-//
-                        vm.increaseStep()
-                    })
+                    BorderedButton(label: "다음",
+                                   isEnabled: vm.isCurrentFormValid,
+                                   action: {
+                                       print(vm.isCurrentFormValid)
+                                       if isBack {
+                                           isBack.toggle()
+                                       }
+                                       vm.increaseStep()
+                                   })
                 }
 
                 // MARK: Check wtf ?

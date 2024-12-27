@@ -80,7 +80,7 @@ struct OnboardingScreen: View {
                 }
             } else {
                 VStack {
-                    BorderedButton(label: "다음", action: state.increaseStep)
+                    BorderedButton(label: "다음", isEnabled: true, action: state.increaseStep)
                         .padding(.horizontal, 16)
                 }
                 .frame(height: 105)
