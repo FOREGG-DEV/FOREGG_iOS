@@ -24,6 +24,7 @@
 		1F3F3CB42CE2E59D006D4EE7 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3F3CB32CE2E598006D4EE7 /* TokenManager.swift */; };
 		1F3F3CB72CE2EF7C006D4EE7 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 1F3F3CB62CE2EF7C006D4EE7 /* PopupView */; };
 		1F3F3CBA2CE2FDC3006D4EE7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3F3CB92CE2FDC1006D4EE7 /* Constants.swift */; };
+		1F4CE85C2D1E540C005CB661 /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4CE85B2D1E5404005CB661 /* CheckboxToggleStyle.swift */; };
 		1F603C6F2CBD06E100E5BF5D /* MyPageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F603C6E2CBD06E100E5BF5D /* MyPageScreen.swift */; };
 		1F60E3352CBFAA2300543A22 /* MyPageBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60E3342CBFAA2300543A22 /* MyPageBaseView.swift */; };
 		1F656AEE2CA96FD90035F81E /* UserJoinRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F656AED2CA96FD90035F81E /* UserJoinRequestDTO.swift */; };
@@ -68,13 +69,14 @@
 		1FD0D22A2CB4308B00F96E87 /* DailyHugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD0D2292CB4308B00F96E87 /* DailyHugView.swift */; };
 		1FD0D2302CB433A200F96E87 /* SurgeryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD0D22F2CB433A200F96E87 /* SurgeryType.swift */; };
 		1FD0D2322CB437B600F96E87 /* CustomDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD0D2312CB437B600F96E87 /* CustomDateFormatter.swift */; };
+		1FD5D8782D1E41A9001D9C5B /* AgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD5D8772D1E41A9001D9C5B /* AgreementView.swift */; };
 		1FD826102C3A7697003C295A /* OnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD8260F2C3A7697003C295A /* OnboardingContent.swift */; };
 		1FDAAC2D2CEB525A00767F86 /* HGPlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDAAC2C2CEB525A00767F86 /* HGPlusButton.swift */; };
 		1FE68CF22C5B522200CD43E4 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE68CF12C5B522200CD43E4 /* SignUpScreen.swift */; };
 		1FE68CF42C5B528700CD43E4 /* AppBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE68CF32C5B528700CD43E4 /* AppBar.swift */; };
 		1FEAF02F2C4986F5004C0EE1 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEAF02E2C4986F5004C0EE1 /* MainViewModel.swift */; };
 		1FF22A792C3AD7C200367518 /* OnboardingVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF22A782C3AD7C200367518 /* OnboardingVO.swift */; };
-		1FF22A7C2C3AD87000367518 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF22A7B2C3AD87000367518 /* BorderedButton.swift */; };
+		1FF22A7C2C3AD87000367518 /* HGBorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF22A7B2C3AD87000367518 /* HGBorderedButton.swift */; };
 		1FF22A7E2C3ADFA000367518 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF22A7D2C3ADFA000367518 /* MainButton.swift */; };
 		1FFD020A2CB402B600020AF4 /* SelectStartDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD02092CB402B600020AF4 /* SelectStartDateView.swift */; };
 		1FFD020C2CB40ABB00020AF4 /* WifeShareCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD020B2CB40ABB00020AF4 /* WifeShareCodeView.swift */; };
@@ -99,6 +101,7 @@
 		1F3DC3552CB50FCE00A72A52 /* TextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Extension.swift"; sourceTree = "<group>"; };
 		1F3F3CB32CE2E598006D4EE7 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
 		1F3F3CB92CE2FDC1006D4EE7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1F4CE85B2D1E5404005CB661 /* CheckboxToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxToggleStyle.swift; sourceTree = "<group>"; };
 		1F603C6E2CBD06E100E5BF5D /* MyPageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageScreen.swift; sourceTree = "<group>"; };
 		1F60E3342CBFAA2300543A22 /* MyPageBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageBaseView.swift; sourceTree = "<group>"; };
 		1F656AED2CA96FD90035F81E /* UserJoinRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserJoinRequestDTO.swift; sourceTree = "<group>"; };
@@ -141,6 +144,7 @@
 		1FD0D2292CB4308B00F96E87 /* DailyHugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyHugView.swift; sourceTree = "<group>"; };
 		1FD0D22F2CB433A200F96E87 /* SurgeryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurgeryType.swift; sourceTree = "<group>"; };
 		1FD0D2312CB437B600F96E87 /* CustomDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDateFormatter.swift; sourceTree = "<group>"; };
+		1FD5D8772D1E41A9001D9C5B /* AgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementView.swift; sourceTree = "<group>"; };
 		1FD8260F2C3A7697003C295A /* OnboardingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContent.swift; sourceTree = "<group>"; };
 		1FD826112C3A779A003C295A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1FDAAC2C2CEB525A00767F86 /* HGPlusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGPlusButton.swift; sourceTree = "<group>"; };
@@ -148,7 +152,7 @@
 		1FE68CF32C5B528700CD43E4 /* AppBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBar.swift; sourceTree = "<group>"; };
 		1FEAF02E2C4986F5004C0EE1 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		1FF22A782C3AD7C200367518 /* OnboardingVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVO.swift; sourceTree = "<group>"; };
-		1FF22A7B2C3AD87000367518 /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		1FF22A7B2C3AD87000367518 /* HGBorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGBorderedButton.swift; sourceTree = "<group>"; };
 		1FF22A7D2C3ADFA000367518 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 		1FFD02092CB402B600020AF4 /* SelectStartDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectStartDateView.swift; sourceTree = "<group>"; };
 		1FFD020B2CB40ABB00020AF4 /* WifeShareCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifeShareCodeView.swift; sourceTree = "<group>"; };
@@ -238,7 +242,6 @@
 				1FD0D2262CB42F7100F96E87 /* Daily */,
 				1FD0D2252CB42F1700F96E87 /* Ledger */,
 				1FFD020D2CB41A9200020AF4 /* Calendar */,
-				1FB8AE922CAD6087003BDC9C /* Styles */,
 				1FE68CF02C5B520100CD43E4 /* SignIn */,
 				1F0D93092C36808100BB6ADD /* Common */,
 				1F0D92F22C365B6D00BB6ADD /* ContentView.swift */,
@@ -273,7 +276,7 @@
 				1F31AFDC2C972B3500DBFB18 /* Popup */,
 				1FEAF0302C498843004C0EE1 /* Home */,
 				1F0D930A2C36808900BB6ADD /* Onboarding */,
-				1FF22A7B2C3AD87000367518 /* BorderedButton.swift */,
+				1FF22A7B2C3AD87000367518 /* HGBorderedButton.swift */,
 				1FF22A7D2C3ADFA000367518 /* MainButton.swift */,
 				1FE68CF32C5B528700CD43E4 /* AppBar.swift */,
 				1F032BB82C612A3500E8C64B /* SkeletonBox.swift */,
@@ -360,6 +363,7 @@
 				1FA645EE2CB3EA1B00419660 /* Extensions */,
 				1F8D593A2C3B9FDA00832F61 /* CustomFonts.swift */,
 				1FD0D2312CB437B600F96E87 /* CustomDateFormatter.swift */,
+				1FB8AE922CAD6087003BDC9C /* Styles */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -402,6 +406,7 @@
 		1FB8AE922CAD6087003BDC9C /* Styles */ = {
 			isa = PBXGroup;
 			children = (
+				1F4CE85B2D1E5404005CB661 /* CheckboxToggleStyle.swift */,
 				1FB8AE932CAD60A0003BDC9C /* NoTapAnimationStyle.swift */,
 				1F3DC34E2CB5032200A72A52 /* SSNTextfieldStyle.swift */,
 			);
@@ -473,6 +478,7 @@
 				1FFD02092CB402B600020AF4 /* SelectStartDateView.swift */,
 				1FFD020B2CB40ABB00020AF4 /* WifeShareCodeView.swift */,
 				1F692CE02CB4FEA400BAEEBE /* EnterSSNView.swift */,
+				1FD5D8772D1E41A9001D9C5B /* AgreementView.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -600,11 +606,12 @@
 				1F0DD9392CD7534700708811 /* RecordType.swift in Sources */,
 				1F0D92F32C365B6D00BB6ADD /* ContentView.swift in Sources */,
 				1FF22A792C3AD7C200367518 /* OnboardingVO.swift in Sources */,
+				1F4CE85C2D1E540C005CB661 /* CheckboxToggleStyle.swift in Sources */,
 				1F99A7E62CC4DB4B00779628 /* HomeScreen.swift in Sources */,
 				1FE68CF22C5B522200CD43E4 /* SignUpScreen.swift in Sources */,
 				1FD0D2302CB433A200F96E87 /* SurgeryType.swift in Sources */,
 				1F8929362CE10DCA00DDF698 /* ManageAccountScreen.swift in Sources */,
-				1FF22A7C2C3AD87000367518 /* BorderedButton.swift in Sources */,
+				1FF22A7C2C3AD87000367518 /* HGBorderedButton.swift in Sources */,
 				1F60E3352CBFAA2300543A22 /* MyPageBaseView.swift in Sources */,
 				1F0D92F12C365B6D00BB6ADD /* huggApp.swift in Sources */,
 				1FFD020C2CB40ABB00020AF4 /* WifeShareCodeView.swift in Sources */,
@@ -628,6 +635,7 @@
 				1FEAF02F2C4986F5004C0EE1 /* MainViewModel.swift in Sources */,
 				1F3F3CB42CE2E59D006D4EE7 /* TokenManager.swift in Sources */,
 				1F8D591C2C3B96CE00832F61 /* SplashScreen.swift in Sources */,
+				1FD5D8782D1E41A9001D9C5B /* AgreementView.swift in Sources */,
 				1F8D593B2C3B9FDA00832F61 /* CustomFonts.swift in Sources */,
 				1F0D93082C367F5300BB6ADD /* OnboardingScreen.swift in Sources */,
 				1F6813CD2CDDEB60002B8481 /* HomeResponseDTO.swift in Sources */,

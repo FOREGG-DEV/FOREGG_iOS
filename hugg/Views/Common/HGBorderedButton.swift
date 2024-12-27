@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BorderedButton: View {
+struct HGBorderedButton: View {
     let label: String
     let isEnabled: Bool
     let action: () -> Void
@@ -42,19 +42,19 @@ struct BorderedButton: View {
 
 #Preview {
     VStack {
-        BorderedButton(label: "다음",
-                       isEnabled: true,
-                       action: {
-                           print("heoo")
-                       })
+        HGBorderedButton(label: "다음",
+                         isEnabled: true,
+                         action: {
+                             print("heoo")
+                         })
 
         Spacer().frame(height: 20)
 
-        BorderedButton(label: "다음",
-                       isEnabled: false,
-                       action: {
-                           print("heoo")
-                       })
+        HGBorderedButton(label: "다음",
+                         isEnabled: false,
+                         action: {
+                             print("heoo")
+                         })
     }
     .padding()
 }

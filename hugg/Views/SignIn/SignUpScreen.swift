@@ -63,15 +63,15 @@ struct SignUpScreen: View {
                 if vm.isLastStep {
                     MainButton(label: "가입 완료", action: {})
                 } else {
-                    BorderedButton(label: "다음",
-                                   isEnabled: vm.isCurrentFormValid,
-                                   action: {
-                                       print(vm.isCurrentFormValid)
-                                       if isBack {
-                                           isBack.toggle()
-                                       }
-                                       vm.increaseStep()
-                                   })
+                    HGBorderedButton(label: "다음",
+                                     isEnabled: vm.isCurrentFormValid,
+                                     action: {
+                                         print(vm.isCurrentFormValid)
+                                         if isBack {
+                                             isBack.toggle()
+                                         }
+                                         vm.increaseStep()
+                                     })
                 }
 
                 // MARK: Check wtf ?
