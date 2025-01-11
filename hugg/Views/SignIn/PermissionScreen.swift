@@ -1,10 +1,4 @@
-//
-//  PermissionView.swift
-//  hugg
-//
-//  Created by Donghan Kim on 12/27/24.
-//
-
+// TODO: 접근 권한 설정
 import SwiftUI
 
 struct PermissionScreen: View {

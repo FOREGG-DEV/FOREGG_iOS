@@ -10,7 +10,7 @@ struct MainScreen: View {
 
     var body: some View {
         TabView(selection: $vm.currentTab) {
-            TabViewContainer(title: "홈 화면")
+            HomeScreen()
                 .tabItem {
                     BottomNavItem(title: "홈", image: "home", isSelected: vm.currentTab == .home)
                 }.tag(HomeTab.home)
