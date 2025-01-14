@@ -52,16 +52,7 @@ struct HomeScreen: View {
                 // MARK: schedule items
 
                 ScrollView(.horizontal) {
-                    RoundedRectangle(cornerRadius: Constants.CornerRadius.six)
-                        .inset(by: 1)
-                        .fill(.white)
-                        .stroke(Constants.Colors.main)
-                        .frame(minWidth: 285, maxHeight: 136)
-                        .overlay {
-                            VStack {
-                                HGTag(label: "병원", background: Constants.Colors.calendarHospital)
-                            }
-                        }
+                    HGHomeScheduleItem()
                 }
                 .frame(maxWidth: .infinity)
 
@@ -123,17 +114,4 @@ struct HomeScreen: View {
     HomeScreen()
 }
 
-struct HGTag: View {
-    let label: String
-    let background: Color
 
-    var body: some View {
-        Text(label)
-            .font(.p3)
-            .foregroundStyle(Constants.Colors.black80)
-            .padding(.horizontal, 9)
-            .padding(.vertical, 1.5)
-            .background(background)
-            .clipShape(RoundedRectangle(cornerRadius: 4))
-    }
-}

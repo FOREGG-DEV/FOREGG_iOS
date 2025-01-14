@@ -73,7 +73,7 @@ struct SignUpScreen: View {
                 // MARK: Change Button if it is last content
 
                 if vm.isLastStep {
-                    MainButton(label: "가입 완료", action: {})
+                    HGMainButton(label: "가입 완료", action: {})
                 } else {
                     HGBorderedButton(label: "다음",
                                      isEnabled: vm.isCurrentFormValid,
