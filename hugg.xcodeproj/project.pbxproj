@@ -77,9 +77,13 @@
 		1FE68CF22C5B522200CD43E4 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE68CF12C5B522200CD43E4 /* SignUpScreen.swift */; };
 		1FE68CF42C5B528700CD43E4 /* AppBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE68CF32C5B528700CD43E4 /* AppBar.swift */; };
 		1FEAF02F2C4986F5004C0EE1 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEAF02E2C4986F5004C0EE1 /* MainViewModel.swift */; };
+		1FF199C42D36612A00FF3C17 /* HGTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF199C32D36612A00FF3C17 /* HGTag.swift */; };
+		1FF199C62D3661E600FF3C17 /* HGHomeScheduleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF199C52D3661E600FF3C17 /* HGHomeScheduleItem.swift */; };
+		1FF199C82D36634200FF3C17 /* ComponentPreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF199C72D36634200FF3C17 /* ComponentPreviewContainer.swift */; };
+		1FF199D02D3664D800FF3C17 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1FF199CF2D3664D000FF3C17 /* .gitignore */; };
 		1FF22A792C3AD7C200367518 /* OnboardingVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF22A782C3AD7C200367518 /* OnboardingVO.swift */; };
 		1FF22A7C2C3AD87000367518 /* HGBorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF22A7B2C3AD87000367518 /* HGBorderedButton.swift */; };
-		1FF22A7E2C3ADFA000367518 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF22A7D2C3ADFA000367518 /* MainButton.swift */; };
+		1FF22A7E2C3ADFA000367518 /* HGMainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF22A7D2C3ADFA000367518 /* HGMainButton.swift */; };
 		1FFD020A2CB402B600020AF4 /* SelectStartDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD02092CB402B600020AF4 /* SelectStartDateView.swift */; };
 		1FFD020C2CB40ABB00020AF4 /* WifeShareCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD020B2CB40ABB00020AF4 /* WifeShareCodeView.swift */; };
 		1FFD020F2CB41AA900020AF4 /* CalendarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFD020E2CB41AA900020AF4 /* CalendarScreen.swift */; };
@@ -155,9 +159,13 @@
 		1FE68CF12C5B522200CD43E4 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
 		1FE68CF32C5B528700CD43E4 /* AppBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBar.swift; sourceTree = "<group>"; };
 		1FEAF02E2C4986F5004C0EE1 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		1FF199C32D36612A00FF3C17 /* HGTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGTag.swift; sourceTree = "<group>"; };
+		1FF199C52D3661E600FF3C17 /* HGHomeScheduleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGHomeScheduleItem.swift; sourceTree = "<group>"; };
+		1FF199C72D36634200FF3C17 /* ComponentPreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentPreviewContainer.swift; sourceTree = "<group>"; };
+		1FF199CF2D3664D000FF3C17 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		1FF22A782C3AD7C200367518 /* OnboardingVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVO.swift; sourceTree = "<group>"; };
 		1FF22A7B2C3AD87000367518 /* HGBorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGBorderedButton.swift; sourceTree = "<group>"; };
-		1FF22A7D2C3ADFA000367518 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		1FF22A7D2C3ADFA000367518 /* HGMainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGMainButton.swift; sourceTree = "<group>"; };
 		1FFD02092CB402B600020AF4 /* SelectStartDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectStartDateView.swift; sourceTree = "<group>"; };
 		1FFD020B2CB40ABB00020AF4 /* WifeShareCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifeShareCodeView.swift; sourceTree = "<group>"; };
 		1FFD020E2CB41AA900020AF4 /* CalendarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarScreen.swift; sourceTree = "<group>"; };
@@ -165,6 +173,7 @@
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1F9477542CEA098000D947E1 /* Examples */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Examples; sourceTree = "<group>"; };
+		1FF199BC2D36400B00FF3C17 /* IconButton */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = IconButton; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +210,7 @@
 		1F0D92EF2C365B6D00BB6ADD /* hugg */ = {
 			isa = PBXGroup;
 			children = (
+				1FF199CF2D3664D000FF3C17 /* .gitignore */,
 				1F9477542CEA098000D947E1 /* Examples */,
 				1F3F3CB92CE2FDC1006D4EE7 /* Constants.swift */,
 				1F8D59392C3B9FC800832F61 /* Utils */,
@@ -276,16 +286,18 @@
 		1F0D93092C36808100BB6ADD /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1FF199BC2D36400B00FF3C17 /* IconButton */,
 				1F8B64C32CB3AA4F00F61118 /* CustomText */,
 				1F31AFDC2C972B3500DBFB18 /* Popup */,
 				1FEAF0302C498843004C0EE1 /* Home */,
 				1F0D930A2C36808900BB6ADD /* Onboarding */,
 				1FF22A7B2C3AD87000367518 /* HGBorderedButton.swift */,
-				1FF22A7D2C3ADFA000367518 /* MainButton.swift */,
+				1FF22A7D2C3ADFA000367518 /* HGMainButton.swift */,
 				1FE68CF32C5B528700CD43E4 /* AppBar.swift */,
 				1F032BB82C612A3500E8C64B /* SkeletonBox.swift */,
 				1F31AFDD2C972BA100DBFB18 /* Counter.swift */,
 				1FDAAC2C2CEB525A00767F86 /* HGPlusButton.swift */,
+				1FF199C32D36612A00FF3C17 /* HGTag.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -377,6 +389,7 @@
 			children = (
 				1F99A7E52CC4DB4B00779628 /* HomeScreen.swift */,
 				1FA3EB822D36207E008C68DB /* HGEmptyScheduleItem.swift */,
+				1FF199C52D3661E600FF3C17 /* HGHomeScheduleItem.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -404,6 +417,7 @@
 			isa = PBXGroup;
 			children = (
 				1FA883FA2CD9F6930022244D /* PreviewContainer.swift */,
+				1FF199C72D36634200FF3C17 /* ComponentPreviewContainer.swift */,
 			);
 			path = Previews;
 			sourceTree = "<group>";
@@ -521,6 +535,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				1F9477542CEA098000D947E1 /* Examples */,
+				1FF199BC2D36400B00FF3C17 /* IconButton */,
 			);
 			name = hugg;
 			productName = hugg;
@@ -579,6 +594,7 @@
 				1F0D92F82C365B6E00BB6ADD /* Preview Assets.xcassets in Resources */,
 				1F8D59302C3B9D0200832F61 /* Pretendard-Black.otf in Resources */,
 				1F8D59352C3B9D7700832F61 /* GmarketSansLight.otf in Resources */,
+				1FF199D02D3664D800FF3C17 /* .gitignore in Resources */,
 				1F8D59292C3B9D0200832F61 /* Pretendard-ExtraBold.otf in Resources */,
 				1F8D592F2C3B9D0200832F61 /* Pretendard-Regular.otf in Resources */,
 				1F0D92F52C365B6E00BB6ADD /* Assets.xcassets in Resources */,
@@ -623,12 +639,13 @@
 				1FFD020C2CB40ABB00020AF4 /* WifeShareCodeView.swift in Sources */,
 				1F3F3CBA2CE2FDC3006D4EE7 /* Constants.swift in Sources */,
 				1F9477532CE9EA1D00D947E1 /* LedgerScreen.swift in Sources */,
-				1FF22A7E2C3ADFA000367518 /* MainButton.swift in Sources */,
+				1FF22A7E2C3ADFA000367518 /* HGMainButton.swift in Sources */,
 				1F3DC3542CB50FAE00A72A52 /* MaxLengthModifier.swift in Sources */,
 				1F0D930C2C36809500BB6ADD /* OnboardingAppBar.swift in Sources */,
 				1F8B64C12CB3A9E400F61118 /* RoundSelectView.swift in Sources */,
 				1F8929342CE0FF2600DDF698 /* MyPageListCell.swift in Sources */,
 				1F6813CF2CDDEB76002B8481 /* HomeRecordResponseDTO.swift in Sources */,
+				1FF199C82D36634200FF3C17 /* ComponentPreviewContainer.swift in Sources */,
 				1FAE4ABB2CE1126E005C946B /* UINavigationController+Extensions.swift in Sources */,
 				1FC4328B2C49732E00FE5834 /* OnboardingState.swift in Sources */,
 				1FCD8F432CB52C6A00956BA0 /* SSNModel.swift in Sources */,
@@ -640,9 +657,11 @@
 				1FE68CF42C5B528700CD43E4 /* AppBar.swift in Sources */,
 				1FEAF02F2C4986F5004C0EE1 /* MainViewModel.swift in Sources */,
 				1F3F3CB42CE2E59D006D4EE7 /* TokenManager.swift in Sources */,
+				1FF199C42D36612A00FF3C17 /* HGTag.swift in Sources */,
 				1F8D591C2C3B96CE00832F61 /* SplashScreen.swift in Sources */,
 				1FD5D8782D1E41A9001D9C5B /* AgreementView.swift in Sources */,
 				1F8D593B2C3B9FDA00832F61 /* CustomFonts.swift in Sources */,
+				1FF199C62D3661E600FF3C17 /* HGHomeScheduleItem.swift in Sources */,
 				1F4CE85E2D1E5B02005CB661 /* PermissionScreen.swift in Sources */,
 				1F0D93082C367F5300BB6ADD /* OnboardingScreen.swift in Sources */,
 				1F6813CD2CDDEB60002B8481 /* HomeResponseDTO.swift in Sources */,

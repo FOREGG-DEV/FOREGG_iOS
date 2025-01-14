@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainButton: View {
+struct HGMainButton: View {
     let label: String
     let labelWeight: Font.Weight? = nil
     let fontSize: CGFloat? = nil
@@ -28,8 +28,13 @@ struct MainButton: View {
 }
 
 #Preview {
-    MainButton(label: "메인 버튼",
-               action: {
-                   print("Hello world")
-               })
+    VStack {
+        Spacer()
+        HGMainButton(label: "메인 버튼",
+                   action: {
+                       print("Hello world")
+                   })
+        Spacer()
+    }
+    .padding()
 }
