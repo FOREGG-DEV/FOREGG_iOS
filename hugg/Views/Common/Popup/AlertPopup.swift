@@ -26,14 +26,14 @@ struct AlertPopup: View {
                     .foregroundStyle(.white)
                     .padding(.vertical, 10)
                     .background(btnBackgroundColor)
-                    .clipShape(RoundedRectangle(cornerRadius: Constants.Layout.cornerRadiusBtn))
+                    .clipShape(RoundedRectangle(cornerRadius: Constants.CornerRadius.button))
             }
         }
         .padding(.horizontal, 16.0)
         .padding(.top, 40.0)
         .padding(.bottom, 32.0)
         .background(.white)
-        .clipShape(RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius))
+        .clipShape(RoundedRectangle(cornerRadius: Constants.CornerRadius.button))
         .padding(.horizontal, 16.0)
     }
 }

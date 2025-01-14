@@ -59,6 +59,7 @@
 		1F9477512CE9E60F00D947E1 /* AlertPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9477502CE9E60F00D947E1 /* AlertPopup.swift */; };
 		1F9477532CE9EA1D00D947E1 /* LedgerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9477522CE9EA1D00D947E1 /* LedgerScreen.swift */; };
 		1F99A7E62CC4DB4B00779628 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F99A7E52CC4DB4B00779628 /* HomeScreen.swift */; };
+		1FA3EB832D36207E008C68DB /* HGEmptyScheduleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA3EB822D36207E008C68DB /* HGEmptyScheduleItem.swift */; };
 		1FA645F02CB3EA3F00419660 /* AnyTransition+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA645EF2CB3EA3F00419660 /* AnyTransition+Extension.swift */; };
 		1FA883F52CD9F5400022244D /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA883F42CD9F5400022244D /* HTTPClient.swift */; };
 		1FA883F82CD9F5600022244D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA883F72CD9F5600022244D /* AppState.swift */; };
@@ -135,6 +136,7 @@
 		1F9477502CE9E60F00D947E1 /* AlertPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPopup.swift; sourceTree = "<group>"; };
 		1F9477522CE9EA1D00D947E1 /* LedgerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgerScreen.swift; sourceTree = "<group>"; };
 		1F99A7E52CC4DB4B00779628 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		1FA3EB822D36207E008C68DB /* HGEmptyScheduleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGEmptyScheduleItem.swift; sourceTree = "<group>"; };
 		1FA645EF2CB3EA3F00419660 /* AnyTransition+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransition+Extension.swift"; sourceTree = "<group>"; };
 		1FA883F42CD9F5400022244D /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		1FA883F72CD9F5600022244D /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
@@ -374,6 +376,7 @@
 			isa = PBXGroup;
 			children = (
 				1F99A7E52CC4DB4B00779628 /* HomeScreen.swift */,
+				1FA3EB822D36207E008C68DB /* HGEmptyScheduleItem.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -644,6 +647,7 @@
 				1F0D93082C367F5300BB6ADD /* OnboardingScreen.swift in Sources */,
 				1F6813CD2CDDEB60002B8481 /* HomeResponseDTO.swift in Sources */,
 				1F94774F2CE9E5AF00D947E1 /* SelectablePopup.swift in Sources */,
+				1FA3EB832D36207E008C68DB /* HGEmptyScheduleItem.swift in Sources */,
 				1FD0D2322CB437B600F96E87 /* CustomDateFormatter.swift in Sources */,
 				1FA883F52CD9F5400022244D /* HTTPClient.swift in Sources */,
 				1FD826102C3A7697003C295A /* OnboardingContent.swift in Sources */,

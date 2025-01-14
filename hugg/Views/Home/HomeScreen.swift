@@ -11,19 +11,20 @@ struct HomeScreen: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Button(action: {}) {
-                    Image("logo")
-                        .fontWeight(.semibold)
-                        .foregroundColor(.black60)
-                        .frame(width: 28, height: 30)
-                }
+                Image("logo")
+                    .fontWeight(.semibold)
+                    .foregroundColor(.black60)
+                    .frame(width: 28, height: 30)
 
                 Spacer()
-                Image(systemName: "bell.fill")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 26, height: 26)
-                    .foregroundStyle(.black50)
+
+                Button(action: {}) {
+                    Image(systemName: "bell.fill")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 26, height: 26)
+                        .foregroundStyle(.black50)
+                }
             }
             .padding(.horizontal, 28)
             .padding(.bottom, 16)
@@ -46,15 +47,26 @@ struct HomeScreen: View {
 
                 // MARK: Empty schedule indicator
 
-                Image("emptySchedule")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(maxWidth: 285, minHeight: 136)
-                    .padding(.bottom, 32)
+//                HGEmptyScheduleItem()
 
                 // MARK: schedule items
 
-                VStack {}.frame(maxWidth: 285, minHeight: 136).padding(.bottom, 32)
+                ScrollView(.horizontal) {
+                    RoundedRectangle(cornerRadius: Constants.CornerRadius.six)
+                        .inset(by: 1)
+                        .fill(.white)
+                        .stroke(Constants.Colors.main)
+                        .frame(minWidth: 285, maxHeight: 136)
+                        .overlay {
+                            VStack {
+                                HGTag(label: "병원", background: Constants.Colors.calendarHospital)
+                            }
+                        }
+                }
+                .frame(maxWidth: .infinity)
+
+                Spacer()
+                    .frame(height: 32)
 
                 // TODO: Implement dynamic banner, add tap event
                 Image("banner")
@@ -109,4 +121,19 @@ struct HomeScreen: View {
 
 #Preview {
     HomeScreen()
+}
+
+struct HGTag: View {
+    let label: String
+    let background: Color
+
+    var body: some View {
+        Text(label)
+            .font(.p3)
+            .foregroundStyle(Constants.Colors.black80)
+            .padding(.horizontal, 9)
+            .padding(.vertical, 1.5)
+            .background(background)
+            .clipShape(RoundedRectangle(cornerRadius: 4))
+    }
 }

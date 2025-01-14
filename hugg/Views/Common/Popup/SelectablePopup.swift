@@ -22,7 +22,7 @@ struct SelectablePopup: View {
                         .foregroundStyle(.black80)
                         .padding(.vertical, 10)
                         .background(.black10)
-                        .clipShape(RoundedRectangle(cornerRadius: Constants.Layout.cornerRadiusBtn))
+                        .clipShape(RoundedRectangle(cornerRadius: Constants.CornerRadius.button))
                 }
 
                 Button(action: onConfirm) {
@@ -32,7 +32,7 @@ struct SelectablePopup: View {
                         .foregroundStyle(.white)
                         .padding(.vertical, 10)
                         .background(confirmBtnBackgroundColor)
-                        .clipShape(RoundedRectangle(cornerRadius: Constants.Layout.cornerRadiusBtn))
+                        .clipShape(RoundedRectangle(cornerRadius: Constants.CornerRadius.button))
                 }
             }
         }
@@ -40,7 +40,7 @@ struct SelectablePopup: View {
         .padding(.top, 40.0)
         .padding(.bottom, 32.0)
         .background(.white)
-        .clipShape(RoundedRectangle(cornerRadius: Constants.Layout.cornerRadius))
+        .clipShape(RoundedRectangle(cornerRadius: Constants.CornerRadius.button))
         .padding(.horizontal, 16.0)
     }
 }

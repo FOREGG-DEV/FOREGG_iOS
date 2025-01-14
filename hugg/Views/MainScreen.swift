@@ -40,7 +40,9 @@ struct MainScreen: View {
 }
 
 #Preview {
-    MainScreen()
+    PreviewContainer {
+        MainScreen()
+    }
 }
 
 private struct BottomNavItem: View {
