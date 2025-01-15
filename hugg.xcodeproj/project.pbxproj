@@ -80,7 +80,8 @@
 		1FF199C42D36612A00FF3C17 /* HGTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF199C32D36612A00FF3C17 /* HGTag.swift */; };
 		1FF199C62D3661E600FF3C17 /* HGHomeScheduleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF199C52D3661E600FF3C17 /* HGHomeScheduleItem.swift */; };
 		1FF199C82D36634200FF3C17 /* ComponentPreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF199C72D36634200FF3C17 /* ComponentPreviewContainer.swift */; };
-		1FF199D02D3664D800FF3C17 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1FF199CF2D3664D000FF3C17 /* .gitignore */; };
+		1FF199DA2D36675D00FF3C17 /* HGCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF199D92D36675D00FF3C17 /* HGCheckBox.swift */; };
+		1FF199DC2D366AC000FF3C17 /* HGMainButtonV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF199DB2D366AC000FF3C17 /* HGMainButtonV2.swift */; };
 		1FF22A792C3AD7C200367518 /* OnboardingVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF22A782C3AD7C200367518 /* OnboardingVO.swift */; };
 		1FF22A7C2C3AD87000367518 /* HGBorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF22A7B2C3AD87000367518 /* HGBorderedButton.swift */; };
 		1FF22A7E2C3ADFA000367518 /* HGMainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF22A7D2C3ADFA000367518 /* HGMainButton.swift */; };
@@ -162,7 +163,8 @@
 		1FF199C32D36612A00FF3C17 /* HGTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGTag.swift; sourceTree = "<group>"; };
 		1FF199C52D3661E600FF3C17 /* HGHomeScheduleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGHomeScheduleItem.swift; sourceTree = "<group>"; };
 		1FF199C72D36634200FF3C17 /* ComponentPreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentPreviewContainer.swift; sourceTree = "<group>"; };
-		1FF199CF2D3664D000FF3C17 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		1FF199D92D36675D00FF3C17 /* HGCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGCheckBox.swift; sourceTree = "<group>"; };
+		1FF199DB2D366AC000FF3C17 /* HGMainButtonV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGMainButtonV2.swift; sourceTree = "<group>"; };
 		1FF22A782C3AD7C200367518 /* OnboardingVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVO.swift; sourceTree = "<group>"; };
 		1FF22A7B2C3AD87000367518 /* HGBorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGBorderedButton.swift; sourceTree = "<group>"; };
 		1FF22A7D2C3ADFA000367518 /* HGMainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGMainButton.swift; sourceTree = "<group>"; };
@@ -210,7 +212,6 @@
 		1F0D92EF2C365B6D00BB6ADD /* hugg */ = {
 			isa = PBXGroup;
 			children = (
-				1FF199CF2D3664D000FF3C17 /* .gitignore */,
 				1F9477542CEA098000D947E1 /* Examples */,
 				1F3F3CB92CE2FDC1006D4EE7 /* Constants.swift */,
 				1F8D59392C3B9FC800832F61 /* Utils */,
@@ -298,6 +299,8 @@
 				1F31AFDD2C972BA100DBFB18 /* Counter.swift */,
 				1FDAAC2C2CEB525A00767F86 /* HGPlusButton.swift */,
 				1FF199C32D36612A00FF3C17 /* HGTag.swift */,
+				1FF199D92D36675D00FF3C17 /* HGCheckBox.swift */,
+				1FF199DB2D366AC000FF3C17 /* HGMainButtonV2.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -594,7 +597,6 @@
 				1F0D92F82C365B6E00BB6ADD /* Preview Assets.xcassets in Resources */,
 				1F8D59302C3B9D0200832F61 /* Pretendard-Black.otf in Resources */,
 				1F8D59352C3B9D7700832F61 /* GmarketSansLight.otf in Resources */,
-				1FF199D02D3664D800FF3C17 /* .gitignore in Resources */,
 				1F8D59292C3B9D0200832F61 /* Pretendard-ExtraBold.otf in Resources */,
 				1F8D592F2C3B9D0200832F61 /* Pretendard-Regular.otf in Resources */,
 				1F0D92F52C365B6E00BB6ADD /* Assets.xcassets in Resources */,
@@ -641,6 +643,7 @@
 				1F9477532CE9EA1D00D947E1 /* LedgerScreen.swift in Sources */,
 				1FF22A7E2C3ADFA000367518 /* HGMainButton.swift in Sources */,
 				1F3DC3542CB50FAE00A72A52 /* MaxLengthModifier.swift in Sources */,
+				1FF199DA2D36675D00FF3C17 /* HGCheckBox.swift in Sources */,
 				1F0D930C2C36809500BB6ADD /* OnboardingAppBar.swift in Sources */,
 				1F8B64C12CB3A9E400F61118 /* RoundSelectView.swift in Sources */,
 				1F8929342CE0FF2600DDF698 /* MyPageListCell.swift in Sources */,
@@ -650,6 +653,7 @@
 				1FC4328B2C49732E00FE5834 /* OnboardingState.swift in Sources */,
 				1FCD8F432CB52C6A00956BA0 /* SSNModel.swift in Sources */,
 				1FD0D22A2CB4308B00F96E87 /* DailyHugView.swift in Sources */,
+				1FF199DC2D366AC000FF3C17 /* HGMainButtonV2.swift in Sources */,
 				1F8B64C52CB3AA7200F61118 /* SignUpTitleText.swift in Sources */,
 				1F0DD93B2CD754CE00708811 /* UserHusbandJoinRequestDTO.swift in Sources */,
 				1F3DC34F2CB5032200A72A52 /* SSNTextfieldStyle.swift in Sources */,

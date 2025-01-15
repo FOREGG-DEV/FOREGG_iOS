@@ -1,12 +1,6 @@
-//
-//  HGTag.swift
-//  hugg
-//
-//  Created by Donghan Kim on 1/14/25.
-//
-
 import SwiftUI
 
+/// Tag component for labeling
 struct HGTag: View {
     let label: String
     var background: Color? = nil
@@ -23,5 +17,7 @@ struct HGTag: View {
 }
 
 #Preview {
-    HGTag(label: "string")
+    ComponentPreviewContainer {
+        HGTag(label: "string")
+    }
 }

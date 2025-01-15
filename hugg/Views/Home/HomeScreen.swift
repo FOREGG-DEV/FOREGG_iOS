@@ -1,10 +1,3 @@
-//
-//  HomeView.swift
-//  hugg
-//
-//  Created by Donghan Kim on 10/20/24.
-//
-
 import SwiftUI
 
 struct HomeScreen: View {
@@ -51,10 +44,18 @@ struct HomeScreen: View {
 
                 // MARK: schedule items
 
-                ScrollView(.horizontal) {
-                    HGHomeScheduleItem()
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack {
+                        ForEach(0 ..< 4) {
+                            if $0 == 0 {
+                                HGHomeScheduleItem()
+                            } else {
+                                HGHomeScheduleItem(borderFocused: false)
+                            }
+                        }
+                    }
+                    .frame(maxWidth: .infinity)
                 }
-                .frame(maxWidth: .infinity)
 
                 Spacer()
                     .frame(height: 32)
@@ -113,5 +114,3 @@ struct HomeScreen: View {
 #Preview {
     HomeScreen()
 }
-
-
