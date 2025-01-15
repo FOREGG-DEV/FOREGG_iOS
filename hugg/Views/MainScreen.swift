@@ -25,7 +25,7 @@ struct MainScreen: View {
                     BottomNavItem(title: "데일리 허그", image: "info", isSelected: vm.currentTab == .daily)
                 }.tag(HomeTab.daily)
 
-            TabViewContainer(title: "가계부")
+            LedgerScreen()
                 .tabItem {
                     BottomNavItem(title: "가계부", image: "savings", isSelected: vm.currentTab == .savings)
                 }.tag(HomeTab.savings)
