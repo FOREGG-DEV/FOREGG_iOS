@@ -59,6 +59,7 @@
 		1F9477512CE9E60F00D947E1 /* AlertPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9477502CE9E60F00D947E1 /* AlertPopup.swift */; };
 		1F9477532CE9EA1D00D947E1 /* LedgerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9477522CE9EA1D00D947E1 /* LedgerScreen.swift */; };
 		1F99A7E62CC4DB4B00779628 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F99A7E52CC4DB4B00779628 /* HomeScreen.swift */; };
+		1FA281D22D37ADFA007BD828 /* LedgerAllPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA281D12D37ADFA007BD828 /* LedgerAllPage.swift */; };
 		1FA3EB832D36207E008C68DB /* HGEmptyScheduleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA3EB822D36207E008C68DB /* HGEmptyScheduleItem.swift */; };
 		1FA645F02CB3EA3F00419660 /* AnyTransition+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA645EF2CB3EA3F00419660 /* AnyTransition+Extension.swift */; };
 		1FA883F52CD9F5400022244D /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA883F42CD9F5400022244D /* HTTPClient.swift */; };
@@ -82,6 +83,7 @@
 		1FF199C82D36634200FF3C17 /* ComponentPreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF199C72D36634200FF3C17 /* ComponentPreviewContainer.swift */; };
 		1FF199DA2D36675D00FF3C17 /* HGCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF199D92D36675D00FF3C17 /* HGCheckBox.swift */; };
 		1FF199DC2D366AC000FF3C17 /* HGMainButtonV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF199DB2D366AC000FF3C17 /* HGMainButtonV2.swift */; };
+		1FF199DE2D37AA7000FF3C17 /* HGTagWithoutText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF199DD2D37AA7000FF3C17 /* HGTagWithoutText.swift */; };
 		1FF22A792C3AD7C200367518 /* OnboardingVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF22A782C3AD7C200367518 /* OnboardingVO.swift */; };
 		1FF22A7C2C3AD87000367518 /* HGBorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF22A7B2C3AD87000367518 /* HGBorderedButton.swift */; };
 		1FF22A7E2C3ADFA000367518 /* HGMainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF22A7D2C3ADFA000367518 /* HGMainButton.swift */; };
@@ -141,6 +143,7 @@
 		1F9477502CE9E60F00D947E1 /* AlertPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPopup.swift; sourceTree = "<group>"; };
 		1F9477522CE9EA1D00D947E1 /* LedgerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgerScreen.swift; sourceTree = "<group>"; };
 		1F99A7E52CC4DB4B00779628 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		1FA281D12D37ADFA007BD828 /* LedgerAllPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgerAllPage.swift; sourceTree = "<group>"; };
 		1FA3EB822D36207E008C68DB /* HGEmptyScheduleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGEmptyScheduleItem.swift; sourceTree = "<group>"; };
 		1FA645EF2CB3EA3F00419660 /* AnyTransition+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransition+Extension.swift"; sourceTree = "<group>"; };
 		1FA883F42CD9F5400022244D /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
@@ -165,6 +168,7 @@
 		1FF199C72D36634200FF3C17 /* ComponentPreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentPreviewContainer.swift; sourceTree = "<group>"; };
 		1FF199D92D36675D00FF3C17 /* HGCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGCheckBox.swift; sourceTree = "<group>"; };
 		1FF199DB2D366AC000FF3C17 /* HGMainButtonV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGMainButtonV2.swift; sourceTree = "<group>"; };
+		1FF199DD2D37AA7000FF3C17 /* HGTagWithoutText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGTagWithoutText.swift; sourceTree = "<group>"; };
 		1FF22A782C3AD7C200367518 /* OnboardingVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVO.swift; sourceTree = "<group>"; };
 		1FF22A7B2C3AD87000367518 /* HGBorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGBorderedButton.swift; sourceTree = "<group>"; };
 		1FF22A7D2C3ADFA000367518 /* HGMainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGMainButton.swift; sourceTree = "<group>"; };
@@ -301,6 +305,7 @@
 				1FF199C32D36612A00FF3C17 /* HGTag.swift */,
 				1FF199D92D36675D00FF3C17 /* HGCheckBox.swift */,
 				1FF199DB2D366AC000FF3C17 /* HGMainButtonV2.swift */,
+				1FF199DD2D37AA7000FF3C17 /* HGTagWithoutText.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -439,6 +444,7 @@
 			isa = PBXGroup;
 			children = (
 				1F9477522CE9EA1D00D947E1 /* LedgerScreen.swift */,
+				1FA281D12D37ADFA007BD828 /* LedgerAllPage.swift */,
 			);
 			path = Ledger;
 			sourceTree = "<group>";
@@ -611,6 +617,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FA281D22D37ADFA007BD828 /* LedgerAllPage.swift in Sources */,
 				1F603C6F2CBD06E100E5BF5D /* MyPageScreen.swift in Sources */,
 				1FA883FB2CD9F6930022244D /* PreviewContainer.swift in Sources */,
 				1F032BB92C612A3500E8C64B /* SkeletonBox.swift in Sources */,
@@ -651,6 +658,7 @@
 				1FF199C82D36634200FF3C17 /* ComponentPreviewContainer.swift in Sources */,
 				1FAE4ABB2CE1126E005C946B /* UINavigationController+Extensions.swift in Sources */,
 				1FC4328B2C49732E00FE5834 /* OnboardingState.swift in Sources */,
+				1FF199DE2D37AA7000FF3C17 /* HGTagWithoutText.swift in Sources */,
 				1FCD8F432CB52C6A00956BA0 /* SSNModel.swift in Sources */,
 				1FD0D22A2CB4308B00F96E87 /* DailyHugView.swift in Sources */,
 				1FF199DC2D366AC000FF3C17 /* HGMainButtonV2.swift in Sources */,

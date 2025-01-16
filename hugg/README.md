@@ -4,16 +4,15 @@
 ## Study
 - [x] @State & Binding
 - [ ] jwt with SwiftUI
-- [ ] kakao login with toy project (sample app)
-- [ ] http connection (Alamofire)
+- [x] http connection (Client)
 - [x] cocoapods
 
 ## Todo
 ### chore
-- [ ] app icon setting
+- [x] app icon setting
 
 ### feature
-- [ ] home screen UI
+- [x] home screen UI
 - [ ] add assets (daily hugg)
 - [ ] 마이페이지 파생 스크린 UI 작업
 - [ ] base API DTO 작업
@@ -50,9 +49,25 @@
 
 ## MEMO
 > code convention
+
+### 모든 변수 이름은 읽을 수 있도록 작성
+```swift
+// Do not this
+let desc = "Hello"
+
+// Do this
+let description = "Hello"
+```
+
+### View hierarchy 구성
+Screen > Page > Content > Other Components like Cell (Listed Items)
+
 `Screen` : 전체 화면 View
+
 `Page` : Screen 내부 View (PageView, TabView 등)
+
 `Content` : Page 내부 View
+
 `Cell` : List 아이템
 
 ## CHECK

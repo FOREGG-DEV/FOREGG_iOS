@@ -43,6 +43,7 @@ enum Constants {
         static let calendarHospital = Color("calendar_hospital")
         static let calendarEtc = Color("calendar_etc")
         static let calendarPillca = Color("calendar_pillca")
+        static let accountbookPersonal = Color("accountbook_personal")
 
         // border
         static let disabledBorder = Color("disabledBorder")

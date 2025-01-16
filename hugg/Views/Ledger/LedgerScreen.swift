@@ -2,6 +2,12 @@ import SwiftUI
 
 // TODO: Tapview 적용 with SegmentedView
 
+enum LedgerAllFilter {
+    case all
+    case personal
+    case support
+}
+
 struct LedgerScreen: View {
     // Tap
     private let tapOption: [String] = ["전체", "회차별", "월별"]
@@ -29,38 +35,13 @@ struct LedgerScreen: View {
                         }
                     )
                 )
+                .padding(.horizontal, 16)
 
                 TabView(selection: $currentIndex) {
                     ForEach(0 ..< tapOption.count, id: \.self) { idx in
                         if idx == 0 {
                             // MARK: all
-
-                            VStack {
-                                RoundedRectangle(cornerRadius: 8)
-                                    .fill(.white)
-                                    .frame(width: .infinity, height: 171)
-                                    .overlay {
-                                        VStack {
-                                            HStack {
-                                                Text("2024. 07. 17 - 2024. 08. 25")
-                                                    .font(.h4)
-                                                    .foregroundStyle(Constants.Colors.black70)
-                                                Spacer()
-                                                Image("tune")
-                                                    .resizable()
-                                                    .scaledToFit()
-                                                    .frame(width: 24, height: 24)
-                                            }
-                                            Spacer()
-                                        }.padding(12)
-                                    }
-
-                                Spacer()
-                                    .frame(height: 12)
-
-                                Spacer()
-                            }
-
+                            LedgerAllPage()
                         } else if idx == 1 {
                             // MARK: round
 
@@ -94,12 +75,3 @@ struct LedgerScreen: View {
     LedgerScreen()
 }
 
-struct HGCalendarTag: View {
-    let color: Color
-    var body: some View {
-        RoundedRectangle(cornerRadius: 3)
-            .inset(by: 3)
-            .fill(color)
-            .frame(width: 12, height: 12)
-    }
-}
