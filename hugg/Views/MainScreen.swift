@@ -1,10 +1,13 @@
 import SwiftUI
 
+// TODO: - What is UIColor and Color ?
+
 struct MainScreen: View {
     // init viewmodel
     @StateObject var vm = MainViewModel()
 
     init() {
+        // Change default TabBar background color
         UITabBar.appearance().backgroundColor = .navbarBg
     }
 
@@ -39,12 +42,10 @@ struct MainScreen: View {
     }
 }
 
-#Preview {
-    PreviewContainer {
-        MainScreen()
-    }
-}
 
+// MARK: - Bottom Navigation Item
+
+/// Main Screen Bottom Navigation Item
 private struct BottomNavItem: View {
     let title: String
     let image: String
@@ -61,6 +62,9 @@ private struct BottomNavItem: View {
     }
 }
 
+// MARK: - 임시 TabView
+
+///
 private struct TabViewContainer: View {
     let title: String
 
@@ -73,4 +77,8 @@ private struct TabViewContainer: View {
     }
 }
 
-// Custom TabView를 써야하는 건가..?
+#Preview {
+    PreviewContainer {
+        MainScreen()
+    }
+}

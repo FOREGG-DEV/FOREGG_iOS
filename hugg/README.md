@@ -1,51 +1,47 @@
 #  난임 관리 파트너 Hugg iOS Application
 
+# Todo (우선순위 정리)
 
-## Study
-- [x] @State & Binding
-- [ ] jwt with SwiftUI
-- [x] http connection (Client)
-- [x] cocoapods
+## 1월 마무리
 
-## Todo
-### chore
-- [x] app icon setting
+### Due to : 01/21
 
-### feature
-- [x] home screen UI
-- [ ] add assets (daily hugg)
-- [ ] 마이페이지 파생 스크린 UI 작업
-- [ ] base API DTO 작업
+- [ ] 회원가입 페이지 : 주민등록번호 입력 페이지 리팩토링
+- [ ] Spouse code 로직
+- [ ] 남편 / 부인 분기 처리
 
-#### Sign up
-- [ ] clipboard with toast
 
-- [ ] Implement WebService layer (repository)
-- [ ] Connect SignIn API
-- [ ] Implement Apple Login
-- [ ] Implement Calendar view
-- [ ] Implement popup system (toast...)
+- [ ] 테스트용 계정 세팅 (동준님 연락)
 
-## Done
-### chore
-- [x] github 연동 
+### Due to : 설 연휴 기간 내 마무리
 
-### feature
-- [x] Add animation to Gesture on onboarding progress indicators
-- [x] progress indicator (구현 및 구현 정리)
-- [x] appear Animation
-- [x] seperated TextFieldView
-- [x] drop menu
-- [x] counter view (3 rectangle?)
-- [x] datepicker
-- [x] splash screen (app launch screen)
-- [x] onboarding screen
-- [x] Implement Kakao Login
-- [x] Implement JWT system (AppState or ViewModel for RootView)
+- [ ] 로그인/회원가입 기능 적용 및 E2E 테스트
 
-### Design
-- [x] font system
-- [x] color system
+- [ ] 온보딩 -> 권한 설정 관련 기능 (추후 작업?)
+- [ ] 홈화면 기능 적용
+- [ ] 가계부 기능 적용
+
+
+- [ ] 마이페이지 기능 구현
+
+- [ ] 캘린더 State 설계 (VM)
+- [ ] 캘린더 View
+
+### Due to : 01/31
+
+- [ ] 캘린더 연동
+
+
+
+
+## 1월 가능 ?
+
+- [ ] 데일리 허그 구현 (FCM 연동)
+
+## 1.0 출시 이후
+- [ ] 챌린지 기능 구현
+
+
 
 ## MEMO
 > code convention

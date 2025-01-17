@@ -1,5 +1,8 @@
 import SwiftUI
 
+/// appState DI 적용을 위한 Container
+/// Preview 사용 시 appState와 같은 environment object가 필요한 경우 이 컨테이너를 사용합니다.
+/// 적용된 objects : AppState
 struct PreviewContainer<Content: View>: View {
     @StateObject private var appState = AppState()
     let content: () -> Content

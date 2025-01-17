@@ -10,7 +10,9 @@ class OnboardingState: ObservableObject {
     ]
 
     @Published var currentStep: Int = 0
+}
 
+extension OnboardingState {
     func increaseStep() {
         withAnimation(.default) {
             if currentStep < datas.count - 1 {

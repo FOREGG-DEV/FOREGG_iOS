@@ -9,6 +9,7 @@ struct OnboardingScreen: View {
     // how can i do unit test this ?
     private func handleKakaoLogin() {
         // 카카오톡으로 로그인 사용 가능한지 체크
+        // 불가능한 경우 카카오톡 웹으로 띄우기
         if UserApi.isKakaoTalkLoginAvailable() {
             UserApi.shared.loginWithKakaoTalk { oauthToken, error in
                 if let error = error {
@@ -19,6 +20,8 @@ struct OnboardingScreen: View {
                     let result = oauthToken?.accessToken
                     print(result ?? "No token found")
                     // set token to userDefaults?
+
+                    // POST: auth/login
                 }
             }
         }

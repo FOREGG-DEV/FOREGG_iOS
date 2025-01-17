@@ -16,7 +16,6 @@
 		1F0D93082C367F5300BB6ADD /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D93072C367F5300BB6ADD /* OnboardingScreen.swift */; };
 		1F0D930C2C36809500BB6ADD /* OnboardingAppBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D930B2C36809500BB6ADD /* OnboardingAppBar.swift */; };
 		1F0DD9392CD7534700708811 /* RecordType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DD9382CD7534700708811 /* RecordType.swift */; };
-		1F0DD93B2CD754CE00708811 /* UserHusbandJoinRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DD93A2CD754CE00708811 /* UserHusbandJoinRequestDTO.swift */; };
 		1F31AFDE2C972BA100DBFB18 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F31AFDD2C972BA100DBFB18 /* Counter.swift */; };
 		1F3DC34F2CB5032200A72A52 /* SSNTextfieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DC34E2CB5032200A72A52 /* SSNTextfieldStyle.swift */; };
 		1F3DC3542CB50FAE00A72A52 /* MaxLengthModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DC3532CB50FAE00A72A52 /* MaxLengthModifier.swift */; };
@@ -28,7 +27,6 @@
 		1F4CE85E2D1E5B02005CB661 /* PermissionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4CE85D2D1E5B02005CB661 /* PermissionScreen.swift */; };
 		1F603C6F2CBD06E100E5BF5D /* MyPageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F603C6E2CBD06E100E5BF5D /* MyPageScreen.swift */; };
 		1F60E3352CBFAA2300543A22 /* MyPageBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60E3342CBFAA2300543A22 /* MyPageBaseView.swift */; };
-		1F656AEE2CA96FD90035F81E /* UserJoinRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F656AED2CA96FD90035F81E /* UserJoinRequestDTO.swift */; };
 		1F656AF22CA979DE0035F81E /* TreatmentSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F656AF12CA979DE0035F81E /* TreatmentSelectView.swift */; };
 		1F6813CD2CDDEB60002B8481 /* HomeResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6813CC2CDDEB5C002B8481 /* HomeResponseDTO.swift */; };
 		1F6813CF2CDDEB76002B8481 /* HomeRecordResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6813CE2CDDEB6D002B8481 /* HomeRecordResponseDTO.swift */; };
@@ -103,7 +101,6 @@
 		1F0D93072C367F5300BB6ADD /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
 		1F0D930B2C36809500BB6ADD /* OnboardingAppBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAppBar.swift; sourceTree = "<group>"; };
 		1F0DD9382CD7534700708811 /* RecordType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordType.swift; sourceTree = "<group>"; };
-		1F0DD93A2CD754CE00708811 /* UserHusbandJoinRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHusbandJoinRequestDTO.swift; sourceTree = "<group>"; };
 		1F31AFDD2C972BA100DBFB18 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		1F3DC34E2CB5032200A72A52 /* SSNTextfieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSNTextfieldStyle.swift; sourceTree = "<group>"; };
 		1F3DC3532CB50FAE00A72A52 /* MaxLengthModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxLengthModifier.swift; sourceTree = "<group>"; };
@@ -114,7 +111,6 @@
 		1F4CE85D2D1E5B02005CB661 /* PermissionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionScreen.swift; sourceTree = "<group>"; };
 		1F603C6E2CBD06E100E5BF5D /* MyPageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageScreen.swift; sourceTree = "<group>"; };
 		1F60E3342CBFAA2300543A22 /* MyPageBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageBaseView.swift; sourceTree = "<group>"; };
-		1F656AED2CA96FD90035F81E /* UserJoinRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserJoinRequestDTO.swift; sourceTree = "<group>"; };
 		1F656AF12CA979DE0035F81E /* TreatmentSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentSelectView.swift; sourceTree = "<group>"; };
 		1F6813CC2CDDEB5C002B8481 /* HomeResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResponseDTO.swift; sourceTree = "<group>"; };
 		1F6813CE2CDDEB6D002B8481 /* HomeRecordResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecordResponseDTO.swift; sourceTree = "<group>"; };
@@ -178,6 +174,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		1F636C462D3A52590026ABE4 /* Authentication */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Authentication; sourceTree = "<group>"; };
 		1F9477542CEA098000D947E1 /* Examples */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Examples; sourceTree = "<group>"; };
 		1FF199BC2D36400B00FF3C17 /* IconButton */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = IconButton; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -258,10 +255,10 @@
 				1FA883F92CD9F6860022244D /* Previews */,
 				1F99A7E42CC4DB2900779628 /* Home */,
 				1FD0D2272CB42F7600F96E87 /* MyPage */,
-				1FD0D2262CB42F7100F96E87 /* Daily */,
+				1FD0D2262CB42F7100F96E87 /* DailyHug */,
 				1FD0D2252CB42F1700F96E87 /* Ledger */,
 				1FFD020D2CB41A9200020AF4 /* Calendar */,
-				1FE68CF02C5B520100CD43E4 /* SignIn */,
+				1FE68CF02C5B520100CD43E4 /* Authentication */,
 				1F0D93092C36808100BB6ADD /* Common */,
 				1F0D92F22C365B6D00BB6ADD /* ContentView.swift */,
 				1F0D93072C367F5300BB6ADD /* OnboardingScreen.swift */,
@@ -334,6 +331,15 @@
 				1F3DC3532CB50FAE00A72A52 /* MaxLengthModifier.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		1F636C452D3A52480026ABE4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1F6813CE2CDDEB6D002B8481 /* HomeRecordResponseDTO.swift */,
+				1F6813CC2CDDEB5C002B8481 /* HomeResponseDTO.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		1F8B64C32CB3AA4F00F61118 /* CustomText */ = {
@@ -449,12 +455,12 @@
 			path = Ledger;
 			sourceTree = "<group>";
 		};
-		1FD0D2262CB42F7100F96E87 /* Daily */ = {
+		1FD0D2262CB42F7100F96E87 /* DailyHug */ = {
 			isa = PBXGroup;
 			children = (
 				1FD0D2292CB4308B00F96E87 /* DailyHugView.swift */,
 			);
-			path = Daily;
+			path = DailyHug;
 			sourceTree = "<group>";
 		};
 		1FD0D2272CB42F7600F96E87 /* MyPage */ = {
@@ -471,10 +477,8 @@
 		1FD0D22B2CB432D700F96E87 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
-				1F6813CE2CDDEB6D002B8481 /* HomeRecordResponseDTO.swift */,
-				1F6813CC2CDDEB5C002B8481 /* HomeResponseDTO.swift */,
-				1F656AED2CA96FD90035F81E /* UserJoinRequestDTO.swift */,
-				1F0DD93A2CD754CE00708811 /* UserHusbandJoinRequestDTO.swift */,
+				1F636C462D3A52590026ABE4 /* Authentication */,
+				1F636C452D3A52480026ABE4 /* Home */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -497,7 +501,7 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
-		1FE68CF02C5B520100CD43E4 /* SignIn */ = {
+		1FE68CF02C5B520100CD43E4 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
 				1FE68CF12C5B522200CD43E4 /* SignUpScreen.swift */,
@@ -509,7 +513,7 @@
 				1FD5D8772D1E41A9001D9C5B /* AgreementView.swift */,
 				1F4CE85D2D1E5B02005CB661 /* PermissionScreen.swift */,
 			);
-			path = SignIn;
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		1FEAF0302C498843004C0EE1 /* Home */ = {
@@ -543,6 +547,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				1F636C462D3A52590026ABE4 /* Authentication */,
 				1F9477542CEA098000D947E1 /* Examples */,
 				1FF199BC2D36400B00FF3C17 /* IconButton */,
 			);
@@ -622,7 +627,6 @@
 				1FA883FB2CD9F6930022244D /* PreviewContainer.swift in Sources */,
 				1F032BB92C612A3500E8C64B /* SkeletonBox.swift in Sources */,
 				1F692CE12CB4FEA400BAEEBE /* EnterSSNView.swift in Sources */,
-				1F656AEE2CA96FD90035F81E /* UserJoinRequestDTO.swift in Sources */,
 				1F31AFDE2C972BA100DBFB18 /* Counter.swift in Sources */,
 				1FDAAC2D2CEB525A00767F86 /* HGPlusButton.swift in Sources */,
 				1F3DC3562CB50FCE00A72A52 /* TextField+Extension.swift in Sources */,
@@ -663,7 +667,6 @@
 				1FD0D22A2CB4308B00F96E87 /* DailyHugView.swift in Sources */,
 				1FF199DC2D366AC000FF3C17 /* HGMainButtonV2.swift in Sources */,
 				1F8B64C52CB3AA7200F61118 /* SignUpTitleText.swift in Sources */,
-				1F0DD93B2CD754CE00708811 /* UserHusbandJoinRequestDTO.swift in Sources */,
 				1F3DC34F2CB5032200A72A52 /* SSNTextfieldStyle.swift in Sources */,
 				1F656AF22CA979DE0035F81E /* TreatmentSelectView.swift in Sources */,
 				1FE68CF42C5B528700CD43E4 /* AppBar.swift in Sources */,
