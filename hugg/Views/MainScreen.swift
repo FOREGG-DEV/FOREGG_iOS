@@ -42,7 +42,6 @@ struct MainScreen: View {
     }
 }
 
-
 // MARK: - Bottom Navigation Item
 
 /// Main Screen Bottom Navigation Item

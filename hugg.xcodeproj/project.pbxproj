@@ -27,6 +27,7 @@
 		1F4CE85E2D1E5B02005CB661 /* PermissionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4CE85D2D1E5B02005CB661 /* PermissionScreen.swift */; };
 		1F603C6F2CBD06E100E5BF5D /* MyPageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F603C6E2CBD06E100E5BF5D /* MyPageScreen.swift */; };
 		1F60E3352CBFAA2300543A22 /* MyPageBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60E3342CBFAA2300543A22 /* MyPageBaseView.swift */; };
+		1F636C4A2D3A59950026ABE4 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F636C492D3A59950026ABE4 /* ApiResponse.swift */; };
 		1F656AF22CA979DE0035F81E /* TreatmentSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F656AF12CA979DE0035F81E /* TreatmentSelectView.swift */; };
 		1F6813CD2CDDEB60002B8481 /* HomeResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6813CC2CDDEB5C002B8481 /* HomeResponseDTO.swift */; };
 		1F6813CF2CDDEB76002B8481 /* HomeRecordResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6813CE2CDDEB6D002B8481 /* HomeRecordResponseDTO.swift */; };
@@ -111,6 +112,7 @@
 		1F4CE85D2D1E5B02005CB661 /* PermissionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionScreen.swift; sourceTree = "<group>"; };
 		1F603C6E2CBD06E100E5BF5D /* MyPageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageScreen.swift; sourceTree = "<group>"; };
 		1F60E3342CBFAA2300543A22 /* MyPageBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageBaseView.swift; sourceTree = "<group>"; };
+		1F636C492D3A59950026ABE4 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		1F656AF12CA979DE0035F81E /* TreatmentSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentSelectView.swift; sourceTree = "<group>"; };
 		1F6813CC2CDDEB5C002B8481 /* HomeResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResponseDTO.swift; sourceTree = "<group>"; };
 		1F6813CE2CDDEB6D002B8481 /* HomeRecordResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecordResponseDTO.swift; sourceTree = "<group>"; };
@@ -479,6 +481,7 @@
 			children = (
 				1F636C462D3A52590026ABE4 /* Authentication */,
 				1F636C452D3A52480026ABE4 /* Home */,
+				1F636C492D3A59950026ABE4 /* ApiResponse.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -650,6 +653,7 @@
 				1F60E3352CBFAA2300543A22 /* MyPageBaseView.swift in Sources */,
 				1F0D92F12C365B6D00BB6ADD /* huggApp.swift in Sources */,
 				1FFD020C2CB40ABB00020AF4 /* WifeShareCodeView.swift in Sources */,
+				1F636C4A2D3A59950026ABE4 /* ApiResponse.swift in Sources */,
 				1F3F3CBA2CE2FDC3006D4EE7 /* Constants.swift in Sources */,
 				1F9477532CE9EA1D00D947E1 /* LedgerScreen.swift in Sources */,
 				1FF22A7E2C3ADFA000367518 /* HGMainButton.swift in Sources */,
