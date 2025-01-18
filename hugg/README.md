@@ -70,5 +70,12 @@ Screen > Page > Content > Other Components like Cell (Listed Items)
 
 `Cell` : List 아이템
 
+### MV Pattern - View 로직 정리
+View 내부 로직의 경우 길어지는 경우 extension으로 빼서 관리함
+
+### 하위 View 관리
+원칙적으로 struct View를 만들어서 재사용 가능한 형태로 하위 뷰를 구성한다.
+private, fileprivate을 적절하게 활용한다
+
 ## CHECK
 - Modal, dialog 등 내에서 상태관리를 직접하지말 것 (Server request)
