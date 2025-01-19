@@ -1,12 +1,6 @@
-//
-//  SplashView.swift
-//  hugg
-//
-//  Created by Donghan Kim on 7/8/24.
-//
-
 import SwiftUI
 
+/// Custom Splash Screen View
 struct SplashScreen: View {
     var body: some View {
         VStack {

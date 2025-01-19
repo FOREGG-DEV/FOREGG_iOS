@@ -3,15 +3,61 @@
 
 import SwiftUI
 
-enum NestedExample {
-    enum Section1 {
-        case spouse
-        case myMedicine
-    }
+// Screen code here
 
-    enum Section2 {
-        case notice
-        case faq
+struct MyPageScreen: View {
+    @EnvironmentObject private var appState: AppState
+
+    var body: some View {
+        VStack {
+            AppBarWithoutBtn(title: "마이페이지")
+            List {
+                // MARK: Section 1
+
+                Section {
+                    ForEach(MyPageRouteSection1Config.allCases, id: \.rawValue) { config in
+                        MyPageListCell(title: config.rawValue, action: {
+                            self.navigate(to: config)
+                        })
+                    }
+                } header: {
+                    Spacer(minLength: 0)
+                }
+                .listRowSeparator(.hidden, edges: .bottom)
+                .listRowSpacing(.zero)
+
+                // MARK: Section 2
+
+                Section(content: {
+                    ForEach(MyPageRouteSection2Config.allCases, id: \.rawValue) { config in
+                        MyPageListCell(title: config.rawValue, action: {
+                            self.navigate(to: config)
+                        })
+                    }
+                })
+                .listRowSeparator(.hidden, edges: .bottom)
+                .listRowSpacing(.zero)
+
+                // MARK: Section 3
+
+                ForEach(MyPageRouteSection3Config.allCases, id: \.rawValue) { config in
+                    MyPageListCell(title: config.rawValue, action: {
+                        self.navigate(to: config)
+                    })
+                }
+            }
+            .listStyle(.insetGrouped)
+            .listSectionSpacing(.compact)
+            .scrollContentBackground(.hidden)
+            .padding(.zero)
+        }
+        .background(.mainBg)
+    }
+}
+
+extension MyPageScreen {
+    private func navigate(to myPageRoute: MyPageNavigatable) {
+        self.appState.routes.append(myPageRoute.toRoute())
     }
 }
 
@@ -74,62 +120,6 @@ enum MyPageRouteSection3Config: String, CaseIterable, MyPageNavigatable {
         case .manageAccount:
             return Route.manageAccount
         }
-    }
-}
-
-// Screen code here
-
-struct MyPageScreen: View {
-    @EnvironmentObject private var appState: AppState
-
-    private func navigate(to myPageRoute: MyPageNavigatable) {
-        self.appState.routes.append(myPageRoute.toRoute())
-    }
-
-    var body: some View {
-        VStack {
-            AppBarWithoutBtn(title: "마이페이지")
-            List {
-                // MARK: Section 1
-
-                Section {
-                    ForEach(MyPageRouteSection1Config.allCases, id: \.rawValue) { config in
-                        MyPageListCell(title: config.rawValue, action: {
-                            self.navigate(to: config)
-                        })
-                    }
-                } header: {
-                    Spacer(minLength: 0)
-                }
-                .listRowSeparator(.hidden, edges: .bottom)
-                .listRowSpacing(.zero)
-
-                // MARK: Section 2
-
-                Section(content: {
-                    ForEach(MyPageRouteSection2Config.allCases, id: \.rawValue) { config in
-                        MyPageListCell(title: config.rawValue, action: {
-                            self.navigate(to: config)
-                        })
-                    }
-                })
-                .listRowSeparator(.hidden, edges: .bottom)
-                .listRowSpacing(.zero)
-
-                // MARK: Section 3
-
-                ForEach(MyPageRouteSection3Config.allCases, id: \.rawValue) { config in
-                    MyPageListCell(title: config.rawValue, action: {
-                        self.navigate(to: config)
-                    })
-                }
-            }
-            .listStyle(.insetGrouped)
-            .listSectionSpacing(.compact)
-            .scrollContentBackground(.hidden)
-            .padding(.zero)
-        }
-        .background(.mainBg)
     }
 }
 

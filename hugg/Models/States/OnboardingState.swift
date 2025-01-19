@@ -1,5 +1,6 @@
 import SwiftUI
 
+/// State for Onboarding Screen (VM)
 class OnboardingState: ObservableObject {
     @Published var datas: [OnboardingVO] = [
         OnboardingVO(image: "onboarding1", title: "주사맞을 시간엔 알람이 울려요", desc: "정확한 시간에 맞아야 하는 주사,\n허그가 챙길 테니 안심하세요."),
