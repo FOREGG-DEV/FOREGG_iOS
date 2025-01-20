@@ -1,7 +1,6 @@
 import SwiftUI
 
 struct TreatmentSelectView: View {
-//    @EnvironmentObject var vm: SignUpViewModel
     @EnvironmentObject var state: SignUpState
 
     @State private var showDropbox: Bool = false
@@ -44,10 +43,6 @@ struct TreatmentSelectView: View {
             })
             .buttonStyle(NoTapAnimationStyle())
 
-            // MARK: ItemList
-
-            // MARK: Item view -> Cell (use this name for every list item)
-
             ZStack {
                 Rectangle()
                     .foregroundStyle(.clear)
@@ -83,7 +78,12 @@ struct TreatmentSelectView: View {
 
             Spacer()
 
-            SignUpFooter(onButtonTapped: {}, buttonEnable: true)
+            SignUpFooter(
+                onButtonTapped: {
+                    state.increaseStep()
+                },
+                buttonEnable: true
+            )
         }
         .frame(maxWidth: .infinity)
     }

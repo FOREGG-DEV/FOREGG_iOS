@@ -1,4 +1,5 @@
 // TODO: Check AttributedString
+// TODO: - AppBar도 각 View마다 따로 처리하는 것이 더 맞는 것 같음
 import SwiftUI
 
 struct SignUpScreen: View {
@@ -62,35 +63,6 @@ struct SignUpScreen: View {
                     }
                 }
                 .transition(isBack ? .backTransition : .nextTransition)
-
-                // MARK: Change Button if it is last content
-
-//                if vm.isLastStep {
-//                    HGMainButton(label: "가입 완료", action: {})
-//                } else {
-//                    HGBorderedButton(label: "다음",
-//                                     isEnabled: vm.isCurrentFormValid,
-//                                     action: {
-//                                         print(vm.isCurrentFormValid)
-//                                         if isBack {
-//                                             isBack.toggle()
-//                                         }
-//                                         vm.increaseStep()
-//                                     })
-//
-//                    HStack {
-//                        Spacer()
-//                        Text("약관 문의").font(.p2).foregroundStyle(.black70)
-//                        Spacer().frame(width: 4)
-//                        Text(customAttributedString)
-//                        Spacer()
-//                    }
-//                    .padding(.top, 12)
-//                    .opacity(vm.currentStep == 0 ? 1 : 0)
-//                }
-//
-//                Spacer()
-//                    .frame(maxHeight: 40)
             }
             .padding(.horizontal, 16)
         }

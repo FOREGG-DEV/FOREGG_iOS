@@ -7,10 +7,12 @@
 ### Due to : 01/21
 
 - [x] 회원가입 페이지 : 주민등록번호 입력 페이지 리팩토링
+- [ ] SignUpState 디버깅 -> 로그 어떻게 작성할건가?
 - [ ] Spouse code 로직
 - [ ] 남편 / 부인 분기 처리
-- [ ] DTO 정리
-- [ ] Colors -> Enum => Color extension 분리
+- [ ] DTO 정리 (Authentication 관련)
+
+> - [ ] Colors -> Enum => Color extension 분리 (보류)
 
 - [ ] UIKit 스터디
 
