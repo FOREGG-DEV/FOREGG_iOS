@@ -21,21 +21,27 @@ struct EnterSSNView: View {
             SSNTitleView()
             VStack {
                 // 1. SSN 박스 출력 (각 자리마다 박스로 표시)
-                HStack(spacing: 8) {
-                    ForEach(state.ssn.ssnDigits, id: \.self) { digit in
+                HStack(spacing: 2) {
+                    ForEach(state.ssn.ssnDigits.indices, id: \.self) { index in
+                        // 마지막 인덱스에만 추가적인 View 삽입
+                        if index == state.ssn.ssnDigits.count - 1 {
+                            Text("-")
+                                .font(.h3)
+                                .foregroundColor(Constants.Colors.black50)
+                                .padding(.horizontal, 4)
+                        }
 
-                        RoundedRectangle(cornerRadius: 5)
+                        RoundedRectangle(cornerRadius: 4)
                             .fill(.white)
                             .frame(width: 30, height: 50)
                             .overlay {
-                                Text(digit)
+                                Text(state.ssn.ssnDigits[index])
                                     .font(.h3)
                                     .foregroundColor(Constants.Colors.black90)
                             }
                     }
-
                     RoundedRectangle(cornerRadius: 4)
-                        .frame(width: 100, height: 48)
+                        .frame(width: 115, height: 50)
                         .foregroundStyle(.whiteF2)
                 }
                 .onTapGesture {
