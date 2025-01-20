@@ -29,6 +29,7 @@
 		1F60E3352CBFAA2300543A22 /* MyPageBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60E3342CBFAA2300543A22 /* MyPageBaseView.swift */; };
 		1F636C4A2D3A59950026ABE4 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F636C492D3A59950026ABE4 /* ApiResponse.swift */; };
 		1F636C4C2D3D3F670026ABE4 /* SignUpState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F636C4B2D3D3F670026ABE4 /* SignUpState.swift */; };
+		1F636C582D3DEA2C0026ABE4 /* SignUpFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F636C572D3DEA2C0026ABE4 /* SignUpFooter.swift */; };
 		1F656AF22CA979DE0035F81E /* TreatmentSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F656AF12CA979DE0035F81E /* TreatmentSelectView.swift */; };
 		1F6813CD2CDDEB60002B8481 /* HomeResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6813CC2CDDEB5C002B8481 /* HomeResponseDTO.swift */; };
 		1F6813CF2CDDEB76002B8481 /* HomeRecordResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6813CE2CDDEB6D002B8481 /* HomeRecordResponseDTO.swift */; };
@@ -115,6 +116,7 @@
 		1F60E3342CBFAA2300543A22 /* MyPageBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageBaseView.swift; sourceTree = "<group>"; };
 		1F636C492D3A59950026ABE4 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		1F636C4B2D3D3F670026ABE4 /* SignUpState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpState.swift; sourceTree = "<group>"; };
+		1F636C572D3DEA2C0026ABE4 /* SignUpFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFooter.swift; sourceTree = "<group>"; };
 		1F656AF12CA979DE0035F81E /* TreatmentSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentSelectView.swift; sourceTree = "<group>"; };
 		1F6813CC2CDDEB5C002B8481 /* HomeResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResponseDTO.swift; sourceTree = "<group>"; };
 		1F6813CE2CDDEB6D002B8481 /* HomeRecordResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecordResponseDTO.swift; sourceTree = "<group>"; };
@@ -518,6 +520,7 @@
 				1F692CE02CB4FEA400BAEEBE /* EnterSSNView.swift */,
 				1FD5D8772D1E41A9001D9C5B /* AgreementView.swift */,
 				1F4CE85D2D1E5B02005CB661 /* PermissionScreen.swift */,
+				1F636C572D3DEA2C0026ABE4 /* SignUpFooter.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -669,6 +672,7 @@
 				1FF199C82D36634200FF3C17 /* ComponentPreviewContainer.swift in Sources */,
 				1FAE4ABB2CE1126E005C946B /* UINavigationController+Extensions.swift in Sources */,
 				1FC4328B2C49732E00FE5834 /* OnboardingState.swift in Sources */,
+				1F636C582D3DEA2C0026ABE4 /* SignUpFooter.swift in Sources */,
 				1FF199DE2D37AA7000FF3C17 /* HGTagWithoutText.swift in Sources */,
 				1FCD8F432CB52C6A00956BA0 /* SSNModel.swift in Sources */,
 				1FD0D22A2CB4308B00F96E87 /* DailyHugView.swift in Sources */,
