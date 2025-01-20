@@ -52,7 +52,12 @@ struct AgreementView: View {
 
             Spacer()
 
-            SignUpFooter(onButtonTapped: {}, buttonEnable: allAgree)
+            SignUpFooter(
+                onButtonTapped: {
+                    state.increaseStep()
+                },
+                buttonEnable: allAgree
+            )
         }
     }
 }

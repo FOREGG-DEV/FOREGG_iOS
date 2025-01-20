@@ -63,8 +63,6 @@ struct SignUpScreen: View {
                 }
                 .transition(isBack ? .backTransition : .nextTransition)
 
-                Spacer()
-
                 // MARK: Change Button if it is last content
 
 //                if vm.isLastStep {

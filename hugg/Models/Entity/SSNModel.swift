@@ -1,28 +1,33 @@
-//
-//  SSN.swift
-//  hugg
-//
-//  Created by Donghan Kim on 10/8/24.
-//
-
 import Foundation
 
 struct SSNModel {
-    var ssn1: String = ""
-    var ssn2: String = ""
-    var ssn3: String = ""
-    var ssn4: String = ""
-    var ssn5: String = ""
-    var ssn6: String = ""
-    var ssn7: String = ""
+    // SSN을 자리별로 저장하는 배열
+    var ssnDigits: [String] = Array(repeating: "", count: 7)
 
-    // You can add validation logic or computed properties here
+    // 전체 SSN을 조합하여 반환
     var fullSSN: String {
-        "\(ssn1)\(ssn2)\(ssn3)\(ssn4)\(ssn5)\(ssn6)\(ssn7)"
+        ssnDigits.joined()
     }
 
+    // 유효성 검사
     var isValid: Bool {
-        // Simple validation check
         return fullSSN.count == 7 && fullSSN.allSatisfy { $0.isNumber }
+    }
+
+    // SSN 전체를 업데이트하는 메서드
+    mutating func updateSSN(with newSSN: String) {
+        let filteredSSN = newSSN.filter { $0.isNumber } // 숫자만 허용
+//        let currentLength = filteredSSN.count
+
+        // 1. 배열을 초기화 (빈 문자열로 채우기)
+        ssnDigits = Array(repeating: "", count: 7)
+
+        // 2. 새로운 값으로 배열을 동기화
+        for (index, char) in filteredSSN.prefix(7).enumerated() {
+            ssnDigits[index] = String(char)
+        }
+
+        // 3. Debugging 출력 (Optional)
+        print("Updated ssnDigits: \(ssnDigits)")
     }
 }

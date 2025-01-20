@@ -8,30 +8,28 @@ struct SignUpFooter: View {
     var buttonEnable: Bool
 
     var body: some View {
-        if state.isLastStep {
-            HGMainButton(label: "가입 완료", action: onButtonTapped)
-        } else {
-            HGBorderedButton(label: "다음",
-                             isEnabled: buttonEnable,
-                             action: {
-                                 onButtonTapped()
-                                 state.increaseStep()
-                             })
+        VStack {
+            if state.isLastStep {
+                HGMainButton(label: "가입 완료", action: onButtonTapped)
+            } else {
+                HGBorderedButton(
+                    label: "다음",
+                    isEnabled: buttonEnable,
+                    action: onButtonTapped
+                )
 
-            HStack {
-                Spacer()
-                Text("약관 문의").font(.p2).foregroundStyle(.black70)
-                Spacer().frame(width: 4)
-                Text(customAttributedString)
-                Spacer()
+                HStack {
+                    Spacer()
+                    Text("약관 문의").font(.p2).foregroundStyle(.black70)
+                    Spacer().frame(width: 4)
+                    Text(customAttributedString)
+                    Spacer()
+                }
+                .padding(.top, 12)
+                .opacity(state.currentStep == 0 ? 1 : 0)
             }
-            .padding(.top, 12)
-            .opacity(state.currentStep == 0 ? 1 : 0)
         }
-
-        // bottom padding
-        Spacer()
-            .frame(maxHeight: 40)
+        .padding(.bottom, 42)
     }
 }
 

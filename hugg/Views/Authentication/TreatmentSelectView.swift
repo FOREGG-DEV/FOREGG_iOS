@@ -1,12 +1,13 @@
 import SwiftUI
 
 struct TreatmentSelectView: View {
-    @EnvironmentObject var vm: SignUpViewModel
+//    @EnvironmentObject var vm: SignUpViewModel
+    @EnvironmentObject var state: SignUpState
 
     @State private var showDropbox: Bool = false
 
     func selectTreatment(_ newValue: SurgeryType) {
-        vm.changeSurgeryType(newValue)
+        state.changeSurgeryType(newValue)
         withAnimation {
             showDropbox.toggle()
         }
@@ -25,7 +26,7 @@ struct TreatmentSelectView: View {
                     ZStack {
                         UnevenRoundedRectangle(cornerRadii: .init(topLeading: 8.0, bottomLeading: 8.0, bottomTrailing: 0.0, topTrailing: 0.0))
                             .fill(.white)
-                        Text(vm.currentSurgeryType.rawValue)
+                        Text(state.currentSurgeryType.rawValue)
                     }
                     .frame(height: 48.0)
 
@@ -62,7 +63,7 @@ struct TreatmentSelectView: View {
                             Rectangle()
                                 .frame(maxWidth: .infinity)
                                 .foregroundStyle(.clear)
-                                .background(vm.currentSurgeryType == item ? .mainBg : .white)
+                                .background(state.currentSurgeryType == item ? .mainBg : .white)
                                 .clipShape(RoundedRectangle(cornerSize: CGSize(width: 8, height: 8)))
                             Text(item.rawValue)
                                 .font(.pretendardSemiBold16)
@@ -79,6 +80,10 @@ struct TreatmentSelectView: View {
             .frame(height: 192)
             .opacity(showDropbox ? 1.0 : 0.0)
             .zIndex(100)
+
+            Spacer()
+
+            SignUpFooter(onButtonTapped: {}, buttonEnable: true)
         }
         .frame(maxWidth: .infinity)
     }
@@ -88,5 +93,5 @@ struct TreatmentSelectView: View {
     TreatmentSelectView()
         .background(.mainBg)
         .padding(.horizontal, 16.0)
-        .environmentObject(SignUpViewModel())
+        .environmentObject(SignUpState())
 }
