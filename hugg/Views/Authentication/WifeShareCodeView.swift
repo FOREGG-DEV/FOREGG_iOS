@@ -1,6 +1,9 @@
 import SwiftUI
 
 struct WifeShareCodeView: View {
+    @EnvironmentObject var state: SignUpState
+    @StateObject var spouseCodeModel = SpouseCodeModel()
+
     var body: some View {
         VStack(alignment: .leading) {
             SignUpTitleText(title: "배우자 코드를 남편에게\n공유해주세요")
@@ -28,7 +31,36 @@ struct WifeShareCodeView: View {
             Text("남편 회원가입시 붙여넣기 해주세요.\n아내 가입 완료 시 남편 로그인이 가능합니다.")
                 .font(.p2L)
                 .foregroundStyle(.black90)
+
+            Spacer()
+
+            // TODO: Join Request
+            SignUpFooter(
+                onButtonTapped: handleJoin,
+                buttonEnable: true
+            )
         }
+        .onAppear {
+            Task {
+                await fetchSpouseCode()
+            }
+        }
+    }
+}
+
+extension WifeShareCodeView {
+    // MARK: - fetch spouse code
+
+    private func fetchSpouseCode() async {
+        do {
+            try await spouseCodeModel.fetchSpouseCode()
+        } catch {
+            print(error)
+        }
+    }
+
+    private func handleJoin() {
+        print(state.toString)
     }
 }
 
@@ -42,4 +74,5 @@ struct WifeShareCodeView: View {
         }.safeAreaPadding(.vertical, 100)
     }
     .ignoresSafeArea()
+    .environmentObject(SignUpState())
 }

@@ -47,10 +47,10 @@ enum HTTPMethod {
     }
 }
 
-struct Resource<T: Decodable> {
+struct Resource<T: Codable> {
     let url: URL
-    let method: HTTPMethod = .get([])
-    let modelType: T.Type
+    var method: HTTPMethod = .get([])
+    var modelType: T.Type
 }
 
 struct HTTPClient {
@@ -60,7 +60,9 @@ struct HTTPClient {
         switch resource.method {
         case .get(let queryItems):
             var components = URLComponents(url: resource.url, resolvingAgainstBaseURL: false)
-            components?.queryItems = queryItems
+            if !queryItems.isEmpty {
+                components?.queryItems = queryItems
+            }
 
             guard let url = components?.url else {
                 throw NetworkError.badRequest
@@ -90,6 +92,8 @@ struct HTTPClient {
         let session = URLSession(configuration: configuration)
 
         let (data, response) = try await session.data(for: request)
+
+        print(response)
 
         // get response
         guard let _ = response as? HTTPURLResponse else {

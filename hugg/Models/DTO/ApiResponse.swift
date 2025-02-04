@@ -19,7 +19,7 @@ import Foundation
 ///     print(response.data?.name ?? "No name")
 /// }
 /// ```
-struct ApiResponse<T: Codable> {
+struct ApiResponse<T: Codable>: Codable {
     /// Indicates whether the API call was successful.
     let isSuccess: Bool
     

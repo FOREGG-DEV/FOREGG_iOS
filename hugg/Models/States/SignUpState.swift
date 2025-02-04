@@ -74,6 +74,10 @@ class SignUpState: ObservableObject {
     var isLastStep: Bool {
         currentStep == 5
     }
+    
+    var toString: String {
+        "###State###\n SSN: \(ssn)\n SurgeryType: \(currentSurgeryType)\n Round: \(currentRound)\n StartDate: \(startDate)\n SpouseCode: \(spouseCode)"
+    }
 }
 
 // MARK: - SignUp Logics

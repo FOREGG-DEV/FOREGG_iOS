@@ -11,7 +11,7 @@ import SwiftUI
 // }
 
 struct SelectStartDateView: View {
-    @EnvironmentObject var vm: SignUpViewModel
+    @EnvironmentObject var state: SignUpState
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -29,16 +29,25 @@ struct SelectStartDateView: View {
                     UnevenRoundedRectangle(cornerRadii: .init(topLeading: 0.0, bottomLeading: 0.0, bottomTrailing: 8.0, topTrailing: 8.0))
                         .fill(.white)
 
-                    Text("\(vm.startDate, formatter: yearMonthDayFormatter)")
+                    Text("\(state.startDate, formatter: yearMonthDayFormatter)")
                         .font(.h3)
                 }
                 .frame(width: 128, height: 48)
             }
             .overlay {
-                DatePicker("", selection: $vm.startDate, displayedComponents: .date)
+                DatePicker("", selection: $state.startDate, displayedComponents: .date)
                     .labelsHidden()
                     .colorMultiply(.clear)
             }
+
+            Spacer()
+
+            SignUpFooter(
+                onButtonTapped: {
+                    state.increaseStep()
+                },
+                buttonEnable: true
+            )
         }
     }
 }
@@ -49,5 +58,5 @@ struct SelectStartDateView: View {
         SelectStartDateView()
             .padding(.horizontal, 16)
     }
-    .environmentObject(SignUpViewModel())
+    .environmentObject(SignUpState())
 }

@@ -11,6 +11,8 @@
 - [ ] Spouse code 로직
 - [ ] 남편 / 부인 분기 처리
 - [ ] DTO 정리 (Authentication 관련)
+- [ ] wife 회원가입 테스트 마무리
+> Join -> Test token 임의로 지정해서 넣어도 잘옴
 
 > - [ ] Colors -> Enum => Color extension 분리 (보류)
 
