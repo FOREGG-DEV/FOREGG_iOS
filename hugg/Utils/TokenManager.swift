@@ -1,4 +1,5 @@
 // JWT 관리용 class
+// TODO: Add test key
 import Foundation
 
 class TokenManager {
@@ -7,6 +8,7 @@ class TokenManager {
     private init() {}
     
     private var cachedToken: String?
+    private let testKey: String = "testKey"
     
     var jwtToken: String? {
         if let token = cachedToken {

@@ -40,11 +40,14 @@ extension EntryPointScreen {
         let userToken = UserDefaults.standard.string(forKey: "userToken")
 
         if userToken != nil {
+            // maybe we have to get extra datas here?
             print("go to main screen")
             appState.routes.append(.mainScreen)
         } else {
-            appState.routes.append(.register)
+            appState.routes.append(.onboarding)
         }
+        
+        // 권한 허용 되었는지도 확인하기 ?
     }
 }
 

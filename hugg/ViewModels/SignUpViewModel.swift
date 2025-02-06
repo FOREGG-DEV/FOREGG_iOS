@@ -1,6 +1,6 @@
 import SwiftUI
 
-// ViewModel -> State로 통일시키기
+// TODO: ViewModel -> State로 통일시키기
 class SignUpViewModel: ObservableObject {
     init(currentStep: Int = 0, currentSurgeryType: SurgeryType = .THINK_SURGERY,
          currentRound: Int = 0, startDate: Date = Date(),

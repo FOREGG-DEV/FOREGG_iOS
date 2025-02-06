@@ -4,7 +4,7 @@ import SwiftUI
 
 struct MainScreen: View {
     // init viewmodel
-    @StateObject var vm = MainViewModel()
+    @EnvironmentObject var model: AppState
 
     init() {
         // Change default TabBar background color
@@ -12,31 +12,31 @@ struct MainScreen: View {
     }
 
     var body: some View {
-        TabView(selection: $vm.currentTab) {
+        TabView(selection: $model.currentBottomNavTab) {
             HomeScreen()
                 .tabItem {
-                    BottomNavItem(title: "홈", image: "home", isSelected: vm.currentTab == .home)
-                }.tag(HomeTab.home)
+                    BottomNavItem(title: "홈", image: "home", isSelected: model.currentBottomNavTab == BottomNavigationTab.home)
+                }.tag(BottomNavigationTab.home)
 
             TabViewContainer(title: "calendar")
                 .tabItem {
-                    BottomNavItem(title: "캘린더", image: "calendar", isSelected: vm.currentTab == .calendar)
-                }.tag(HomeTab.calendar)
+                    BottomNavItem(title: "캘린더", image: "calendar", isSelected: model.currentBottomNavTab == BottomNavigationTab.calendar)
+                }.tag(BottomNavigationTab.calendar)
 
             DailyHugView()
                 .tabItem {
-                    BottomNavItem(title: "데일리 허그", image: "info", isSelected: vm.currentTab == .daily)
-                }.tag(HomeTab.daily)
+                    BottomNavItem(title: "데일리 허그", image: "info", isSelected: model.currentBottomNavTab == BottomNavigationTab.daily)
+                }.tag(BottomNavigationTab.daily)
 
             LedgerScreen()
                 .tabItem {
-                    BottomNavItem(title: "가계부", image: "savings", isSelected: vm.currentTab == .savings)
-                }.tag(HomeTab.savings)
+                    BottomNavItem(title: "가계부", image: "savings", isSelected: model.currentBottomNavTab == BottomNavigationTab.ledger)
+                }.tag(BottomNavigationTab.ledger)
 
             MyPageScreen()
                 .tabItem {
-                    BottomNavItem(title: "마이페이지", image: "mypage", isSelected: vm.currentTab == .mypage)
-                }.tag(HomeTab.mypage)
+                    BottomNavItem(title: "마이페이지", image: "mypage", isSelected: model.currentBottomNavTab == BottomNavigationTab.mypage)
+                }.tag(BottomNavigationTab.mypage)
         }
         .tint(.black80)
     }
@@ -79,5 +79,6 @@ private struct TabViewContainer: View {
 #Preview {
     PreviewContainer {
         MainScreen()
+            .environmentObject(AppState())
     }
 }

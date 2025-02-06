@@ -1,5 +1,6 @@
 import SwiftUI
 
+/// Deprecated
 struct SSNTextfieldStyle: TextFieldStyle {
     func _body(configuration: TextField<Self._Label>) -> some View {
         ZStack {

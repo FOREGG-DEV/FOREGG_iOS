@@ -45,6 +45,7 @@ struct OnboardingScreen: View {
 
             if state.currentStep == state.datas.count - 1 {
                 VStack {
+                    // kakao login button
                     Image(.kakaoLogin)
                         .resizable()
                         .scaledToFit()
@@ -53,6 +54,8 @@ struct OnboardingScreen: View {
                         .onTapGesture {
                             handleKakaoLogin()
                         }
+
+                    // apple login button
                     Image(.appleLogin)
                         .resizable()
                         .scaledToFit()
@@ -74,6 +77,12 @@ struct OnboardingScreen: View {
 }
 
 extension OnboardingScreen {
+    
+    private func handleLogin() {
+        // maybe get the kakao jwt here
+        print("login here")
+    }
+
     // how can i do unit test this ?
     private func handleKakaoLogin() {
         // 카카오톡으로 로그인 사용 가능한지 체크
@@ -82,6 +91,7 @@ extension OnboardingScreen {
             UserApi.shared.loginWithKakaoTalk { oauthToken, error in
                 if let error = error {
                     print(error)
+                    // show error dialog
                 } else {
                     // 로그인 성공
                     print("kakao login is success")
@@ -90,6 +100,24 @@ extension OnboardingScreen {
                     // set token to userDefaults?
 
                     // POST: auth/login
+                    handleLogin()
+                }
+            }
+        } else {
+            print("cannot use kakao login")
+            UserApi.shared.loginWithKakaoAccount { oauthToken, error in
+                if let error = error {
+                    print(error)
+                    // show error dialog
+                } else {
+                    // 로그인 성공
+                    print("kakao login is success")
+                    let result = oauthToken?.accessToken
+                    print(result ?? "No token found")
+                    // set token to userDefaults?
+
+                    // POST: auth/login
+                    handleLogin()
                 }
             }
         }
