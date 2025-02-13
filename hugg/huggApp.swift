@@ -5,6 +5,7 @@ import SwiftUI
 @main
 struct huggApp: App {
     @StateObject private var appState = AppState()
+    @StateObject private var myPageModel = MyPageModel()
 
     init() {
         // for kakao login
@@ -31,7 +32,8 @@ struct huggApp: App {
                                 .navigationBarBackButtonHidden(true)
                         // MyPage derivation
                         case .spouse:
-                            DummyScreen()
+                            MyPageSpouseScreen()
+                                .navigationBarBackButtonHidden(true)
 
                         case .myMedicine:
                             DummyScreen()
@@ -56,6 +58,7 @@ struct huggApp: App {
                     })
             }
             .environmentObject(appState)
+            .environmentObject(myPageModel)
             .onOpenURL(perform: { url in
                 if AuthApi.isKakaoTalkLoginUrl(url) {
                     _ = AuthController.handleOpenUrl(url: url)
@@ -70,3 +73,5 @@ struct DummyScreen: View {
         Text("Hello, World!")
     }
 }
+
+// TODO: environmentObject에 인스턴스를 바로 주입하면 어떤 문제가 생기나?

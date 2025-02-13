@@ -34,7 +34,7 @@ struct MyPageScreen: View {
                     Section {
                         MyPageListSpouseCell(
                             title: MyPageRouteSection1Config.spouse.rawValue,
-                            spouseName: self.model.myPage?.spouse ?? "배우자를 등록해주세요",
+                            spouseName: self.model.myPage?.spouse ?? "데이터 발견x",
                             action: {
                                 self.navigate(to: MyPageRouteSection1Config.spouse)
                             }
@@ -78,8 +78,8 @@ struct MyPageScreen: View {
             }
         }
         .background(.mainBg)
-        .onAppear {
-            Task {
+        .task {
+            if self.model.myPage == nil {
                 do {
                     try await self.model.populateMyPage()
                     self.viewStatus = .success

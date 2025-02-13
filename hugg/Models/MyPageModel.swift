@@ -25,9 +25,11 @@ class MyPageModel: ObservableObject {
 
     /// [GET]  /myPage : 내 정보 보기 API
     func populateMyPage() async throws {
+        print("populate 시작")
         // MOCK
         try await Task.sleep(for: .seconds(3))
         myPage = MyPageResponseDTO.sample
+        print("populate 종료")
     }
 
     /// [GET] /myPage/medicalInfo : 내 주사, 약 기록 보기 API

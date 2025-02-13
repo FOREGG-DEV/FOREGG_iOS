@@ -12,7 +12,7 @@ struct LedgerAllPage: View {
         VStack {
             RoundedRectangle(cornerRadius: 8)
                 .fill(.white)
-                .frame(width: .infinity, height: 171)
+                .frame(height: 171)
                 .overlay {
                     VStack {
                         HStack {
@@ -106,8 +106,6 @@ struct LedgerAllPage: View {
                 Spacer()
             }
             .padding(.bottom, 8)
-            
-            
             
             Spacer()
         }

@@ -42,7 +42,7 @@ struct MyPageSpouseScreen: View {
                         .frame(width: 20, height: 20)
                 }
             }
-            .frame(width: .infinity, height: 48)
+            .frame(height: 48)
             .padding(.horizontal, 8.0)
             .onTapGesture {
                 Task {
