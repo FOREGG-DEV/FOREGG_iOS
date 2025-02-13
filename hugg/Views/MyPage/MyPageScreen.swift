@@ -1,5 +1,4 @@
 // TODO: Check list cell's height
-// TODO: 마이페이지 내 내정보 불러오기 기능 (appState -> User Information 사용)
 
 import SwiftUI
 
@@ -35,7 +34,7 @@ struct MyPageScreen: View {
                     Section {
                         MyPageListSpouseCell(
                             title: MyPageRouteSection1Config.spouse.rawValue,
-                            spouseName: "",
+                            spouseName: self.model.myPage?.spouse ?? "배우자를 등록해주세요",
                             action: {
                                 self.navigate(to: MyPageRouteSection1Config.spouse)
                             }
