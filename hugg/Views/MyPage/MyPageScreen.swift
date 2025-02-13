@@ -15,11 +15,12 @@ struct MyPageScreen: View {
                 // MARK: Section 1
 
                 Section {
-                    ForEach(MyPageRouteSection1Config.allCases, id: \.rawValue) { config in
-                        MyPageListCell(title: config.rawValue, action: {
-                            self.navigate(to: config)
-                        })
-                    }
+                    MyPageListSpouseCell(title: MyPageRouteSection1Config.spouse.rawValue, spouseName: "박강현", action: {
+                        self.navigate(to: MyPageRouteSection1Config.spouse)
+                    })
+                    MyPageListCell(title: MyPageRouteSection1Config.myMedicine.rawValue, action: {
+                        self.navigate(to: MyPageRouteSection1Config.myMedicine)
+                    })
                 } header: {
                     Spacer(minLength: 0)
                 }

@@ -18,6 +18,9 @@
 		1F0DD9392CD7534700708811 /* RecordType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DD9382CD7534700708811 /* RecordType.swift */; };
 		1F1ED3822D5242A000A1894A /* http_guide.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F1ED3812D52428E00A1894A /* http_guide.md */; };
 		1F1ED3882D5247A100A1894A /* todo.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F1ED3872D5247A100A1894A /* todo.md */; };
+		1F2B73CA2D5D81D800E07569 /* note.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F2B73C92D5D81D100E07569 /* note.md */; };
+		1F2B73CD2D5D84D700E07569 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B73CC2D5D84D100E07569 /* AuthService.swift */; };
+		1F2B73CF2D5D853000E07569 /* note.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F2B73CE2D5D852D00E07569 /* note.md */; };
 		1F31AFDE2C972BA100DBFB18 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F31AFDD2C972BA100DBFB18 /* Counter.swift */; };
 		1F3DC34F2CB5032200A72A52 /* SSNTextfieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DC34E2CB5032200A72A52 /* SSNTextfieldStyle.swift */; };
 		1F3DC3542CB50FAE00A72A52 /* MaxLengthModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DC3532CB50FAE00A72A52 /* MaxLengthModifier.swift */; };
@@ -108,6 +111,9 @@
 		1F0DD9382CD7534700708811 /* RecordType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordType.swift; sourceTree = "<group>"; };
 		1F1ED3812D52428E00A1894A /* http_guide.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = http_guide.md; sourceTree = "<group>"; };
 		1F1ED3872D5247A100A1894A /* todo.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = todo.md; sourceTree = "<group>"; };
+		1F2B73C92D5D81D100E07569 /* note.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = note.md; sourceTree = "<group>"; };
+		1F2B73CC2D5D84D100E07569 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		1F2B73CE2D5D852D00E07569 /* note.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = note.md; sourceTree = "<group>"; };
 		1F31AFDD2C972BA100DBFB18 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		1F3DC34E2CB5032200A72A52 /* SSNTextfieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSNTextfieldStyle.swift; sourceTree = "<group>"; };
 		1F3DC3532CB50FAE00A72A52 /* MaxLengthModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxLengthModifier.swift; sourceTree = "<group>"; };
@@ -223,6 +229,7 @@
 		1F0D92EF2C365B6D00BB6ADD /* hugg */ = {
 			isa = PBXGroup;
 			children = (
+				1F2B73CB2D5D84CA00E07569 /* Services */,
 				1F1ED37F2D52428500A1894A /* Docs */,
 				1F9477542CEA098000D947E1 /* Examples */,
 				1F3F3CB92CE2FDC1006D4EE7 /* Constants.swift */,
@@ -329,6 +336,7 @@
 		1F1ED37F2D52428500A1894A /* Docs */ = {
 			isa = PBXGroup;
 			children = (
+				1F2B73C92D5D81D100E07569 /* note.md */,
 				1F1ED3812D52428E00A1894A /* http_guide.md */,
 				1F1ED3872D5247A100A1894A /* todo.md */,
 			);
@@ -341,6 +349,15 @@
 				1F0D93072C367F5300BB6ADD /* OnboardingScreen.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		1F2B73CB2D5D84CA00E07569 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1F2B73CE2D5D852D00E07569 /* note.md */,
+				1F2B73CC2D5D84D100E07569 /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		1F31AFDC2C972B3500DBFB18 /* Popup */ = {
@@ -629,7 +646,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F2B73CF2D5D853000E07569 /* note.md in Resources */,
 				1F8D592E2C3B9D0200832F61 /* Pretendard-ExtraLight.otf in Resources */,
+				1F2B73CA2D5D81D800E07569 /* note.md in Resources */,
 				1F8D59282C3B9D0200832F61 /* Pretendard-SemiBold.otf in Resources */,
 				1F8D592A2C3B9D0200832F61 /* Pretendard-Thin.otf in Resources */,
 				1F8D592C2C3B9D0200832F61 /* Pretendard-Bold.otf in Resources */,
@@ -660,6 +679,7 @@
 				1FA883FB2CD9F6930022244D /* PreviewContainer.swift in Sources */,
 				1F032BB92C612A3500E8C64B /* SkeletonBox.swift in Sources */,
 				1F692CE12CB4FEA400BAEEBE /* EnterSSNView.swift in Sources */,
+				1F2B73CD2D5D84D700E07569 /* AuthService.swift in Sources */,
 				1F31AFDE2C972BA100DBFB18 /* Counter.swift in Sources */,
 				1FDAAC2D2CEB525A00767F86 /* HGPlusButton.swift in Sources */,
 				1FCABC532D3E4172005B5285 /* SpouseCodeModel.swift in Sources */,
