@@ -30,5 +30,10 @@
 
 
 ## Progress
+- [ ] MyPage 구현 마무리 -> dummy data 연동
 - [ ] Ledger 부분 마무리
 
+- 일단 각 View 별로 가져오는 데이터가 조금씩 다른 것 같음 -> 모두 통합할 생각하지말고 동기화가 자주 일어나는 부분들만 집중적으로 통합
+-> 나머지는 ViewModel처럼 접근하기 (단 Model로 네이밍)
+
+MyPage -> MyPageModel로 감싸는 게 맞는 듯

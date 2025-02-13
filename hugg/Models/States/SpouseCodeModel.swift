@@ -1,5 +1,6 @@
 import Foundation
 
+// model for only get spousecode API call
 @MainActor
 class SpouseCodeModel: ObservableObject {
     let client = HTTPClient()
