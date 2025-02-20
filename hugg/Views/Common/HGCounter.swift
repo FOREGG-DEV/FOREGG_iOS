@@ -1,7 +1,6 @@
 import SwiftUI
 
-struct Counter: View {
-    // TODO: Change Image (from Figma)
+struct HGCounter: View {
     @Binding var cnt: Int
 
     var body: some View {
@@ -46,22 +45,9 @@ struct Counter: View {
 
 // MARK: .constant를 활용해서 예시 값 출력 가능
 
-// TODO: 왜 @State 정상 동작 안하는지 체크
-
-// struct Counter_Preview: PreviewProvider {
-//    @State static var test: Int = 0
-//
-//    static var previews: some View {
-//        ZStack {
-//            Color(.mainBg).ignoresSafeArea()
-//            Counter(cnt: $test)
-//        }
-//    }
-// }
-
 #Preview {
     ZStack {
         Color(.mainBg).ignoresSafeArea()
-        Counter(cnt: .constant(3))
+        HGCounter(cnt: .constant(3))
     }
 }

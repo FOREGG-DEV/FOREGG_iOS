@@ -36,6 +36,7 @@ struct MyPageScreen: View {
                             title: MyPageRouteSection1Config.spouse.rawValue,
                             spouseName: self.model.myPage?.spouse ?? "데이터 발견x",
                             action: {
+//                                print("clicked")
                                 self.navigate(to: MyPageRouteSection1Config.spouse)
                             }
                         )
@@ -79,14 +80,7 @@ struct MyPageScreen: View {
         }
         .background(.mainBg)
         .task {
-            if self.model.myPage == nil {
-                do {
-                    try await self.model.populateMyPage()
-                    self.viewStatus = .success
-                } catch {
-                    self.viewStatus = .failure(error.localizedDescription)
-                }
-            }
+            await populateMyPage()
         }
     }
 }
@@ -95,6 +89,16 @@ struct MyPageScreen: View {
 extension MyPageScreen {
     private func navigate(to myPageRoute: MyPageNavigatable) {
         self.appState.routes.append(myPageRoute.toRoute())
+    }
+
+    private func populateMyPage() async {
+        do {
+            self.viewStatus = .loading
+            try await self.model.populateMyPage()
+            self.viewStatus = .success
+        } catch {
+            self.viewStatus = .failure(error.localizedDescription)
+        }
     }
 }
 

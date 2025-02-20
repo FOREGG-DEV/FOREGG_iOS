@@ -6,7 +6,7 @@ struct RoundSelectView: View {
     var body: some View {
         VStack(alignment: .leading) {
             SignUpTitleText(title: "현재 진행중인 회차를\n알려주세요")
-            Counter(cnt: $state.currentRound)
+            HGCounter(cnt: $state.currentRound)
 
             Spacer()
 
