@@ -17,11 +17,11 @@ struct SegmentedView: View {
                         ZStack {
                             Capsule()
                                 .fill(Color.clear)
-                                .frame(height: 40)
+                                .frame(height: 46)
                             if selected == segment {
                                 RoundedRectangle(cornerRadius: 8)
                                     .fill(.main)
-                                    .frame(height: 40)
+                                    .frame(height: 46)
                                     .matchedGeometryEffect(id: "Tab", in: name)
                             }
                             Text(segment)

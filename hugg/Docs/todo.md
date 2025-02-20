@@ -35,7 +35,8 @@
 > 사실 토큰만 있어도 로그아웃, 회원탈퇴가 되니까 괜찮긴 할듯..?
 > Process : Token 지우기 (TokenManager) -> AppState init(Routing to Entry Screen)
 
-- [ ] FAQ, 카톡 채널, 공지사항 등 링크 연동
+- [x] FAQ, 공지사항 등 링크 연동
+> 카톡 채널 링크 넣기
 
 
 금주 주말까지
@@ -47,7 +48,9 @@
 ## Progress
 
 오늘 목표 (02/20)
-- [ ] MyPage 구현 마무리 -> dummy data 연동
+- [x] MyPage 구현 마무리 -> dummy data 연동
+- [ ] HomePage -> 더미데이터 연동
+- [ ] HomePage / 알림 페이지 구현
 - [ ] Ledger 부분 마무리 -> dummy data 연동
 - [ ] 에러, 로딩 화면 넣기
 > json lottie 어떻게 넣는지 찾아보기

@@ -82,6 +82,7 @@
 		1FCABC532D3E4172005B5285 /* SpouseCodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCABC522D3E4172005B5285 /* SpouseCodeModel.swift */; };
 		1FCD8F432CB52C6A00956BA0 /* SSNModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCD8F422CB52C6A00956BA0 /* SSNModel.swift */; };
 		1FCEFF072D66B3E60063DA31 /* HGBlackToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCEFF062D66B3E60063DA31 /* HGBlackToast.swift */; };
+		1FCEFF092D66C4BC0063DA31 /* MyMedicineScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCEFF082D66C4BC0063DA31 /* MyMedicineScreen.swift */; };
 		1FD0D22A2CB4308B00F96E87 /* DailyHugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD0D2292CB4308B00F96E87 /* DailyHugView.swift */; };
 		1FD0D2302CB433A200F96E87 /* SurgeryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD0D22F2CB433A200F96E87 /* SurgeryType.swift */; };
 		1FD0D2322CB437B600F96E87 /* CustomDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD0D2312CB437B600F96E87 /* CustomDateFormatter.swift */; };
@@ -178,6 +179,7 @@
 		1FCABC522D3E4172005B5285 /* SpouseCodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpouseCodeModel.swift; sourceTree = "<group>"; };
 		1FCD8F422CB52C6A00956BA0 /* SSNModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSNModel.swift; sourceTree = "<group>"; };
 		1FCEFF062D66B3E60063DA31 /* HGBlackToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGBlackToast.swift; sourceTree = "<group>"; };
+		1FCEFF082D66C4BC0063DA31 /* MyMedicineScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMedicineScreen.swift; sourceTree = "<group>"; };
 		1FD0D2292CB4308B00F96E87 /* DailyHugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyHugView.swift; sourceTree = "<group>"; };
 		1FD0D22F2CB433A200F96E87 /* SurgeryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurgeryType.swift; sourceTree = "<group>"; };
 		1FD0D2312CB437B600F96E87 /* CustomDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDateFormatter.swift; sourceTree = "<group>"; };
@@ -533,6 +535,7 @@
 				1F8929352CE10DCA00DDF698 /* ManageAccountScreen.swift */,
 				1F2B73D62D5DB5CF00E07569 /* MyPageSpouseScreen.swift */,
 				1F3CA1EE2D6476270086FDB2 /* MyPageQuestionScreen.swift */,
+				1FCEFF082D66C4BC0063DA31 /* MyMedicineScreen.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -696,6 +699,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FA281D22D37ADFA007BD828 /* LedgerAllPage.swift in Sources */,
+				1FCEFF092D66C4BC0063DA31 /* MyMedicineScreen.swift in Sources */,
 				1F603C6F2CBD06E100E5BF5D /* MyPageScreen.swift in Sources */,
 				1F2B73D72D5DB5CF00E07569 /* MyPageSpouseScreen.swift in Sources */,
 				1FA883FB2CD9F6930022244D /* PreviewContainer.swift in Sources */,

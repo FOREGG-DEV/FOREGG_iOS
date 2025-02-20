@@ -22,3 +22,12 @@ Screen의 목적인 View는 반드시 Screen으로 명칭
 - `failure`, `success`, `loading` 값을 가지며 이에 따라 알맞게 렌더링한다.
 
 
+### Screen 만들기
+- View 생성 (for screen)
+- extension에 로직 넣어서 코드 정리
+- Screen이 커지는 경우, ScreenState 만들어도 됨 (ViewModel의 역할)
+
+- `huggApp` 내에 Route에 View 연결
+- 기본 navigationBar 가리기
+> Gesture navigation 고려
+

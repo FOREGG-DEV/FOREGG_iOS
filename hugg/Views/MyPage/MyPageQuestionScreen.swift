@@ -5,6 +5,8 @@ private let OFFICAL_EMAIL = "for.egg0302@gmail.com"
 struct MyPageQuestionScreen: View {
     @EnvironmentObject var appState: AppState
     @State var showToast: Bool = false
+    // TODO: 카카오톡 채널 링크 연동
+//    @Environment(\.openURL) var openURL
 
     var body: some View {
         VStack(alignment: .leading) {
