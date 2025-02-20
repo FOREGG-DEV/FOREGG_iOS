@@ -20,3 +20,5 @@ Screen의 목적인 View는 반드시 Screen으로 명칭
 ### viewStatus
 - View 마다 불러올 데이터가 있다면 viewStatus라는 enum을 @State로 가진다.
 - `failure`, `success`, `loading` 값을 가지며 이에 따라 알맞게 렌더링한다.
+
+

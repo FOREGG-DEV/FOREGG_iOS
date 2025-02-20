@@ -38,17 +38,9 @@ struct huggApp: App {
                         case .myMedicine:
                             DummyScreen()
 
-                        case .faq:
-                            DummyScreen()
-
-                        case .notice:
-                            DummyScreen()
-
                         case .question:
-                            DummyScreen()
-
-                        case .terms:
-                            DummyScreen()
+                            MyPageQuestionScreen()
+                                .navigationBarBackButtonHidden(true)
 
                         case .manageAccount:
                             ManageAccountScreen()

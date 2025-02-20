@@ -4,9 +4,17 @@ import SwiftUI
 
 // Screen code here
 
+private enum MyPageUrls: String {
+    case notice = "https://abouthugg.notion.site/Hugg-c673654437704c938ec5d7762ca338a0?pvs=4"
+    case faq = "https://abouthugg.notion.site/Hugg-Q-A-1d703027d86d4dd2abafce3ad594927e"
+    case terms = "https://abouthugg.notion.site/9f6d826b7f354ec8af9a2832ad34310d"
+}
+
 struct MyPageScreen: View {
     @EnvironmentObject private var appState: AppState
     @EnvironmentObject private var model: MyPageModel
+
+    @Environment(\.openURL) var openURL
 
     @State var viewStatus: ViewStatus = .loading
 
@@ -33,17 +41,16 @@ struct MyPageScreen: View {
 
                     Section {
                         MyPageListSpouseCell(
-                            title: MyPageRouteSection1Config.spouse.rawValue,
+                            title: "배우자",
                             spouseName: self.model.myPage?.spouse ?? "데이터 발견x",
                             action: {
-//                                print("clicked")
-                                self.navigate(to: MyPageRouteSection1Config.spouse)
+                                self.navigate(to: .spouse)
                             }
                         )
                         MyPageListCell(
-                            title: MyPageRouteSection1Config.myMedicine.rawValue,
+                            title: "나의 약, 주사 정보",
                             action: {
-                                self.navigate(to: MyPageRouteSection1Config.myMedicine)
+                                self.navigate(to: .myMedicine)
                             }
                         )
                     } header: {
@@ -55,22 +62,33 @@ struct MyPageScreen: View {
                     // MARK: Section 2
 
                     Section(content: {
-                        ForEach(MyPageRouteSection2Config.allCases, id: \.rawValue) { config in
-                            MyPageListCell(title: config.rawValue, action: {
-                                self.navigate(to: config)
-                            })
-                        }
-                    })
+                        MyPageListCell(title: "공지사항", action: {
+                            self.openURL(URL(string: MyPageUrls.notice.rawValue)!)
+                        })
+
+                        MyPageListCell(title: "FAQ", action: {
+                            self.openURL(URL(string: MyPageUrls.faq.rawValue)!)
+                        })
+
+                        MyPageListCell(title: "문의사항", action: {
+                            self.navigate(to: .question)
+                        })
+
+                        MyPageListCell(title: "이용약관", action: {
+                            self.openURL(URL(string: MyPageUrls.terms.rawValue)!)
+                        })
+                    }
+                    )
                     .listRowSeparator(.hidden, edges: .bottom)
                     .listRowSpacing(.zero)
 
                     // MARK: Section 3
 
-                    ForEach(MyPageRouteSection3Config.allCases, id: \.rawValue) { config in
-                        MyPageListCell(title: config.rawValue, action: {
-                            self.navigate(to: config)
+                    Section(content: {
+                        MyPageListCell(title: "계정관리", action: {
+                            self.navigate(to: .manageAccount)
                         })
-                    }
+                    })
                 }
                 .listStyle(.insetGrouped)
                 .listSectionSpacing(.compact)
@@ -87,8 +105,12 @@ struct MyPageScreen: View {
 
 // logics
 extension MyPageScreen {
-    private func navigate(to myPageRoute: MyPageNavigatable) {
-        self.appState.routes.append(myPageRoute.toRoute())
+//    private func navigate(to myPageRoute: MyPageNavigatable) {
+//        self.appState.routes.append(myPageRoute.toRoute())
+//    }
+
+    private func navigate(to route: Route) {
+        self.appState.routes.append(route)
     }
 
     private func populateMyPage() async {
@@ -103,67 +125,6 @@ extension MyPageScreen {
 }
 
 // protocols, enums for listview clean up
-protocol MyPageNavigatable {
-    var routeName: String { get }
-    func toRoute() -> Route
-}
-
-enum MyPageRouteSection1Config: String, CaseIterable, MyPageNavigatable {
-    case spouse = "배우자"
-    case myMedicine = "나의 약, 주사 정보"
-
-    var routeName: String {
-        return self.rawValue
-    }
-
-    func toRoute() -> Route {
-        switch self {
-        case .spouse:
-            return Route.spouse
-        case .myMedicine:
-            return Route.myMedicine
-        }
-    }
-}
-
-enum MyPageRouteSection2Config: String, CaseIterable, MyPageNavigatable {
-    case notice = "공지사항"
-    case faq = "FAQ"
-    case question = "문의사항"
-    case terms = "이용약관"
-
-    var routeName: String {
-        return self.rawValue
-    }
-
-    func toRoute() -> Route {
-        switch self {
-        case .faq:
-            return Route.faq
-        case .notice:
-            return Route.notice
-        case .question:
-            return Route.question
-        case .terms:
-            return Route.terms
-        }
-    }
-}
-
-enum MyPageRouteSection3Config: String, CaseIterable, MyPageNavigatable {
-    case manageAccount = "계정관리"
-
-    var routeName: String {
-        return self.rawValue
-    }
-
-    func toRoute() -> Route {
-        switch self {
-        case .manageAccount:
-            return Route.manageAccount
-        }
-    }
-}
 
 // View Test
 #Preview {

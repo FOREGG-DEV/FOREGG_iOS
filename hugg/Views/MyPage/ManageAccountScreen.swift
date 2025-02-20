@@ -1,9 +1,7 @@
-// TODO: 로그아웃 기능 구현
-// TODO: 회원 탈퇴 기능 구현
-// TODO: Binding() 공부하기
-import SwiftUI
 import PopupView
+import SwiftUI
 
+// Popup State
 enum ManageAccountPopupConfig: Equatable {
     case logout
     case withdrawal
@@ -13,7 +11,7 @@ enum ManageAccountPopupConfig: Equatable {
 struct ManageAccountScreen: View {
     @EnvironmentObject private var appState: AppState
     @Environment(\.dismiss) var dismiss
-    // local states
+    // local state for popup status
     @State private var currentPopup: ManageAccountPopupConfig?
 
     private func logout() {
@@ -96,7 +94,11 @@ struct ManageAccountScreen: View {
                         onCancel: {
                             currentPopup = nil
                         },
-                        onConfirm: {},
+                        onConfirm: {
+                            // DELETE account
+                            currentPopup = .alert(title: "탈퇴가 완료되었습니다.", btnLabel: "확인")
+                            appState.initState()
+                        },
                         title: "Hugg에서 탈퇴하시겠습니까?",
                         confirmBtnLabel: "탈퇴"
                     )
@@ -113,9 +115,14 @@ struct ManageAccountScreen: View {
     }
 }
 
+extension ManageAccountScreen {
+    func deleteAccount() async {
+        // using which model?
+        // TODO: [DELETE] user here
+    }
+}
+
 #Preview {
     ManageAccountScreen()
         .background(.mainBg)
 }
-
-

@@ -27,7 +27,7 @@ class MyPageModel: ObservableObject {
     func populateMyPage() async throws {
         print("populate 시작")
         // MOCK
-        try await Task.sleep(for: .seconds(3))
+        try await Task.sleep(for: .seconds(1))
         myPage = MyPageResponseDTO.sample
         print("populate 종료")
     }

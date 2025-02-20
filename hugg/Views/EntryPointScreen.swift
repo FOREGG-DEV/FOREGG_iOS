@@ -46,9 +46,11 @@ extension EntryPointScreen {
 //        } else {
 //            appState.routes.append(.onboarding)
 //        }
+
         // MARK: Debug
+
         appState.routes.append(.mainScreen)
-        
+
         // 권한 허용 되었는지도 확인하기 ?
     }
 }

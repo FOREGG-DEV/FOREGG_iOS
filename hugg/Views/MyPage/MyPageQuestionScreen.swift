@@ -1,10 +1,3 @@
-//
-//  EnquiryScreen.swift
-//  hugg
-//
-//  Created by Donghan Kim on 2/18/25.
-//
-
 import SwiftUI
 
 private let OFFICAL_EMAIL = "for.egg0302@gmail.com"
@@ -27,7 +20,6 @@ struct MyPageQuestionScreen: View {
             Image(.kakaoChannel)
                 .resizable()
                 .scaledToFit()
-                .frame(width: .infinity)
                 .padding(.horizontal, 16)
 
             Spacer()
