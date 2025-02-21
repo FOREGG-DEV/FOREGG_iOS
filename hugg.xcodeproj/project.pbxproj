@@ -37,8 +37,6 @@
 		1F636C4C2D3D3F670026ABE4 /* SignUpState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F636C4B2D3D3F670026ABE4 /* SignUpState.swift */; };
 		1F636C582D3DEA2C0026ABE4 /* SignUpFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F636C572D3DEA2C0026ABE4 /* SignUpFooter.swift */; };
 		1F656AF22CA979DE0035F81E /* TreatmentSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F656AF12CA979DE0035F81E /* TreatmentSelectView.swift */; };
-		1F6813CD2CDDEB60002B8481 /* HomeResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6813CC2CDDEB5C002B8481 /* HomeResponseDTO.swift */; };
-		1F6813CF2CDDEB76002B8481 /* HomeRecordResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6813CE2CDDEB6D002B8481 /* HomeRecordResponseDTO.swift */; };
 		1F692CE12CB4FEA400BAEEBE /* EnterSSNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F692CE02CB4FEA400BAEEBE /* EnterSSNView.swift */; };
 		1F86E4A12D5DBD0C0042B256 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F86E4A02D5DBD060042B256 /* UserModel.swift */; };
 		1F86E4A32D5DBED80042B256 /* MyPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F86E4A22D5DBED50042B256 /* MyPageModel.swift */; };
@@ -78,6 +76,49 @@
 		1FA883FB2CD9F6930022244D /* PreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA883FA2CD9F6930022244D /* PreviewContainer.swift */; };
 		1FAE4ABB2CE1126E005C946B /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAE4ABA2CE11264005C946B /* UINavigationController+Extensions.swift */; };
 		1FB8AE942CAD60A0003BDC9C /* NoTapAnimationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8AE932CAD60A0003BDC9C /* NoTapAnimationStyle.swift */; };
+		1FBB67522D68ABEB002C60A2 /* MedicalResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67392D68ABEB002C60A2 /* MedicalResponseDTO.swift */; };
+		1FBB67532D68ABEB002C60A2 /* NotificationDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67402D68ABEB002C60A2 /* NotificationDTO.swift */; };
+		1FBB67562D68ABEB002C60A2 /* MyChallengeTotalDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB673B2D68ABEB002C60A2 /* MyChallengeTotalDTO.swift */; };
+		1FBB675C2D68ABEB002C60A2 /* NotificationResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67412D68ABEB002C60A2 /* NotificationResponseDTO.swift */; };
+		1FBB675D2D68ABEB002C60A2 /* RepeatTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67442D68ABEB002C60A2 /* RepeatTime.swift */; };
+		1FBB675F2D68ABEB002C60A2 /* ChallengeDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67202D68ABEB002C60A2 /* ChallengeDTO.swift */; };
+		1FBB67612D68ABEB002C60A2 /* SideEffectRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67472D68ABEB002C60A2 /* SideEffectRequestDTO.swift */; };
+		1FBB67622D68ABEB002C60A2 /* DailyByCountResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67282D68ABEB002C60A2 /* DailyByCountResponseDTO.swift */; };
+		1FBB67632D68ABEB002C60A2 /* ExpenditureRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB672E2D68ABEB002C60A2 /* ExpenditureRequestDTO.swift */; };
+		1FBB67642D68ABEB002C60A2 /* ChallengeCompleteRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB671E2D68ABEB002C60A2 /* ChallengeCompleteRequestDTO.swift */; };
+		1FBB67662D68ABEB002C60A2 /* RecordRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67422D68ABEB002C60A2 /* RecordRequestDTO.swift */; };
+		1FBB67672D68ABEB002C60A2 /* ChallengeNameRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67212D68ABEB002C60A2 /* ChallengeNameRequestDTO.swift */; };
+		1FBB67682D68ABEB002C60A2 /* DailyWriteBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB672D2D68ABEB002C60A2 /* DailyWriteBody.swift */; };
+		1FBB676A2D68ABEB002C60A2 /* FcmRenewalRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB672F2D68ABEB002C60A2 /* FcmRenewalRequest.swift */; };
+		1FBB676B2D68ABEB002C60A2 /* ScheduleResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67462D68ABEB002C60A2 /* ScheduleResponseDTO.swift */; };
+		1FBB676E2D68ABEB002C60A2 /* RepeatTimeResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67452D68ABEB002C60A2 /* RepeatTimeResponseDTO.swift */; };
+		1FBB676F2D68ABEB002C60A2 /* DailyAllResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67272D68ABEB002C60A2 /* DailyAllResponseDTO.swift */; };
+		1FBB67702D68ABEB002C60A2 /* SubsidyAvailable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67492D68ABEB002C60A2 /* SubsidyAvailable.swift */; };
+		1FBB67722D68ABEB002C60A2 /* DailyResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB672C2D68ABEB002C60A2 /* DailyResponseDTO.swift */; };
+		1FBB67732D68ABEB002C60A2 /* DailyRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB672B2D68ABEB002C60A2 /* DailyRequestDTO.swift */; };
+		1FBB67742D68ABEB002C60A2 /* DailyIdBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67292D68ABEB002C60A2 /* DailyIdBody.swift */; };
+		1FBB67782D68ABEB002C60A2 /* LedgerMemoRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67332D68ABEB002C60A2 /* LedgerMemoRequestDTO.swift */; };
+		1FBB67792D68ABEB002C60A2 /* LedgerRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67342D68ABEB002C60A2 /* LedgerRequestDTO.swift */; };
+		1FBB677C2D68ABEB002C60A2 /* SubsidyResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB674C2D68ABEB002C60A2 /* SubsidyResponseDTO.swift */; };
+		1FBB677E2D68ABEB002C60A2 /* RecordResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67432D68ABEB002C60A2 /* RecordResponseDTO.swift */; };
+		1FBB677F2D68ABEB002C60A2 /* HomeRecordResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67302D68ABEB002C60A2 /* HomeRecordResponseDTO.swift */; };
+		1FBB67812D68ABEB002C60A2 /* LedgerResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67352D68ABEB002C60A2 /* LedgerResponseDTO.swift */; };
+		1FBB67832D68ABEB002C60A2 /* MedicalRecordResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67382D68ABEB002C60A2 /* MedicalRecordResponseDTO.swift */; };
+		1FBB67842D68ABEB002C60A2 /* ChallengeCreateRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB671F2D68ABEB002C60A2 /* ChallengeCreateRequestDTO.swift */; };
+		1FBB67852D68ABEB002C60A2 /* SubsidyDetailResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB674A2D68ABEB002C60A2 /* SubsidyDetailResponseDTO.swift */; };
+		1FBB67862D68ABEB002C60A2 /* SubsidyRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB674B2D68ABEB002C60A2 /* SubsidyRequestDTO.swift */; };
+		1FBB67872D68ABEB002C60A2 /* CheckInSameRecordResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67252D68ABEB002C60A2 /* CheckInSameRecordResponseDTO.swift */; };
+		1FBB67882D68ABEB002C60A2 /* MyChallengeDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB673A2D68ABEB002C60A2 /* MyChallengeDTO.swift */; };
+		1FBB678B2D68ABEB002C60A2 /* ChallengeParticipantDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67222D68ABEB002C60A2 /* ChallengeParticipantDTO.swift */; };
+		1FBB678C2D68ABEB002C60A2 /* ChallengeResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67242D68ABEB002C60A2 /* ChallengeResponseDTO.swift */; };
+		1FBB678D2D68ABEB002C60A2 /* SideEffectResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67482D68ABEB002C60A2 /* SideEffectResponseDTO.swift */; };
+		1FBB678E2D68ABEB002C60A2 /* LedgerDetailResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67322D68ABEB002C60A2 /* LedgerDetailResponseDTO.swift */; };
+		1FBB67902D68ABEB002C60A2 /* CheckResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67262D68ABEB002C60A2 /* CheckResponseDTO.swift */; };
+		1FBB67952D68ABEB002C60A2 /* ChallengeParticipantsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67232D68ABEB002C60A2 /* ChallengeParticipantsDTO.swift */; };
+		1FBB67962D68ABEB002C60A2 /* HomeResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67312D68ABEB002C60A2 /* HomeResponseDTO.swift */; };
+		1FBB67972D68ABEB002C60A2 /* LogoutWithdrawalResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67362D68ABEB002C60A2 /* LogoutWithdrawalResponseDTO.swift */; };
+		1FBB679A2D68ABEB002C60A2 /* MedicalRecordRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB67372D68ABEB002C60A2 /* MedicalRecordRequestDTO.swift */; };
+		1FBB679E2D68ABEB002C60A2 /* DailyReplyRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB672A2D68ABEB002C60A2 /* DailyReplyRequestDTO.swift */; };
 		1FC4328B2C49732E00FE5834 /* OnboardingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC4328A2C49732E00FE5834 /* OnboardingState.swift */; };
 		1FCABC532D3E4172005B5285 /* SpouseCodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCABC522D3E4172005B5285 /* SpouseCodeModel.swift */; };
 		1FCD8F432CB52C6A00956BA0 /* SSNModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCD8F422CB52C6A00956BA0 /* SSNModel.swift */; };
@@ -136,8 +177,6 @@
 		1F636C4B2D3D3F670026ABE4 /* SignUpState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpState.swift; sourceTree = "<group>"; };
 		1F636C572D3DEA2C0026ABE4 /* SignUpFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFooter.swift; sourceTree = "<group>"; };
 		1F656AF12CA979DE0035F81E /* TreatmentSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentSelectView.swift; sourceTree = "<group>"; };
-		1F6813CC2CDDEB5C002B8481 /* HomeResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResponseDTO.swift; sourceTree = "<group>"; };
-		1F6813CE2CDDEB6D002B8481 /* HomeRecordResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecordResponseDTO.swift; sourceTree = "<group>"; };
 		1F692CE02CB4FEA400BAEEBE /* EnterSSNView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterSSNView.swift; sourceTree = "<group>"; };
 		1F86E4A02D5DBD060042B256 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		1F86E4A22D5DBED50042B256 /* MyPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageModel.swift; sourceTree = "<group>"; };
@@ -175,6 +214,49 @@
 		1FA883FA2CD9F6930022244D /* PreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContainer.swift; sourceTree = "<group>"; };
 		1FAE4ABA2CE11264005C946B /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
 		1FB8AE932CAD60A0003BDC9C /* NoTapAnimationStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoTapAnimationStyle.swift; sourceTree = "<group>"; };
+		1FBB671E2D68ABEB002C60A2 /* ChallengeCompleteRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeCompleteRequestDTO.swift; sourceTree = "<group>"; };
+		1FBB671F2D68ABEB002C60A2 /* ChallengeCreateRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeCreateRequestDTO.swift; sourceTree = "<group>"; };
+		1FBB67202D68ABEB002C60A2 /* ChallengeDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDTO.swift; sourceTree = "<group>"; };
+		1FBB67212D68ABEB002C60A2 /* ChallengeNameRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeNameRequestDTO.swift; sourceTree = "<group>"; };
+		1FBB67222D68ABEB002C60A2 /* ChallengeParticipantDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeParticipantDTO.swift; sourceTree = "<group>"; };
+		1FBB67232D68ABEB002C60A2 /* ChallengeParticipantsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeParticipantsDTO.swift; sourceTree = "<group>"; };
+		1FBB67242D68ABEB002C60A2 /* ChallengeResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeResponseDTO.swift; sourceTree = "<group>"; };
+		1FBB67252D68ABEB002C60A2 /* CheckInSameRecordResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInSameRecordResponseDTO.swift; sourceTree = "<group>"; };
+		1FBB67262D68ABEB002C60A2 /* CheckResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckResponseDTO.swift; sourceTree = "<group>"; };
+		1FBB67272D68ABEB002C60A2 /* DailyAllResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyAllResponseDTO.swift; sourceTree = "<group>"; };
+		1FBB67282D68ABEB002C60A2 /* DailyByCountResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyByCountResponseDTO.swift; sourceTree = "<group>"; };
+		1FBB67292D68ABEB002C60A2 /* DailyIdBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyIdBody.swift; sourceTree = "<group>"; };
+		1FBB672A2D68ABEB002C60A2 /* DailyReplyRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReplyRequestDTO.swift; sourceTree = "<group>"; };
+		1FBB672B2D68ABEB002C60A2 /* DailyRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRequestDTO.swift; sourceTree = "<group>"; };
+		1FBB672C2D68ABEB002C60A2 /* DailyResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyResponseDTO.swift; sourceTree = "<group>"; };
+		1FBB672D2D68ABEB002C60A2 /* DailyWriteBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWriteBody.swift; sourceTree = "<group>"; };
+		1FBB672E2D68ABEB002C60A2 /* ExpenditureRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenditureRequestDTO.swift; sourceTree = "<group>"; };
+		1FBB672F2D68ABEB002C60A2 /* FcmRenewalRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FcmRenewalRequest.swift; sourceTree = "<group>"; };
+		1FBB67302D68ABEB002C60A2 /* HomeRecordResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecordResponseDTO.swift; sourceTree = "<group>"; };
+		1FBB67312D68ABEB002C60A2 /* HomeResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResponseDTO.swift; sourceTree = "<group>"; };
+		1FBB67322D68ABEB002C60A2 /* LedgerDetailResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgerDetailResponseDTO.swift; sourceTree = "<group>"; };
+		1FBB67332D68ABEB002C60A2 /* LedgerMemoRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgerMemoRequestDTO.swift; sourceTree = "<group>"; };
+		1FBB67342D68ABEB002C60A2 /* LedgerRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgerRequestDTO.swift; sourceTree = "<group>"; };
+		1FBB67352D68ABEB002C60A2 /* LedgerResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgerResponseDTO.swift; sourceTree = "<group>"; };
+		1FBB67362D68ABEB002C60A2 /* LogoutWithdrawalResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutWithdrawalResponseDTO.swift; sourceTree = "<group>"; };
+		1FBB67372D68ABEB002C60A2 /* MedicalRecordRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalRecordRequestDTO.swift; sourceTree = "<group>"; };
+		1FBB67382D68ABEB002C60A2 /* MedicalRecordResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalRecordResponseDTO.swift; sourceTree = "<group>"; };
+		1FBB67392D68ABEB002C60A2 /* MedicalResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalResponseDTO.swift; sourceTree = "<group>"; };
+		1FBB673A2D68ABEB002C60A2 /* MyChallengeDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChallengeDTO.swift; sourceTree = "<group>"; };
+		1FBB673B2D68ABEB002C60A2 /* MyChallengeTotalDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChallengeTotalDTO.swift; sourceTree = "<group>"; };
+		1FBB67402D68ABEB002C60A2 /* NotificationDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDTO.swift; sourceTree = "<group>"; };
+		1FBB67412D68ABEB002C60A2 /* NotificationResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationResponseDTO.swift; sourceTree = "<group>"; };
+		1FBB67422D68ABEB002C60A2 /* RecordRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordRequestDTO.swift; sourceTree = "<group>"; };
+		1FBB67432D68ABEB002C60A2 /* RecordResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordResponseDTO.swift; sourceTree = "<group>"; };
+		1FBB67442D68ABEB002C60A2 /* RepeatTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatTime.swift; sourceTree = "<group>"; };
+		1FBB67452D68ABEB002C60A2 /* RepeatTimeResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatTimeResponseDTO.swift; sourceTree = "<group>"; };
+		1FBB67462D68ABEB002C60A2 /* ScheduleResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleResponseDTO.swift; sourceTree = "<group>"; };
+		1FBB67472D68ABEB002C60A2 /* SideEffectRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideEffectRequestDTO.swift; sourceTree = "<group>"; };
+		1FBB67482D68ABEB002C60A2 /* SideEffectResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideEffectResponseDTO.swift; sourceTree = "<group>"; };
+		1FBB67492D68ABEB002C60A2 /* SubsidyAvailable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsidyAvailable.swift; sourceTree = "<group>"; };
+		1FBB674A2D68ABEB002C60A2 /* SubsidyDetailResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsidyDetailResponseDTO.swift; sourceTree = "<group>"; };
+		1FBB674B2D68ABEB002C60A2 /* SubsidyRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsidyRequestDTO.swift; sourceTree = "<group>"; };
+		1FBB674C2D68ABEB002C60A2 /* SubsidyResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsidyResponseDTO.swift; sourceTree = "<group>"; };
 		1FC4328A2C49732E00FE5834 /* OnboardingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingState.swift; sourceTree = "<group>"; };
 		1FCABC522D3E4172005B5285 /* SpouseCodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpouseCodeModel.swift; sourceTree = "<group>"; };
 		1FCD8F422CB52C6A00956BA0 /* SSNModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSNModel.swift; sourceTree = "<group>"; };
@@ -389,8 +471,6 @@
 		1F636C452D3A52480026ABE4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				1F6813CE2CDDEB6D002B8481 /* HomeRecordResponseDTO.swift */,
-				1F6813CC2CDDEB5C002B8481 /* HomeResponseDTO.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -501,6 +581,77 @@
 			path = Styles;
 			sourceTree = "<group>";
 		};
+		1FBB67022D68AB9D002C60A2 /* Gen */ = {
+			isa = PBXGroup;
+			children = (
+				1FBB67252D68ABEB002C60A2 /* CheckInSameRecordResponseDTO.swift */,
+				1FBB67262D68ABEB002C60A2 /* CheckResponseDTO.swift */,
+				1FBB67272D68ABEB002C60A2 /* DailyAllResponseDTO.swift */,
+				1FBB67282D68ABEB002C60A2 /* DailyByCountResponseDTO.swift */,
+				1FBB67292D68ABEB002C60A2 /* DailyIdBody.swift */,
+				1FBB672A2D68ABEB002C60A2 /* DailyReplyRequestDTO.swift */,
+				1FBB672B2D68ABEB002C60A2 /* DailyRequestDTO.swift */,
+				1FBB672C2D68ABEB002C60A2 /* DailyResponseDTO.swift */,
+				1FBB672D2D68ABEB002C60A2 /* DailyWriteBody.swift */,
+				1FBB672E2D68ABEB002C60A2 /* ExpenditureRequestDTO.swift */,
+				1FBB672F2D68ABEB002C60A2 /* FcmRenewalRequest.swift */,
+				1FBB67302D68ABEB002C60A2 /* HomeRecordResponseDTO.swift */,
+				1FBB67312D68ABEB002C60A2 /* HomeResponseDTO.swift */,
+				1FBB67362D68ABEB002C60A2 /* LogoutWithdrawalResponseDTO.swift */,
+				1FBB67372D68ABEB002C60A2 /* MedicalRecordRequestDTO.swift */,
+				1FBB67382D68ABEB002C60A2 /* MedicalRecordResponseDTO.swift */,
+				1FBB67392D68ABEB002C60A2 /* MedicalResponseDTO.swift */,
+				1FBB67422D68ABEB002C60A2 /* RecordRequestDTO.swift */,
+				1FBB67432D68ABEB002C60A2 /* RecordResponseDTO.swift */,
+				1FBB67442D68ABEB002C60A2 /* RepeatTime.swift */,
+				1FBB67452D68ABEB002C60A2 /* RepeatTimeResponseDTO.swift */,
+				1FBB67462D68ABEB002C60A2 /* ScheduleResponseDTO.swift */,
+				1FBB67472D68ABEB002C60A2 /* SideEffectRequestDTO.swift */,
+				1FBB67482D68ABEB002C60A2 /* SideEffectResponseDTO.swift */,
+				1FBB67492D68ABEB002C60A2 /* SubsidyAvailable.swift */,
+				1FBB674A2D68ABEB002C60A2 /* SubsidyDetailResponseDTO.swift */,
+				1FBB674B2D68ABEB002C60A2 /* SubsidyRequestDTO.swift */,
+				1FBB674C2D68ABEB002C60A2 /* SubsidyResponseDTO.swift */,
+			);
+			path = Gen;
+			sourceTree = "<group>";
+		};
+		1FBB679F2D68AF12002C60A2 /* Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				1FBB671E2D68ABEB002C60A2 /* ChallengeCompleteRequestDTO.swift */,
+				1FBB671F2D68ABEB002C60A2 /* ChallengeCreateRequestDTO.swift */,
+				1FBB67202D68ABEB002C60A2 /* ChallengeDTO.swift */,
+				1FBB67212D68ABEB002C60A2 /* ChallengeNameRequestDTO.swift */,
+				1FBB67222D68ABEB002C60A2 /* ChallengeParticipantDTO.swift */,
+				1FBB67232D68ABEB002C60A2 /* ChallengeParticipantsDTO.swift */,
+				1FBB67242D68ABEB002C60A2 /* ChallengeResponseDTO.swift */,
+				1FBB673A2D68ABEB002C60A2 /* MyChallengeDTO.swift */,
+				1FBB673B2D68ABEB002C60A2 /* MyChallengeTotalDTO.swift */,
+			);
+			path = Challenge;
+			sourceTree = "<group>";
+		};
+		1FBB67A02D68AF59002C60A2 /* Ledger */ = {
+			isa = PBXGroup;
+			children = (
+				1FBB67322D68ABEB002C60A2 /* LedgerDetailResponseDTO.swift */,
+				1FBB67332D68ABEB002C60A2 /* LedgerMemoRequestDTO.swift */,
+				1FBB67342D68ABEB002C60A2 /* LedgerRequestDTO.swift */,
+				1FBB67352D68ABEB002C60A2 /* LedgerResponseDTO.swift */,
+			);
+			path = Ledger;
+			sourceTree = "<group>";
+		};
+		1FBB67A12D68AF96002C60A2 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				1FBB67402D68ABEB002C60A2 /* NotificationDTO.swift */,
+				1FBB67412D68ABEB002C60A2 /* NotificationResponseDTO.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
 		1FCEFF052D66B3D30063DA31 /* Toast */ = {
 			isa = PBXGroup;
 			children = (
@@ -543,6 +694,10 @@
 		1FD0D22B2CB432D700F96E87 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
+				1FBB67A12D68AF96002C60A2 /* Notification */,
+				1FBB67A02D68AF59002C60A2 /* Ledger */,
+				1FBB679F2D68AF12002C60A2 /* Challenge */,
+				1FBB67022D68AB9D002C60A2 /* Gen */,
 				1F2B73D02D5DB24900E07569 /* MyPage */,
 				1F636C462D3A52590026ABE4 /* Authentication */,
 				1F636C452D3A52480026ABE4 /* Home */,
@@ -735,13 +890,55 @@
 				1F3F3CBA2CE2FDC3006D4EE7 /* Constants.swift in Sources */,
 				1F86E4A12D5DBD0C0042B256 /* UserModel.swift in Sources */,
 				1F9477532CE9EA1D00D947E1 /* LedgerScreen.swift in Sources */,
+				1FBB67522D68ABEB002C60A2 /* MedicalResponseDTO.swift in Sources */,
+				1FBB67532D68ABEB002C60A2 /* NotificationDTO.swift in Sources */,
+				1FBB67562D68ABEB002C60A2 /* MyChallengeTotalDTO.swift in Sources */,
+				1FBB675C2D68ABEB002C60A2 /* NotificationResponseDTO.swift in Sources */,
+				1FBB675D2D68ABEB002C60A2 /* RepeatTime.swift in Sources */,
+				1FBB675F2D68ABEB002C60A2 /* ChallengeDTO.swift in Sources */,
+				1FBB67612D68ABEB002C60A2 /* SideEffectRequestDTO.swift in Sources */,
+				1FBB67622D68ABEB002C60A2 /* DailyByCountResponseDTO.swift in Sources */,
+				1FBB67632D68ABEB002C60A2 /* ExpenditureRequestDTO.swift in Sources */,
+				1FBB67642D68ABEB002C60A2 /* ChallengeCompleteRequestDTO.swift in Sources */,
+				1FBB67662D68ABEB002C60A2 /* RecordRequestDTO.swift in Sources */,
+				1FBB67672D68ABEB002C60A2 /* ChallengeNameRequestDTO.swift in Sources */,
+				1FBB67682D68ABEB002C60A2 /* DailyWriteBody.swift in Sources */,
+				1FBB676A2D68ABEB002C60A2 /* FcmRenewalRequest.swift in Sources */,
+				1FBB676B2D68ABEB002C60A2 /* ScheduleResponseDTO.swift in Sources */,
+				1FBB676E2D68ABEB002C60A2 /* RepeatTimeResponseDTO.swift in Sources */,
+				1FBB676F2D68ABEB002C60A2 /* DailyAllResponseDTO.swift in Sources */,
+				1FBB67702D68ABEB002C60A2 /* SubsidyAvailable.swift in Sources */,
+				1FBB67722D68ABEB002C60A2 /* DailyResponseDTO.swift in Sources */,
+				1FBB67732D68ABEB002C60A2 /* DailyRequestDTO.swift in Sources */,
+				1FBB67742D68ABEB002C60A2 /* DailyIdBody.swift in Sources */,
+				1FBB67782D68ABEB002C60A2 /* LedgerMemoRequestDTO.swift in Sources */,
+				1FBB67792D68ABEB002C60A2 /* LedgerRequestDTO.swift in Sources */,
+				1FBB677C2D68ABEB002C60A2 /* SubsidyResponseDTO.swift in Sources */,
+				1FBB677E2D68ABEB002C60A2 /* RecordResponseDTO.swift in Sources */,
+				1FBB677F2D68ABEB002C60A2 /* HomeRecordResponseDTO.swift in Sources */,
+				1FBB67812D68ABEB002C60A2 /* LedgerResponseDTO.swift in Sources */,
+				1FBB67832D68ABEB002C60A2 /* MedicalRecordResponseDTO.swift in Sources */,
+				1FBB67842D68ABEB002C60A2 /* ChallengeCreateRequestDTO.swift in Sources */,
+				1FBB67852D68ABEB002C60A2 /* SubsidyDetailResponseDTO.swift in Sources */,
+				1FBB67862D68ABEB002C60A2 /* SubsidyRequestDTO.swift in Sources */,
+				1FBB67872D68ABEB002C60A2 /* CheckInSameRecordResponseDTO.swift in Sources */,
+				1FBB67882D68ABEB002C60A2 /* MyChallengeDTO.swift in Sources */,
+				1FBB678B2D68ABEB002C60A2 /* ChallengeParticipantDTO.swift in Sources */,
+				1FBB678C2D68ABEB002C60A2 /* ChallengeResponseDTO.swift in Sources */,
+				1FBB678D2D68ABEB002C60A2 /* SideEffectResponseDTO.swift in Sources */,
+				1FBB678E2D68ABEB002C60A2 /* LedgerDetailResponseDTO.swift in Sources */,
+				1FBB67902D68ABEB002C60A2 /* CheckResponseDTO.swift in Sources */,
+				1FBB67952D68ABEB002C60A2 /* ChallengeParticipantsDTO.swift in Sources */,
+				1FBB67962D68ABEB002C60A2 /* HomeResponseDTO.swift in Sources */,
+				1FBB67972D68ABEB002C60A2 /* LogoutWithdrawalResponseDTO.swift in Sources */,
+				1FBB679A2D68ABEB002C60A2 /* MedicalRecordRequestDTO.swift in Sources */,
+				1FBB679E2D68ABEB002C60A2 /* DailyReplyRequestDTO.swift in Sources */,
 				1FF22A7E2C3ADFA000367518 /* HGMainButton.swift in Sources */,
 				1F3DC3542CB50FAE00A72A52 /* MaxLengthModifier.swift in Sources */,
 				1FF199DA2D36675D00FF3C17 /* HGCheckBox.swift in Sources */,
 				1F0D930C2C36809500BB6ADD /* OnboardingAppBar.swift in Sources */,
 				1F8B64C12CB3A9E400F61118 /* RoundSelectView.swift in Sources */,
 				1F8929342CE0FF2600DDF698 /* MyPageListCell.swift in Sources */,
-				1F6813CF2CDDEB76002B8481 /* HomeRecordResponseDTO.swift in Sources */,
 				1FF199C82D36634200FF3C17 /* ComponentPreviewContainer.swift in Sources */,
 				1F86E4A32D5DBED80042B256 /* MyPageModel.swift in Sources */,
 				1FAE4ABB2CE1126E005C946B /* UINavigationController+Extensions.swift in Sources */,
@@ -766,7 +963,6 @@
 				1FF199C62D3661E600FF3C17 /* HGHomeScheduleItem.swift in Sources */,
 				1F4CE85E2D1E5B02005CB661 /* PermissionScreen.swift in Sources */,
 				1F0D93082C367F5300BB6ADD /* OnboardingScreen.swift in Sources */,
-				1F6813CD2CDDEB60002B8481 /* HomeResponseDTO.swift in Sources */,
 				1F94774F2CE9E5AF00D947E1 /* SelectablePopup.swift in Sources */,
 				1FA3EB832D36207E008C68DB /* HGEmptyScheduleItem.swift in Sources */,
 				1FD0D2322CB437B600F96E87 /* CustomDateFormatter.swift in Sources */,

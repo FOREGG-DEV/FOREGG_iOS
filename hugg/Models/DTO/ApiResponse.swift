@@ -22,13 +22,13 @@ import Foundation
 struct ApiResponse<T: Codable>: Codable {
     /// Indicates whether the API call was successful.
     let isSuccess: Bool
-    
+
     /// The status code of the API call result.
     let code: String
-    
+
     /// A message providing additional context or information (e.g., "User registration required").
     let message: String
-    
+
     /// The returned data, if available.
     ///
     /// - Note: This will be `nil` if the API call does not return any data.

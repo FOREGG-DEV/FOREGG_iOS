@@ -1,5 +1,8 @@
 import SwiftUI
 
+// Test Variable
+let useMock = true
+
 enum Constants {
     enum CornerRadius {
         static let general: CGFloat = 12.0
