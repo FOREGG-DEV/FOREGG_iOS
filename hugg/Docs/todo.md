@@ -47,7 +47,7 @@
 
 ## Progress
 
-오늘 목표 (02/20)
+오늘 목표 (02/21)
 - [x] MyPage 구현 마무리 -> dummy data 연동
 - [ ] HomePage -> 더미데이터 연동
 - [ ] HomePage / 알림 페이지 구현
@@ -63,3 +63,6 @@ MyPage -> MyPageModel로 감싸는 게 맞는 듯
 
 ## 궁금한 것
 - [ ] 성별 분기는 어떻게 해야하지?
+- [ ] Gesture 네비게이션 어떻게 적용하지? => navigationBar 비활성화 상태에서
+- [ ] List 정리 한 번 해야지
+- [ ] Xcode 토큰은 왜 자꾸 요구하지? -> 어떻게 설정해야 안귀찮아지냐

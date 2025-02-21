@@ -36,7 +36,8 @@ struct huggApp: App {
                                 .navigationBarBackButtonHidden(true)
 
                         case .myMedicine:
-                            DummyScreen()
+                            MyMedicineScreen()
+                                .navigationBarBackButtonHidden(true)
 
                         case .question:
                             MyPageQuestionScreen()

@@ -10,6 +10,7 @@ import SwiftUI
 struct MyMedicineScreen: View {
     // model for medicine screen
     @EnvironmentObject private var model: MyPageModel
+    @EnvironmentObject private var appState: AppState
 
     private let tapOption: [String] = ["약", "주사"]
     @State private var selectedTap: String = "전체"
@@ -17,7 +18,9 @@ struct MyMedicineScreen: View {
 
     var body: some View {
         VStack(alignment: .center) {
-            AppBar(title: "나의 약, 주사 정보", onBack: {})
+            AppBar(title: "나의 약, 주사 정보", onBack: {
+                _ = appState.routes.popLast()
+            })
             // Binding 생성 (Int -> String)
             // newValue -> from get?
             SegmentedView(
@@ -100,6 +103,8 @@ struct MyMedicineListCell: View {
 extension MyMedicineScreen {}
 
 #Preview {
-    MyMedicineScreen()
-        .environmentObject(MyPageModel())
+    PreviewContainer {
+        MyMedicineScreen()
+            .environmentObject(MyPageModel())
+    }
 }
