@@ -42,5 +42,5 @@ struct MyPageResponseDTO: Codable {
 
 extension MyPageResponseDTO {
     static let sample: MyPageResponseDTO =
-        .init(_id: 32, nickname: "김동한", surgeryType: SurgeryType.EGG_FREEZING, count: 3, startDate: "2024-01-02", spouse: "정선호", ssn: "9704251", spouseCode: "03FD8")
+        .init(_id: 32, nickname: "김허그", surgeryType: SurgeryType.EGG_FREEZING, count: 3, startDate: "2024-01-02", spouse: "배우자", ssn: "9201011", spouseCode: "03FD8")
 }

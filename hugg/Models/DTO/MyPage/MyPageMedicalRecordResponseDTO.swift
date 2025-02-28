@@ -7,15 +7,12 @@
 
 import Foundation
 
+struct MyPageMedicalRecordResponseDTO: Codable {
+    var myPageRecordResponseDTO: [MyPageRecordResponseDTO]?
 
-
-public struct MyPageMedicalRecordResponseDTO: Codable {
-
-    public var myPageRecordResponseDTO: [MyPageRecordResponseDTO]?
-
-    public init(myPageRecordResponseDTO: [MyPageRecordResponseDTO]? = nil) {
+    init(myPageRecordResponseDTO: [MyPageRecordResponseDTO]? = nil) {
         self.myPageRecordResponseDTO = myPageRecordResponseDTO
     }
-
-
 }
+
+extension MyPageMedicalRecordResponseDTO {}

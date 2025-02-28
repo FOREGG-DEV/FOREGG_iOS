@@ -7,25 +7,14 @@
 
 import Foundation
 
+struct MyPageRequestDTO: Codable {
+    var surgeryType: SurgeryType?
+    var count: Int?
+    var startDate: String?
 
-
-public struct MyPageRequestDTO: Codable {
-
-    public enum SurgeryType: String, Codable { 
-        case thinkSurgery = "THINK_SURGERY"
-        case iui = "IUI"
-        case eggFreezing = "EGG_FREEZING"
-        case inVitroFertilization = "IN_VITRO_FERTILIZATION"
-    }
-    public var surgeryType: SurgeryType?
-    public var count: Int?
-    public var startDate: String?
-
-    public init(surgeryType: SurgeryType? = nil, count: Int? = nil, startDate: String? = nil) {
+    init(surgeryType: SurgeryType? = nil, count: Int? = nil, startDate: String? = nil) {
         self.surgeryType = surgeryType
         self.count = count
         self.startDate = startDate
     }
-
-
 }

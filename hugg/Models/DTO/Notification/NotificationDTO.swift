@@ -7,24 +7,16 @@
 
 import Foundation
 
+struct NotificationDTO: Codable {
+    var id: Int64?
+    var targetKey: String?
+    var notificationType: NotificationType?
+    var sender: String?
+    var createdAt: String?
+    var elapsedTime: String?
 
-
-public struct NotificationDTO: Codable {
-
-    public enum NotificationType: String, Codable { 
-        case clap = "CLAP"
-        case support = "SUPPORT"
-        case reply = "REPLY"
-    }
-    public var _id: Int64?
-    public var targetKey: String?
-    public var notificationType: NotificationType?
-    public var sender: String?
-    public var createdAt: String?
-    public var elapsedTime: String?
-
-    public init(_id: Int64? = nil, targetKey: String? = nil, notificationType: NotificationType? = nil, sender: String? = nil, createdAt: String? = nil, elapsedTime: String? = nil) {
-        self._id = _id
+    init(id: Int64? = nil, targetKey: String? = nil, notificationType: NotificationType? = nil, sender: String? = nil, createdAt: String? = nil, elapsedTime: String? = nil) {
+        self.id = id
         self.targetKey = targetKey
         self.notificationType = notificationType
         self.sender = sender
@@ -32,13 +24,24 @@ public struct NotificationDTO: Codable {
         self.elapsedTime = elapsedTime
     }
 
-    public enum CodingKeys: String, CodingKey { 
-        case _id = "id"
+    enum CodingKeys: String, CodingKey {
+        case id = "_id"
         case targetKey
         case notificationType
         case sender
         case createdAt
         case elapsedTime
     }
+}
 
+extension NotificationDTO: Identifiable {
+//    var id: Int64 { _id ?? -1 }
+    static let sampleNotifications: [NotificationDTO] = [
+        NotificationDTO(id: 11201, targetKey: "key1", notificationType: .reply, sender: "사용자1", createdAt: "2024-02-01T10:00:00", elapsedTime: "1시간 전"),
+        NotificationDTO(id: 11202, targetKey: "key2", notificationType: .clap, sender: "테스터1", createdAt: "2024-02-01T11:30:00", elapsedTime: "30분 전"),
+        NotificationDTO(id: 11203, targetKey: "key3", notificationType: .support, sender: "허그허그", createdAt: "2024-02-01T12:15:00", elapsedTime: "15분 전"),
+        NotificationDTO(id: 11204, targetKey: "key4", notificationType: .reply, sender: "사용자2", createdAt: "2024-02-01T08:45:00", elapsedTime: "3시간 전"),
+        NotificationDTO(id: 11205, targetKey: "key5", notificationType: .clap, sender: "테스터2", createdAt: "2024-02-01T09:20:00", elapsedTime: "40분 전"),
+        NotificationDTO(id: 11206, targetKey: "key6", notificationType: .support, sender: "이름이 엄청 긴 사용자인 경우", createdAt: "2024-02-01T07:00:00", elapsedTime: "5시간 전")
+    ]
 }

@@ -7,21 +7,19 @@
 
 import Foundation
 
+struct NotificationResponseDTO: Codable {
+    var dto: [NotificationDTO]?
+    var currentPage: Int?
+    var totalPage: Int?
+    var totalElements: Int?
 
-
-public struct NotificationResponseDTO: Codable {
-
-    public var dto: [NotificationDTO]?
-    public var currentPage: Int?
-    public var totalPage: Int?
-    public var totalElements: Int?
-
-    public init(dto: [NotificationDTO]? = nil, currentPage: Int? = nil, totalPage: Int? = nil, totalElements: Int? = nil) {
+    init(dto: [NotificationDTO]? = nil, currentPage: Int? = nil, totalPage: Int? = nil, totalElements: Int? = nil) {
         self.dto = dto
         self.currentPage = currentPage
         self.totalPage = totalPage
         self.totalElements = totalElements
     }
-
-
+    
+    
 }
+

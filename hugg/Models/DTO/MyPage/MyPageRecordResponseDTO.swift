@@ -7,19 +7,16 @@
 
 import Foundation
 
+struct MyPageRecordResponseDTO: Codable {
+    var _id: Int64?
+    var date: String?
+    var startDate: String?
+    var endDate: String?
+    var repeatDays: String?
+    var name: String?
+    var dose: String?
 
-
-public struct MyPageRecordResponseDTO: Codable {
-
-    public var _id: Int64?
-    public var date: String?
-    public var startDate: String?
-    public var endDate: String?
-    public var repeatDays: String?
-    public var name: String?
-    public var dose: String?
-
-    public init(_id: Int64? = nil, date: String? = nil, startDate: String? = nil, endDate: String? = nil, repeatDays: String? = nil, name: String? = nil, dose: String? = nil) {
+    init(_id: Int64? = nil, date: String? = nil, startDate: String? = nil, endDate: String? = nil, repeatDays: String? = nil, name: String? = nil, dose: String? = nil) {
         self._id = _id
         self.date = date
         self.startDate = startDate
@@ -29,7 +26,7 @@ public struct MyPageRecordResponseDTO: Codable {
         self.dose = dose
     }
 
-    public enum CodingKeys: String, CodingKey { 
+    enum CodingKeys: String, CodingKey {
         case _id = "id"
         case date
         case startDate
@@ -38,5 +35,4 @@ public struct MyPageRecordResponseDTO: Codable {
         case name
         case dose
     }
-
 }

@@ -42,7 +42,7 @@ struct MyPageScreen: View {
                     Section {
                         MyPageListSpouseCell(
                             title: "배우자",
-                            spouseName: self.model.myPage?.spouse ?? "데이터 발견x",
+                            spouseName: self.model.myPage?.spouse ?? "",
                             action: {
                                 self.navigate(to: .spouse)
                             }

@@ -18,6 +18,12 @@
 		1F0DD9392CD7534700708811 /* RecordType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DD9382CD7534700708811 /* RecordType.swift */; };
 		1F1ED3822D5242A000A1894A /* http_guide.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F1ED3812D52428E00A1894A /* http_guide.md */; };
 		1F1ED3882D5247A100A1894A /* todo.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F1ED3872D5247A100A1894A /* todo.md */; };
+		1F24490A2D70671C0026D9B7 /* NotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2449092D70671C0026D9B7 /* NotificationType.swift */; };
+		1F24490C2D707E5A0026D9B7 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F24490B2D707E4F0026D9B7 /* NotificationModel.swift */; };
+		1F24490E2D707F100026D9B7 /* NotificationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F24490D2D707F100026D9B7 /* NotificationScreen.swift */; };
+		1F2449102D714F9F0026D9B7 /* HGProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F24490F2D714F9F0026D9B7 /* HGProgressView.swift */; };
+		1F2449132D7151940026D9B7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1F2449122D7151940026D9B7 /* Lottie */; };
+		1F2449152D71528D0026D9B7 /* HGErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2449142D71528D0026D9B7 /* HGErrorView.swift */; };
 		1F2B73CA2D5D81D800E07569 /* note.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F2B73C92D5D81D100E07569 /* note.md */; };
 		1F2B73CF2D5D853000E07569 /* service_layer.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F2B73CE2D5D852D00E07569 /* service_layer.md */; };
 		1F2B73D72D5DB5CF00E07569 /* MyPageSpouseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B73D62D5DB5CF00E07569 /* MyPageSpouseScreen.swift */; };
@@ -159,6 +165,11 @@
 		1F0DD9382CD7534700708811 /* RecordType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordType.swift; sourceTree = "<group>"; };
 		1F1ED3812D52428E00A1894A /* http_guide.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = http_guide.md; sourceTree = "<group>"; };
 		1F1ED3872D5247A100A1894A /* todo.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = todo.md; sourceTree = "<group>"; };
+		1F2449092D70671C0026D9B7 /* NotificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationType.swift; sourceTree = "<group>"; };
+		1F24490B2D707E4F0026D9B7 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
+		1F24490D2D707F100026D9B7 /* NotificationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScreen.swift; sourceTree = "<group>"; };
+		1F24490F2D714F9F0026D9B7 /* HGProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGProgressView.swift; sourceTree = "<group>"; };
+		1F2449142D71528D0026D9B7 /* HGErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGErrorView.swift; sourceTree = "<group>"; };
 		1F2B73C92D5D81D100E07569 /* note.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = note.md; sourceTree = "<group>"; };
 		1F2B73CE2D5D852D00E07569 /* service_layer.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = service_layer.md; sourceTree = "<group>"; };
 		1F2B73D62D5DB5CF00E07569 /* MyPageSpouseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageSpouseScreen.swift; sourceTree = "<group>"; };
@@ -297,6 +308,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F2449132D7151940026D9B7 /* Lottie in Frameworks */,
 				1F3F3CB72CE2EF7C006D4EE7 /* PopupView in Frameworks */,
 				1F8929302CE0D86100DDF698 /* KakaoSDKCommon in Frameworks */,
 				1F89292E2CE0D86100DDF698 /* KakaoSDKAuth in Frameworks */,
@@ -355,6 +367,7 @@
 		1F0D92FE2C365DC500BB6ADD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1F24490B2D707E4F0026D9B7 /* NotificationModel.swift */,
 				1F86E4A22D5DBED50042B256 /* MyPageModel.swift */,
 				1F86E4A02D5DBD060042B256 /* UserModel.swift */,
 				1FA883F62CD9F5570022244D /* States */,
@@ -419,6 +432,8 @@
 				1FF199D92D36675D00FF3C17 /* HGCheckBox.swift */,
 				1FF199DB2D366AC000FF3C17 /* HGMainButtonV2.swift */,
 				1FF199DD2D37AA7000FF3C17 /* HGTagWithoutText.swift */,
+				1F24490F2D714F9F0026D9B7 /* HGProgressView.swift */,
+				1F2449142D71528D0026D9B7 /* HGErrorView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -537,6 +552,7 @@
 				1F99A7E52CC4DB4B00779628 /* HomeScreen.swift */,
 				1FA3EB822D36207E008C68DB /* HGEmptyScheduleItem.swift */,
 				1FF199C52D3661E600FF3C17 /* HGHomeScheduleItem.swift */,
+				1F24490D2D707F100026D9B7 /* NotificationScreen.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -722,6 +738,7 @@
 				1F86E4AD2D5DDC9B0042B256 /* ViewStatus.swift */,
 				1FD0D22F2CB433A200F96E87 /* SurgeryType.swift */,
 				1F0DD9382CD7534700708811 /* RecordType.swift */,
+				1F2449092D70671C0026D9B7 /* NotificationType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -810,6 +827,7 @@
 			packageReferences = (
 				1F89292C2CE0D86100DDF698 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
 				1F3F3CB52CE2EF7C006D4EE7 /* XCRemoteSwiftPackageReference "PopupView" */,
+				1F2449112D7151940026D9B7 /* XCRemoteSwiftPackageReference "lottie-spm" */,
 			);
 			productRefGroup = 1F0D92EE2C365B6D00BB6ADD /* Products */;
 			projectDirPath = "";
@@ -853,6 +871,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F24490C2D707E5A0026D9B7 /* NotificationModel.swift in Sources */,
 				1FA281D22D37ADFA007BD828 /* LedgerAllPage.swift in Sources */,
 				1FCEFF092D66C4BC0063DA31 /* MyMedicineScreen.swift in Sources */,
 				1F603C6F2CBD06E100E5BF5D /* MyPageScreen.swift in Sources */,
@@ -865,6 +884,7 @@
 				1FCABC532D3E4172005B5285 /* SpouseCodeModel.swift in Sources */,
 				1F3DC3562CB50FCE00A72A52 /* TextField+Extension.swift in Sources */,
 				1F032BBD2C612B5B00E8C64B /* SignUpViewModel.swift in Sources */,
+				1F2449102D714F9F0026D9B7 /* HGProgressView.swift in Sources */,
 				1F8D591A2C3B956500832F61 /* MainScreen.swift in Sources */,
 				1FFD020F2CB41AA900020AF4 /* CalendarScreen.swift in Sources */,
 				1FA883F82CD9F5600022244D /* AppState.swift in Sources */,
@@ -888,6 +908,7 @@
 				1FFD020C2CB40ABB00020AF4 /* WifeShareCodeView.swift in Sources */,
 				1F636C4A2D3A59950026ABE4 /* ApiResponse.swift in Sources */,
 				1F3F3CBA2CE2FDC3006D4EE7 /* Constants.swift in Sources */,
+				1F2449152D71528D0026D9B7 /* HGErrorView.swift in Sources */,
 				1F86E4A12D5DBD0C0042B256 /* UserModel.swift in Sources */,
 				1F9477532CE9EA1D00D947E1 /* LedgerScreen.swift in Sources */,
 				1FBB67522D68ABEB002C60A2 /* MedicalResponseDTO.swift in Sources */,
@@ -906,6 +927,7 @@
 				1FBB676A2D68ABEB002C60A2 /* FcmRenewalRequest.swift in Sources */,
 				1FBB676B2D68ABEB002C60A2 /* ScheduleResponseDTO.swift in Sources */,
 				1FBB676E2D68ABEB002C60A2 /* RepeatTimeResponseDTO.swift in Sources */,
+				1F24490E2D707F100026D9B7 /* NotificationScreen.swift in Sources */,
 				1FBB676F2D68ABEB002C60A2 /* DailyAllResponseDTO.swift in Sources */,
 				1FBB67702D68ABEB002C60A2 /* SubsidyAvailable.swift in Sources */,
 				1FBB67722D68ABEB002C60A2 /* DailyResponseDTO.swift in Sources */,
@@ -956,6 +978,7 @@
 				1F656AF22CA979DE0035F81E /* TreatmentSelectView.swift in Sources */,
 				1FE68CF42C5B528700CD43E4 /* AppBar.swift in Sources */,
 				1F3F3CB42CE2E59D006D4EE7 /* TokenManager.swift in Sources */,
+				1F24490A2D70671C0026D9B7 /* NotificationType.swift in Sources */,
 				1FF199C42D36612A00FF3C17 /* HGTag.swift in Sources */,
 				1F8D591C2C3B96CE00832F61 /* SplashScreen.swift in Sources */,
 				1FD5D8782D1E41A9001D9C5B /* AgreementView.swift in Sources */,
@@ -1187,6 +1210,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1F2449112D7151940026D9B7 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.1;
+			};
+		};
 		1F3F3CB52CE2EF7C006D4EE7 /* XCRemoteSwiftPackageReference "PopupView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/exyte/PopupView.git";
@@ -1206,6 +1237,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1F2449122D7151940026D9B7 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F2449112D7151940026D9B7 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
 		1F3F3CB62CE2EF7C006D4EE7 /* PopupView */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1F3F3CB52CE2EF7C006D4EE7 /* XCRemoteSwiftPackageReference "PopupView" */;
