@@ -25,17 +25,17 @@ struct MainScreen: View {
 
             DailyHugView()
                 .tabItem {
-                    BottomNavItem(title: "데일리 허그", image: "info", isSelected: model.currentBottomNavTab == BottomNavigationTab.daily)
+                    BottomNavItem(title: "데일리 허그", image: "daily", isSelected: model.currentBottomNavTab == BottomNavigationTab.daily)
                 }.tag(BottomNavigationTab.daily)
 
             LedgerScreen()
                 .tabItem {
-                    BottomNavItem(title: "가계부", image: "savings", isSelected: model.currentBottomNavTab == BottomNavigationTab.ledger)
+                    BottomNavItem(title: "가계부", image: "ledger", isSelected: model.currentBottomNavTab == BottomNavigationTab.ledger)
                 }.tag(BottomNavigationTab.ledger)
 
             MyPageScreen()
                 .tabItem {
-                    BottomNavItem(title: "마이페이지", image: "mypage", isSelected: model.currentBottomNavTab == BottomNavigationTab.mypage)
+                    BottomNavItem(title: "마이페이지", image: "myPage", isSelected: model.currentBottomNavTab == BottomNavigationTab.mypage)
                 }.tag(BottomNavigationTab.mypage)
         }
         .tint(.black80)
@@ -80,5 +80,6 @@ private struct TabViewContainer: View {
     PreviewContainer {
         MainScreen()
             .environmentObject(AppState())
+            .environmentObject(MyPageModel())
     }
 }

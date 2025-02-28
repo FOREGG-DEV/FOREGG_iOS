@@ -24,6 +24,7 @@
 		1F2449102D714F9F0026D9B7 /* HGProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F24490F2D714F9F0026D9B7 /* HGProgressView.swift */; };
 		1F2449132D7151940026D9B7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1F2449122D7151940026D9B7 /* Lottie */; };
 		1F2449152D71528D0026D9B7 /* HGErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2449142D71528D0026D9B7 /* HGErrorView.swift */; };
+		1F2449172D7158660026D9B7 /* HGHomeAppBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2449162D7158660026D9B7 /* HGHomeAppBar.swift */; };
 		1F2B73CA2D5D81D800E07569 /* note.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F2B73C92D5D81D100E07569 /* note.md */; };
 		1F2B73CF2D5D853000E07569 /* service_layer.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F2B73CE2D5D852D00E07569 /* service_layer.md */; };
 		1F2B73D72D5DB5CF00E07569 /* MyPageSpouseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B73D62D5DB5CF00E07569 /* MyPageSpouseScreen.swift */; };
@@ -170,6 +171,7 @@
 		1F24490D2D707F100026D9B7 /* NotificationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScreen.swift; sourceTree = "<group>"; };
 		1F24490F2D714F9F0026D9B7 /* HGProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGProgressView.swift; sourceTree = "<group>"; };
 		1F2449142D71528D0026D9B7 /* HGErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGErrorView.swift; sourceTree = "<group>"; };
+		1F2449162D7158660026D9B7 /* HGHomeAppBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGHomeAppBar.swift; sourceTree = "<group>"; };
 		1F2B73C92D5D81D100E07569 /* note.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = note.md; sourceTree = "<group>"; };
 		1F2B73CE2D5D852D00E07569 /* service_layer.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = service_layer.md; sourceTree = "<group>"; };
 		1F2B73D62D5DB5CF00E07569 /* MyPageSpouseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageSpouseScreen.swift; sourceTree = "<group>"; };
@@ -553,6 +555,7 @@
 				1FA3EB822D36207E008C68DB /* HGEmptyScheduleItem.swift */,
 				1FF199C52D3661E600FF3C17 /* HGHomeScheduleItem.swift */,
 				1F24490D2D707F100026D9B7 /* NotificationScreen.swift */,
+				1F2449162D7158660026D9B7 /* HGHomeAppBar.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -960,6 +963,7 @@
 				1FF199DA2D36675D00FF3C17 /* HGCheckBox.swift in Sources */,
 				1F0D930C2C36809500BB6ADD /* OnboardingAppBar.swift in Sources */,
 				1F8B64C12CB3A9E400F61118 /* RoundSelectView.swift in Sources */,
+				1F2449172D7158660026D9B7 /* HGHomeAppBar.swift in Sources */,
 				1F8929342CE0FF2600DDF698 /* MyPageListCell.swift in Sources */,
 				1FF199C82D36634200FF3C17 /* ComponentPreviewContainer.swift in Sources */,
 				1F86E4A32D5DBED80042B256 /* MyPageModel.swift in Sources */,

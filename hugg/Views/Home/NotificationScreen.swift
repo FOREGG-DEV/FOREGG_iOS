@@ -1,6 +1,7 @@
 import SwiftUI
 
 // TODO: Add Link to DailyHug Screen
+// TODO: Implement real population
 
 struct NotificationScreen: View {
     @EnvironmentObject private var appState: AppState
@@ -37,6 +38,7 @@ struct NotificationScreen: View {
             case .failure(let string):
                 HGErrorView {
                     Task {
+                        print(string)
                         await populateNotification()
                     }
                 }
@@ -58,6 +60,8 @@ struct NotificationScreen: View {
 
 // logics
 extension NotificationScreen {
+    // TODO: Implement go to detail
+    private func goToDetail() {}
     private func populateNotification() async {
         do {
             self.viewStatus = .loading

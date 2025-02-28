@@ -46,6 +46,10 @@ struct huggApp: App {
                         case .manageAccount:
                             ManageAccountScreen()
                                 .navigationBarBackButtonHidden(true)
+
+                        case .notification:
+                            NotificationScreen()
+                                .navigationBarBackButtonHidden(true)
                         }
 
                     })

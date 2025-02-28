@@ -14,6 +14,7 @@ enum Route: Hashable {
     case myMedicine
     case question
     case manageAccount
+    case notification
 }
 
 enum BottomNavigationTab: Hashable {

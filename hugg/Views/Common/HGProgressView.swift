@@ -7,6 +7,7 @@ struct HGProgressView: View {
             Spacer()
             LottieView(animation: .named("loading"))
                 .looping()
+                .frame(width: 100, height: 100)
             Spacer()
         }
     }

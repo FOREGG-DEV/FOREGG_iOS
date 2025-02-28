@@ -24,17 +24,9 @@ struct MyPageScreen: View {
 
             switch self.viewStatus {
             case .failure(let errorMessage):
-                VStack {
-                    Spacer()
-                    Text(errorMessage)
-                    Spacer()
-                }
+                HGErrorView {}
             case .loading:
-                VStack {
-                    Spacer()
-                    ProgressView()
-                    Spacer()
-                }
+                HGProgressView()
             case .success:
                 List {
                     // MARK: Section 1
