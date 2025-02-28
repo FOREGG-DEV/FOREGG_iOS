@@ -7,25 +7,23 @@
 
 import Foundation
 
-
-
-public struct HomeRecordResponseDTO: Codable {
-
-    public enum RecordType: String, Codable { 
+struct HomeRecordResponseDTO: Codable {
+    enum RecordType: String, Codable {
         case medicine = "MEDICINE"
         case injection = "INJECTION"
         case hospital = "HOSPITAL"
         case etc = "ETC"
     }
-    public var _id: Int64?
-    public var recordType: RecordType?
-    public var time: String?
-    public var name: String?
-    public var memo: String?
-    public var todo: Bool?
 
-    public init(_id: Int64? = nil, recordType: RecordType? = nil, time: String? = nil, name: String? = nil, memo: String? = nil, todo: Bool? = nil) {
-        self._id = _id
+    let id: Int64?
+    let recordType: RecordType?
+    let time: String?
+    let name: String?
+    let memo: String?
+    let todo: Bool?
+
+    init(id: Int64? = nil, recordType: RecordType? = nil, time: String? = nil, name: String? = nil, memo: String? = nil, todo: Bool? = nil) {
+        self.id = id
         self.recordType = recordType
         self.time = time
         self.name = name
@@ -33,13 +31,12 @@ public struct HomeRecordResponseDTO: Codable {
         self.todo = todo
     }
 
-    public enum CodingKeys: String, CodingKey { 
-        case _id = "id"
+    enum CodingKeys: String, CodingKey {
+        case id = "_id"
         case recordType
         case time
         case name
         case memo
         case todo
     }
-
 }

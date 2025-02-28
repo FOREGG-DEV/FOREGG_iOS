@@ -27,6 +27,7 @@
 		1F2449172D7158660026D9B7 /* HGHomeAppBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2449162D7158660026D9B7 /* HGHomeAppBar.swift */; };
 		1F2449192D71623B0026D9B7 /* AddLedgerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2449182D71623B0026D9B7 /* AddLedgerScreen.swift */; };
 		1F24491B2D7163140026D9B7 /* LedgerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F24491A2D7163100026D9B7 /* LedgerModel.swift */; };
+		1F24491D2D719BC80026D9B7 /* HomeScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F24491C2D719BBD0026D9B7 /* HomeScreenModel.swift */; };
 		1F2B73CA2D5D81D800E07569 /* note.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F2B73C92D5D81D100E07569 /* note.md */; };
 		1F2B73CF2D5D853000E07569 /* service_layer.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F2B73CE2D5D852D00E07569 /* service_layer.md */; };
 		1F2B73D72D5DB5CF00E07569 /* MyPageSpouseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B73D62D5DB5CF00E07569 /* MyPageSpouseScreen.swift */; };
@@ -176,6 +177,7 @@
 		1F2449162D7158660026D9B7 /* HGHomeAppBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGHomeAppBar.swift; sourceTree = "<group>"; };
 		1F2449182D71623B0026D9B7 /* AddLedgerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLedgerScreen.swift; sourceTree = "<group>"; };
 		1F24491A2D7163100026D9B7 /* LedgerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgerModel.swift; sourceTree = "<group>"; };
+		1F24491C2D719BBD0026D9B7 /* HomeScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenModel.swift; sourceTree = "<group>"; };
 		1F2B73C92D5D81D100E07569 /* note.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = note.md; sourceTree = "<group>"; };
 		1F2B73CE2D5D852D00E07569 /* service_layer.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = service_layer.md; sourceTree = "<group>"; };
 		1F2B73D62D5DB5CF00E07569 /* MyPageSpouseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageSpouseScreen.swift; sourceTree = "<group>"; };
@@ -373,6 +375,7 @@
 		1F0D92FE2C365DC500BB6ADD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1F24491C2D719BBD0026D9B7 /* HomeScreenModel.swift */,
 				1F24491A2D7163100026D9B7 /* LedgerModel.swift */,
 				1F24490B2D707E4F0026D9B7 /* NotificationModel.swift */,
 				1F86E4A22D5DBED50042B256 /* MyPageModel.swift */,
@@ -493,6 +496,8 @@
 		1F636C452D3A52480026ABE4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1FBB67302D68ABEB002C60A2 /* HomeRecordResponseDTO.swift */,
+				1FBB67312D68ABEB002C60A2 /* HomeResponseDTO.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -619,8 +624,6 @@
 				1FBB672D2D68ABEB002C60A2 /* DailyWriteBody.swift */,
 				1FBB672E2D68ABEB002C60A2 /* ExpenditureRequestDTO.swift */,
 				1FBB672F2D68ABEB002C60A2 /* FcmRenewalRequest.swift */,
-				1FBB67302D68ABEB002C60A2 /* HomeRecordResponseDTO.swift */,
-				1FBB67312D68ABEB002C60A2 /* HomeResponseDTO.swift */,
 				1FBB67362D68ABEB002C60A2 /* LogoutWithdrawalResponseDTO.swift */,
 				1FBB67372D68ABEB002C60A2 /* MedicalRecordRequestDTO.swift */,
 				1FBB67382D68ABEB002C60A2 /* MedicalRecordResponseDTO.swift */,
@@ -932,6 +935,7 @@
 				1FBB67632D68ABEB002C60A2 /* ExpenditureRequestDTO.swift in Sources */,
 				1FBB67642D68ABEB002C60A2 /* ChallengeCompleteRequestDTO.swift in Sources */,
 				1FBB67662D68ABEB002C60A2 /* RecordRequestDTO.swift in Sources */,
+				1F24491D2D719BC80026D9B7 /* HomeScreenModel.swift in Sources */,
 				1FBB67672D68ABEB002C60A2 /* ChallengeNameRequestDTO.swift in Sources */,
 				1FBB67682D68ABEB002C60A2 /* DailyWriteBody.swift in Sources */,
 				1FBB676A2D68ABEB002C60A2 /* FcmRenewalRequest.swift in Sources */,
