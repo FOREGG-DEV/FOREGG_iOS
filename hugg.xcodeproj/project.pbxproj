@@ -25,6 +25,8 @@
 		1F2449132D7151940026D9B7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1F2449122D7151940026D9B7 /* Lottie */; };
 		1F2449152D71528D0026D9B7 /* HGErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2449142D71528D0026D9B7 /* HGErrorView.swift */; };
 		1F2449172D7158660026D9B7 /* HGHomeAppBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2449162D7158660026D9B7 /* HGHomeAppBar.swift */; };
+		1F2449192D71623B0026D9B7 /* AddLedgerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2449182D71623B0026D9B7 /* AddLedgerScreen.swift */; };
+		1F24491B2D7163140026D9B7 /* LedgerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F24491A2D7163100026D9B7 /* LedgerModel.swift */; };
 		1F2B73CA2D5D81D800E07569 /* note.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F2B73C92D5D81D100E07569 /* note.md */; };
 		1F2B73CF2D5D853000E07569 /* service_layer.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F2B73CE2D5D852D00E07569 /* service_layer.md */; };
 		1F2B73D72D5DB5CF00E07569 /* MyPageSpouseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B73D62D5DB5CF00E07569 /* MyPageSpouseScreen.swift */; };
@@ -54,7 +56,7 @@
 		1F8929322CE0D86100DDF698 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 1F8929312CE0D86100DDF698 /* KakaoSDKUser */; };
 		1F8929342CE0FF2600DDF698 /* MyPageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8929332CE0FF2600DDF698 /* MyPageListCell.swift */; };
 		1F8929362CE10DCA00DDF698 /* ManageAccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8929352CE10DCA00DDF698 /* ManageAccountScreen.swift */; };
-		1F8B64C12CB3A9E400F61118 /* RoundSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B64C02CB3A9E400F61118 /* RoundSelectView.swift */; };
+		1F8B64C12CB3A9E400F61118 /* CountSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B64C02CB3A9E400F61118 /* CountSelectView.swift */; };
 		1F8B64C52CB3AA7200F61118 /* SignUpTitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B64C42CB3AA7200F61118 /* SignUpTitleText.swift */; };
 		1F8D591A2C3B956500832F61 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D59192C3B956500832F61 /* MainScreen.swift */; };
 		1F8D591C2C3B96CE00832F61 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D591B2C3B96CE00832F61 /* SplashScreen.swift */; };
@@ -172,6 +174,8 @@
 		1F24490F2D714F9F0026D9B7 /* HGProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGProgressView.swift; sourceTree = "<group>"; };
 		1F2449142D71528D0026D9B7 /* HGErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGErrorView.swift; sourceTree = "<group>"; };
 		1F2449162D7158660026D9B7 /* HGHomeAppBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGHomeAppBar.swift; sourceTree = "<group>"; };
+		1F2449182D71623B0026D9B7 /* AddLedgerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLedgerScreen.swift; sourceTree = "<group>"; };
+		1F24491A2D7163100026D9B7 /* LedgerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgerModel.swift; sourceTree = "<group>"; };
 		1F2B73C92D5D81D100E07569 /* note.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = note.md; sourceTree = "<group>"; };
 		1F2B73CE2D5D852D00E07569 /* service_layer.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = service_layer.md; sourceTree = "<group>"; };
 		1F2B73D62D5DB5CF00E07569 /* MyPageSpouseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageSpouseScreen.swift; sourceTree = "<group>"; };
@@ -197,7 +201,7 @@
 		1F86E4AD2D5DDC9B0042B256 /* ViewStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStatus.swift; sourceTree = "<group>"; };
 		1F8929332CE0FF2600DDF698 /* MyPageListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageListCell.swift; sourceTree = "<group>"; };
 		1F8929352CE10DCA00DDF698 /* ManageAccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageAccountScreen.swift; sourceTree = "<group>"; };
-		1F8B64C02CB3A9E400F61118 /* RoundSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundSelectView.swift; sourceTree = "<group>"; };
+		1F8B64C02CB3A9E400F61118 /* CountSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountSelectView.swift; sourceTree = "<group>"; };
 		1F8B64C42CB3AA7200F61118 /* SignUpTitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTitleText.swift; sourceTree = "<group>"; };
 		1F8D59192C3B956500832F61 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		1F8D591B2C3B96CE00832F61 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
@@ -369,6 +373,7 @@
 		1F0D92FE2C365DC500BB6ADD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1F24491A2D7163100026D9B7 /* LedgerModel.swift */,
 				1F24490B2D707E4F0026D9B7 /* NotificationModel.swift */,
 				1F86E4A22D5DBED50042B256 /* MyPageModel.swift */,
 				1F86E4A02D5DBD060042B256 /* UserModel.swift */,
@@ -684,6 +689,7 @@
 			children = (
 				1F9477522CE9EA1D00D947E1 /* LedgerScreen.swift */,
 				1FA281D12D37ADFA007BD828 /* LedgerAllPage.swift */,
+				1F2449182D71623B0026D9B7 /* AddLedgerScreen.swift */,
 			);
 			path = Ledger;
 			sourceTree = "<group>";
@@ -751,7 +757,7 @@
 			children = (
 				1FE68CF12C5B522200CD43E4 /* SignUpScreen.swift */,
 				1F656AF12CA979DE0035F81E /* TreatmentSelectView.swift */,
-				1F8B64C02CB3A9E400F61118 /* RoundSelectView.swift */,
+				1F8B64C02CB3A9E400F61118 /* CountSelectView.swift */,
 				1FFD02092CB402B600020AF4 /* SelectStartDateView.swift */,
 				1FFD020B2CB40ABB00020AF4 /* WifeShareCodeView.swift */,
 				1F692CE02CB4FEA400BAEEBE /* EnterSSNView.swift */,
@@ -906,6 +912,7 @@
 				1FD0D2302CB433A200F96E87 /* SurgeryType.swift in Sources */,
 				1F8929362CE10DCA00DDF698 /* ManageAccountScreen.swift in Sources */,
 				1FF22A7C2C3AD87000367518 /* HGBorderedButton.swift in Sources */,
+				1F2449192D71623B0026D9B7 /* AddLedgerScreen.swift in Sources */,
 				1F60E3352CBFAA2300543A22 /* MyPageBaseView.swift in Sources */,
 				1F0D92F12C365B6D00BB6ADD /* huggApp.swift in Sources */,
 				1FFD020C2CB40ABB00020AF4 /* WifeShareCodeView.swift in Sources */,
@@ -962,7 +969,8 @@
 				1F3DC3542CB50FAE00A72A52 /* MaxLengthModifier.swift in Sources */,
 				1FF199DA2D36675D00FF3C17 /* HGCheckBox.swift in Sources */,
 				1F0D930C2C36809500BB6ADD /* OnboardingAppBar.swift in Sources */,
-				1F8B64C12CB3A9E400F61118 /* RoundSelectView.swift in Sources */,
+				1F8B64C12CB3A9E400F61118 /* CountSelectView.swift in Sources */,
+				1F24491B2D7163140026D9B7 /* LedgerModel.swift in Sources */,
 				1F2449172D7158660026D9B7 /* HGHomeAppBar.swift in Sources */,
 				1F8929342CE0FF2600DDF698 /* MyPageListCell.swift in Sources */,
 				1FF199C82D36634200FF3C17 /* ComponentPreviewContainer.swift in Sources */,

@@ -52,7 +52,7 @@ struct SignUpScreen: View {
                     case 2:
                         TreatmentSelectView()
                     case 3:
-                        RoundSelectView()
+                        CountSelectView()
                     case 4:
                         SelectStartDateView()
                     case 5:

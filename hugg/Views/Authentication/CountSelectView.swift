@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct RoundSelectView: View {
+struct CountSelectView: View {
     @EnvironmentObject var state: SignUpState
 
     var body: some View {
@@ -22,6 +22,6 @@ struct RoundSelectView: View {
 }
 
 #Preview {
-    RoundSelectView()
+    CountSelectView()
         .environmentObject(SignUpState())
 }

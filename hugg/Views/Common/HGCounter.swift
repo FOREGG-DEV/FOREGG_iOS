@@ -2,6 +2,7 @@ import SwiftUI
 
 struct HGCounter: View {
     @Binding var cnt: Int
+    var maxValue: Int? = nil
 
     var body: some View {
         HStack(spacing: 0) {
@@ -27,7 +28,7 @@ struct HGCounter: View {
 
             ZStack {
                 UnevenRoundedRectangle(cornerRadii: .init(topLeading: 0.0, bottomLeading: 0.0, bottomTrailing: 8.0, topTrailing: 8.0))
-                    .fill(.main)
+                    .fill(maxValue != nil && cnt >= maxValue! ? .disabled : .main)
 
                 Image(systemName: "plus")
                     .resizable()
@@ -36,8 +37,13 @@ struct HGCounter: View {
             }
             .frame(width: 51, height: 48)
             .onTapGesture {
+                // prevent count increase over max value
+                // if max value is given
+                if maxValue != nil && cnt >= maxValue! {
+                    return
+                }
+
                 cnt += 1
-                print(cnt)
             }
         }
     }
