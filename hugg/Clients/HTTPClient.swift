@@ -51,11 +51,11 @@ enum HTTPMethod {
 struct Resource<T: Codable> {
     let url: URL
     var method: HTTPMethod = .get([])
-    var modelType: T.Type
+    var modelType: ApiResponse<T>.Type
 }
 
 struct HTTPClient {
-    func load<T: Codable>(_ resource: Resource<T>) async throws -> T {
+    func load<T: Codable>(_ resource: Resource<T>) async throws -> ApiResponse<T> {
         var request = URLRequest(url: resource.url)
 
         // HTTP 메서드 설정
@@ -97,7 +97,7 @@ struct HTTPClient {
         }
 
         // HTTP 상태 코드 검사 (2xx 성공)
-        guard (200...299).contains(httpResponse.statusCode) else {
+        guard (200 ... 299).contains(httpResponse.statusCode) else {
             throw NetworkError.serverError("Server returned status code: \(httpResponse.statusCode)")
         }
 

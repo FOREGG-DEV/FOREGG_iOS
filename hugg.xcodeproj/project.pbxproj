@@ -28,6 +28,7 @@
 		1F2449192D71623B0026D9B7 /* AddLedgerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2449182D71623B0026D9B7 /* AddLedgerScreen.swift */; };
 		1F24491B2D7163140026D9B7 /* LedgerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F24491A2D7163100026D9B7 /* LedgerModel.swift */; };
 		1F24491D2D719BC80026D9B7 /* HomeScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F24491C2D719BBD0026D9B7 /* HomeScreenModel.swift */; };
+		1F24491F2D71C12B0026D9B7 /* SubsidyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F24491E2D71C12B0026D9B7 /* SubsidyScreen.swift */; };
 		1F2B73CA2D5D81D800E07569 /* note.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F2B73C92D5D81D100E07569 /* note.md */; };
 		1F2B73CF2D5D853000E07569 /* service_layer.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F2B73CE2D5D852D00E07569 /* service_layer.md */; };
 		1F2B73D72D5DB5CF00E07569 /* MyPageSpouseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B73D62D5DB5CF00E07569 /* MyPageSpouseScreen.swift */; };
@@ -178,6 +179,7 @@
 		1F2449182D71623B0026D9B7 /* AddLedgerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLedgerScreen.swift; sourceTree = "<group>"; };
 		1F24491A2D7163100026D9B7 /* LedgerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgerModel.swift; sourceTree = "<group>"; };
 		1F24491C2D719BBD0026D9B7 /* HomeScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenModel.swift; sourceTree = "<group>"; };
+		1F24491E2D71C12B0026D9B7 /* SubsidyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsidyScreen.swift; sourceTree = "<group>"; };
 		1F2B73C92D5D81D100E07569 /* note.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = note.md; sourceTree = "<group>"; };
 		1F2B73CE2D5D852D00E07569 /* service_layer.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = service_layer.md; sourceTree = "<group>"; };
 		1F2B73D62D5DB5CF00E07569 /* MyPageSpouseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageSpouseScreen.swift; sourceTree = "<group>"; };
@@ -693,6 +695,7 @@
 				1F9477522CE9EA1D00D947E1 /* LedgerScreen.swift */,
 				1FA281D12D37ADFA007BD828 /* LedgerAllPage.swift */,
 				1F2449182D71623B0026D9B7 /* AddLedgerScreen.swift */,
+				1F24491E2D71C12B0026D9B7 /* SubsidyScreen.swift */,
 			);
 			path = Ledger;
 			sourceTree = "<group>";
@@ -897,6 +900,7 @@
 				1F3DC3562CB50FCE00A72A52 /* TextField+Extension.swift in Sources */,
 				1F032BBD2C612B5B00E8C64B /* SignUpViewModel.swift in Sources */,
 				1F2449102D714F9F0026D9B7 /* HGProgressView.swift in Sources */,
+				1F24491F2D71C12B0026D9B7 /* SubsidyScreen.swift in Sources */,
 				1F8D591A2C3B956500832F61 /* MainScreen.swift in Sources */,
 				1FFD020F2CB41AA900020AF4 /* CalendarScreen.swift in Sources */,
 				1FA883F82CD9F5600022244D /* AppState.swift in Sources */,

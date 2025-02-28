@@ -3,12 +3,12 @@ import SwiftUI
 // TODO: Implement Population
 
 struct HomeScreen: View {
-    @State var viewStatus: ViewStatus = .loading
+    @StateObject var model: HomeScreenModel = .init()
 
     var body: some View {
         VStack(alignment: .center) {
             HGHomeAppBar()
-            switch self.viewStatus {
+            switch self.model.viewStatus {
             case .loading:
                 HGProgressView()
             case .success:
@@ -90,7 +90,7 @@ struct HomeScreen: View {
                     }
                 }
                 .padding(.horizontal, 16)
-            case .failure(let string):
+            case .failure:
                 HGErrorView {
                     Task {
                         await populateHomeScreen()
@@ -109,13 +109,9 @@ struct HomeScreen: View {
 
 extension HomeScreen {
     private func populateHomeScreen() async {
-        do {
-            self.viewStatus = .loading
-            try await Task.sleep(for: .seconds(1))
-            self.viewStatus = .success
-        } catch {
-            self.viewStatus = .failure("")
-        }
+        print("get home data")
+//            await model.fetchHomeData()
+        await model.fetchDummy()
     }
 }
 
