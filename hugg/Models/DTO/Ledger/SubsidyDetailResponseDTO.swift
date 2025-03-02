@@ -36,3 +36,15 @@ struct SubsidyDetailResponseDTO: Codable {
         case percent
     }
 }
+
+extension SubsidyDetailResponseDTO {
+    static let sample = SubsidyDetailResponseDTO(
+        id: 1,
+        nickname: "test",
+        color: .blue,
+        amount: 1000,
+        expenditure: 500,
+        available: 500,
+        percent: 20
+    )
+}

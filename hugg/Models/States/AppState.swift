@@ -33,6 +33,10 @@ class AppState: ObservableObject {
     // Navigation stack
     @Published var routes: [Route] = []
     @Published var currentBottomNavTab: BottomNavigationTab = .home
+    /// 전역으로 관리되는 toast message
+    /// navigation 처리 이후 표시되는 toast를 관리할 때 사용합니다.
+    /// 해당 값을 초기화하는 것은 각 View에 종속적입니다.
+    @Published var toastMessage: String? = nil
 
     func initState() {
         routes = []
