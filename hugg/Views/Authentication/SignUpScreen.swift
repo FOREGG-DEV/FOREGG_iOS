@@ -12,7 +12,7 @@ struct SignUpScreen: View {
     var body: some View {
         VStack(alignment: .leading) {
             // TODO: change onBack logic (maybe navigation)
-            AppBar(title: "회원가입", onBack: {
+            HGAppBar(title: "회원가입", onBack: {
                 if !isBack {
                     isBack.toggle()
                 }

@@ -20,7 +20,7 @@ struct MyPageScreen: View {
 
     var body: some View {
         VStack {
-            AppBarWithoutBtn(title: "마이페이지")
+            HGAppBarWithoutBack(title: "마이페이지")
 
             switch self.viewStatus {
             case .failure(let errorMessage):

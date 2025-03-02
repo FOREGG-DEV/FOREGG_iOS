@@ -40,7 +40,7 @@ struct AddLedgerScreen: View {
 
     var body: some View {
         VStack {
-            AppBar(title: "가계부 추가", onBack: {
+            HGAppBar(title: "가계부 추가", onBack: {
                 _ = appState.routes.popLast()
             })
             ScrollView {

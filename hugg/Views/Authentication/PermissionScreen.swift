@@ -4,7 +4,7 @@ import SwiftUI
 struct PermissionScreen: View {
     var body: some View {
         VStack(alignment: .leading) {
-            AppBarWithoutBtn(title: "알림")
+            HGAppBarWithoutBack(title: "알림")
             Spacer()
                 .frame(height: 32)
             VStack(alignment: .leading) {

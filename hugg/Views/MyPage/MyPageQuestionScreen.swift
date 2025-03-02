@@ -10,7 +10,7 @@ struct MyPageQuestionScreen: View {
 
     var body: some View {
         VStack(alignment: .leading) {
-            AppBar(title: "문의사항", onBack: {
+            HGAppBar(title: "문의사항", onBack: {
                 // popLast -> route return == _ var로 사용 안함 처리
                 _ = appState.routes.popLast()
             })

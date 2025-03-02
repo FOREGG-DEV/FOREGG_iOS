@@ -18,7 +18,7 @@ struct MyMedicineScreen: View {
 
     var body: some View {
         VStack(alignment: .center) {
-            AppBar(title: "나의 약, 주사 정보", onBack: {
+            HGAppBar(title: "나의 약, 주사 정보", onBack: {
                 _ = appState.routes.popLast()
             })
             // Binding 생성 (Int -> String)

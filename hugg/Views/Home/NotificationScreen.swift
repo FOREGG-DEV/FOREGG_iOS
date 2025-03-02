@@ -11,7 +11,7 @@ struct NotificationScreen: View {
 
     var body: some View {
         VStack {
-            AppBar(title: "알림", onBack: {
+            HGAppBar(title: "알림", onBack: {
                 _ = self.appState.routes.popLast()
             })
             switch self.viewStatus {

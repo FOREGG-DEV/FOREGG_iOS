@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AppBar: View {
+struct HGAppBar: View {
     var title: String
     var onBack: () -> Void
 
@@ -42,7 +42,7 @@ struct AppBar: View {
 }
 
 // AppBar without Back button
-struct AppBarWithoutBtn: View {
+struct HGAppBarWithoutBack: View {
     var title: String
 
     var body: some View {
@@ -67,6 +67,52 @@ struct AppBarWithoutBtn: View {
     }
 }
 
+struct HGAppBarWithTrailing<Trailing: View>: View {
+    var title: String
+    var onBack: () -> Void
+    @ViewBuilder let trailing: Trailing
+
+    var body: some View {
+        HStack {
+            Button(action: onBack) {
+                Image(systemName: "chevron.left")
+                    .fontWeight(.semibold)
+                    .foregroundColor(.black60)
+                    .frame(width: 24, height: 24)
+            }
+            Spacer()
+            Text(title)
+                .font(.pretendardSemiBold16)
+                .foregroundStyle(.kBlack)
+            Spacer()
+
+            trailing
+            Spacer()
+                .frame(width: 24, height: 24)
+        }
+        .padding(.horizontal, 28)
+        .padding(.vertical, 15)
+        .background(.mainBg)
+        .overlay(
+            VStack {
+                Spacer()
+                Divider()
+                    .background(.black60)
+                    .frame(height: 1)
+
+            })
+    }
+}
+
 #Preview {
-    AppBar(title: "회원가입", onBack: {})
+    VStack {
+        HGAppBar(title: "회원가입", onBack: {})
+        Spacer()
+        
+        HGAppBarWithTrailing(title: "test", onBack: {}) {
+            Text("Trailing")
+        }
+        
+        Spacer()
+    }
 }

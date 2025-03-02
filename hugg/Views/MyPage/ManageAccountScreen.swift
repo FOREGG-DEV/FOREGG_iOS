@@ -24,7 +24,7 @@ struct ManageAccountScreen: View {
 
     var body: some View {
         VStack {
-            AppBar(title: "계정관리", onBack: {
+            HGAppBar(title: "계정관리", onBack: {
                 _ = appState.routes.popLast()
             })
 

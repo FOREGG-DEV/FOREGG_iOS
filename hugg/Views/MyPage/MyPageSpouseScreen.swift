@@ -9,7 +9,7 @@ struct MyPageSpouseScreen: View {
 
     var body: some View {
         VStack {
-            AppBar(title: "배우자", onBack: {
+            HGAppBar(title: "배우자", onBack: {
                 _ = appState.routes.popLast()
             })
 
