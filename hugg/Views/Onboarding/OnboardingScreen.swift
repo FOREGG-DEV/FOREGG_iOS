@@ -5,6 +5,8 @@ import SwiftUI
 struct OnboardingScreen: View {
     //    init viewModel instance
     @StateObject private var state = OnboardingState()
+    @State private var showPopup: Bool = false
+    private let client = LoginHTTPClient()
 
     var body: some View {
         VStack(spacing: 0) {
@@ -76,42 +78,69 @@ struct OnboardingScreen: View {
                 .frame(height: 60)
         }
         .background(.mainBg)
+        .popup(isPresented: $showPopup) {
+            ErrorPopup(onConfirm: {
+                showPopup.toggle()
+            })
+        } customize: {
+            $0
+                .appearFrom(.centerScale)
+                .position(.center)
+                .closeOnTapOutside(true)
+                .closeOnTap(false)
+                .backgroundColor(.dimBg)
+        }
     }
 }
 
 extension OnboardingScreen {
-    private func loginProcess(_ token: String) {
-        // maybe get the kakao jwt here
+    private func loginProcess(_ token: String) async throws {
+        // get the kakao jwt here
         print("kakao token is \(token)")
-        // save to UserDefaults
+        // kakao login with kakao token
+        // create resource for kakao login
+        let resource = Resource(
+            url: Constants.Urls.login,
+            method: .post(nil),
+            modelType: ApiResponse<UserResponseDTO>.self
+        )
+
+        let response = try await client.load(resource, token: token)
+        print(response.code)
+        print(response.message)
+
+        if response.isSuccess, response.data != nil {
+            print(response.data?.accessToken ?? "no Token")
+        }
     }
 
     // how can i do unit test this ?
     private func handleKakaoLogin() {
         // 카카오톡으로 로그인 사용 가능한지 체크
-        // 불가능한 경우 카카오톡 웹으로 띄우기
         if UserApi.isKakaoTalkLoginAvailable() {
             UserApi.shared.loginWithKakaoTalk { oauthToken, error in
                 if let error = error {
-                    print(error)
-                    // show error dialog
+                    print(error.localizedDescription)
+                    showPopup.toggle()
                 } else {
                     // 로그인 성공
-                    print("kakao login is success")
                     let result = oauthToken?.accessToken
-                    print(result ?? "No token found")
-                    // set token to userDefaults?
-
-                    // POST: auth/login
-                    loginProcess(result ?? "no token founded")
+                    Task {
+                        do {
+                            try await loginProcess(result ?? "no token founded")
+                        } catch {
+                            print(error.localizedDescription)
+                            showPopup.toggle()
+                        }
+                    }
                 }
             }
+            // 불가능한 경우 카카오톡 웹으로 띄우기
         } else {
             print("cannot use kakao login")
             UserApi.shared.loginWithKakaoAccount { oauthToken, error in
                 if let error = error {
-                    print(error)
-                    // show error dialog
+                    showPopup.toggle()
                 } else {
                     // 로그인 성공
                     print("kakao login is success")
@@ -120,7 +149,14 @@ extension OnboardingScreen {
                     // set token to userDefaults?
 
                     // POST: auth/login
-                    loginProcess(result ?? "no token founded")
+                    Task {
+                        do {
+                            try await loginProcess(result ?? "no token founded")
+                        } catch {
+                            print(error.localizedDescription)
+                            showPopup.toggle()
+                        }
+                    }
                 }
             }
         }

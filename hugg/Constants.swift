@@ -56,5 +56,6 @@ enum Constants {
 
     enum Urls {
         static let spouseCode = URL(string: "\(baseUrlPath)/auth/spouseCode")!
+        static let login = URL(string: "\(baseUrlPath)/auth/login")!
     }
 }
