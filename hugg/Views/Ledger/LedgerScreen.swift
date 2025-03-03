@@ -11,8 +11,10 @@ enum LedgerAllFilter {
 struct LedgerScreen: View {
     // Tap
     private let tapOption: [String] = ["전체", "회차별", "월별"]
+
     @State private var selectedTap: String = "전체"
     @State private var currentIndex: Int = 0
+    @EnvironmentObject private var appState: AppState
 
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
@@ -41,6 +43,7 @@ struct LedgerScreen: View {
                     ForEach(0 ..< tapOption.count, id: \.self) { idx in
                         if idx == 0 {
                             // MARK: all
+
                             LedgerAllPage()
                         } else if idx == 1 {
                             // MARK: round
@@ -65,13 +68,16 @@ struct LedgerScreen: View {
 
             // MARK: Floating Button
 
-            HGPlusButton(onTap: {})
-                .padding([.trailing, .bottom], 16)
+            HGPlusButton(onTap: {
+                appState.routes.append(.ledgerForm)
+            })
+            .padding([.trailing, .bottom], 16)
         }
     }
 }
 
 #Preview {
-    LedgerScreen()
+    PreviewContainer {
+        LedgerScreen()
+    }
 }
-

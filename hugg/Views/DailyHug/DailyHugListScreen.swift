@@ -9,26 +9,33 @@ struct DailyHugListScreen: View {
             })
             ScrollView {
                 VStack(spacing: 12) {
-                    DailyHuggListCell()
-                    DailyHuggListCell()
-                    DailyHuggListCell()
-                    DailyHuggListCell()
-                    DailyHuggListCell()
-                    DailyHuggListCell()
-                    DailyHuggListCell()
-                    DailyHuggListCell()
-                    DailyHuggListCell()
-                    DailyHuggListCell()
-                    DailyHuggListCell()
-                    DailyHuggListCell()
-                    DailyHuggListCell()
-                    DailyHuggListCell()
-                    DailyHuggListCell()
-                    DailyHuggListCell()
-                    DailyHuggListCell()
-                    DailyHuggListCell()
-                    DailyHuggListCell()
-                    DailyHuggListCell()
+                    // Empty content
+                    Image("dailyhugAllEmpty")
+                        .resizable()
+                        .scaledToFit()
+                        .padding(.horizontal, 16)
+                        .padding(.top, 20)
+                    // or generate ListCell with model's dailyHug dto
+//                    DailyHuggListCell()
+//                    DailyHuggListCell()
+//                    DailyHuggListCell()
+//                    DailyHuggListCell()
+//                    DailyHuggListCell()
+//                    DailyHuggListCell()
+//                    DailyHuggListCell()
+//                    DailyHuggListCell()
+//                    DailyHuggListCell()
+//                    DailyHuggListCell()
+//                    DailyHuggListCell()
+//                    DailyHuggListCell()
+//                    DailyHuggListCell()
+//                    DailyHuggListCell()
+//                    DailyHuggListCell()
+//                    DailyHuggListCell()
+//                    DailyHuggListCell()
+//                    DailyHuggListCell()
+//                    DailyHuggListCell()
+//                    DailyHuggListCell()
                 }
                 Spacer()
                     .frame(height: 46)
@@ -39,8 +46,13 @@ struct DailyHugListScreen: View {
 }
 
 extension DailyHugListScreen {
-    // get every dailyHug
+    // get every dailyHug with page 0
     func populateAllDailyHug() {}
+    //
+    func pagination(_ page: Int){
+        // total page < current page
+        // else return
+    }
 }
 
 #Preview {

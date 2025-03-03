@@ -39,11 +39,20 @@ extension EntryPointScreen {
 
         let userToken = UserDefaults.standard.string(forKey: "userToken")
 
-        if userToken != nil {
-            // token 설정 로직은 회원가입, 로그인 페이지에서 처리
+        switch devMode {
+        case .dev:
             appState.routes.append(.mainScreen)
-        } else {
-            appState.routes.append(.onboarding)
+
+        case .ui(let rt):
+            appState.routes.append(rt)
+
+        case .prod:
+            if userToken != nil {
+                // token 설정 로직은 회원가입, 로그인 페이지에서 처리
+                appState.routes.append(.mainScreen)
+            } else {
+                appState.routes.append(.onboarding)
+            }
         }
 
         // MARK: Debug

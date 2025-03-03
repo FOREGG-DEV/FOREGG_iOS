@@ -28,7 +28,7 @@ enum AddLedgerPopup: Equatable {
 }
 
 struct AddLedgerScreen: View {
-    let mode: LedgerFormMode
+    let mode: LedgerFormMode = .add
     @State private var selectedCount: Int = 0
     @State private var selectedDate: Date = .now
     @State private var content: String = ""
@@ -86,15 +86,34 @@ struct AddLedgerScreen: View {
 
                 AddLedgerVGap()
 
-                AddLedgerTitle(label: "내용 및 금액*")
-                AddLedgerTextField(text: $content, label: "가계부 내용 입력")
+                HStack(alignment: .center) {
+                    AddLedgerTitle(label: "내용 및 금액*")
+                    Text("지원금 항목 추가")
+                        .font(.p3)
+                        .foregroundStyle(Constants.Colors.black50)
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 3.5)
+                        .background(Color.white)
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 4)
+                                .stroke(Constants.Colors.black20, lineWidth: 1)
+                        }
+                        .padding(.trailing, 16)
+                        .onTapGesture {
+                            appState.routes.append(.subsidy)
+                        }
+                }
+                .padding(.bottom, 4)
 
-                Spacer()
-                    .frame(height: 150)
+                AddLedgerTextField(text: $content, label: "가계부 내용 입력")
 
                 // 지출 금액들 (amounts)
                 // subsidy data from model
                 // TextField 구성
+                
+                Spacer()
+                    .frame(height: 150)
+
 
                 AddLedgerVGap()
 
@@ -165,6 +184,6 @@ private struct AddLedgerTitle: View {
 
 #Preview {
     PreviewContainer {
-        AddLedgerScreen(mode: .add)
+        AddLedgerScreen()
     }
 }

@@ -14,12 +14,15 @@ enum SubsidyFormMode {
     case edit(SubsidyDetailResponseDTO)
 }
 
+// mode data => subsidyModel에서 관리하는 게 맞을 듯
+
 // TODO: Add popup config
 // 버튼 클릭 시 -> 삭제 팝업
 // 확인 시  : 성공 -> popup 닫기 / 실패 -> popup 속성 바꾸기 (에러 팝업으로)
 
 struct SubsidyFormScreen: View {
-    let mode: SubsidyFormMode
+    // from subsidy model
+    let mode: SubsidyFormMode = .create
     // 중복 이름 안되도록 설정해야함 -> 기존의 Subsidy 데이터도 조회해야함
     // mode가 edit인 경우에는 DTO에서 기본 데이터 가져와야함
     @State var nickname: String = ""
@@ -182,6 +185,6 @@ private struct SubsidyFormTitle: View {
 
 #Preview {
     PreviewContainer {
-        SubsidyFormScreen(mode: .edit(SubsidyDetailResponseDTO.sample))
+        SubsidyFormScreen()
     }
 }

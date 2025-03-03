@@ -51,6 +51,26 @@ struct huggApp: App {
                         case .notification:
                             NotificationScreen()
                                 .navigationBarBackButtonHidden(true)
+
+                        case .dailyHug:
+                            DailyHugScreen()
+                                .navigationBarBackButtonHidden(true)
+
+                        case .dailyHugList:
+                            DailyHugListScreen()
+                                .navigationBarBackButtonHidden(true)
+                        
+                        case .ledgerForm:
+                            AddLedgerScreen()
+                                .navigationBarBackButtonHidden(true)
+
+                        case .subsidy:
+                            SubsidyScreen()
+                                .navigationBarBackButtonHidden(true)
+
+                        case .subsidyForm:
+                            SubsidyFormScreen()
+                                .navigationBarBackButtonHidden(true)
                         }
 
                     })

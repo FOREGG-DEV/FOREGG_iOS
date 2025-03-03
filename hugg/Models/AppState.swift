@@ -15,6 +15,11 @@ enum Route: Hashable {
     case question
     case manageAccount
     case notification
+    case dailyHug
+    case dailyHugList
+    case ledgerForm
+    case subsidy
+    case subsidyForm
 }
 
 enum BottomNavigationTab: Hashable {
