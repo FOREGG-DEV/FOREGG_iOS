@@ -12,7 +12,7 @@ struct HGTextBorderedButton: View {
     let onTap: () -> Void
 
     var body: some View {
-        Text("지원금 항목 추가")
+        Text(label)
             .font(.p3)
             .foregroundStyle(Constants.Colors.black50)
             .padding(.horizontal, 8)
