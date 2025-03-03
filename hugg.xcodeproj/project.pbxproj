@@ -57,6 +57,7 @@
 		1F86E4A32D5DBED80042B256 /* MyPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F86E4A22D5DBED50042B256 /* MyPageModel.swift */; };
 		1F86E4A52D5DC09E0042B256 /* MyPageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F86E4A42D5DC0970042B256 /* MyPageEntity.swift */; };
 		1F86E4AE2D5DDC9E0042B256 /* ViewStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F86E4AD2D5DDC9B0042B256 /* ViewStatus.swift */; };
+		1F89149C2D75EC0800AC6A5B /* DailyHugListDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F89149B2D75EC0800AC6A5B /* DailyHugListDetailScreen.swift */; };
 		1F89292E2CE0D86100DDF698 /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1F89292D2CE0D86100DDF698 /* KakaoSDKAuth */; };
 		1F8929302CE0D86100DDF698 /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 1F89292F2CE0D86100DDF698 /* KakaoSDKCommon */; };
 		1F8929322CE0D86100DDF698 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 1F8929312CE0D86100DDF698 /* KakaoSDKUser */; };
@@ -212,6 +213,7 @@
 		1F86E4A22D5DBED50042B256 /* MyPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageModel.swift; sourceTree = "<group>"; };
 		1F86E4A42D5DC0970042B256 /* MyPageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageEntity.swift; sourceTree = "<group>"; };
 		1F86E4AD2D5DDC9B0042B256 /* ViewStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStatus.swift; sourceTree = "<group>"; };
+		1F89149B2D75EC0800AC6A5B /* DailyHugListDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyHugListDetailScreen.swift; sourceTree = "<group>"; };
 		1F8929332CE0FF2600DDF698 /* MyPageListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageListCell.swift; sourceTree = "<group>"; };
 		1F8929352CE10DCA00DDF698 /* ManageAccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageAccountScreen.swift; sourceTree = "<group>"; };
 		1F8B64C02CB3A9E400F61118 /* CountSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountSelectView.swift; sourceTree = "<group>"; };
@@ -718,6 +720,7 @@
 			children = (
 				1F9451E02D75CAC1007797D9 /* DailyHugListScreen.swift */,
 				1FD0D2292CB4308B00F96E87 /* DailyHugScreen.swift */,
+				1F89149B2D75EC0800AC6A5B /* DailyHugListDetailScreen.swift */,
 			);
 			path = DailyHug;
 			sourceTree = "<group>";
@@ -901,6 +904,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F89149C2D75EC0800AC6A5B /* DailyHugListDetailScreen.swift in Sources */,
 				1F24490C2D707E5A0026D9B7 /* NotificationModel.swift in Sources */,
 				1FA281D22D37ADFA007BD828 /* LedgerAllPage.swift in Sources */,
 				1FCEFF092D66C4BC0063DA31 /* MyMedicineScreen.swift in Sources */,

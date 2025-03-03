@@ -25,6 +25,7 @@ struct DailyHugScreen: View {
                         .frame(width: 18, height: 18)
                         .foregroundStyle(Constants.Colors.black60)
                     Spacer()
+                    // date -> "yyyy년 mm월 dd일 요일"
                     Text("2024년 8월 5일 월요일")
                         .font(.h2)
                         .foregroundStyle(Constants.Colors.black90)
