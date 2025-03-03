@@ -79,6 +79,7 @@
 		1F8D59362C3B9D7700832F61 /* GmarketSansMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1F8D59332C3B9D7700832F61 /* GmarketSansMedium.otf */; };
 		1F8D59372C3B9D7700832F61 /* GmarketSansBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1F8D59342C3B9D7700832F61 /* GmarketSansBold.otf */; };
 		1F8D593B2C3B9FDA00832F61 /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D593A2C3B9FDA00832F61 /* CustomFonts.swift */; };
+		1F9451E12D75CAC6007797D9 /* DailyHugListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9451E02D75CAC1007797D9 /* DailyHugListScreen.swift */; };
 		1F94774F2CE9E5AF00D947E1 /* SelectablePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F94774E2CE9E5AF00D947E1 /* SelectablePopup.swift */; };
 		1F9477512CE9E60F00D947E1 /* AlertPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9477502CE9E60F00D947E1 /* AlertPopup.swift */; };
 		1F9477532CE9EA1D00D947E1 /* LedgerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9477522CE9EA1D00D947E1 /* LedgerScreen.swift */; };
@@ -139,7 +140,7 @@
 		1FCD8F432CB52C6A00956BA0 /* SSNModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCD8F422CB52C6A00956BA0 /* SSNModel.swift */; };
 		1FCEFF072D66B3E60063DA31 /* HGBlackToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCEFF062D66B3E60063DA31 /* HGBlackToast.swift */; };
 		1FCEFF092D66C4BC0063DA31 /* MyMedicineScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCEFF082D66C4BC0063DA31 /* MyMedicineScreen.swift */; };
-		1FD0D22A2CB4308B00F96E87 /* DailyHugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD0D2292CB4308B00F96E87 /* DailyHugView.swift */; };
+		1FD0D22A2CB4308B00F96E87 /* DailyHugScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD0D2292CB4308B00F96E87 /* DailyHugScreen.swift */; };
 		1FD0D2302CB433A200F96E87 /* SurgeryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD0D22F2CB433A200F96E87 /* SurgeryType.swift */; };
 		1FD0D2322CB437B600F96E87 /* CustomDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD0D2312CB437B600F96E87 /* CustomDateFormatter.swift */; };
 		1FD5D8782D1E41A9001D9C5B /* AgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD5D8772D1E41A9001D9C5B /* AgreementView.swift */; };
@@ -231,6 +232,7 @@
 		1F8D59342C3B9D7700832F61 /* GmarketSansBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansBold.otf; sourceTree = "<group>"; };
 		1F8D59382C3B9EB700832F61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1F8D593A2C3B9FDA00832F61 /* CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
+		1F9451E02D75CAC1007797D9 /* DailyHugListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyHugListScreen.swift; sourceTree = "<group>"; };
 		1F94774E2CE9E5AF00D947E1 /* SelectablePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectablePopup.swift; sourceTree = "<group>"; };
 		1F9477502CE9E60F00D947E1 /* AlertPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPopup.swift; sourceTree = "<group>"; };
 		1F9477522CE9EA1D00D947E1 /* LedgerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgerScreen.swift; sourceTree = "<group>"; };
@@ -291,7 +293,7 @@
 		1FCD8F422CB52C6A00956BA0 /* SSNModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSNModel.swift; sourceTree = "<group>"; };
 		1FCEFF062D66B3E60063DA31 /* HGBlackToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGBlackToast.swift; sourceTree = "<group>"; };
 		1FCEFF082D66C4BC0063DA31 /* MyMedicineScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMedicineScreen.swift; sourceTree = "<group>"; };
-		1FD0D2292CB4308B00F96E87 /* DailyHugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyHugView.swift; sourceTree = "<group>"; };
+		1FD0D2292CB4308B00F96E87 /* DailyHugScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyHugScreen.swift; sourceTree = "<group>"; };
 		1FD0D22F2CB433A200F96E87 /* SurgeryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurgeryType.swift; sourceTree = "<group>"; };
 		1FD0D2312CB437B600F96E87 /* CustomDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDateFormatter.swift; sourceTree = "<group>"; };
 		1FD5D8772D1E41A9001D9C5B /* AgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementView.swift; sourceTree = "<group>"; };
@@ -714,7 +716,8 @@
 		1FD0D2262CB42F7100F96E87 /* DailyHug */ = {
 			isa = PBXGroup;
 			children = (
-				1FD0D2292CB4308B00F96E87 /* DailyHugView.swift */,
+				1F9451E02D75CAC1007797D9 /* DailyHugListScreen.swift */,
+				1FD0D2292CB4308B00F96E87 /* DailyHugScreen.swift */,
 			);
 			path = DailyHug;
 			sourceTree = "<group>";
@@ -966,6 +969,7 @@
 				1FBB67702D68ABEB002C60A2 /* SubsidyAvailable.swift in Sources */,
 				1FBB67722D68ABEB002C60A2 /* DailyResponseDTO.swift in Sources */,
 				1FBB67732D68ABEB002C60A2 /* DailyRequestDTO.swift in Sources */,
+				1F9451E12D75CAC6007797D9 /* DailyHugListScreen.swift in Sources */,
 				1FBB67742D68ABEB002C60A2 /* DailyIdBody.swift in Sources */,
 				1FBB67782D68ABEB002C60A2 /* LedgerMemoRequestDTO.swift in Sources */,
 				1FBB67792D68ABEB002C60A2 /* LedgerRequestDTO.swift in Sources */,
@@ -1004,7 +1008,7 @@
 				1F636C582D3DEA2C0026ABE4 /* SignUpFooter.swift in Sources */,
 				1FF199DE2D37AA7000FF3C17 /* HGTagWithoutText.swift in Sources */,
 				1FCD8F432CB52C6A00956BA0 /* SSNModel.swift in Sources */,
-				1FD0D22A2CB4308B00F96E87 /* DailyHugView.swift in Sources */,
+				1FD0D22A2CB4308B00F96E87 /* DailyHugScreen.swift in Sources */,
 				1F3CA1EF2D6476270086FDB2 /* MyPageQuestionScreen.swift in Sources */,
 				1FCEFF072D66B3E60063DA31 /* HGBlackToast.swift in Sources */,
 				1F636C4C2D3D3F670026ABE4 /* SignUpState.swift in Sources */,

@@ -87,6 +87,36 @@ struct HGAppBarWithTrailing<Trailing: View>: View {
             Spacer()
 
             trailing
+                .frame(width: 24)
+        }
+        .padding(.horizontal, 28)
+        .padding(.vertical, 15)
+        .background(.mainBg)
+        .overlay(
+            VStack {
+                Spacer()
+                Divider()
+                    .background(.black60)
+                    .frame(height: 1)
+
+            })
+    }
+}
+
+struct HGAppBarWithLeading<Leading: View>: View {
+    var title: String
+    var onBack: () -> Void
+    @ViewBuilder let leading: Leading
+
+    var body: some View {
+        HStack {
+            leading
+            Spacer()
+            Text(title)
+                .font(.pretendardSemiBold16)
+                .foregroundStyle(.kBlack)
+            Spacer()
+            Spacer()
         }
         .padding(.horizontal, 28)
         .padding(.vertical, 15)
@@ -108,6 +138,9 @@ struct HGAppBarWithTrailing<Trailing: View>: View {
         Spacer()
 
         HGAppBarWithTrailing(title: "test", onBack: {}) {
+            Text("T")
+        }
+        HGAppBarWithLeading(title: "test", onBack: {}) {
             Text("Trailing")
         }
 

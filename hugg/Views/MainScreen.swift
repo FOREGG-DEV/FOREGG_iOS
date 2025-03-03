@@ -36,7 +36,7 @@ struct MainScreen: View {
                             BottomNavItem(title: "캘린더", image: "calendar", isSelected: self.appState.currentBottomNavTab == BottomNavigationTab.calendar)
                         }.tag(BottomNavigationTab.calendar)
 
-                    DailyHugView()
+                    DailyHugScreen()
                         .tabItem {
                             BottomNavItem(title: "데일리 허그", image: "daily", isSelected: self.appState.currentBottomNavTab == BottomNavigationTab.daily)
                         }.tag(BottomNavigationTab.daily)
