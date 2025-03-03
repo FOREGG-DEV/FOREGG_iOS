@@ -39,5 +39,10 @@ struct AlertPopup: View {
 }
 
 #Preview {
-    AlertPopup(onConfirm: {}, title: "Preview Check")
+    VStack {
+        Spacer()
+        AlertPopup(onConfirm: {}, title: "Preview Check")
+        Spacer()
+    }
+    .background(Constants.Colors.backgroundMain)
 }

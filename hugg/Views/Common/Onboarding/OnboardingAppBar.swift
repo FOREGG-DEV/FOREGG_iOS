@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// StateObject 파라미터로 받는 거면 ObservedObeject로 받으면 되네
 struct OnboardingAppBar: View {
     @ObservedObject var state: OnboardingState
 
@@ -33,8 +34,7 @@ struct OnboardingAppBar: View {
                 .frame(width: 86, height: 26)
             Spacer()
             Button(action: {
-                // Skip 버튼 액션
-                print("Skip button tapped")
+                state.currentStep = 4
             }) {
                 Text("Skip")
                     .fontWeight(Font.Weight.semibold)

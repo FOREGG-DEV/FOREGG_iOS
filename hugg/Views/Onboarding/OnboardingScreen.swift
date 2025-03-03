@@ -61,6 +61,9 @@ struct OnboardingScreen: View {
                         .scaledToFit()
                         .frame(height: 52)
                         .padding(.horizontal, 16)
+                        .onTapGesture {
+                            handleAppleLogin()
+                        }
                 }
             } else {
                 VStack {
@@ -77,10 +80,10 @@ struct OnboardingScreen: View {
 }
 
 extension OnboardingScreen {
-    
-    private func handleLogin() {
+    private func loginProcess(_ token: String) {
         // maybe get the kakao jwt here
-        print("login here")
+        print("kakao token is \(token)")
+        // save to UserDefaults
     }
 
     // how can i do unit test this ?
@@ -100,7 +103,7 @@ extension OnboardingScreen {
                     // set token to userDefaults?
 
                     // POST: auth/login
-                    handleLogin()
+                    loginProcess(result ?? "no token founded")
                 }
             }
         } else {
@@ -117,7 +120,7 @@ extension OnboardingScreen {
                     // set token to userDefaults?
 
                     // POST: auth/login
-                    handleLogin()
+                    loginProcess(result ?? "no token founded")
                 }
             }
         }
