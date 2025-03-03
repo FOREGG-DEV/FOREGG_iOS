@@ -87,8 +87,6 @@ struct HGAppBarWithTrailing<Trailing: View>: View {
             Spacer()
 
             trailing
-            Spacer()
-                .frame(width: 24, height: 24)
         }
         .padding(.horizontal, 28)
         .padding(.vertical, 15)
@@ -108,11 +106,11 @@ struct HGAppBarWithTrailing<Trailing: View>: View {
     VStack {
         HGAppBar(title: "회원가입", onBack: {})
         Spacer()
-        
+
         HGAppBarWithTrailing(title: "test", onBack: {}) {
             Text("Trailing")
         }
-        
+
         Spacer()
     }
 }

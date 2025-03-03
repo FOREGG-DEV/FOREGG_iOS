@@ -31,6 +31,7 @@
 		1F24491F2D71C12B0026D9B7 /* SubsidyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F24491E2D71C12B0026D9B7 /* SubsidyScreen.swift */; };
 		1F2449212D71C1B50026D9B7 /* SubsidyFormScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2449202D71C1B50026D9B7 /* SubsidyFormScreen.swift */; };
 		1F2449232D74211D0026D9B7 /* HGTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2449222D74211D0026D9B7 /* HGTextField.swift */; };
+		1F2449252D7452370026D9B7 /* HGGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2449242D7452320026D9B7 /* HGGender.swift */; };
 		1F2B73CA2D5D81D800E07569 /* note.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F2B73C92D5D81D100E07569 /* note.md */; };
 		1F2B73CF2D5D853000E07569 /* service_layer.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F2B73CE2D5D852D00E07569 /* service_layer.md */; };
 		1F2B73D72D5DB5CF00E07569 /* MyPageSpouseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2B73D62D5DB5CF00E07569 /* MyPageSpouseScreen.swift */; };
@@ -51,7 +52,6 @@
 		1F636C582D3DEA2C0026ABE4 /* SignUpFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F636C572D3DEA2C0026ABE4 /* SignUpFooter.swift */; };
 		1F656AF22CA979DE0035F81E /* TreatmentSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F656AF12CA979DE0035F81E /* TreatmentSelectView.swift */; };
 		1F692CE12CB4FEA400BAEEBE /* EnterSSNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F692CE02CB4FEA400BAEEBE /* EnterSSNView.swift */; };
-		1F86E4A12D5DBD0C0042B256 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F86E4A02D5DBD060042B256 /* UserModel.swift */; };
 		1F86E4A32D5DBED80042B256 /* MyPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F86E4A22D5DBED50042B256 /* MyPageModel.swift */; };
 		1F86E4A52D5DC09E0042B256 /* MyPageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F86E4A42D5DC0970042B256 /* MyPageEntity.swift */; };
 		1F86E4AE2D5DDC9E0042B256 /* ViewStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F86E4AD2D5DDC9B0042B256 /* ViewStatus.swift */; };
@@ -184,6 +184,7 @@
 		1F24491E2D71C12B0026D9B7 /* SubsidyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsidyScreen.swift; sourceTree = "<group>"; };
 		1F2449202D71C1B50026D9B7 /* SubsidyFormScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsidyFormScreen.swift; sourceTree = "<group>"; };
 		1F2449222D74211D0026D9B7 /* HGTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGTextField.swift; sourceTree = "<group>"; };
+		1F2449242D7452320026D9B7 /* HGGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGGender.swift; sourceTree = "<group>"; };
 		1F2B73C92D5D81D100E07569 /* note.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = note.md; sourceTree = "<group>"; };
 		1F2B73CE2D5D852D00E07569 /* service_layer.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = service_layer.md; sourceTree = "<group>"; };
 		1F2B73D62D5DB5CF00E07569 /* MyPageSpouseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageSpouseScreen.swift; sourceTree = "<group>"; };
@@ -203,7 +204,6 @@
 		1F636C572D3DEA2C0026ABE4 /* SignUpFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFooter.swift; sourceTree = "<group>"; };
 		1F656AF12CA979DE0035F81E /* TreatmentSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentSelectView.swift; sourceTree = "<group>"; };
 		1F692CE02CB4FEA400BAEEBE /* EnterSSNView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterSSNView.swift; sourceTree = "<group>"; };
-		1F86E4A02D5DBD060042B256 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		1F86E4A22D5DBED50042B256 /* MyPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageModel.swift; sourceTree = "<group>"; };
 		1F86E4A42D5DC0970042B256 /* MyPageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageEntity.swift; sourceTree = "<group>"; };
 		1F86E4AD2D5DDC9B0042B256 /* ViewStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStatus.swift; sourceTree = "<group>"; };
@@ -385,7 +385,6 @@
 				1F24491A2D7163100026D9B7 /* LedgerModel.swift */,
 				1F24490B2D707E4F0026D9B7 /* NotificationModel.swift */,
 				1F86E4A22D5DBED50042B256 /* MyPageModel.swift */,
-				1F86E4A02D5DBD060042B256 /* UserModel.swift */,
 				1FA883F62CD9F5570022244D /* States */,
 				1FD0D22D2CB4332600F96E87 /* Enums */,
 				1FD0D22C2CB432E500F96E87 /* Entity */,
@@ -756,6 +755,7 @@
 		1FD0D22D2CB4332600F96E87 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				1F2449242D7452320026D9B7 /* HGGender.swift */,
 				1F86E4AD2D5DDC9B0042B256 /* ViewStatus.swift */,
 				1FD0D22F2CB433A200F96E87 /* SurgeryType.swift */,
 				1F0DD9382CD7534700708811 /* RecordType.swift */,
@@ -897,6 +897,7 @@
 				1FCEFF092D66C4BC0063DA31 /* MyMedicineScreen.swift in Sources */,
 				1F603C6F2CBD06E100E5BF5D /* MyPageScreen.swift in Sources */,
 				1F2B73D72D5DB5CF00E07569 /* MyPageSpouseScreen.swift in Sources */,
+				1F2449252D7452370026D9B7 /* HGGender.swift in Sources */,
 				1FA883FB2CD9F6930022244D /* PreviewContainer.swift in Sources */,
 				1F032BB92C612A3500E8C64B /* SkeletonBox.swift in Sources */,
 				1F692CE12CB4FEA400BAEEBE /* EnterSSNView.swift in Sources */,
@@ -934,7 +935,6 @@
 				1F636C4A2D3A59950026ABE4 /* ApiResponse.swift in Sources */,
 				1F3F3CBA2CE2FDC3006D4EE7 /* Constants.swift in Sources */,
 				1F2449152D71528D0026D9B7 /* HGErrorView.swift in Sources */,
-				1F86E4A12D5DBD0C0042B256 /* UserModel.swift in Sources */,
 				1F9477532CE9EA1D00D947E1 /* LedgerScreen.swift in Sources */,
 				1FBB67522D68ABEB002C60A2 /* MedicalResponseDTO.swift in Sources */,
 				1FBB67532D68ABEB002C60A2 /* NotificationDTO.swift in Sources */,

@@ -3,12 +3,16 @@ import SwiftUI
 // TODO: Implement Population
 
 struct HomeScreen: View {
-    @StateObject var model: HomeScreenModel = .init()
+    @EnvironmentObject private var appState: AppState
+    @EnvironmentObject var model: HomeScreenModel
+    @EnvironmentObject var myPageModel: MyPageModel
+
+    @State private var viewStatus: ViewStatus = .loading
 
     var body: some View {
         VStack(alignment: .center) {
             HGHomeAppBar()
-            switch self.model.viewStatus {
+            switch self.viewStatus {
             case .loading:
                 HGProgressView()
             case .success:
@@ -102,21 +106,30 @@ struct HomeScreen: View {
         }
         .background(.mainBg)
         .task {
-            await populateHomeScreen()
+            if self.model.homeData == nil {
+                await populateHomeScreen()
+            }
         }
     }
 }
 
 extension HomeScreen {
     private func populateHomeScreen() async {
+        self.viewStatus = .loading
         print("get home data")
-//            await model.fetchHomeData()
-        await model.fetchDummy()
+        do {
+            try await self.model.fetchDummy()
+            self.viewStatus = .success
+        } catch {
+            self.viewStatus = .failure(error.localizedDescription)
+        }
     }
 }
 
 #Preview {
     PreviewContainer {
         HomeScreen()
+            .environmentObject(HomeScreenModel())
+            .environmentObject(MyPageModel())
     }
 }

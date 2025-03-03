@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HGHomeAppBar: View {
     @EnvironmentObject private var appState: AppState
+
     var body: some View {
         HStack {
             Image("logo")

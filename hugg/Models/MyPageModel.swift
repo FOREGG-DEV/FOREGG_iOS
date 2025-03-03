@@ -1,4 +1,5 @@
 import SwiftUI
+// 사용자 정보는 모두 MyPage에서 참조
 
 enum MyPageError: Error {
     case errorTest
@@ -17,11 +18,8 @@ class MyPageModel: ObservableObject {
 
     // logics
     // 순서)
-    // 1: isLoading -> true
     // 2: API 콜
-    // 3: error 발생 시 -> errorMessage != nil
     // 4: data 변경
-    // 5: isLoading -> false
 
     /// [GET]  /myPage : 내 정보 보기 API
     func populateMyPage() async throws {

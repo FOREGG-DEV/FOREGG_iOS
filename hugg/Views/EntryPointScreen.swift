@@ -39,17 +39,16 @@ extension EntryPointScreen {
 
         let userToken = UserDefaults.standard.string(forKey: "userToken")
 
-//        if userToken != nil {
-//            // maybe we have to get extra datas here?
-//            print("go to main screen")
-//            appState.routes.append(.mainScreen)
-//        } else {
-//            appState.routes.append(.onboarding)
-//        }
+        if userToken != nil {
+            // token 설정 로직은 회원가입, 로그인 페이지에서 처리
+            appState.routes.append(.mainScreen)
+        } else {
+            appState.routes.append(.onboarding)
+        }
 
         // MARK: Debug
 
-        appState.routes.append(.mainScreen)
+//        appState.routes.append(.mainScreen)
 
         // 권한 허용 되었는지도 확인하기 ?
     }

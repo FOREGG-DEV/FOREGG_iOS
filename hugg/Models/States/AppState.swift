@@ -26,7 +26,6 @@ enum BottomNavigationTab: Hashable {
 /// 여러 스크린에서 공통적으로 사용되는 회차 정보 등 데이터 저장하기
 /// State가 너무 커질 것 같으면 추가적으로 분리해서 활용
 class AppState: ObservableObject {
-    @Published var testString = "Test for AppState DI"
     /// enum for checking current app mode
     /// if it is debug mode, using test account's kakao oauth token
     @Published var appMode: AppMode = .debug

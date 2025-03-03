@@ -1,4 +1,3 @@
-// TODO: Check list cell's height
 
 import SwiftUI
 
@@ -10,109 +9,85 @@ private enum MyPageUrls: String {
     case terms = "https://abouthugg.notion.site/9f6d826b7f354ec8af9a2832ad34310d"
 }
 
+// myPageModel 초기화 -> MainPage에서 실행됨
+
 struct MyPageScreen: View {
     @EnvironmentObject private var appState: AppState
     @EnvironmentObject private var model: MyPageModel
 
     @Environment(\.openURL) var openURL
 
-    @State var viewStatus: ViewStatus = .loading
-
     var body: some View {
         VStack {
             HGAppBarWithoutBack(title: "마이페이지")
 
-            switch self.viewStatus {
-            case .failure(let errorMessage):
-                HGErrorView {}
-            case .loading:
-                HGProgressView()
-            case .success:
-                List {
-                    // MARK: Section 1
+            List {
+                // MARK: Section 1
 
-                    Section {
-                        MyPageListSpouseCell(
-                            title: "배우자",
-                            spouseName: self.model.myPage?.spouse ?? "",
-                            action: {
-                                self.navigate(to: .spouse)
-                            }
-                        )
-                        MyPageListCell(
-                            title: "나의 약, 주사 정보",
-                            action: {
-                                self.navigate(to: .myMedicine)
-                            }
-                        )
-                    } header: {
-                        Spacer(minLength: 0)
-                    }
-                    .listRowSeparator(.hidden, edges: .bottom)
-                    .listRowSpacing(.zero)
-
-                    // MARK: Section 2
-
-                    Section(content: {
-                        MyPageListCell(title: "공지사항", action: {
-                            self.openURL(URL(string: MyPageUrls.notice.rawValue)!)
-                        })
-
-                        MyPageListCell(title: "FAQ", action: {
-                            self.openURL(URL(string: MyPageUrls.faq.rawValue)!)
-                        })
-
-                        MyPageListCell(title: "문의사항", action: {
-                            self.navigate(to: .question)
-                        })
-
-                        MyPageListCell(title: "이용약관", action: {
-                            self.openURL(URL(string: MyPageUrls.terms.rawValue)!)
-                        })
-                    }
+                Section {
+                    MyPageListSpouseCell(
+                        title: "배우자",
+                        spouseName: self.model.myPage?.spouse ?? "",
+                        action: {
+                            self.navigate(to: .spouse)
+                        }
                     )
-                    .listRowSeparator(.hidden, edges: .bottom)
-                    .listRowSpacing(.zero)
+                    MyPageListCell(
+                        title: "나의 약, 주사 정보",
+                        action: {
+                            self.navigate(to: .myMedicine)
+                        }
+                    )
+                } header: {
+                    Spacer(minLength: 0)
+                }
+                .listRowSeparator(.hidden, edges: .bottom)
+                .listRowSpacing(.zero)
 
-                    // MARK: Section 3
+                // MARK: Section 2
 
-                    Section(content: {
-                        MyPageListCell(title: "계정관리", action: {
-                            self.navigate(to: .manageAccount)
-                        })
+                Section(content: {
+                    MyPageListCell(title: "공지사항", action: {
+                        self.openURL(URL(string: MyPageUrls.notice.rawValue)!)
+                    })
+
+                    MyPageListCell(title: "FAQ", action: {
+                        self.openURL(URL(string: MyPageUrls.faq.rawValue)!)
+                    })
+
+                    MyPageListCell(title: "문의사항", action: {
+                        self.navigate(to: .question)
+                    })
+
+                    MyPageListCell(title: "이용약관", action: {
+                        self.openURL(URL(string: MyPageUrls.terms.rawValue)!)
                     })
                 }
-                .listStyle(.insetGrouped)
-                .listSectionSpacing(.compact)
-                .scrollContentBackground(.hidden)
-                .padding(.zero)
+                )
+                .listRowSeparator(.hidden, edges: .bottom)
+                .listRowSpacing(.zero)
+
+                // MARK: Section 3
+
+                Section(content: {
+                    MyPageListCell(title: "계정관리", action: {
+                        self.navigate(to: .manageAccount)
+                    })
+                })
             }
+            .listStyle(.insetGrouped)
+            .listSectionSpacing(.compact)
+            .scrollContentBackground(.hidden)
+            .padding(.zero)
         }
         .background(.mainBg)
-        .task {
-            await populateMyPage()
-        }
     }
 }
 
 // logics
 extension MyPageScreen {
-//    private func navigate(to myPageRoute: MyPageNavigatable) {
-//        self.appState.routes.append(myPageRoute.toRoute())
-//    }
-
     private func navigate(to route: Route) {
         self.appState.routes.append(route)
-    }
-
-    private func populateMyPage() async {
-        do {
-            self.viewStatus = .loading
-            try await self.model.populateMyPage()
-            self.viewStatus = .success
-        } catch {
-            self.viewStatus = .failure(error.localizedDescription)
-        }
     }
 }
 

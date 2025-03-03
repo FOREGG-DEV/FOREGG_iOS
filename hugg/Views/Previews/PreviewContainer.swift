@@ -1,4 +1,5 @@
 import SwiftUI
+// MARK: @escaping은 왜 사용하는 것일까?
 
 /// appState DI 적용을 위한 Container
 /// Preview 사용 시 appState와 같은 environment object가 필요한 경우 이 컨테이너를 사용합니다.
@@ -28,6 +29,6 @@ struct TestView: View {
     @EnvironmentObject private var appState: AppState
 
     var body: some View {
-        Text(appState.testString)
+        Text("")
     }
 }
