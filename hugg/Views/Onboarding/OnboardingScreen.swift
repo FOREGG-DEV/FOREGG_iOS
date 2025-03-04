@@ -5,6 +5,7 @@ import SwiftUI
 struct OnboardingScreen: View {
     //    init viewModel instance
     @StateObject private var state = OnboardingState()
+    @EnvironmentObject private var appState: AppState
     @State private var showPopup: Bool = false
     private let client = LoginHTTPClient()
 
@@ -104,14 +105,19 @@ extension OnboardingScreen {
             method: .post(nil),
             modelType: ApiResponse<UserResponseDTO>.self
         )
-
-        let response = try await client.load(resource, token: token)
-        print(response.code)
-        print(response.message)
-
-        if response.isSuccess, response.data != nil {
-            print(response.data?.accessToken ?? "no Token")
-        }
+        _ = appState.routes.popLast()
+        appState.routes.append(.register)
+        //        let response = try await client.load(resource, token: token)
+//        print(response.code)
+//        print(response.message)
+//
+//        if response.isSuccess, response.data != nil {
+//            print(response.data?.accessToken ?? "no Token")
+//            if response.code == "4002" {
+//                appState.routes.popLast()
+//                appState.routes.append(.register)
+//            }
+//        }
     }
 
     // how can i do unit test this ?

@@ -3,7 +3,7 @@
 import SwiftUI
 
 struct SignUpScreen: View {
-    @StateObject private var state = SignUpState()
+    @StateObject private var state = SignUpModel()
 
     @State private var isBack: Bool = false
 

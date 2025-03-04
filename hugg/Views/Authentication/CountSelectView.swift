@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct CountSelectView: View {
-    @EnvironmentObject var state: SignUpState
+    @EnvironmentObject var state: SignUpModel
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -23,5 +23,5 @@ struct CountSelectView: View {
 
 #Preview {
     CountSelectView()
-        .environmentObject(SignUpState())
+        .environmentObject(SignUpModel())
 }

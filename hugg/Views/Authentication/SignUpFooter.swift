@@ -3,7 +3,7 @@ import SwiftUI
 
 struct SignUpFooter: View {
     // State DI
-    @EnvironmentObject var state: SignUpState
+    @EnvironmentObject var state: SignUpModel
     let onButtonTapped: () -> Void
     var buttonEnable: Bool
 
@@ -45,5 +45,5 @@ extension SignUpFooter {
 
 #Preview {
     SignUpFooter(onButtonTapped: {}, buttonEnable: true)
-        .environmentObject(SignUpState())
+        .environmentObject(SignUpModel())
 }

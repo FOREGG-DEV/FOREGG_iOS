@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct TreatmentSelectView: View {
-    @EnvironmentObject var state: SignUpState
+    @EnvironmentObject var state: SignUpModel
 
     @State private var showDropbox: Bool = false
 
@@ -25,7 +25,7 @@ struct TreatmentSelectView: View {
                     ZStack {
                         UnevenRoundedRectangle(cornerRadii: .init(topLeading: 8.0, bottomLeading: 8.0, bottomTrailing: 0.0, topTrailing: 0.0))
                             .fill(.white)
-                        Text(state.currentSurgeryType.rawValue)
+                        Text(state.currentSurgeryType.displayName)
                     }
                     .frame(height: 48.0)
 
@@ -60,7 +60,7 @@ struct TreatmentSelectView: View {
                                 .foregroundStyle(.clear)
                                 .background(state.currentSurgeryType == item ? .mainBg : .white)
                                 .clipShape(RoundedRectangle(cornerSize: CGSize(width: 8, height: 8)))
-                            Text(item.rawValue)
+                            Text(item.displayName)
                                 .font(.pretendardSemiBold16)
                                 .foregroundStyle(.black70)
                                 .padding(.vertical, 13.0)
@@ -93,5 +93,5 @@ struct TreatmentSelectView: View {
     TreatmentSelectView()
         .background(.mainBg)
         .padding(.horizontal, 16.0)
-        .environmentObject(SignUpState())
+        .environmentObject(SignUpModel())
 }

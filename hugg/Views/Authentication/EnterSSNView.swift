@@ -12,7 +12,7 @@ private enum FocusField: Hashable {
 }
 
 struct EnterSSNView: View {
-    @EnvironmentObject var state: SignUpState
+    @EnvironmentObject var state: SignUpModel
     @State private var ssn: String = ""
     @FocusState private var focusField: FocusField?
 
@@ -137,5 +137,5 @@ private struct SSNTitleView: View {
     }
     .padding(.horizontal, 16.0)
     .background(Constants.Colors.backgroundMain)
-    .environmentObject(SignUpState())
+    .environmentObject(SignUpModel())
 }

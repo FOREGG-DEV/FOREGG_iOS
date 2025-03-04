@@ -3,7 +3,7 @@
 import SwiftUI
 
 struct AgreementView: View {
-    @EnvironmentObject var state: SignUpState
+    @EnvironmentObject var state: SignUpModel
     @State var termsAgree: Bool = false
     @State var privacyAgree: Bool = false
     @State var ageCheckAgree: Bool = false
@@ -116,7 +116,7 @@ struct HGAgreementItem: View {
     VStack {
         Spacer()
         AgreementView()
-            .environmentObject(SignUpState())
+            .environmentObject(SignUpModel())
         Spacer()
     }
     .padding(.horizontal, 16)

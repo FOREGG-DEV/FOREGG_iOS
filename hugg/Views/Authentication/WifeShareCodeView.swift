@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct WifeShareCodeView: View {
-    @EnvironmentObject var state: SignUpState
+    @EnvironmentObject var state: SignUpModel
     @StateObject var spouseCodeModel = SpouseCodeModel()
 
     var body: some View {
@@ -74,5 +74,5 @@ extension WifeShareCodeView {
         }.safeAreaPadding(.vertical, 100)
     }
     .ignoresSafeArea()
-    .environmentObject(SignUpState())
+    .environmentObject(SignUpModel())
 }

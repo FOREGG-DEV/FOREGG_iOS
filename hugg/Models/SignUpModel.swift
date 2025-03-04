@@ -1,6 +1,7 @@
 import SwiftUI
 
-class SignUpState: ObservableObject {
+@MainActor
+class SignUpModel: ObservableObject {
     // initializer with default values
     init(
         currentStep: Int = 0,
@@ -19,6 +20,7 @@ class SignUpState: ObservableObject {
     @Published var termsAgree: Bool = false
     @Published var privacyAgree: Bool = false
     @Published var ageCheckAgree: Bool = false
+    let client = HTTPClient()
     
     // MARK: check current form is valid
     
@@ -82,7 +84,7 @@ class SignUpState: ObservableObject {
 
 // MARK: - SignUp Logics
 
-extension SignUpState {
+extension SignUpModel {
     func increaseStep() {
         withAnimation(.default) {
             if currentStep < 5 {
@@ -106,6 +108,8 @@ extension SignUpState {
         
     // TODO: Implement Service layer
     // [GET] from Service layer (get spouseCode)
+    func populateSpouseCode() async {}
+    
     func changeSpouseCode(_ newValue: String) {
         spouseCode = newValue
     }

@@ -5,4 +5,5 @@ enum DevMode: Equatable {
     case ui(Route)
 }
 
-let devMode = DevMode.ui(.ledgerForm)
+let devMode: DevMode = .prod
+// DevMode.ui(.ledgerForm)

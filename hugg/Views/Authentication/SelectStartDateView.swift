@@ -11,7 +11,7 @@ import SwiftUI
 // }
 
 struct SelectStartDateView: View {
-    @EnvironmentObject var state: SignUpState
+    @EnvironmentObject var state: SignUpModel
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -58,5 +58,5 @@ struct SelectStartDateView: View {
         SelectStartDateView()
             .padding(.horizontal, 16)
     }
-    .environmentObject(SignUpState())
+    .environmentObject(SignUpModel())
 }

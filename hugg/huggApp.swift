@@ -7,6 +7,9 @@ struct huggApp: App {
     @StateObject private var appState = AppState()
     @StateObject private var myPageModel = MyPageModel()
     @StateObject private var homeScreenModel = HomeScreenModel()
+    // LedgerModel
+    // DailyHugModel
+    // CalendarModel
 
     init() {
         // for kakao login
