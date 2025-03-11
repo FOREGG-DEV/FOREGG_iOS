@@ -31,3 +31,7 @@ Screen의 목적인 View는 반드시 Screen으로 명칭
 - 기본 navigationBar 가리기
 > Gesture navigation 고려
 
+
+### Study
+- [ ] Do catch, try await 공부
+- [ ] AnyCodable ?

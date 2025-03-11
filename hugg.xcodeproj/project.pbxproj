@@ -59,6 +59,7 @@
 		1F86E4AE2D5DDC9E0042B256 /* ViewStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F86E4AD2D5DDC9B0042B256 /* ViewStatus.swift */; };
 		1F89149C2D75EC0800AC6A5B /* DailyHugListDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F89149B2D75EC0800AC6A5B /* DailyHugListDetailScreen.swift */; };
 		1F89149E2D75FCB000AC6A5B /* dev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F89149D2D75FCAE00AC6A5B /* dev.swift */; };
+		1F8914C52D77344000AC6A5B /* bugs.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F8914C42D77343D00AC6A5B /* bugs.md */; };
 		1F89292E2CE0D86100DDF698 /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1F89292D2CE0D86100DDF698 /* KakaoSDKAuth */; };
 		1F8929302CE0D86100DDF698 /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 1F89292F2CE0D86100DDF698 /* KakaoSDKCommon */; };
 		1F8929322CE0D86100DDF698 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 1F8929312CE0D86100DDF698 /* KakaoSDKUser */; };
@@ -212,6 +213,7 @@
 		1F86E4AD2D5DDC9B0042B256 /* ViewStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStatus.swift; sourceTree = "<group>"; };
 		1F89149B2D75EC0800AC6A5B /* DailyHugListDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyHugListDetailScreen.swift; sourceTree = "<group>"; };
 		1F89149D2D75FCAE00AC6A5B /* dev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dev.swift; sourceTree = "<group>"; };
+		1F8914C42D77343D00AC6A5B /* bugs.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = bugs.md; sourceTree = "<group>"; };
 		1F8929332CE0FF2600DDF698 /* MyPageListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageListCell.swift; sourceTree = "<group>"; };
 		1F8929352CE10DCA00DDF698 /* ManageAccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageAccountScreen.swift; sourceTree = "<group>"; };
 		1F8B64C02CB3A9E400F61118 /* CountSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountSelectView.swift; sourceTree = "<group>"; };
@@ -470,6 +472,7 @@
 		1F1ED37F2D52428500A1894A /* Docs */ = {
 			isa = PBXGroup;
 			children = (
+				1F8914C42D77343D00AC6A5B /* bugs.md */,
 				1F2B73CE2D5D852D00E07569 /* service_layer.md */,
 				1F2B73C92D5D81D100E07569 /* note.md */,
 				1F1ED3812D52428E00A1894A /* http_guide.md */,
@@ -881,6 +884,7 @@
 				1F8D59372C3B9D7700832F61 /* GmarketSansBold.otf in Resources */,
 				1F8D59362C3B9D7700832F61 /* GmarketSansMedium.otf in Resources */,
 				1F0D92F82C365B6E00BB6ADD /* Preview Assets.xcassets in Resources */,
+				1F8914C52D77344000AC6A5B /* bugs.md in Resources */,
 				1F8D59302C3B9D0200832F61 /* Pretendard-Black.otf in Resources */,
 				1F8D59352C3B9D7700832F61 /* GmarketSansLight.otf in Resources */,
 				1F8D59292C3B9D0200832F61 /* Pretendard-ExtraBold.otf in Resources */,

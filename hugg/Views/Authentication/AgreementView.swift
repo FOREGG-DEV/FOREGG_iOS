@@ -10,6 +10,8 @@ struct AgreementView: View {
 
     @State var allAgree: Bool = false
 
+    @Environment(\.openURL) var openURL
+
     private func updateAllAgreeState() {
         allAgree = termsAgree && privacyAgree && ageCheckAgree
     }
@@ -46,9 +48,30 @@ struct AgreementView: View {
             Spacer()
                 .frame(height: 24)
 
-            HGAgreementItem(primaryText: "허그 이용약관", secondaryText: "에 동의합니다.", isOn: $termsAgree)
-            HGAgreementItem(primaryText: "개인정보 수집/이용", secondaryText: "에 동의합니다.", isOn: $privacyAgree)
-            HGAgreementItem(primaryText: "", secondaryText: "본인은 만 14세 이상입니다.", isOn: $ageCheckAgree, disableIcon: true)
+            HGAgreementItem(
+                primaryText: "허그 이용약관",
+                secondaryText: "에 동의합니다.",
+                isOn: $termsAgree,
+                onTap: {
+                    self.openURL(URL(string: MyPageUrls.terms.rawValue)!)
+                }
+            )
+
+            HGAgreementItem(
+                primaryText: "개인정보 수집/이용",
+                secondaryText: "에 동의합니다.",
+                isOn: $privacyAgree,
+                onTap: {
+                    self.openURL(URL(string: MyPageUrls.privacy.rawValue)!)
+                }
+            )
+
+            HGAgreementItem(
+                primaryText: "",
+                secondaryText: "본인은 만 14세 이상입니다.",
+                isOn: $ageCheckAgree, disableIcon: true,
+                onTap: {}
+            )
 
             Spacer()
 
@@ -68,6 +91,8 @@ struct HGAgreementItem: View {
     // 파라미터: 첫 번째, 두 번째 텍스트 및 바인딩
     let primaryText: String
     let secondaryText: String
+    let onTap: () -> Void
+
     let disableIcon: Bool
     @Binding var isOn: Bool
 
@@ -75,36 +100,40 @@ struct HGAgreementItem: View {
         primaryText: String,
         secondaryText: String,
         isOn: Binding<Bool>,
-        disableIcon: Bool = false // 기본값 설정
+        disableIcon: Bool = false, // 기본값 설정
+        onTap: @escaping () -> Void
     ) {
         self.primaryText = primaryText
         self.secondaryText = secondaryText
         self._isOn = isOn // Binding은 `_`로 접근
         self.disableIcon = disableIcon
+        self.onTap = onTap
     }
 
     var body: some View {
         HStack {
-            Toggle(isOn: $isOn) {
-                HStack {
-                    Text(primaryText)
-                        .underline(color: .black80)
-                        .font(.p2)
-                        .foregroundStyle(.black90)
-                        + Text(secondaryText)
-                        .font(.p2)
-                        .foregroundStyle(.black90)
-
-                    Text("(필수)")
-                        .font(.p2)
-                        .foregroundStyle(.mainStrong)
+            Toggle(isOn: $isOn) {}
+                .toggleStyle(CheckboxToggleStyle()) // 커스텀 스타일 적용
+            HStack {
+                Text(primaryText)
+                    .underline(color: .black80)
+                    .font(.p2)
+                    .foregroundStyle(.black90)
+                    + Text(secondaryText)
+                    .font(.p2)
+                    .foregroundStyle(.black90)
+                Text("(필수)")
+                    .font(.p2)
+                    .foregroundStyle(.mainStrong)
+                Spacer()
+                if !disableIcon {
+                    Image(systemName: "chevron.forward")
+                        .foregroundStyle(.black50)
+                        .padding(.trailing, 12)
                 }
             }
-            .toggleStyle(CheckboxToggleStyle()) // 커스텀 스타일 적용
-            Spacer()
-            if !disableIcon {
-                Image(systemName: "chevron.forward")
-                    .foregroundStyle(.black50)
+            .onTapGesture {
+                onTap()
             }
         }
         .padding(.leading, 32)

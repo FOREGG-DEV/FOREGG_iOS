@@ -52,7 +52,7 @@ enum Constants {
         static let disabledBorder = Color("disabledBorder")
     }
 
-    private static let baseUrlPath = "http://ec2-15-164-204-24.ap-northeast-2.compute.amazonaws.com:8080/foreegg"
+    private static let baseUrlPath = "http://ec2-15-164-204-24.ap-northeast-2.compute.amazonaws.com:8080"
 
     enum Urls {
         static let spouseCode = URL(string: "\(baseUrlPath)/auth/spouseCode")!

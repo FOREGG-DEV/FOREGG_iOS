@@ -95,29 +95,30 @@ struct OnboardingScreen: View {
 }
 
 extension OnboardingScreen {
-    private func loginProcess(_ token: String) async throws {
-        // get the kakao jwt here
+    private func loginProcess(_ token: String) async {
         print("kakao token is \(token)")
-        // kakao login with kakao token
-        // create resource for kakao login
+
         let resource = Resource(
             url: Constants.Urls.login,
             method: .post(nil),
             modelType: ApiResponse<UserResponseDTO>.self
         )
-        _ = appState.routes.popLast()
-        appState.routes.append(.register)
-        //        let response = try await client.load(resource, token: token)
-//        print(response.code)
-//        print(response.message)
-//
-//        if response.isSuccess, response.data != nil {
-//            print(response.data?.accessToken ?? "no Token")
-//            if response.code == "4002" {
-//                appState.routes.popLast()
-//                appState.routes.append(.register)
-//            }
-//        }
+
+        do {
+            let response = try await client.load(resource, token: token)
+            if response.isSuccess, let userData = response.data {
+                // save token to UserDefaults
+                appState.routes.append(.mainScreen) // ✅ 로그인 성공 → 메인 화면 이동
+            }
+        } catch let NetworkError.serverError(error as ApiResponse<UserResponseDTO>) {
+            if error.code == "USER4002" {
+                print("🚨 회원가입이 필요한 사용자")
+                appState.routes.append(.register)
+            }
+        } catch {
+            print("❌ 예상치 못한 로그인 실패")
+            showPopup.toggle() // 에러 팝업 표시
+        }
     }
 
     // how can i do unit test this ?
@@ -131,13 +132,9 @@ extension OnboardingScreen {
                 } else {
                     // 로그인 성공
                     let result = oauthToken?.accessToken
+
                     Task {
-                        do {
-                            try await loginProcess(result ?? "no token founded")
-                        } catch {
-                            print(error.localizedDescription)
-                            showPopup.toggle()
-                        }
+                        await loginProcess(result ?? "no token")
                     }
                 }
             }
@@ -157,7 +154,7 @@ extension OnboardingScreen {
                     // POST: auth/login
                     Task {
                         do {
-                            try await loginProcess(result ?? "no token founded")
+                            try await loginProcess(result ?? "no token")
                         } catch {
                             print(error.localizedDescription)
                             showPopup.toggle()

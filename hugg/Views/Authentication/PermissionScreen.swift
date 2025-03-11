@@ -2,11 +2,10 @@
 import SwiftUI
 
 struct PermissionScreen: View {
+    @EnvironmentObject private var model: SignUpModel
+
     var body: some View {
         VStack(alignment: .leading) {
-            HGAppBarWithoutBack(title: "알림")
-            Spacer()
-                .frame(height: 32)
             VStack(alignment: .leading) {
                 HStack {
                     Text("앱 접근 권한을 안내드려요")
@@ -32,10 +31,10 @@ struct PermissionScreen: View {
                     HGPermissionHeadingLabel(label: "선택적 접근 권한")
 
                     HGPermissionItem(label: "알림", desc: "캘린더 알림, 챌린지, 데일리허그", imageName:
-                        "homeFill")
+                        "bell")
 
                     HGPermissionItem(label: "사진 및 카메라", desc: "데일리허그", imageName:
-                        "homeFill")
+                        "camera")
 
                     Spacer().frame(height: 24)
 
@@ -55,11 +54,12 @@ struct PermissionScreen: View {
 
                 Spacer()
             }
-            .padding(.horizontal, 16)
 
-            HGBorderedButton(label: "다음", isEnabled: true, action: {})
-                .padding(.horizontal, 16)
-                .padding(.bottom, 70)
+            HGBorderedButton(label: "다음", isEnabled: true, action: {
+                // Permission
+                model.increaseStep()
+            })
+            .padding(.bottom, 70)
         }
         .background(.mainBg)
     }
@@ -67,6 +67,7 @@ struct PermissionScreen: View {
 
 #Preview {
     PermissionScreen()
+//        .environmentObject()
 }
 
 // Views
@@ -76,10 +77,12 @@ private struct HGPermissionItem: View {
     let desc: String
     let imageName: String
     var body: some View {
-        HStack(alignment: .center) {
-            Image(imageName)
+        HStack(alignment: .center, spacing: 12) {
+            Image(systemName: imageName)
                 .resizable()
-                .frame(width: 48, height: 48)
+                .scaledToFit()
+                .frame(width: 32, height: 32)
+                .foregroundStyle(Constants.Colors.black80)
             VStack(alignment: .leading) {
                 Text(label)
                     .font(.h3)

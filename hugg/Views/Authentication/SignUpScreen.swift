@@ -3,6 +3,7 @@
 import SwiftUI
 
 struct SignUpScreen: View {
+    // 진입점에서 StateObject 생성
     @StateObject private var state = SignUpModel()
 
     @State private var isBack: Bool = false
@@ -29,16 +30,17 @@ struct SignUpScreen: View {
                         .foregroundColor(.mainSub)
                         .cornerRadius(5)
                     Rectangle()
-                        .frame(width: state.currentStep >= 1 && state.currentStep < 5 ? 20 : 10, height: 10)
+                        .frame(width: state.currentStep >= 1 && state.currentStep < 6 ? 20 : 10, height: 10)
                         .foregroundColor(state.currentStep >= 1 ? .mainSub : .black30)
                         .cornerRadius(5)
                     Rectangle()
-                        .frame(width: state.currentStep == 5 ? 20 : 10, height: 10)
-                        .foregroundColor(state.currentStep == 5 ? .mainSub : .black30)
+                        .frame(width: state.currentStep == 6 ? 20 : 10, height: 10)
+                        .foregroundColor(state.currentStep == 6 ? .mainSub : .black30)
                         .cornerRadius(5)
                 }
                 .background(RoundedRectangle(cornerRadius: 30).fill(Color.clear))
                 .allowsTightening(false)
+                .padding(.bottom, 16)
 
                 // MARK: Sign Up Content below
 
@@ -48,14 +50,16 @@ struct SignUpScreen: View {
                     case 0:
                         AgreementView()
                     case 1:
-                        EnterSSNView()
+                        PermissionScreen()
                     case 2:
-                        TreatmentSelectView()
+                        EnterSSNView()
                     case 3:
-                        CountSelectView()
+                        TreatmentSelectView()
                     case 4:
-                        SelectStartDateView()
+                        CountSelectView()
                     case 5:
+                        SelectStartDateView()
+                    case 6:
                         WifeShareCodeView()
 
                     default:

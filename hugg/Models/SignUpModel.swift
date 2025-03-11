@@ -20,7 +20,7 @@ class SignUpModel: ObservableObject {
     @Published var termsAgree: Bool = false
     @Published var privacyAgree: Bool = false
     @Published var ageCheckAgree: Bool = false
-    let client = HTTPClient()
+    let client = LoginHTTPClient()
     
     // MARK: check current form is valid
     
@@ -87,7 +87,7 @@ class SignUpModel: ObservableObject {
 extension SignUpModel {
     func increaseStep() {
         withAnimation(.default) {
-            if currentStep < 5 {
+            if currentStep < 6 {
                 currentStep += 1
             }
         }
@@ -108,7 +108,24 @@ extension SignUpModel {
         
     // TODO: Implement Service layer
     // [GET] from Service layer (get spouseCode)
-    func populateSpouseCode() async {}
+    func populateSpouseCode() async {
+        // create resource
+        let resource = Resource(url: Constants.Urls.spouseCode, method: .get([]), modelType: ApiResponse<UserSpouseCodeResponseDTO>.self)
+        
+        do {
+            let response = try await client.load(resource, token: nil)
+            if response.isSuccess, let data = response.data {
+                changeSpouseCode(data.spouseCode)
+                print(spouseCode)
+            }
+        } catch let NetworkError.serverError(error as ApiResponse<UserSpouseCodeResponseDTO>) {
+            print(error.code)
+            print(error.message)
+            // show error popup
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
     
     func changeSpouseCode(_ newValue: String) {
         spouseCode = newValue

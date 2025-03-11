@@ -4,10 +4,13 @@ import Foundation
 // TODO: serverError인 경우 에러 코드 처리는 어떻게 해야하나?
 enum NetworkError: Error {
     case badRequest
-    case serverError(String)
+    case serverError(Any)
     case decodingError
     case invalidResponse
 }
+
+// Codable한 Any struct
+struct AnyCodable: Codable {}
 
 extension NetworkError: LocalizedError {
     var errorDescription: String? {
@@ -15,15 +18,16 @@ extension NetworkError: LocalizedError {
         case .badRequest:
             // comment -> 추가적인 정보 제공 (개발 과정에서 활용)
             return NSLocalizedString("Unable to perform request", comment: "badRequestError")
-        case .serverError(let errorMessage):
-            print(errorMessage)
-            return NSLocalizedString(errorMessage, comment: "serverError")
+        case .serverError(let error as ApiResponse<AnyCodable>):
+            return NSLocalizedString(error.message, comment: "serverError")
 
         case .decodingError:
             return NSLocalizedString("Unable to decode successfully.", comment: "decodingError")
 
         case .invalidResponse:
             return NSLocalizedString("Invalid response", comment: "invalidResponse")
+        case .serverError:
+            return NSLocalizedString("unexpected Error", comment: "serverError")
         }
     }
 }
@@ -96,18 +100,19 @@ struct HTTPClient {
             throw NetworkError.invalidResponse
         }
 
-        // HTTP 상태 코드 검사 (2xx 성공)
-        guard (200 ... 299).contains(httpResponse.statusCode) else {
-            throw NetworkError.serverError("Server returned status code: \(httpResponse.statusCode)")
-        }
-
-        // JSON 디코딩
         do {
             let result = try JSONDecoder().decode(resource.modelType, from: data)
+            // ✅ 서버 응답이 실패인 경우 (isSuccess = false)
+            if !result.isSuccess {
+                throw NetworkError.serverError(result)
+            }
+
             return result
-        } catch {
-            print("Decoding error: \(error.localizedDescription)")
+
+        } catch let error as DecodingError {
             throw NetworkError.decodingError
+        } catch {
+            throw error
         }
     }
 }

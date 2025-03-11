@@ -1,7 +1,7 @@
 import Foundation
 
 struct LoginHTTPClient {
-    func load<T: Codable>(_ resource: Resource<T>, token: String) async throws -> ApiResponse<T> {
+    func load<T: Codable>(_ resource: Resource<T>, token: String?) async throws -> ApiResponse<T> {
         var request = URLRequest(url: resource.url)
 
         // HTTP 메서드 설정
@@ -24,31 +24,38 @@ struct LoginHTTPClient {
             request.httpMethod = resource.method.name
         }
 
-        // HTTP 요청 설정
+        // ✅ 헤더에 accessToken 추가
         let configuration = URLSessionConfiguration.default
-        configuration.httpAdditionalHeaders = ["Content-Type": "application/json", "accessToken": token]
+        if token != nil {
+            configuration.httpAdditionalHeaders = ["Content-Type": "application/json", "accessToken": token!]
+        } else {
+            configuration.httpAdditionalHeaders = ["Content-Type": "application/json"]
+        }
         let session = URLSession(configuration: configuration)
 
         // 비동기 요청 수행
         let (data, response) = try await session.data(for: request)
 
-        // 응답 타입 확인
+        // ✅ 응답 타입 확인
         guard let httpResponse = response as? HTTPURLResponse else {
             throw NetworkError.invalidResponse
         }
 
-        // HTTP 상태 코드 검사 (2xx 성공)
-        guard (200 ... 299).contains(httpResponse.statusCode) else {
-            throw NetworkError.serverError("Server returned status code: \(httpResponse.statusCode)")
-        }
-
-        // JSON 디코딩
+        // ✅ JSON 디코딩 시도
         do {
             let result = try JSONDecoder().decode(resource.modelType, from: data)
+            print(result)
+            // ✅ 서버 응답이 실패인 경우 (isSuccess = false)
+            if !result.isSuccess {
+                throw NetworkError.serverError(result)
+            }
+
             return result
-        } catch {
-            print("Decoding error: \(error.localizedDescription)")
+
+        } catch let error as DecodingError {
             throw NetworkError.decodingError
+        } catch {
+            throw error
         }
     }
 }
